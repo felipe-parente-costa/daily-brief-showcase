@@ -1,0 +1,50 @@
+{
+  "janela_horas": 30,
+  "feeds": [
+    { "id": "infomoney",   "nome": "InfoMoney",              "secao": "brasil", "url": "https://www.infomoney.com.br/feed/",                        "max_itens": 15 },
+    { "id": "g1_economia", "nome": "G1 Economia",            "secao": "brasil", "url": "https://g1.globo.com/rss/g1/economia/",                     "max_itens": 15 },
+    { "id": "brazil_journal", "nome": "Brazil Journal",      "secao": "brasil", "url": "https://braziljournal.com/feed/",                          "max_itens": 12 },
+    { "id": "neofeed",     "nome": "NeoFeed",                "secao": "brasil", "url": "https://neofeed.com.br/feed/",                             "max_itens": 12 },
+    { "id": "turim",       "nome": "Turim",                  "secao": "brasil", "url": "https://www.turimbr.com/publicacoes/insights/feed/",       "max_itens": 6 },
+    { "id": "cnbc_top",    "nome": "CNBC Top News",          "secao": "global", "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",     "max_itens": 15 },
+    { "id": "marketwatch", "nome": "MarketWatch",            "secao": "global", "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories","max_itens": 15 },
+    { "id": "yahoo_fin",   "nome": "Yahoo Finance",          "secao": "global", "url": "https://finance.yahoo.com/news/rssindex",                   "max_itens": 15 },
+    { "id": "fed_press",   "nome": "Federal Reserve",        "secao": "global", "url": "https://www.federalreserve.gov/feeds/press_all.xml",        "max_itens": 10 },
+    { "id": "ft",          "nome": "Financial Times",        "secao": "global", "url": "https://www.ft.com/rss/home",                              "max_itens": 12 },
+    { "id": "wsj_markets", "nome": "WSJ Markets",            "secao": "global", "url": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain", "max_itens": 12 },
+    { "id": "economist",   "nome": "The Economist",          "secao": "mundo",  "url": "https://www.economist.com/latest/rss.xml",                 "max_itens": 12 },
+    { "id": "cnbc_world",  "nome": "CNBC World",             "secao": "mundo",  "url": "https://www.cnbc.com/id/100727362/device/rss/rss.html",     "max_itens": 15 },
+    { "id": "bbc_world",   "nome": "BBC World",              "secao": "mundo",  "url": "https://feeds.bbci.co.uk/news/world/rss.xml",               "max_itens": 15 },
+    { "id": "techcrunch",  "nome": "TechCrunch",             "secao": "tech",   "url": "https://techcrunch.com/feed/",                              "max_itens": 12 },
+    { "id": "theverge",    "nome": "The Verge",              "secao": "tech",   "url": "https://www.theverge.com/rss/index.xml",                    "max_itens": 12 }
+  ],
+  "mercado": {
+    "yahoo": [
+      { "simbolo": "^BVSP",    "nome": "Ibovespa",        "grupo": "brasil",     "casas": 0 },
+      { "simbolo": "^GSPC",    "nome": "S&P 500",         "grupo": "global",     "casas": 2 },
+      { "simbolo": "^IXIC",    "nome": "Nasdaq",          "grupo": "global",     "casas": 2 },
+      { "simbolo": "^TNX",     "nome": "Treasury 10a",    "grupo": "global",     "casas": 3, "sufixo": "%" },
+      { "simbolo": "DX-Y.NYB", "nome": "Dolar (DXY)",     "grupo": "global",     "casas": 2 },
+      { "simbolo": "CL=F",     "nome": "Petroleo WTI",    "grupo": "commodity",  "casas": 2, "prefixo": "US$ " },
+      { "simbolo": "GC=F",     "nome": "Ouro",            "grupo": "commodity",  "casas": 2, "prefixo": "US$ " }
+    ],
+    "awesomeapi": [
+      { "par": "USD-BRL", "nome": "Dolar (USD/BRL)", "grupo": "brasil", "casas": 4, "prefixo": "R$ " },
+      { "par": "EUR-BRL", "nome": "Euro (EUR/BRL)",  "grupo": "brasil", "casas": 4, "prefixo": "R$ " }
+    ],
+    "coingecko": [
+      { "id": "bitcoin",  "nome": "Bitcoin",  "grupo": "cripto", "casas": 0, "prefixo": "US$ " },
+      { "id": "ethereum", "nome": "Ethereum", "grupo": "cripto", "casas": 2, "prefixo": "US$ " }
+    ],
+    "bcb": [
+      { "serie": 432, "nome": "Selic (meta)",  "grupo": "brasil", "sufixo": "% a.a." },
+      { "serie": 433, "nome": "IPCA (mensal)", "grupo": "brasil", "sufixo": "%" }
+    ]
+  },
+  "newsletters": {
+    "alias": "seuemail+brief@gmail.com",
+    "label": "Brief/Fontes",
+    "janela": "newer_than:1d",
+    "max_emails": 12
+  }
+}

@@ -1,0 +1,4 @@
+# Curadoria: instale so o do provedor que voce usa (BRIEF_PROVIDER).
+# O 2.0 e obrigatorio: a API recusa o schema legado do SDK 1.x.
+google-genai>=2,<3
+# anthropic>=1,<2

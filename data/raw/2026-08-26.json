@@ -1,0 +1,2321 @@
+{
+  "data": "2026-08-26",
+  "gerado_em": "2026-08-26T19:18:32-03:00",
+  "janela_horas": 30,
+  "mercado": [
+    {
+      "nome": "Ibovespa",
+      "grupo": "brasil",
+      "valor": "174.586",
+      "valor_num": 174586.27,
+      "variacao_pct": 0.01,
+      "fonte": "Yahoo Finance",
+      "referencia": null
+    },
+    {
+      "nome": "S&P 500",
+      "grupo": "global",
+      "valor": "7.675,70",
+      "valor_num": 7675.7,
+      "variacao_pct": -0.02,
+      "fonte": "Yahoo Finance",
+      "referencia": null
+    },
+    {
+      "nome": "Nasdaq",
+      "grupo": "global",
+      "valor": "26.130,20",
+      "valor_num": 26130.197,
+      "variacao_pct": -0.08,
+      "fonte": "Yahoo Finance",
+      "referencia": null
+    },
+    {
+      "nome": "Treasury 10a",
+      "grupo": "global",
+      "valor": "4,664%",
+      "valor_num": 4.664,
+      "variacao_pct": 0.54,
+      "fonte": "Yahoo Finance",
+      "referencia": null
+    },
+    {
+      "nome": "Dolar (DXY)",
+      "grupo": "global",
+      "valor": "99,13",
+      "valor_num": 99.134,
+      "variacao_pct": 0.22,
+      "fonte": "Yahoo Finance",
+      "referencia": null
+    },
+    {
+      "nome": "Petroleo WTI",
+      "grupo": "commodity",
+      "valor": "US$ 81,84",
+      "valor_num": 81.84,
+      "variacao_pct": -0.63,
+      "fonte": "Yahoo Finance",
+      "referencia": null
+    },
+    {
+      "nome": "Ouro",
+      "grupo": "commodity",
+      "valor": "US$ 4.657,80",
+      "valor_num": 4657.8,
+      "variacao_pct": 0.42,
+      "fonte": "Yahoo Finance",
+      "referencia": null
+    },
+    {
+      "nome": "Bitcoin",
+      "grupo": "cripto",
+      "valor": "US$ 78.825",
+      "valor_num": 78825,
+      "variacao_pct": -0.13,
+      "fonte": "CoinGecko",
+      "referencia": null
+    },
+    {
+      "nome": "Ethereum",
+      "grupo": "cripto",
+      "valor": "US$ 2.506,82",
+      "valor_num": 2506.82,
+      "variacao_pct": 2.29,
+      "fonte": "CoinGecko",
+      "referencia": null
+    },
+    {
+      "nome": "Selic (meta)",
+      "grupo": "brasil",
+      "valor": "14,00% a.a.",
+      "valor_num": 14.0,
+      "variacao_pct": null,
+      "fonte": "Banco Central",
+      "referencia": "16/09/2026",
+      "casas_forcadas": true
+    },
+    {
+      "nome": "IPCA (mensal)",
+      "grupo": "brasil",
+      "valor": "0,07%",
+      "valor_num": 0.07,
+      "variacao_pct": null,
+      "fonte": "Banco Central",
+      "referencia": "01/07/2026",
+      "casas_forcadas": true
+    }
+  ],
+  "itens": [
+    {
+      "titulo": "‘There is considerable tension’: My grandmother, 99, wants to cut my mother out of her will. Should I intervene?",
+      "link": "https://www.marketwatch.com/story/there-is-considerable-tension-my-grandmother-99-wants-to-cut-my-mother-out-of-her-will-should-i-intervene-5e8f408e?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T22:15:00+00:00",
+      "resumo": "“Grandma feels that she was pressured by my mother into taking out a $50,000 HELOC.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Nvidia’s Blowout Quarter and Upbeat Outlook Send Shares Higher",
+      "link": "https://www.wsj.com/tech/nvidia-earnings-q2-2027-nvda-stock-8983c8d1?mod=rss_markets_main",
+      "publicado": "2026-08-26T22:04:00+00:00",
+      "resumo": "The chips giant reported record sales of $96.2 billion and said demand is accelerating, soothing market jitters over AI spending.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "US drug agency approves breakthrough treatment for pancreatic cancer",
+      "link": "https://www.bbc.co.uk/news/articles/clyq4ge4wk9o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T22:02:18+00:00",
+      "resumo": "Experts have hailed the drug, daraxonrasib, as a game changer for one of the world's deadliest cancers.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Lito está lutando pela vida. Seu drama está unindo o Brasil",
+      "link": "https://braziljournal.com/lito-esta-lutando-pela-vida-seu-drama-esta-unindo-o-brasil/",
+      "publicado": "2026-08-26T22:00:12+00:00",
+      "resumo": "CAMBRIDGE, Massachusetts – Lito Sousa conseguiu nas últimas semanas o feito raro de unir um País polarizado em torno de uma causa – ainda que por um motivo triste. Conhecido na internet por seu conteúdo técnico sobre aviação, o influenciador de 59 anos vem há meses passando por um quadro médico de perda de coordenação […] The post Lito está lutando pela vida. Seu drama está unindo o Brasil...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "O que vai ser do Habib’s com o pedido de recuperação judicial",
+      "link": "https://neofeed.com.br/negocios/o-que-vai-ser-do-habibs-com-o-pedido-de-recuperacao-judicial/",
+      "publicado": "2026-08-26T21:59:00+00:00",
+      "resumo": "Controlador da rede Habib’s e dono de marcas como Ragazzo, Tendal Grill e Mita, o Grupo Gennius é o mais novo nome na cada vez mais extensa onda de empresas que estão recorrendo à recuperação judicial (RJ) no mercado brasileiro. Fundado em 1987, pelo empresário Antônio Alberto Saraiva, o grupo de varejo alimentar teve seu […] O post O que vai ser do Habib’s com o pedido de recuperação judicial...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Meta dodges ‘Big Tobacco’ nightmare with $18 billion settlement in child-safety lawsuit",
+      "link": "https://www.marketwatch.com/story/metas-stock-rises-as-the-company-settles-in-social-media-addiction-trial-78abdfbf?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T21:58:00+00:00",
+      "resumo": "The social-media giant’s agreement with state officials removes a cloud that was hanging over its stock, analysts say.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "CrowdStrike’s stock soars after AI fuels the cybersecurity company’s ‘best quarter in history’",
+      "link": "https://www.marketwatch.com/story/crowdstrikes-stock-soars-after-ai-fuels-the-cybersecurity-companys-best-quarter-ever-6aeae1d5?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T21:56:00+00:00",
+      "resumo": "Shares of CrowdStrike Holdings were roaring after the cybersecurity company revealed a record-breaking quarter, one partially boosted by fears about the power of artificial intelligence.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Nvidia projects 70% sales growth next year as AI boom shows no sign of slowing",
+      "link": "https://www.ft.com/content/72908915-5e4a-457c-8c3a-aee8917a664a?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T21:53:35+00:00",
+      "resumo": "Chip giant’s data centre division grew 117% last quarter as clients race for computing power",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Anthropic agrees $45bn AI data centre deal with UK start-up Nscale",
+      "link": "https://www.ft.com/content/0ec76ba3-5f7f-4085-88fb-acf21954bc85?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T21:48:11+00:00",
+      "resumo": "Claude maker is rushing to secure computing capacity to run and train its latest models",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Salesforce stock jumps 12% on AI growth and Anthropic investment gain",
+      "link": "https://www.cnbc.com/2026/08/26/salesforce-crm-q2-earnings-report-2027.html",
+      "publicado": "2026-08-26T21:44:40+00:00",
+      "resumo": "Salesforce's Anthropic stake led to higher profit in the latest quarter.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Salesforce stock jumps 12% on AI growth and Anthropic investment gain",
+      "link": "https://www.cnbc.com/2026/08/26/salesforce-crm-q2-earnings-report-2027.html",
+      "publicado": "2026-08-26T21:44:40+00:00",
+      "resumo": "Salesforce's Anthropic stake led to higher profit in the latest quarter.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Agentes de IA da OpenAI invadem sistema da empresa e tentam esconder rastro em testes",
+      "link": "https://www.infomoney.com.br/business/openai-diz-que-agentes-de-ia-hackearam-seus-proprios-sistemas-e-tentaram-se-esconder/",
+      "publicado": "2026-08-26T21:41:40+00:00",
+      "resumo": "Relatório revela que modelos escaparam de ambientes controlados, roubaram credenciais, colaboraram em ataques e até adulteraram registros para ocultar comportamentos indevidos The post Agentes de IA da OpenAI invadem sistema da empresa e tentam esconder rastro em testes appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Nvidia is about to be a hundred-billion-dollar-a-quarter company",
+      "link": "https://www.theverge.com/tech/985387/nvidia-hundred-billion-dollar-quarterly-revenue",
+      "publicado": "2026-08-26T21:40:53+00:00",
+      "resumo": "Nvidia's predicting it will pull in $108 billion in revenue within just a few months. It wouldn't be the first company to rake in over $100 billion in quarterly revenue - Amazon, Apple, and Alphabet have repeatedly reached the milestone. Nvidia said in its latest earnings report that it brought in a record $96.2 billion […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Trump oficializa cota extra de importação de carne para baixar preços nos EUA",
+      "link": "https://g1.globo.com/economia/agronegocios/noticia/2026/08/26/trump-oficializa-cota-extra-de-importacao-de-carne-para-baixar-precos-nos-eua.ghtml",
+      "publicado": "2026-08-26T21:37:55+00:00",
+      "resumo": "Festival Recife Burger Gourmet Gustavo Steffen/Divulgação O presidente dos Estados Unidos, Donald Trump, assinou nesta quarta-feira (26) uma proclamação que amplia temporariamente a importação carne bovina para o país com imposto menor, anunciou a Casa Branca. A medida tem como objetivo aumentar a oferta e tentar conter os preços da carne para os consumidores norte-americanos. A nova cota vale...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Anthropic continues compute-gobbling streak in $45 billion deal with Nscale",
+      "link": "https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/",
+      "publicado": "2026-08-26T21:37:39+00:00",
+      "resumo": "The new deal with the infrastructure provider is the latest example of Anthropic's white-hot compute-gobbling streak.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "OpenAI’s rogue AI model incident was worse than we thought",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+      "publicado": "2026-08-26T21:36:06+00:00",
+      "resumo": "In July, an unreleased OpenAI model broke out of a restricted environment, figured out how to get access to the internet, allowed AI agents to talk to each other using a secret \"message board,\" and hacked into the internal systems of a different AI lab, Hugging Face. It took nearly two weeks for OpenAI to […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Onde assistir: Vasco x Vitória pela Copa do Brasil",
+      "link": "https://www.infomoney.com.br/esportes/onde-assistir-vasco-x-vitoria-pela-copa-do-brasil/",
+      "publicado": "2026-08-26T21:30:00+00:00",
+      "resumo": "O jogo está previsto para começar às 21h30 (horário de Brasília) em São Januário, no Rio The post Onde assistir: Vasco x Vitória pela Copa do Brasil appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Governo é contra a exploração de terras raras em Goiás por empresa americana e avalia como rever negócio",
+      "link": "https://g1.globo.com/politica/noticia/2026/08/26/governo-e-contra-a-exploracao-de-terras-raras-em-goias-por-empresa-americana-e-avalia-como-rever-negocio.ghtml",
+      "publicado": "2026-08-26T21:29:03+00:00",
+      "resumo": "Serra verde - mineradora de terras raras em Goias Divulgação O governo federal é contra a exploração de terras raras em Minaçu, norte de Goiás, por uma empresa americana. A USA Rare Earth firmou um acordo para adquirir participação na mineradora Serra Verde, responsável por uma mina no município. O negócio prevê a combinação das operações das duas companhias para criar uma cadeia completa de...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Okta pops 20% after topping estimates as AI threat spikes demand for identity security",
+      "link": "https://www.cnbc.com/2026/08/26/okta-okta-earnings-q2-2027.html",
+      "publicado": "2026-08-26T21:27:53+00:00",
+      "resumo": "New products accounted for 30% of total bookings and Okta said it closed dozens of AI deals during the period",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Okta pops 20% after topping estimates as AI threat spikes demand for identity security",
+      "link": "https://www.cnbc.com/2026/08/26/okta-okta-earnings-q2-2027.html",
+      "publicado": "2026-08-26T21:27:53+00:00",
+      "resumo": "New products accounted for 30% of total bookings and Okta said it closed dozens of AI deals during the period",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Republicans are dismissing affordability. That could be a problem in November",
+      "link": "https://www.cnbc.com/2026/08/26/election-republicans-dismissing-affordability.html",
+      "publicado": "2026-08-26T21:26:06+00:00",
+      "resumo": "President Donald Trump quipped that affordability was \"devised\" by Democrats, while Vice President JD Vance said groceries \"cost what they cost.\"",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "CrowdStrike jumps 11% on record second quarter as 'Mythos moment' drives AI cyber wave",
+      "link": "https://www.cnbc.com/2026/08/26/crowdstrike-crwd-earnings-q2-2027.html",
+      "publicado": "2026-08-26T21:25:56+00:00",
+      "resumo": "CrowdStrike shares have surged 61% this year to new highs as the threat from frontier AI has fueled demand for advanced security tools.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "CrowdStrike jumps 11% on record second quarter as 'Mythos moment' drives AI cyber wave",
+      "link": "https://www.cnbc.com/2026/08/26/crowdstrike-crwd-earnings-q2-2027.html",
+      "publicado": "2026-08-26T21:25:56+00:00",
+      "resumo": "CrowdStrike shares have surged 61% this year to new highs as the threat from frontier AI has fueled demand for advanced security tools.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Tempestade avança por Estados do Sudeste, do Sul e do Centro-Oeste nesta quarta-feira",
+      "link": "https://www.infomoney.com.br/brasil/tempestade-avanca-por-estados-do-sudeste-do-sul-e-do-centro-oeste-nesta-quarta-feira/",
+      "publicado": "2026-08-26T21:22:48+00:00",
+      "resumo": "Segundo o órgão, a atuação de diferentes cavados - áreas alongadas de baixa pressão - deve manter as condições de chuva, trovoadas e tempestades em áreas do Sudeste e do Sul The post Tempestade avança por Estados do Sudeste, do Sul e do Centro-Oeste nesta quarta-feira appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Meta settles social media addiction case with California, other states for $16.7 billion",
+      "link": "https://www.cnbc.com/2026/08/26/meta-social-media-trial-settlement.html",
+      "publicado": "2026-08-26T21:17:46+00:00",
+      "resumo": "Meta and state attorneys general settled a federal trial centering on allegations that company misrepresented the extent of child-related mental health harms.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Meta settles social media addiction case with California, other states for $16.7 billion",
+      "link": "https://www.cnbc.com/2026/08/26/meta-social-media-trial-settlement.html",
+      "publicado": "2026-08-26T21:17:46+00:00",
+      "resumo": "Meta and state attorneys general settled a federal trial centering on allegations that company misrepresented the extent of child-related mental health harms.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "OpenAI releases sweeping report on Hugging Face AI agent hack",
+      "link": "https://www.cnbc.com/2026/08/26/open-ai-hugging-face-hack.html",
+      "publicado": "2026-08-26T21:17:34+00:00",
+      "resumo": "The 37-page report walks through the actions that OpenAI's models took during a series of evaluations prior to and during the Hugging Face breach.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "O petróleo de 2027 já mostra sinais de escassez",
+      "link": "https://neofeed.com.br/economia/o-petroleo-de-2027-ja-mostra-sinais-de-escassez/",
+      "publicado": "2026-08-26T21:13:51+00:00",
+      "resumo": "O boom do preço do petróleo que muitos esperavam para este ano, impulsionado pela crise no Estreito de Ormuz, não aconteceu — pelo menos por enquanto. Mas, segundo gestores de um fundo especializado em commodities, o choque foi apenas adiado. A explosão dos preços deve ocorrer em 2027, quando a combinação de estoques esgotados, oferta […] O post O petróleo de 2027 já mostra sinais de escassez...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Investors Brace for Less-Than-Perfect Nvidia Results, Pull Stocks Lower",
+      "link": "https://www.wsj.com/finance/stocks/investors-brace-for-less-than-perfect-nvidia-results-pull-stocks-lower-2ef52443?mod=rss_markets_main",
+      "publicado": "2026-08-26T21:13:00+00:00",
+      "resumo": "The major stock indexes edge lower on Wednesday in light trading.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "I’m turning 70. Here’s how I’m making this decade the richest of my retirement.",
+      "link": "https://www.marketwatch.com/story/im-turning-70-heres-how-im-making-this-decade-the-richest-of-my-retirement-ae351f90?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T21:09:00+00:00",
+      "resumo": "Tweaking my finances, work and life as I go from the “go-go” years to the “slow-go” years.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "‘We got attacked’: Canadians unite in fury against Trump’s latest tariff salvo",
+      "link": "https://www.ft.com/content/615a1b65-3949-4297-a87a-e0d23fbfcecf?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T21:05:08+00:00",
+      "resumo": "Washington’s aggressive trade stance prompts defiance from northern neighbour",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Salesforce’s stock surges as AI momentum fuels revenue growth",
+      "link": "https://www.marketwatch.com/story/salesforces-stock-surges-as-ai-momentums-fuel-revenue-growth-8c96eef3?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T21:04:00+00:00",
+      "resumo": "Salesforce cleared Wall Street’s second-quarter expectations and deepened its ties with AI lab Anthropic.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "U.S. Stocks Tick Down as Traders Weigh Inflation Data",
+      "link": "https://www.wsj.com/finance/investing/u-s-stocks-tick-down-as-traders-weigh-inflation-data-f49901a5?mod=rss_markets_main",
+      "publicado": "2026-08-26T21:03:00+00:00",
+      "resumo": "U.S. stocks ticked down after surprisingly heated inflation data as traders kept their powder dry ahead of earnings from artificial-intelligence bellwether Nvidia after the bell.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "Salesforce projeta receita acima do esperado e amplia parceria com Anthropic",
+      "link": "https://www.infomoney.com.br/mercados/salesforce-preve-aceleracao-da-receita-e-reforca-aposta-em-ia-acoes-sobem-7/",
+      "publicado": "2026-08-26T21:02:01+00:00",
+      "resumo": "Empresa prevê vendas de US$ 11,5 bilhões no trimestre, vê aceleração do crescimento na segunda metade do ano e reforça aposta em IA com integração ao Claude The post Salesforce projeta receita acima do esperado e amplia parceria com Anthropic appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Palmeiras x Santos: onde assistir a Copa do Brasil",
+      "link": "https://www.infomoney.com.br/esportes/onde-assistir-palmeiras-x-santos-pela-copa-do-brasil/",
+      "publicado": "2026-08-26T21:00:00+00:00",
+      "resumo": "O jogo está previsto para começar às 21h30 (horário de Brasília) no Nubank Parque, em São Paulo The post Palmeiras x Santos: onde assistir a Copa do Brasil appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Ibovespa perde fôlego e fecha quase estável após superar 176 mil pontos",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-sobe-apos-queda-do-ipca-15-e-com-sinal-de-estrangeiros-voltando-ao-mercado/",
+      "publicado": "2026-08-26T20:57:43+00:00",
+      "resumo": "Na máxima do dia, o Ibovespa chegou a 176.296,49 pontos. Na mínima, marcou 174.208,48 pontos The post Ibovespa perde fôlego e fecha quase estável após superar 176 mil pontos appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "EUA impõem sanções contra Ação Palestina e outros grupos de “extrema-esquerda”",
+      "link": "https://www.infomoney.com.br/mundo/eua-impoem-sancoes-contra-acao-palestina-e-outros-grupos-de-extrema-esquerda/",
+      "publicado": "2026-08-26T20:56:41+00:00",
+      "resumo": "Ação Palestina foi designada como grupo \"Terrorista Global Especialmente Designado\" (SDGT, na sigla em inglês) pelo Escritório de Controle de Ativos Estrangeiros (Ofac, em inglês) The post EUA impõem sanções contra Ação Palestina e outros grupos de “extrema-esquerda” appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Fazenda defende prorrogação por dois meses do Imposto de Exportação sobre petróleo",
+      "link": "https://www.infomoney.com.br/economia/fazenda-defende-prorrogar-por-dois-meses-imposto-de-exportacao-sobre-petroleo/",
+      "publicado": "2026-08-26T20:55:56+00:00",
+      "resumo": "Decisão será tomada nesta quinta-feira pela Câmara de Comércio Exterior (Camex) The post Fazenda defende prorrogação por dois meses do Imposto de Exportação sobre petróleo appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Taxas dos DIs fecham com variações modestas em dia de IPCA-15 e dados dos EUA",
+      "link": "https://www.infomoney.com.br/mercados/taxas-dos-dis-fecham-com-variacoes-modestas-em-dia-de-ipca-15-e-dados-dos-eua/",
+      "publicado": "2026-08-26T20:51:14+00:00",
+      "resumo": "Taxa para janeiro de 2028 estava em 13,815% The post Taxas dos DIs fecham com variações modestas em dia de IPCA-15 e dados dos EUA appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Salesforce, Anthropic expand partnership as Benioff responds to ‘SaaSpocalypse’ concerns",
+      "link": "https://www.cnbc.com/2026/08/26/salesforce-anthropic-partnership-claudeforce.html",
+      "publicado": "2026-08-26T20:50:45+00:00",
+      "resumo": "\"We're delivering a dynamic interface that thinks, reasons, and acts,\" Salesforce CEO Marc Benioff said in a statement.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bolsas de NY fecham em queda após dados dos EUA e expectativas com Nvidia",
+      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-queda-apos-dados-dos-eua-e-expectativas-com-nvidia/",
+      "publicado": "2026-08-26T20:46:03+00:00",
+      "resumo": "O índice Dow Jones fechou em baixa de 0,21%, aos 53.464,59 pontos. O S&P 500 recuou 0,02%, a 7.675,80 pontos e o Nasdaq teve perda de 0,08%, encerrando em 26.130,20 pontos The post Bolsas de NY fecham em queda após dados dos EUA e expectativas com Nvidia appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "CVM reduz, mas não extingue dúvidas sobre OPA da Oncoclínicas",
+      "link": "https://neofeed.com.br/negocios/cvm-reduz-mas-nao-extingue-duvidas-sobre-opa-da-oncoclinicas/",
+      "publicado": "2026-08-26T20:40:04+00:00",
+      "resumo": "A decisão unânime do colegiado da Comissão de Valores Mobiliários (CVM) pela obrigatoriedade de uma oferta pública de aquisição (OPA) na Oncoclínicas tirou uma dúvida do radar dos investidores — mas está longe de encerrar o caso. De acordo com o julgamento de terça-feira, 25 de agosto, a reorganização que levou o fundo Josephina III […] O post CVM reduz, mas não extingue dúvidas sobre OPA da...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Meta Settles for $18 Billion",
+      "link": "https://www.wsj.com/finance/investing/meta-settles-for-18-billion-c8b5636b?mod=rss_markets_main",
+      "publicado": "2026-08-26T20:34:00+00:00",
+      "resumo": "Plus, Nvidia reports and inflation stays elevated.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "Ibovespa arranca a 6ª alta seguida, em dia de dados econômicos; dólar sobe a R$ 5,15",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-26082026/",
+      "publicado": "2026-08-26T20:32:43+00:00",
+      "resumo": "Bolsas dos EUA fecham no vermelho, após dados econômicos e à espera de Nvidia The post Ibovespa arranca a 6ª alta seguida, em dia de dados econômicos; dólar sobe a R$ 5,15 appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "EXCLUSIVO: Cemig terá novo CEO (depois de apenas três meses)",
+      "link": "https://braziljournal.com/exclusivo-cemig-tera-novo-ceo-depois-de-apenas-tres-meses/",
+      "publicado": "2026-08-26T20:31:43+00:00",
+      "resumo": "O Governador de Minas Gerais, Mateus Simões, decidiu indicar um novo CEO para a Cemig, visando atender aliados políticos em meio à disputa eleitoral. Foram indicados para a vaga dois nomes, que já estão sendo submetidos aos processos de governança da estatal: Marcio Nunes, um ex-CEO da Copasa, e Fernando Fagundes, que já foi diretor […] The post EXCLUSIVO: Cemig terá novo CEO (depois de apenas...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Dona de Habib’s e Ragazzo entra em recuperação judicial; veja quais são os próximos passos",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/recuperacao-judicial-proximos-passos.ghtml",
+      "publicado": "2026-08-26T20:30:42+00:00",
+      "resumo": "Dona de Habib’s e Ragazzo entra em recuperação judicial com dívida de R$ 265,2 milhões O Grupo Gennius, controlador das marcas Habib’s, Ragazzo e Tendall, entrou com pedido de recuperação judicial na segunda-feira (24), com dívidas de R$ 265,2 milhões. O pedido foi aceito na terça-feira (25) pela Justiça de São Paulo, que nomeou a consultoria KPMG como administradora judicial. A decisão foi...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Nvidia tem receita de US$ 96,2 bilhões no 2º trimestre; projeções decepcionam",
+      "link": "https://www.infomoney.com.br/mercados/nvidia-resultados-segundo-trimestre-2026/",
+      "publicado": "2026-08-26T20:23:35+00:00",
+      "resumo": "Mesmo com receita acima do esperado, a companhia apresentou uma projeção de vendas que decepcionou parte dos investidores The post Nvidia tem receita de US$ 96,2 bilhões no 2º trimestre; projeções decepcionam appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "AGU processa Discord e pede R$ 500 milhões por falhas na proteção de adolescentes",
+      "link": "https://www.infomoney.com.br/politica/agu-processa-discord-e-pede-r-500-milhoes-por-falhas-na-protecao-de-adolescentes/",
+      "publicado": "2026-08-26T20:20:21+00:00",
+      "resumo": "Governo cobra mudanças nos mecanismos de segurança da plataforma e solicita indenização por danos morais coletivos após fracasso nas negociações com a empresa The post AGU processa Discord e pede R$ 500 milhões por falhas na proteção de adolescentes appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "‘The relationship quickly deteriorated’: My friend’s lawyer settled his injury case without his consent. What can he do?",
+      "link": "https://www.marketwatch.com/story/the-relationship-quickly-deteriorated-my-friends-lawyer-settled-his-injury-case-without-his-consent-what-can-he-do-a289fee9?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T20:15:00+00:00",
+      "resumo": "“His former lawyer is now holding the settlement funds, maintaining that he is entitled to attorney’s fees.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "All the ways Instagram and Facebook are changing for teens",
+      "link": "https://www.theverge.com/tech/985329/instagram-facebook-meta-settlement-changes",
+      "publicado": "2026-08-26T20:00:00+00:00",
+      "resumo": "Meta just agreed to make sweeping changes for teens as part of a child safety settlement reached with attorneys general across the US. Under the agreement, Meta must apply new safeguards across Instagram and Facebook that will change how teens interact with the social media platforms, as well as restrict their use during certain times. […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "U.S. Natural Gas Futures Gain on Persistent Hot Weather",
+      "link": "https://www.wsj.com/finance/commodities-futures/u-s-natural-gas-futures-see-continued-weather-support-85b403e3?mod=rss_markets_main",
+      "publicado": "2026-08-26T19:58:00+00:00",
+      "resumo": "U.S. natural gas futures settled at their highest level in a month as hot weather lingers into late August and early September, maintaining high power-sector demand.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "America will regret Scott Bessent’s bond-market misadventures",
+      "link": "https://www.economist.com/leaders/2026/08/26/america-will-regret-scott-bessents-bond-market-misadventures",
+      "publicado": "2026-08-26T19:53:31+00:00",
+      "resumo": "But expect them to continue, so long as government debt stays high",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Oil Futures Settle Lower in Choppy Trade",
+      "link": "https://www.wsj.com/finance/commodities-futures/oil-falls-on-signs-of-middle-east-talks-b6581385?mod=rss_markets_main",
+      "publicado": "2026-08-26T19:51:00+00:00",
+      "resumo": "Crude futures extended losses to three sessions on cautious expectations that the U.S. economic isolation of Iran, rather than military action, could bring about a reopening of the Strait of Hormuz.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "Dona de Habib’s e Ragazzo entra em recuperação judicial com dívida de R$ 265,2 milhões",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/recuperacao-judicial-habibs.ghtml",
+      "publicado": "2026-08-26T19:49:03+00:00",
+      "resumo": "Habib's e Ragazzo, do Grupo Gennius. Divulgação/Habib's O Grupo Gennius, controlador das marcas Habib’s, Ragazzo e Tendall, entrou com pedido de recuperação judicial na segunda-feira (24), declarando uma dívida de R$ 265,2 milhões. O pedido foi aceito na terça-feira (25) pela Justiça de São Paulo, que nomeou a consultoria KPMG como administradora judicial. A decisão foi proferida pelo juiz Jomar...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Oil prices little changed after Iran says deal reached with Oman to share revenue from Hormuz",
+      "link": "https://www.cnbc.com/2026/08/26/oil-falls-as-the-us-pivots-to-economic-pressure-on-iran-.html",
+      "publicado": "2026-08-26T19:48:49+00:00",
+      "resumo": "Oil fell more than 3% earlier in the session as the U.S. relies on economic pressure against Iran rather than military strikes.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Does a 2% beneficiary inherit 100% if the 98% beneficiary dies in a car accident? Asking for a friend.",
+      "link": "https://www.marketwatch.com/story/does-a-2-beneficiary-inherit-100-if-the-98-beneficiary-dies-in-a-car-accident-asking-for-a-friend-67aacc06?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T19:46:00+00:00",
+      "resumo": "“I’m curious what would happen if the account owner were to die suddenly at the same time as the 98% beneficiary.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Google’s Gemini has a branding problem, and so does the rest of AI",
+      "link": "https://techcrunch.com/2026/08/26/googles-gemini-has-a-branding-problem-and-so-does-the-rest-of-ai/",
+      "publicado": "2026-08-26T19:37:34+00:00",
+      "resumo": "Consumer AI apps need to stop making users learn their product architecture.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "How do we explain OpenAI’s executive exodus?",
+      "link": "https://techcrunch.com/2026/08/26/how-do-we-explain-openais-executive-exodus/",
+      "publicado": "2026-08-26T19:34:04+00:00",
+      "resumo": "Was Greg Brockman the right executive all along?",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "I just had my first baby and don’t want to go back to work. Is quitting for a year a bad idea?",
+      "link": "https://www.marketwatch.com/story/i-just-had-my-first-baby-and-dont-want-to-go-back-to-work-is-quitting-for-a-year-a-bad-idea-780122e6?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T19:33:00+00:00",
+      "resumo": "“I really don’t want to miss my baby’s first year.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Carro zero mais barato do Brasil, preço do Renault Kwid cai quase R$ 12 mil e parte de R$ 71.190",
+      "link": "https://g1.globo.com/carros/noticia/2026/08/26/renault-kwid-fica-quase-r-12-mil-mais-barato-e-parte-de-r-71190.ghtml",
+      "publicado": "2026-08-26T19:30:04+00:00",
+      "resumo": "Renault Kwid 2027 divulgação/Renault A Renault anunciou nesta quarta-feira (26) que a linha 2027 do Kwid terá o preço reduzido em R$ 11,6 mil, partindo de R$ 71.190 até R$ 84.890. Assim, o hatch segue sendo o carro zero mais barato do Brasil. Veja abaixo. Renault Kwid: entre R$ 71.190 e R$ 84.890; Fiat Mobi: entre R$ 85.490 e R$ 87.990; Citroën C3: entre R$ 88.990 e R$ 116.990. O hatch compacto...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Parrot eggs hatch after suspected Thai smuggler arrested at South African airport",
+      "link": "https://www.bbc.co.uk/news/articles/ceq8n04q0gxo?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T19:19:46+00:00",
+      "resumo": "A 50-year-old Thai suspect was arrested with the eggs in a \"homemade incubator\" carried as hand luggage.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Amazon knocks $150 off Pixel 11 phones, with up to $200 in gift cards",
+      "link": "https://www.theverge.com/gadgets/984516/pixel-11-promo-code-doom-dark-ages-deal-sale",
+      "publicado": "2026-08-26T19:18:23+00:00",
+      "resumo": "If you’ve been on the fence about Google’s latest Pixel phones, this might be your best chance to save some cash. Amazon is offering an extra $150 off the Pixel 11, Pixel 11 Pro, and Pixel 11 Pro XL when you use the coupon code PIXEL11 at checkout. While the discounted price appeared at checkout […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Gold Loses Some Ground As PCE Inflation Picks Up",
+      "link": "https://www.wsj.com/finance/commodities-futures/gold-slips-as-markets-await-fed-chairman-comments-at-jackson-hole-5a931818?mod=rss_markets_main",
+      "publicado": "2026-08-26T19:18:00+00:00",
+      "resumo": "Gold futures eased back from the three-month highs reached early this week after PCE inflation—a consumer price gauge favored by the Fed—picked up in July.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "OpenAI’s Jalapeño AI chip brings new 'threat' to Nvidia margins as custom silicon gains ground",
+      "link": "https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html",
+      "publicado": "2026-08-26T19:15:53+00:00",
+      "resumo": "OpenAI’s Jalapeño chip beat Nvidia Blackwell systems on key inference-efficiency tests as custom AI silicon gains ground among major tech companies.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "OpenAI’s Jalapeño AI chip brings new 'threat' to Nvidia margins as custom silicon gains ground",
+      "link": "https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html",
+      "publicado": "2026-08-26T19:15:53+00:00",
+      "resumo": "OpenAI’s Jalapeño chip beat Nvidia Blackwell systems on key inference-efficiency tests as custom AI silicon gains ground among major tech companies.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Federal judge lifts final block on Trump mail-in voting order, clearing way for midterm restrictions",
+      "link": "https://www.cnbc.com/2026/08/26/trump-usps-mail-voting-rule-lawsuit-states-supreme-court.html",
+      "publicado": "2026-08-26T19:15:45+00:00",
+      "resumo": "The rule in question would require election officials to give USPS voter information and use federally reviewed, uniquely barcoded ballot envelopes.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "U.S. Stocks Mixed as Investors Brace for Chip Giant’s Results",
+      "link": "https://www.wsj.com/finance/investing/oil-extends-falls-nasdaq-futures-lower-before-nvidia-earnings-579f51f5?mod=rss_markets_main",
+      "publicado": "2026-08-26T19:13:00+00:00",
+      "resumo": "Stocks were muted ahead of earnings from the world’s most valuable company, Nvidia.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "O que muda nas redes nos EUA após acordo bilionário da Meta",
+      "link": "https://g1.globo.com/tecnologia/noticia/2026/08/26/o-que-muda-nas-redes-nos-eua-apos-acordo-bilionario-da-meta.ghtml",
+      "publicado": "2026-08-26T19:12:42+00:00",
+      "resumo": "Adam Mosseri, chefe do Instagram, deixa o Tribunal após julgamento em que a Meta está sendo processada por 'incentivar' vício de adolescentes nas redes sociais. KARL MONDON/AFP A Meta fechou um acordo no qual aceitou pagar em torno de US$ 17 bilhões (R$ 87,7 bilhões) e adicionar medidas de segurança mais robustas para proteger as crianças em suas plataformas Facebook e Instagram. A decisão...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Are older Americans spoiling the economy for everyone else?",
+      "link": "https://www.marketwatch.com/story/are-older-americans-spoiling-the-economy-for-everyone-else-064b5820?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T19:06:00+00:00",
+      "resumo": "How to get seniors to spend $12 trillion in home equity.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "OpenAI releases its official report on the Hugging Face breach",
+      "link": "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
+      "publicado": "2026-08-26T19:05:22+00:00",
+      "resumo": "The report, which spans several discrete cybersecurity compromises, is the most complete accounting of the incident to date.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "OpenAI says it took a week to detect its AI models had hacked Hugging Face",
+      "link": "https://www.ft.com/content/3fc189d6-28e7-4a2b-b77e-5c94bf513955?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T19:00:04+00:00",
+      "resumo": "Start-up says AI agents communicated among themselves and sometimes tried to conceal efforts to cheat during testing",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "O plano da Iguá para desalavancar apesar dos juros e investimentos bilionários",
+      "link": "https://neofeed.com.br/negocios/o-plano-da-igua-para-desalavancar-apesar-dos-juros-e-investimentos-bilionarios/",
+      "publicado": "2026-08-26T18:45:19+00:00",
+      "resumo": "A Iguá Saneamento ainda vê espaço para reduzir a alavancagem mesmo diante dos juros altos e dos fortes investimentos previstos nas concessões atuais. Com Rio de Janeiro e Sergipe ainda em fase de amadurecimento, a estratégia combina crescimento do Ebitda e ganhos de eficiência operacional. O custo elevado do capital também tornou a companhia mais […] O post O plano da Iguá para desalavancar...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "‘My main goal is to help people’: I’m single, 74, with $10 million burning a hole in my pocket. What should I do?",
+      "link": "https://www.marketwatch.com/story/my-main-goal-is-to-help-people-im-single-74-with-10-million-burning-a-hole-in-my-pocket-what-should-i-do-0e6112e1?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T18:45:00+00:00",
+      "resumo": "“I also own my home and an SUV outright, with no outstanding debt.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Flipboard acquires Graze, the feed builder working to monetize the open social web",
+      "link": "https://techcrunch.com/2026/08/26/flipboard-acquires-graze-the-feed-builder-working-to-monetize-the-open-social-web/",
+      "publicado": "2026-08-26T18:35:40+00:00",
+      "resumo": "Flipboard is acquiring Bluesky feed-building startup Graze, bringing its privacy-friendly ad technology and creator monetization tools into Flipboard’s growing open social web ecosystem.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Trump analisa regras da carne bovina enquanto produtores se opõem a tarifas; JBS e MBRF estão no setor",
+      "link": "https://g1.globo.com/economia/agronegocios/noticia/2026/08/26/trump-analisa-regras-da-carne-bovina-enquanto-produtores-se-opoem-a-tarifas.ghtml",
+      "publicado": "2026-08-26T18:34:45+00:00",
+      "resumo": "Carne bovina não está incluída na nova tarifa de 25% Eraldo Peres/AP Photo/picture alliance via DW O presidente dos EUA, Donald Trump, afirmou nesta quarta-feira (26), no programa de Glenn Beck, que vai analisar se há regulamentações excessivas nas fábricas de processamento de carne bovina. A declaração ocorreu depois que Beck sugeriu que a redução das regras permitiria que agricultores e...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Micron elevates two executives. Plus, what the Meta settlement means for its top line",
+      "link": "https://www.cnbc.com/2026/08/26/micron-elevates-two-executives-plus-what-the-meta-settlement-means-for-its-top-line.html",
+      "publicado": "2026-08-26T18:31:26+00:00",
+      "resumo": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Why is Russia deliberately weakening its currency?",
+      "link": "https://www.economist.com/finance-and-economics/2026/08/26/why-is-russia-deliberately-weakening-its-currency",
+      "publicado": "2026-08-26T18:28:55+00:00",
+      "resumo": "A strong rouble was hurting the budget",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "My father-in-law passed away, leaving a house with tenants. Do I evict them?",
+      "link": "https://www.marketwatch.com/story/my-father-in-law-passed-away-leaving-a-house-with-tenants-do-i-evict-them-f974428c?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T18:26:00+00:00",
+      "resumo": "“We don’t know whether they have signed leases or are renting month to month.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Medical device maker Boston Scientific says a cyberattack is causing a ‘global disruption’ to its operations",
+      "link": "https://techcrunch.com/2026/08/26/medical-device-maker-boston-scientific-says-a-cyberattack-is-causing-a-global-disruption-to-its-operations/",
+      "publicado": "2026-08-26T18:23:09+00:00",
+      "resumo": "The company won't say if medical devices are affected or if any customer data was exfiltrated.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Two German airport workers die of malaria after 'mosquito arrives on plane'",
+      "link": "https://www.bbc.co.uk/news/articles/cz6zwgg9y8go?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T18:22:41+00:00",
+      "resumo": "It is believed the mosquitoes arrived at Germany's busiest airport on a plane, according to German public health officials.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Las Vegas Sands shares are about to 'catch a heater,' says Mike Khouw",
+      "link": "https://www.cnbc.com/2026/08/26/las-vegas-sands-shares-are-about-to-catch-a-heater-says-mike-khouw.html",
+      "publicado": "2026-08-26T18:17:04+00:00",
+      "resumo": "Although named after the Nevada gaming mecca, Las Vegas Sands has largely depended on the Asia/Macau story of the last decade.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Fed, NASA and DOJ among victims of Chinese state-sponsored hacker group: Court documents",
+      "link": "https://www.cnbc.com/2026/08/26/china-hacker-federal-reserve-doj-nasa.html",
+      "publicado": "2026-08-26T18:16:38+00:00",
+      "resumo": "Hackers targeted networks \"operated by hospitals, telecommunications providers, power companies, financial institutions, and defense contractors,\" a filing said.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Fed, NASA and DOJ among victims of Chinese state-sponsored hacker group: Court documents",
+      "link": "https://www.cnbc.com/2026/08/26/china-hacker-federal-reserve-doj-nasa.html",
+      "publicado": "2026-08-26T18:16:38+00:00",
+      "resumo": "Hackers targeted networks \"operated by hospitals, telecommunications providers, power companies, financial institutions, and defense contractors,\" a filing said.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Being a mom is hard — the heat is making it harder",
+      "link": "https://www.theverge.com/news/985225/heat-stress-children-climate-change-study",
+      "publicado": "2026-08-26T18:14:08+00:00",
+      "resumo": "It's 8:52 AM and 86 degrees Fahrenheit (30 Celsius) where I live in Southern California. My husband just came back from a morning outing with our four-month-old. \"How was the botanic garden?\" I ask him. \"It was okay. It was just too hot,\" he tells me. I didn't expect us to spend so much of […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "5 affordable cities to retire in the U.S. right now",
+      "link": "https://www.marketwatch.com/story/5-cheap-u-s-cities-to-retire-in-if-you-can-deal-with-this-one-thing-fbda5d1a?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T18:10:00+00:00",
+      "resumo": "You don’t have to leave the country to find an affordable place that matches your retirement vision.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Dívida pública federal cresce 0,22% em julho e atinge R$ 9,28 trilhões",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/divida-publica-federal-cresce-022percent-em-julho-e-atinge-r-928-trilhoes.ghtml",
+      "publicado": "2026-08-26T18:09:44+00:00",
+      "resumo": "A dívida pública federal cresceu 0,22% em julho e atingiu R$R$ 9,28 trilhões, informou nesta quarta-feira (26) a Secretaria do Tesouro Nacional. Em junho o endividamento estava em R$ R$ R$ 9,26 trilhões. A dívida pública federal é a contraída pelo Tesouro Nacional, órgão do Ministério da Fazenda, para financiar o déficit orçamentário do governo federal, ou seja, pagar as despesas do governo acima...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Anthropic and Nscale strike $45 billion cloud deal, sources say",
+      "link": "https://www.cnbc.com/2026/08/26/anthropic-and-nscale-strike-45-billion-cloud-deal-sources-say.html",
+      "publicado": "2026-08-26T18:07:15+00:00",
+      "resumo": "Anthropic will rent around 460 megawatts of compute capacity at an Nscale data center development in West Virgina, according to sources.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Anthropic and Nscale strike $45 billion cloud deal, sources say",
+      "link": "https://www.cnbc.com/2026/08/26/anthropic-and-nscale-strike-45-billion-cloud-deal-sources-say.html",
+      "publicado": "2026-08-26T18:07:15+00:00",
+      "resumo": "Anthropic will rent around 460 megawatts of compute capacity at an Nscale data center development in West Virgina, according to sources.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "How Dolly Parton inspired women in leadership: 'We all owe Dolly a debt'",
+      "link": "https://www.cnbc.com/2026/08/26/dolly-parton-women-leadership.html",
+      "publicado": "2026-08-26T18:04:25+00:00",
+      "resumo": "The legendary Dolly Parton inspired women to dream bigger and fight for what they deserve. Female business leaders and workers share what the icon meant to them.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "The Switch 2’s $50 price increase is happening next week",
+      "link": "https://www.theverge.com/gadgets/984331/switch-2-price-increase-psa",
+      "publicado": "2026-08-26T18:00:00+00:00",
+      "resumo": "This is a friendly reminder that the Nintendo Switch 2 will jump in price by $50 starting on September 1st. That’s next Tuesday! The company gave plenty of notice, but the time has finally come. The base 256GB model that ships without a game will go from $449.99 to $499.99. Nintendo recently announced two bundles […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Iran says the U.S. is standing in the way of Hormuz deal amid talks with Oman",
+      "link": "https://www.cnbc.com/2026/08/26/us-iran-war-trump-hormuz.html",
+      "publicado": "2026-08-26T17:54:01+00:00",
+      "resumo": "Iran and Oman are approaching a deal to secure safe transit through the Strait of Hormuz and future administration of the vital economic artery.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Iran says the U.S. is standing in the way of Hormuz deal amid talks with Oman",
+      "link": "https://www.cnbc.com/2026/08/26/us-iran-war-trump-hormuz.html",
+      "publicado": "2026-08-26T17:54:01+00:00",
+      "resumo": "Iran and Oman are approaching a deal to secure safe transit through the Strait of Hormuz and future administration of the vital economic artery.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Hundreds reported missing after flash flood on Nepal border with China",
+      "link": "https://www.ft.com/content/a97acd81-ed7c-4d27-a9c9-298348242e37?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T17:41:45+00:00",
+      "resumo": "At least 160 people are confirmed dead and many local residents, foreign tourists, workers and security personnel remain unaccounted for",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Apple sets iPhone launch event for Sept. 9, first under new CEO John Ternus",
+      "link": "https://www.cnbc.com/2026/08/26/apple-iphone-launch-date-john-ternus.html",
+      "publicado": "2026-08-26T17:40:28+00:00",
+      "resumo": "Analysts expect the company to launch new iPhones and Apple Watches at the event, including the company's first folding phone",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Apple Maps has ads now",
+      "link": "https://www.theverge.com/tech/985249/apple-maps-iphone-ads",
+      "publicado": "2026-08-26T17:34:32+00:00",
+      "resumo": "Ads have started popping up in Apple Maps, following Apple's announcement in March that it would let businesses pay for top spots. They're appearing on my iPhone as the first entry in the \"suggested places\" section in search, but Apple says they'll also show up at the top of search results. According to 9to5Mac, the […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "From battleships to catapults, Donald Trump keeps messing with the navy",
+      "link": "https://www.economist.com/united-states/2026/08/26/from-battleships-to-catapults-donald-trump-keeps-messing-with-the-navy",
+      "publicado": "2026-08-26T17:28:02+00:00",
+      "resumo": "His obsessions will prove costly",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Low-energy cooling for a warming planet",
+      "link": "https://www.economist.com/podcasts/2026/08/26/low-energy-cooling-for-a-warming-planet",
+      "publicado": "2026-08-26T17:21:19+00:00",
+      "resumo": "Our podcast on science and technology. This week, how to beat the heat without overworking your air-conditioning",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Mark Walter's TWG Global says there's 'no fraud' amid probe of insurers' disclosures",
+      "link": "https://www.cnbc.com/2026/08/26/mark-walter-twg-guggenheim-lakers.html",
+      "publicado": "2026-08-26T17:15:22+00:00",
+      "resumo": "The empire of billionaire Los Angeles Dodgers owner Mark Walter has faced media scrutiny since he said he would sell his majority share of the LA Lakers.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Governo prorroga subsídio à gasolina até 9 de setembro",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/governo-prorroga-subsidio-a-gasolina-ate-9-de-setembro.ghtml",
+      "publicado": "2026-08-26T17:09:05+00:00",
+      "resumo": "O Ministério da Fazenda prorrogou a chamada \"subvenção\" à gasolina, ou seja, um tipo de subsídio, até 9 de setembro. Portaria assinada pelo titular da pasta, o ministro Dario Durigan, manteve em R$ 0,44 a subvenção para manter o preço do combustível mais baixo. 🔎Essa subvenção é uma ajuda financeira dada pelo governo para reduzir o preço de um produto ou serviço. No caso da gasolina, o governo...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Ukrainian military balloons may spoil Russia’s party",
+      "link": "https://www.economist.com/science-and-technology/2026/08/26/ukrainian-military-balloons-may-spoil-russias-party",
+      "publicado": "2026-08-26T17:06:28+00:00",
+      "resumo": "Reports suggest some are being used to launch drones",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Jeep lança Série Especial 85 Anos para Renegade, Avenger, Compass e Commander",
+      "link": "https://g1.globo.com/carros/noticia/2026/08/26/jeep-lanca-serie-especial-85-anos.ghtml",
+      "publicado": "2026-08-26T17:04:09+00:00",
+      "resumo": "Jeep Avenger da série especial 85 anos. Divulgação/Stellantis A Jeep apresentou nesta quarta-feira (26) a Série Especial 85 Anos durante o Festival Interlagos, em São Paulo. A linha comemorativa abrange toda a gama produzida no país: o novo utilitário esportivo Avenger e os modelos Renegade, Compass e Commander. As vendas começam em setembro em todas as concessionárias do Brasil, com produção...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Economists want Warsh to share more on his view of the economy at Jackson Hole, says CNBC survey",
+      "link": "https://www.cnbc.com/2026/08/26/fed-survey-warsh-economy-view.html",
+      "publicado": "2026-08-26T17:02:24+00:00",
+      "resumo": "Eighty percent of CNBC Fed Survey respondents say the Federal Reserve Chairman Warsh should provide more insight into his economic views.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "US seizes domains of Chinese botnet used to hack NASA, Justice Department, and the Senate",
+      "link": "https://techcrunch.com/2026/08/26/us-seizes-domains-of-chinese-botnet-used-to-hack-nasa-justice-department-and-the-senate/",
+      "publicado": "2026-08-26T17:01:05+00:00",
+      "resumo": "The Justice Department said that the domain seizures made the botnet and its command and control servers \"inoperable,\" as the domains were hardcoded into the botnet's code and were critical for the botnet's communication and essential operations.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "How salmon evolved to cope with the ice age",
+      "link": "https://www.economist.com/science-and-technology/2026/08/26/how-salmon-evolved-to-cope-with-the-ice-age",
+      "publicado": "2026-08-26T17:01:02+00:00",
+      "resumo": "Their odd behaviour seems to be a relic of the time of the glaciers",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Capital F closes $17M debut fund with goal to back the future of the ‘female economy’",
+      "link": "https://techcrunch.com/2026/08/26/capital-f-closes-17m-debut-fund-with-goal-to-back-the-future-of-the-female-economy/",
+      "publicado": "2026-08-26T17:00:00+00:00",
+      "resumo": "The firm backs companies building in the “female economy,” or the markets where women drive demand — women’s health, digital commerce, and AI tools.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Google’s new AI transcription edits out your ‘ums’ and ‘ahs’",
+      "link": "https://www.theverge.com/tech/985186/google-gemini-3-5-transcribe-audio-ai",
+      "publicado": "2026-08-26T17:00:00+00:00",
+      "resumo": "Google has updated Gemini Audio with new transcription capabilities that automatically detect specialized jargon and more than 85 languages. Gemini 3.5 Transcribe is a new addition to the Gemini family that follows the launch of 3.5 Live Translate, and comes as we're still waiting for Google to release the Gemini 3.5 Pro model that it […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Unipar está cada vez mais resiliente – mas BTG não vê upside",
+      "link": "https://braziljournal.com/unipar-esta-cada-vez-mais-resiliente-mas-btg-nao-ve-upside/",
+      "publicado": "2026-08-26T16:58:34+00:00",
+      "resumo": "O BTG Pactual iniciou a cobertura de Unipar com recomendação ‘neutra’ e um preço-alvo de R$ 68 – reconhecendo que o negócio tem se tornado cada vez mais resiliente, mas com a ação já precificada de forma justa. O preço-alvo representa um upside potencial de 19% em relação ao preço de tela. A Unipar negocia […] The post Unipar está cada vez mais resiliente – mas BTG não vê upside appeared first on...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "SpaceX plans to build the world’s biggest spaceport",
+      "link": "https://www.economist.com/science-and-technology/2026/08/26/spacex-plans-to-build-the-worlds-biggest-spaceport",
+      "publicado": "2026-08-26T16:57:24+00:00",
+      "resumo": "The $100bn facility aims to support up to 30 rocket launches a day",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Apple is holding its iPhone launch event on September 9",
+      "link": "https://techcrunch.com/2026/08/26/apple-is-holding-its-iphone-launch-event-on-september-9/",
+      "publicado": "2026-08-26T16:53:07+00:00",
+      "resumo": "The event is expected to be a notable one, as Apple is rumored to unveil its long-awaited foldable iPhone. It'll also be the first Apple event with John Ternus as CEO, who is scheduled to take the reins of the tech giant from Tim Cook on September 1.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Data centers entram na rota da DHL no Brasil",
+      "link": "https://neofeed.com.br/negocios/data-centers-entram-na-rota-da-dhl-no-brasil/",
+      "publicado": "2026-08-26T16:52:15+00:00",
+      "resumo": "A expansão dos projetos de data centers no Brasil abriu uma nova frente de demanda para o setor logístico. A DHL Global Forwarding, divisão do grupo alemão especializada no transporte internacional de cargas aéreas e marítimas, prevê que a movimentação de servidores e outros equipamentos de alto valor destinados a esses empreendimentos passará a ocupar […] O post Data centers entram na rota da...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Justiça libera R$ 2,75 bilhões para atrasados do INSS; veja quem tem direito e como receber",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/governo-libera-r-275-bilhoes-para-atrasados-do-inss-veja-quem-tem-direito-e-como-receber.ghtml",
+      "publicado": "2026-08-26T16:45:24+00:00",
+      "resumo": "A cobrança do INSS era indevida, o que justificou a indenização por danos morais Divulgação / INSS O Conselho da Justiça Federal (CJF) liberou R$ 3,31 bilhões para o pagamento de valores atrasados a pessoas que venceram ações contra órgãos do governo federal. Do total, R$ 2,75 bilhões são destinados a ações relacionadas ao INSS e a benefícios assistenciais, incluindo casos de revisão de...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Bill Gates warns ‘there is no plan’ for the ‘upheaval’ AI will cause",
+      "link": "https://www.cnbc.com/2026/08/26/bill-gates-ai-jobs-economic-upheaval.html",
+      "publicado": "2026-08-26T16:25:09+00:00",
+      "resumo": "Bill Gates warned governments are not adequately preparing for how AI could displace workers, strain social systems and create global risks.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Dolly Parton’s lessons for business",
+      "link": "https://www.ft.com/content/c36f89d0-0d53-41f6-a0eb-89c5921e14df?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T16:17:35+00:00",
+      "resumo": "The singer will be remembered mostly for her records, but she was also an entrepreneur",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Meta to pay up to $18bn to settle children’s social media harm case",
+      "link": "https://www.ft.com/content/21dcbd96-ee57-445c-a9ba-0938c49b91c0?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T16:05:05+00:00",
+      "resumo": "Case relating to alleged failures of child protection was getting under way in California",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Apple announces September iPhone launch event",
+      "link": "https://www.theverge.com/tech/983407/apple-iphone-launch-event-2026-date",
+      "publicado": "2026-08-26T16:03:49+00:00",
+      "resumo": "Apple's next launch event will take place on September 9th at 1PM ET. Invites to the event, which has a \"Surprise and shine\" tagline, were sent out on Wednesday. The event will take place at the Steve Jobs Theater in Apple Park, but there will also be a livestream on Apple's website. September's show could […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Meta agrees to sweeping changes to restrict kids’ access to its apps as part of settlement with states",
+      "link": "https://techcrunch.com/2026/08/26/meta-agrees-to-sweeping-changes-to-restrict-kids-access-to-its-apps-as-part-of-settlement-with-states/",
+      "publicado": "2026-08-26T16:03:14+00:00",
+      "resumo": "One of the most notable changes is that Meta plans to implement a daily two-hour time limit for teens that can only be disabled with parental permission.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "What’s driving Sweden’s startup boom, from Lovable to Legora",
+      "link": "https://techcrunch.com/video/whats-driving-swedens-startup-boom-from-lovable-to-legora/",
+      "publicado": "2026-08-26T16:00:00+00:00",
+      "resumo": "Vibe-coding darling Lovable just raised $400 million at a $13.3 billion valuation, roughly doubling its worth in eight months. But Lovable isn’t the only Stockholm startup putting up huge numbers lately — legal AI company Legora and health tech startup Neko Health are right there with it. On this episode of TechCrunch’s Equity podcast, Dominic-Madori Davis is joined by Sophia Bendz, a partner at...",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "U.S. Crude Oil Inventories See Modest Weekly Build",
+      "link": "https://www.wsj.com/business/energy-oil/u-s-crude-oil-inventories-see-modest-weekly-build-3434adb1?mod=rss_markets_main",
+      "publicado": "2026-08-26T15:50:00+00:00",
+      "resumo": "Commercial crude oil stockpiles, excluding the Strategic Petroleum Reserve, rose by 95,000 barrels to 428.9 million barrels in the week ended Aug. 21.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "Radar makes podcasts searchable — and usable by AI agents",
+      "link": "https://techcrunch.com/2026/08/26/radar-makes-podcasts-searchable-and-usable-by-ai-agents/",
+      "publicado": "2026-08-26T15:47:28+00:00",
+      "resumo": "Particle’s new podcast intelligence platform transcribes and analyzes more than 130,000 podcasts, making their conversations searchable on the web and accessible to AI agents through an API and MCP.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Trump officials threaten Kennedy Center demolition if court blocks renovations",
+      "link": "https://www.bbc.co.uk/news/articles/c62mr97n936o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T15:42:45+00:00",
+      "resumo": "The justice department has also asked for Trump's name to be put back on the building after it was removed in June following a court order.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Volvo’s cars will warn one another about hazards in the road",
+      "link": "https://www.theverge.com/transportation/985070/volvo-connected-safety-hazard-alert-animal-cyclist",
+      "publicado": "2026-08-26T15:28:14+00:00",
+      "resumo": "Volvo is updating three of its electric vehicles with new hazard alerts to warn drivers when there are animals or vulnerable road users ahead. The new connected safety features are based on Volvo's cars talking to one another, as opposed to crowdsourced alert systems used by popular navigation tools like Google Maps and Waze. The […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Irã diz ter fechado acordo com Omã sobre Ormuz e acusa EUA de travar avanço",
+      "link": "https://www.infomoney.com.br/mundo/ira-diz-ter-fechado-acordo-com-oma-sobre-ormuz-e-acusa-eua-de-travar-avanco/",
+      "publicado": "2026-08-26T15:24:03+00:00",
+      "resumo": "Segundo a Guarda Revolucionária, os dois países acertaram divisão de receitas e da gestão da hidrovia estratégica; reabertura plena da rota ainda depende de negociações com Washington The post Irã diz ter fechado acordo com Omã sobre Ormuz e acusa EUA de travar avanço appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Huawei mira contrato de IA no Egito e abre nova frente da guerra tecnológica com EUA",
+      "link": "https://www.infomoney.com.br/business/huawei-mira-contrato-de-ia-no-egito-e-abre-nova-frente-da-guerra-tecnologica-com-eua/",
+      "publicado": "2026-08-26T15:20:29+00:00",
+      "resumo": "Proposta para fornecer chips avançados e data centers colocou Washington em alerta e transformou o país africano em palco da disputa por influência na inteligência artificial The post Huawei mira contrato de IA no Egito e abre nova frente da guerra tecnológica com EUA appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "If You Invest $1,000 in VOO Right Now and Never Touch It, Here's What History Says You Could Have in 25 Years",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/invest-1-000-voo-now-152000110.html",
+      "publicado": "2026-08-26T15:20:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Possíveis medidas do BC contra endividamento elevam incertezas para bancos, diz UBS",
+      "link": "https://www.infomoney.com.br/mercados/possiveis-medidas-do-bc-contra-endividamento-elevam-incertezas-para-bancos-diz-ubs/",
+      "publicado": "2026-08-26T15:19:52+00:00",
+      "resumo": "Falas recentes de Gabriel Galípolo, presidente do BC, sobre adoção de medidas contra o endividamento poderiam colocar pressão extra em bancos, segundo relatório The post Possíveis medidas do BC contra endividamento elevam incertezas para bancos, diz UBS appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Análise: Deflação do IPCA-15 é bom sinal, mas ainda insuficiente para Selic cair mais",
+      "link": "https://www.infomoney.com.br/economia/ipca-15-agosto-deflacao-inflacao-ibge/",
+      "publicado": "2026-08-26T15:18:05+00:00",
+      "resumo": "Recuo de 0,40% veio de fatores sazonais e derrubou os juros futuros, mas a resiliência dos serviços mantém analistas dividids sobre o espaço para novas reduções The post Análise: Deflação do IPCA-15 é bom sinal, mas ainda insuficiente para Selic cair mais appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Yelp Insider Sells Over 10,000 Shares. Stock Has Dropped 44% in Three Years",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/yelp-insider-sells-over-10-151501766.html",
+      "publicado": "2026-08-26T15:15:01+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Moderna Stock Carries A Market Value Its Revenue Does Not Support",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/moderna-stock-carries-market-value-151304350.html",
+      "publicado": "2026-08-26T15:13:04+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Coca-Cola’s stock splits: history (& prospects) explained",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/coca-cola-stock-splits-history-151300584.html",
+      "publicado": "2026-08-26T15:13:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "SoftBank avalia emissão de até US$ 20 bilhões para financiar aposta na OpenAI",
+      "link": "https://www.infomoney.com.br/mercados/softbank-avalia-emissao-de-ate-us-20-bilhoes-para-financiar-aposta-na-openai/",
+      "publicado": "2026-08-26T15:11:46+00:00",
+      "resumo": "Grupo japonês negocia venda de títulos em dólar e euro para refinanciar empréstimos ligados ao investimento na dona do ChatGPT e reforçar sua estratégia em inteligência artificial The post SoftBank avalia emissão de até US$ 20 bilhões para financiar aposta na OpenAI appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Denny’s Goes All-In on Catering as Part of Comeback Plan",
+      "link": "https://finance.yahoo.com/small-business/articles/denny-goes-catering-part-comeback-151141580.html",
+      "publicado": "2026-08-26T15:11:41+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "WTS UK picks Sharmila Sanmugam as partner",
+      "link": "https://finance.yahoo.com/small-business/articles/wts-uk-picks-sharmila-sanmugam-151053144.html",
+      "publicado": "2026-08-26T15:10:53+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Enbridge Buys $600 Million Permian Crude Network",
+      "link": "https://finance.yahoo.com/energy/articles/enbridge-buys-600-million-permian-151012234.html",
+      "publicado": "2026-08-26T15:10:12+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Embraer (EMBJ3): BBI vê oportunidade bilionária na Índia e eleva preço-alvo",
+      "link": "https://www.infomoney.com.br/mercados/embraer-embj3-bbi-ve-oportunidade-bilionaria-na-india-e-eleva-preco-alvo/",
+      "publicado": "2026-08-26T15:08:26+00:00",
+      "resumo": "Força Aérea Indiana abriu uma concorrência para a aquisição de 60 aeronaves de transporte médio The post Embraer (EMBJ3): BBI vê oportunidade bilionária na Índia e eleva preço-alvo appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Oil prices tumble as Oman and Iran make an unexpected move",
+      "link": "https://finance.yahoo.com/energy/articles/oil-prices-tumble-oman-iran-150700772.html",
+      "publicado": "2026-08-26T15:07:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Is It Too Late to Buy Eli Lilly? Billionaire Ken Griffin Doesn't Think So. He Nearly Quadrupled His Stake in the Pharma Stock in Q2.",
+      "link": "https://finance.yahoo.com/healthcare/articles/too-buy-eli-lilly-billionaire-150500007.html",
+      "publicado": "2026-08-26T15:05:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "InterDigital Eyes $1B Recurring Revenue as Patent Licensing Gains Momentum",
+      "link": "https://finance.yahoo.com/technology/articles/interdigital-eyes-1b-recurring-revenue-150500130.html",
+      "publicado": "2026-08-26T15:05:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Movado Group Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/movado-group-q2-earnings-call-150459416.html",
+      "publicado": "2026-08-26T15:04:59+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "JinkoSolar Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/energy/articles/jinkosolar-q2-earnings-call-highlights-150459794.html",
+      "publicado": "2026-08-26T15:04:59+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Kohl's Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/kohls-q2-earnings-call-highlights-150459754.html",
+      "publicado": "2026-08-26T15:04:59+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Dycom Industries Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dycom-industries-q2-earnings-call-150458545.html",
+      "publicado": "2026-08-26T15:04:58+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bath & Body Works Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/bath-body-works-q2-earnings-150458287.html",
+      "publicado": "2026-08-26T15:04:58+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Torm Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/torm-q2-earnings-call-highlights-150457015.html",
+      "publicado": "2026-08-26T15:04:57+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Abercrombie & Fitch Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/abercrombie-fitch-q2-earnings-call-150457352.html",
+      "publicado": "2026-08-26T15:04:57+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Hochschild Mining H1 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/commodities/articles/hochschild-mining-h1-earnings-call-150456537.html",
+      "publicado": "2026-08-26T15:04:56+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Li Auto Q2 Earnings Call Highlights",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/li-auto-q2-earnings-call-150456321.html",
+      "publicado": "2026-08-26T15:04:56+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Ex-Meta scientists want to bring visual AI to the factory floor",
+      "link": "https://techcrunch.com/2026/08/26/ex-meta-scientists-want-to-bring-visual-ai-to-the-factory-floor/",
+      "publicado": "2026-08-26T15:00:00+00:00",
+      "resumo": "Perceptron offers an AI model that it says can help machines navigate the world while also providing in-depth visual intelligence.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Banks Fought Against Stablecoins. Now They Are Considering Launching Their Own.",
+      "link": "https://www.wsj.com/finance/banking/banks-fought-against-stablecoins-now-they-are-considering-launching-their-own-896b691e?mod=rss_markets_main",
+      "publicado": "2026-08-26T14:59:00+00:00",
+      "resumo": "Executives are on the defensive as companies outside of the banking system launch coins.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "I manage Dolly Parton’s Imagination Library in Cincinnati—the No. 1 lesson she taught me about success",
+      "link": "https://www.cnbc.com/2026/08/26/the-no-1-lesson-dolly-parton-taught-me-about-success.html",
+      "publicado": "2026-08-26T14:56:51+00:00",
+      "resumo": "Cincinnati literacy leader Kristy High reflects on Dolly Parton’s Imagination Library and the lesson Parton's philanthropy taught her about success.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Medical device maker Boston Scientific is being hit by a cyberattack. The shares are falling",
+      "link": "https://www.cnbc.com/2026/08/26/medical-device-maker-boston-scientific-is-being-hit-by-a-cyber-attack-the-shares-are-falling.html",
+      "publicado": "2026-08-26T14:55:22+00:00",
+      "resumo": "The attack has disrupted the company's ability to ship products, and it's not clear when services will be restored.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Why Anthropic's $30 trillion sales pitch ahead of its IPO could make sense",
+      "link": "https://finance.yahoo.com/markets/article/why-anthropics-30-trillion-sales-pitch-ahead-of-its-ipo-could-make-sense-145413337.html",
+      "publicado": "2026-08-26T14:54:13+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Quaest: Riedel lidera com 40% das intenções de voto no 1º turno do MS",
+      "link": "https://www.infomoney.com.br/politica/quaest-riedel-lidera-com-40-das-intencoes-de-voto-no-1o-turno-do-ms/",
+      "publicado": "2026-08-26T14:54:06+00:00",
+      "resumo": "Atual governador também venceria todos os adversários em um eventual segundo turno The post Quaest: Riedel lidera com 40% das intenções de voto no 1º turno do MS appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "70% do turismo de luxo no Brasil é doméstico, mas procura de estrangeiros cresce",
+      "link": "https://www.infomoney.com.br/consumo/70-do-turismo-de-luxo-no-brasil-e-domestico-mas-procura-de-estrangeiros-cresce/",
+      "publicado": "2026-08-26T14:52:15+00:00",
+      "resumo": "Bem-estar, spa e relaxamento continuam no topo das preferências dos hóspedes, mencionados por 93% dos empreendimentos pesquisados no anuário da BLTA The post 70% do turismo de luxo no Brasil é doméstico, mas procura de estrangeiros cresce appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Bill Gates issues a stark warning about AI — and Americans increasingly share his concerns",
+      "link": "https://www.marketwatch.com/story/bill-gates-issues-a-stark-warning-about-ai-and-americans-increasingly-share-his-concerns-e54b9e72?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T14:51:00+00:00",
+      "resumo": "The Microsoft co-founder is urging technology leaders and government officials to better acknowledge the risks AI poses to jobs and human connections.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Inflation Ran a Little Hotter Than Expected in July",
+      "link": "https://finance.yahoo.com/economy/articles/inflation-ran-little-hotter-expected-144912442.html",
+      "publicado": "2026-08-26T14:49:12+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "We're buying the dip — again — in a retailer not getting credit for addressing weak sales",
+      "link": "https://www.cnbc.com/2026/08/26/were-buying-the-dip-again-in-a-retailer-not-getting-credit-for-addressing-weak-sales.html",
+      "publicado": "2026-08-26T14:48:53+00:00",
+      "resumo": "Wednesday's decline can be attributed to a downgrade at Jefferies, which we disagree with.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Ring introduces a new encryption standard, makes it the default for cloud features",
+      "link": "https://techcrunch.com/2026/08/26/ring-introduces-a-new-encryption-standard-makes-it-the-default-for-cloud-features/",
+      "publicado": "2026-08-26T14:44:33+00:00",
+      "resumo": "Ring says users can still opt for end-to-end encryption.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Door was locked at Pakistan hospital where fire killed 14 babies, witnesses say",
+      "link": "https://www.bbc.co.uk/news/articles/czdz13elezlo?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T14:42:03+00:00",
+      "resumo": "The hospital tells the BBC the ward door was not locked but manned with security guards, to protect the babies.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "China is collecting on old debts but won’t pay its own",
+      "link": "https://www.marketwatch.com/story/china-is-collecting-on-old-debts-but-wont-pay-its-own-b5fccb4c?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T14:42:00+00:00",
+      "resumo": "China’s leaders are working to recoup hundreds of billions of dollars worth of unpaid taxes. At the same time, the country is defaulting on a significant obligation.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bill Gates wants to see a robot tax and ‘Human Reserved’ jobs to mitigate harms from AI",
+      "link": "https://techcrunch.com/2026/08/26/bill-gates-wants-to-see-a-robot-tax-and-human-reserved-jobs-to-mitigate-harms-from-ai/",
+      "publicado": "2026-08-26T14:37:01+00:00",
+      "resumo": "Gates is mostly in the Responsible AI camp, but there are a few ideas in here we hadn't heard before.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Mark Walter’s group insists there is no ‘fire sale’ and ‘no fraud’",
+      "link": "https://www.ft.com/content/70949883-f543-4444-a330-503b8e4c141a?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T14:35:40+00:00",
+      "resumo": "TWG Global hits out at ‘multipronged attacks’ on investment empire, which has stakes in high-profile sports teams",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Apetite por risco de assessores de investimento cai ao menor nível desde 2023",
+      "link": "https://www.infomoney.com.br/onde-investir/apetite-por-risco-de-assessores-de-investimento-cai-ao-menor-nivel-desde-2023/",
+      "publicado": "2026-08-26T14:34:36+00:00",
+      "resumo": "Parcela de assessores da rede da XP que planeja elevar alocação em renda variável cai para 10%, projeção média para o Ibovespa recua a 172 mil pontos e instabilidade política atinge o maior patamar da série The post Apetite por risco de assessores de investimento cai ao menor nível desde 2023 appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Lost in limbo: Where the Paramount merger delay leaves WBD, and what may come next",
+      "link": "https://www.cnbc.com/2026/08/26/paramount-merger-delay-wbd-limbo.html",
+      "publicado": "2026-08-26T14:31:47+00:00",
+      "resumo": "Paramount Skydance's acquisition of Warner Bros. Discovery is stalled due to an antitrust lawsuit, leaving WBD in limbo during a pivotal moment for media.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Real Time: Dorinha tem 33% e Vicentinho, 30%, na disputa pelo Tocantins",
+      "link": "https://www.infomoney.com.br/politica/real-time-dorinha-tem-33-e-vicentinho-30-na-disputa-pelo-tocantins/",
+      "publicado": "2026-08-26T14:31:33+00:00",
+      "resumo": "Pesquisa mostra equilíbrio no primeiro turno e também em um eventual confronto direto entre os dois candidatos The post Real Time: Dorinha tem 33% e Vicentinho, 30%, na disputa pelo Tocantins appeared first on InfoMoney .",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "CISA confirms hackers targeted over 100 US water systems during July",
+      "link": "https://techcrunch.com/2026/08/26/cisa-confirms-hackers-targeted-over-100-us-water-systems-during-july/",
+      "publicado": "2026-08-26T14:31:05+00:00",
+      "resumo": "The federal cyber agency's warning comes amid a wave of suspected Iran-backed cyberattacks targeting critical water systems across the United States.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Xbox announces disc-to-digital feature that digitizes your physical games",
+      "link": "https://www.theverge.com/tech/984936/xbox-disc-to-digital-feature-official",
+      "publicado": "2026-08-26T14:30:00+00:00",
+      "resumo": "Microsoft is officially announcing a new Xbox feature that will allow Xbox owners to digitize their existing physical game collections. The disc-to-digital feature, which The Verge exclusively revealed last month, is part of work that Microsoft is doing for game preservation and in preparation for the next generation of Xbox consoles. \"Most Xbox One and […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "‘It’s the ultimate regifting’: My mom gave me a house. Should I transfer it back to her to reduce capital gains?",
+      "link": "https://www.marketwatch.com/story/its-the-ultimate-regifting-my-mom-gave-me-a-house-should-i-transfer-it-back-to-her-to-reduce-capital-gains-e357f49c?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T14:30:00+00:00",
+      "resumo": "“The property is very old and requires significant ongoing maintenance.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Customers are fleeing TurboTax over price, and Intuit’s stock is sliding",
+      "link": "https://www.marketwatch.com/story/customers-are-fleeing-turbotax-over-price-and-intuits-stock-is-sliding-a37dcce0?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T14:29:00+00:00",
+      "resumo": "Cost-conscious customers giving up on TurboTax sent Intuit shares sliding in early Wednesday trade.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Nvidia Stock Slips Ahead Of Report (Live Coverage)",
+      "link": "https://www.investors.com/news/technology/nvidia-stock-nvda-fiscal-q2-2027-earnings/?src=A00220&yptr=yahoo",
+      "publicado": "2026-08-26T14:27:47+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Emergency medical evacuation insurance: What it covers, what it costs, and how to compare plans",
+      "link": "https://finance.yahoo.com/personal-finance/insurance/article/emergency-medical-evacuation-insurance-142045430.html",
+      "publicado": "2026-08-26T14:20:45+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Surprise: Z.ai is the AI lab behind the mysterious Ox Alpha model",
+      "link": "https://techcrunch.com/2026/08/26/surprise-z-ai-is-the-ai-lab-behind-the-mysterious-ox-alpha-model/",
+      "publicado": "2026-08-26T14:19:29+00:00",
+      "resumo": "Z.ai confirms it is behind Ox Alpha, the mysterious open AI model topping benchmarks and leaderboards, and its weights are set to be released soon.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Am I too old for Roth conversions? I’m 84 and my wife is 77. We have $8 million saved.",
+      "link": "https://www.marketwatch.com/story/am-i-too-old-for-roth-conversions-im-84-and-my-wife-is-77-we-have-8-million-saved-fb08fccd?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T14:15:00+00:00",
+      "resumo": "“We are reluctant to pay a financial adviser 2% of assets — roughly $160,000 per year.”",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Meta fecha acordo de US$ 16 bi nos EUA por danos a jovens e muda regras do Instagram",
+      "link": "https://www.infomoney.com.br/business/meta-fecha-acordo-de-us-16-bi-nos-eua-por-danos-a-jovens-e-muda-regras-do-instagram/",
+      "publicado": "2026-08-26T14:12:54+00:00",
+      "resumo": "Empresa encerrara processo movido por 29 estados por supostamente estimular o uso compulsivo de suas redes por criancas e adolescentes; acordo preve limites diarios de uso, bloqueios noturnos e novas protecoes para menores",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "12 stocks for ‘bottom-fishing’ investors looking for cheap growth opportunities",
+      "link": "https://www.marketwatch.com/story/12-stocks-for-bottom-fishing-investors-looking-for-cheap-growth-opportunities-d232ea75?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T14:06:00+00:00",
+      "resumo": "Companies with stocks near 52-week lows that analysts expect to roar back include Dick’s Sporting Goods, McDonald’s and L3Harris.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Microsoft’s 25th anniversary Xbox will cost $899",
+      "link": "https://www.theverge.com/games/985003/microsoft-xbox-25th-anniversary-console-price",
+      "publicado": "2026-08-26T14:05:38+00:00",
+      "resumo": "The special-edition translucent green Xbox finally has an official price. Preorders for the console start August 27th at 10AM ET / 7AM PT, although Microsoft says \"some of XBOX's most dedicated fans\" will receive early access preorder emails starting today. The console will launch on November 13th, alongside a matching controller with the same \"OG […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Os desafios do Banco do Brasil vão além do agro",
+      "link": "https://braziljournal.com/os-desafios-do-banco-do-brasil-vao-alem-do-agro/",
+      "publicado": "2026-08-26T14:02:40+00:00",
+      "resumo": "“Quem tem, mantenha, e quem não tem, compre”. Com esta frase, a CEO Tarciana Medeiros recomendou (!) a ação do Banco do Brasil numa call de resultados em agosto de 2025 – um ‘vai tourinho’ que se tornou alvo de um processo sancionador na CVM. De lá pra cá, o papel caiu 5% em meio […] The post Os desafios do Banco do Brasil vão além do agro appeared first on Brazil Journal .",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Your portfolio can recover from a bear market, but can it survive you living to 110?",
+      "link": "https://www.marketwatch.com/story/your-portfolio-can-recover-from-a-bear-market-but-can-it-survive-you-living-to-110-cc6d344c?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T14:00:00+00:00",
+      "resumo": "A longer life may be the biggest risk to retirement plans",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Elden Ring on the Switch 2 isn’t tarnished",
+      "link": "https://www.theverge.com/entertainment/983307/elden-ring-nintendo-switch-2-review",
+      "publicado": "2026-08-26T14:00:00+00:00",
+      "resumo": "FromSoftware is hoping to make a splash on the Switch 2 later this year when it launches The Duskbloods, a gothic competitive multiplayer game that's unlike anything the studio has made before. But before that, Switch 2 owners have a chance to experience the studio's biggest hit for the first time thanks to a port […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "You can now buy music on SoundCloud",
+      "link": "https://www.theverge.com/entertainment/984926/soundcloud-direct-music-sales-beta-launch",
+      "publicado": "2026-08-26T14:00:00+00:00",
+      "resumo": "SoundCloud has launched a new beta feature that allows artists on the audio streaming platform to sell music directly from their profiles, instead of diverting fans to purchase from third-party services like Bandcamp and Beatport. The feature aims to give listeners a better way to support the musicians behind their favorite songs, because SoundCloud isn't […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Your Oura Ring can’t measure what’s going on in your skull",
+      "link": "https://www.theverge.com/column/984991/optimizer-oura-ring-lawsuit-sleep-tracking-wearables",
+      "publicado": "2026-08-26T14:00:00+00:00",
+      "resumo": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. Oura's getting sued. A recently filed class-action complaint against the smart ring maker alleges that the company has duped customers […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Tax tips for TikTok stars, after judge says influencer can’t write off his Grammy tickets",
+      "link": "https://www.marketwatch.com/story/tax-tips-for-tiktok-stars-after-judge-says-influencer-cant-write-off-his-grammy-tickets-29c19139?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T13:57:00+00:00",
+      "resumo": "3 tax pitfalls for ‘influencers’ — and tips to avoid them that could help all taxpayers.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Consumer spending sees the smallest increase in seven months. Is the economy getting weaker?",
+      "link": "https://www.marketwatch.com/story/consumer-spending-posts-smallest-increases-in-14-months-is-the-economy-getting-weaker-1580cec6?mod=mw_rss_topstories",
+      "publicado": "2026-08-26T13:52:00+00:00",
+      "resumo": "Consumer spending rose in July at the slowest pace in seven months, suggesting the U.S. economy lost a little steam after the end of the 2026 Word Cup and start of the third quarter.",
+      "fonte": "MarketWatch",
+      "secao": "global"
+    },
+    {
+      "titulo": "Guinea's president dismisses 173 soldiers, including coup ally, for desertion",
+      "link": "https://www.bbc.co.uk/news/articles/cx2z0j3nyl4o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T13:49:55+00:00",
+      "resumo": "It is thought to be part of efforts to consolidate the former coup leader's control.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Meta settles for $18 billion in lawsuit brought by 29 states over social media harms to children",
+      "link": "https://techcrunch.com/2026/08/26/meta-settles-for-18-billion-in-lawsuit-brought-by-29-states-over-social-media-harms-to-children/",
+      "publicado": "2026-08-26T13:43:01+00:00",
+      "resumo": "The lawsuit alleged that Meta knowingly designed platforms like Instagram and Facebook to addict children, despite knowing about the harms the platforms could pose to young users.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Meta vai pagar US$ 16 bilhões em acordo por alegações de vício de crianças em redes sociais nos EUA",
+      "link": "https://g1.globo.com/tecnologia/noticia/2026/08/26/meta-vai-pagar-us-bilhoes-em-acordo-por-alegacoes-de-vicio-de-criancas-em-redes-sociais-nos-eua.ghtml",
+      "publicado": "2026-08-26T13:41:32+00:00",
+      "resumo": "Meta fecha acordo judicial de US$ 16,6 bilhões nos Estados Unidos A Meta, dona de Instagram, Facebook e WhatsApp, concordou em pagar US$ 16,68 bilhões (cerca de R$ 86,7 bilhões) a estados americanos em um acordo judicial relacionado a um processo que acusa a empresa de incentivar a dependência de adolescentes das redes sociais. A empresa também concordou em adotar novas regras para adolescentes...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Fed’s preferred inflation gauge shows core prices rose 3.3% annually in July",
+      "link": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html",
+      "publicado": "2026-08-26T13:35:50+00:00",
+      "resumo": "The personal consumption expenditures price index was expected to rise 0.1% monthly and 3.6% on a 12-month basis, according to economists surveyed by Dow Jones.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Dollar and bond markets 'on edge' ahead of Jackson Hole as Bessent's market intervention piles pressure on Warsh",
+      "link": "https://www.cnbc.com/2026/08/26/jackson-hole-warsh-bessent-bonds-treasury-dollar.html",
+      "publicado": "2026-08-26T13:35:18+00:00",
+      "resumo": "Strategists said investors were approaching Jackson Hole “on the back foot.\"",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Meta agrees to heavy restrictions on teen users in major lawsuit settlement",
+      "link": "https://www.theverge.com/policy/985032/meta-state-ag-kids-online-safety-settlement",
+      "publicado": "2026-08-26T13:31:32+00:00",
+      "resumo": "Meta settled its latest kids online safety trial with a group of 29 state attorneys general, sparing it from the remainder of a trial that could have cost it hundreds of billions of dollars. Under the terms of the settlement, which resolves claims by a larger group of 47 states and several districts and territories, […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Robot brain builders are pushing out of their GPT-2 era",
+      "link": "https://techcrunch.com/2026/08/26/robot-brain-builders-are-pushing-out-of-their-gpt-2-era/",
+      "publicado": "2026-08-26T13:30:00+00:00",
+      "resumo": "Robot bodies are waiting for their AI brains to catch up.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Canada unveils retaliatory tariffs on about $20 billion of U.S. goods",
+      "link": "https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html",
+      "publicado": "2026-08-26T13:24:25+00:00",
+      "resumo": "Canadian trade negotiators left the U.S. last week after failing to clinch a trade deal that would stop President Donald Trump's new tariffs from taking effect.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Canada unveils retaliatory tariffs on about $20 billion of U.S. goods",
+      "link": "https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html",
+      "publicado": "2026-08-26T13:24:25+00:00",
+      "resumo": "Canadian trade negotiators left the U.S. last week after failing to clinch a trade deal that would stop President Donald Trump's new tariffs from taking effect.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "China's short-drama producers flood the market with cheap bets — and let audiences pick the winners",
+      "link": "https://www.cnbc.com/2026/08/26/short-drama-china-production-ai-entertainment-economics.html",
+      "publicado": "2026-08-26T13:20:34+00:00",
+      "resumo": "The short-drama model offers an alternative to traditional entertainment, but rising distribution costs and audience-retention challenges remain.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "China's short-drama producers flood the market with cheap bets — and let audiences pick the winners",
+      "link": "https://www.cnbc.com/2026/08/26/short-drama-china-production-ai-entertainment-economics.html",
+      "publicado": "2026-08-26T13:20:34+00:00",
+      "resumo": "The short-drama model offers an alternative to traditional entertainment, but rising distribution costs and audience-retention challenges remain.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Amazon service Bezos once called 'artificial artificial intelligence' is shutting down",
+      "link": "https://www.cnbc.com/2026/08/25/amazon-service-that-jeff-bezos-called-artificial-ai-is-shutting-down.html",
+      "publicado": "2026-08-26T13:15:24+00:00",
+      "resumo": "Mechanical Turk launched in 2005 as a way to farm out tasks that are easy for humans to complete but too challenging for computers.",
+      "fonte": "CNBC Top News",
+      "secao": "global"
+    },
+    {
+      "titulo": "Amazon service Bezos once called 'artificial artificial intelligence' is shutting down",
+      "link": "https://www.cnbc.com/2026/08/25/amazon-service-that-jeff-bezos-called-artificial-ai-is-shutting-down.html",
+      "publicado": "2026-08-26T13:15:24+00:00",
+      "resumo": "Mechanical Turk launched in 2005 as a way to farm out tasks that are easy for humans to complete but too challenging for computers.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "10 of the Best Financial Advisor Companies: Well-Known Fiduciary Investment Firms to Consider",
+      "link": "https://www.wsj.com/buyside/personal-finance/financial-advisors/best-financial-advisors?mod=rss_markets_main",
+      "publicado": "2026-08-26T13:14:00+00:00",
+      "resumo": "We analyzed everything from advisor credentials to fees to portfolio options at some of the larger and more well-known registered investment advisor firms to help you select a firm that could best connect you with a fiduciary financial advisor.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bluesky now lets you upload 10-minute long videos",
+      "link": "https://techcrunch.com/2026/08/26/bluesky-now-lets-you-upload-10-minute-long-videos/",
+      "publicado": "2026-08-26T13:12:36+00:00",
+      "resumo": "Bluesky's new 10-minute video support includes faster upload speeds, too.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Jaecoo 5 chega em setembro como o mais potente da categoria, para enfrentar HR-V, Creta e Renegade",
+      "link": "https://g1.globo.com/carros/noticia/2026/08/26/jaecoo-5-chega-em-setembro.ghtml",
+      "publicado": "2026-08-26T13:09:43+00:00",
+      "resumo": "Omoda & Jaecoo apresenta o Jaecoo 5 no Festival Interlagos Carlos Cereijo/g1 A Omoda&Jaecoo apresentou nesta quarta-feira (26) o SUV compacto Jaecoo 5, que promete ser o mais potente da categoria. A marca não divulgou preço, mas o g1 apurou que o modelo chega para concorrer com Honda HR-V, Jeep Renegade, Hyundai Creta e outros SUVs na faixa dos R$ 200 mil. ✅ Clique aqui para seguir o canal do g1...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Omar Aziz vai propor transição de até um ano para fim da escala 6x1",
+      "link": "https://g1.globo.com/economia/blog/ana-flor/post/2026/08/26/omar-aziz-vai-propor-transicao-de-ate-um-ano-para-fim-da-escala-6x1.ghtml",
+      "publicado": "2026-08-26T13:02:07+00:00",
+      "resumo": "O relator da proposta do fim da escala 6x1 no Senado, Omar Aziz (PSD-AM), irá propor uma transição de até um ano para a redução das horas semanais trabalhadas e quer exceções para setores específicos. Ao blog, o senador afirmou que entregará o relatório nesta quinta-feira (27), para que Comissão de Constituição e Justiça (CCJ) possa votar o texto na próxima semana. Segundo Aziz, há um acordo com...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Bill Gates faz duro alerta sobre a IA, sugere reservar empregos para humanos e propõe taxar robôs",
+      "link": "https://neofeed.com.br/inovacao/bill-gates-faz-duro-alerta-sobre-a-ia-sugere-reservar-empregos-para-humanos-e-propoe-taxar-robos/",
+      "publicado": "2026-08-26T13:00:46+00:00",
+      "resumo": "Um equilíbrio entre o entusiasmo e a preocupação. Esse tem sido o tom adotado por Bill Gates quando o tema em debate são os impactos que a inteligência artificial (IA) trará para a humanidade. E em sua “pensata” mais recente, o bilionário e filantropo deu muito mais peso a um desses extremos. Em um longo […] O post Bill Gates faz duro alerta sobre a IA, sugere reservar empregos para humanos e...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "QueryStory wants you to believe what AI is telling you",
+      "link": "https://techcrunch.com/2026/08/26/querystory-wants-you-to-believe-what-ai-is-telling-you/",
+      "publicado": "2026-08-26T13:00:00+00:00",
+      "resumo": "The startup came out of stealth with $6 million in seed funding and a plan to use LLMs and cybersecurity know-how to make AI queries coherent.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Incendio em hospital do Paquistao deixa ao menos 14 recem-nascidos mortos",
+      "link": "https://www.infomoney.com.br/mundo/incendio-em-hospital-do-paquistao-deixa-ao-menos-14-recem-nascidos-mortos/",
+      "publicado": "2026-08-26T13:00:00+00:00",
+      "resumo": "Fogo atingiu unidade neonatal em Islamabad apos suposta explosao de ar-condicionado; governo abriu investigacao e afastou secretario da Saude",
+      "fonte": "InfoMoney",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Credores da Elfa se revoltam depois de Pátria vender a empresa por R$ 630",
+      "link": "https://braziljournal.com/credores-da-elfa-se-revoltam-depois-de-patria-vender-a-empresa-por-r-630/",
+      "publicado": "2026-08-26T12:59:15+00:00",
+      "resumo": "Os debenturistas da Elfa – a empresa de distribuição de medicamentos criada pelo Pátria – estão revoltados com a venda da empresa pelo valor simbólico de R$ 630. Credores disseram ao Brazil Journal que foram pegos de surpresa com a notícia, já que o Pátria não havia sinalizado que buscava vender o ativo, e que […] The post Credores da Elfa se revoltam depois de Pátria vender a empresa por R$ 630...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Ring says its new encryption limits what it can give police",
+      "link": "https://www.theverge.com/tech/984838/ring-take-encryption-throw-away-the-key-law-enforcement",
+      "publicado": "2026-08-26T12:55:45+00:00",
+      "resumo": "Ring has a new way to protect your videos. It's developed an encryption method called TAKE, short for Throw Away the Key Encryption, that the Amazon-owned company says will protect your videos without traditional end-to-end encryption. TAKE limits when and why Amazon's cloud can access those videos, while still providing features like smart alerts for […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Arga Labs is building a better way to train enterprise AI agents",
+      "link": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents/",
+      "publicado": "2026-08-26T12:55:28+00:00",
+      "resumo": "Arga has raised $10 million in a seed funding round that was led by General Catalyst, with participation from Box Group, Emergence, Gradient and SV Angel.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Iran war approaching Ukraine-style stalemate, says shipping boss",
+      "link": "https://www.ft.com/content/e9b2231e-79b0-40b3-a72e-6c594839e157?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T12:48:52+00:00",
+      "resumo": "Freight rates remain at record highs while oil prices fall back on talks between Iran and Oman to reopen the Strait of Hormuz",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bitcoin and ethereum prices today, Wednesday, August 26, 2026: 'Bitcoin is having a price gusher to close out August'",
+      "link": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-august-26-2026-bitcoin-is-having-a-price-gusher-to-close-out-august-124254461.html",
+      "publicado": "2026-08-26T12:42:54+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bill Gates alerta para perigos da IA e quer discutir regras com Xi Jinping, presidente da China",
+      "link": "https://g1.globo.com/tecnologia/noticia/2026/08/26/bill-gates-alerta-para-perigos-da-ia-e-quer-discutir-regras-com-xi-jinping-presidente-da-china.ghtml",
+      "publicado": "2026-08-26T12:36:28+00:00",
+      "resumo": "Na China, seu rosto já pode ser alugado ou vendido para a IA Bill Gates, cofundador da Microsoft, pretende se encontrar com o presidente da China, Xi Jinping, ainda neste ano para discutir formas de reduzir os riscos provocados pelo avanço da inteligência artificial (IA). Em entrevista à agencia Reuters, Gates afirmou que acredita que a China poderia concordar em restringir o lançamento de...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "GWM Tank 400 híbrido flex chega ao Brasil em 2026, para rivalizar com Toyota SW4",
+      "link": "https://g1.globo.com/carros/noticia/2026/08/26/gwm-tank-400.ghtml",
+      "publicado": "2026-08-26T12:27:25+00:00",
+      "resumo": "GWM Tank 400 André Fogaça/g1 A GWM confirmou que o Tank 400, um jipão de cinco lugares, chega ao mercado brasileiro em 2026. O modelo será um híbrido plug-in flex e terá o Toyota SW4 como um dos principais concorrentes. O modelo estará em exibição no Festival Interlagos, que acontece entre os dias 27 e 30 de agosto, em São Paulo (SP). ✅ Clique aqui para seguir o canal do g1 Carros no WhatsApp À...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Vanguard Buys Wealth Management Platform Altruist in $4 Billion Deal",
+      "link": "https://www.wsj.com/business/deals/vanguard-buys-wealth-management-platform-altruist-in-4-billion-deal-68e7260c?mod=rss_markets_main",
+      "publicado": "2026-08-26T12:22:00+00:00",
+      "resumo": "The world’s second-biggest investment firm is making a bigger push into financial advice.",
+      "fonte": "WSJ Markets",
+      "secao": "global"
+    },
+    {
+      "titulo": "China advises its citizens to leave Taiwan ally Eswatini over 'security risks'",
+      "link": "https://www.bbc.co.uk/news/articles/c3rel9rgnx5o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T12:17:12+00:00",
+      "resumo": "Eswatini is one of 12 countries, and the only one in Africa, that has diplomatic relations with Taiwan.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Silver price today, Wednesday, August 26, 2026: Silver prices hold, notching a 17% monthly gain",
+      "link": "https://finance.yahoo.com/personal-finance/investing/article/silver-price-today-wednesday-august-26-2026-silver-prices-hold-notching-a-17-monthly-gain-121703294.html",
+      "publicado": "2026-08-26T12:17:03+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Gold price today, Wednesday, August 26, 2026: Gold pulls back from morning's high over $4,700",
+      "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-august-26-2026-gold-pulls-back-from-mornings-high-over-4700-120804724.html",
+      "publicado": "2026-08-26T12:08:04+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Rockstar finally responds to ‘heartbreaking’ GTA 6 leaks",
+      "link": "https://www.theverge.com/games/984959/gta-vi-leaks-rockstar-games-official-statement-heartbreaking",
+      "publicado": "2026-08-26T12:04:15+00:00",
+      "resumo": "Rockstar Games has released its first official statement following days of sustained leaks of footage from Grand Theft Auto VI, calling the period \"heartbreaking for our team.\" Not long after Rockstar posted, another leaked video appeared, this time showing the Jason character pulling off the series' trademark move of carjacking a box Chevy-like vehicle with […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "IPCA-15: preços caem 0,40% em agosto, com conta de luz, gasolina e alimentos mais baratos",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/ipca-15-previa-da-inflacao-agosto.ghtml",
+      "publicado": "2026-08-26T12:00:39+00:00",
+      "resumo": "TV Verdes Mares/Reprodução O IPCA-15, considerado uma prévia da inflação oficial do país, registrou queda de 0,40% nos preços em agosto. Os dados foram divulgados nesta quarta-feira (26) pelo Instituto Brasileiro de Geografia e Estatística (IBGE). 🗒️ Tem alguma sugestão de reportagem? Mande para o g1 Com o resultado, o IPCA-15 acumula alta de 3,09% no ano e de 4,24% em 12 meses. Nesse último...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Dólar opera em alta com foco em IPCA-15, dívida pública e indicadores dos EUA; Ibovespa sobe",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/dolar-ibovespa.ghtml",
+      "publicado": "2026-08-26T12:00:16+00:00",
+      "resumo": "Entenda o que faz o preço do dólar subir ou cair O dólar opera em alta nesta quarta-feira (26). Por volta das 11h45, a moeda americana avançava 0,45%, cotada a R$ 5,1629. No mesmo horário, o Ibovespa, principal índice da bolsa brasileira, subia 0,31%, aos 175.126 pontos. ▶️ Os investidores acompanham, nesta manhã, a divulgação do Índice Nacional de Preços ao Consumidor Amplo 15 (IPCA-15),...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Hyundai has grown more than any automaker in the U.S. — and it's not done yet",
+      "link": "https://www.cnbc.com/2026/08/26/hyundai-sales-us-investment.html",
+      "publicado": "2026-08-26T12:00:01+00:00",
+      "resumo": "The South Korean automaker wants to keep going by ramping up production at a new $7.6 billion plant in Georgia to capture more sales and market share.",
+      "fonte": "CNBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Hearing tech startup Legato emerges from stealth with $12M and a peek at its AI hearing glasses",
+      "link": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses/",
+      "publicado": "2026-08-26T12:00:00+00:00",
+      "resumo": "The glasses, called Legato Frames, integrate the company’s patented hearing-assistance technology into the arms of eyewear frames.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "The second-generation Bose QuietComfort Headphones are good, but don’t stand out",
+      "link": "https://www.theverge.com/tech/984764/bose-quietcomfort-headphones-gen-2-review",
+      "publicado": "2026-08-26T12:00:00+00:00",
+      "resumo": "Bose QuietComfort headphones used to be innovative. Bose's noise-canceling research is the reason the technology is where it is today, and its headphones set the standard. They were the ubiquitous traveler's accessory. But over the past few years, it's felt like Bose has rested on that reputation, as other companies have caught up. Sony and […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "What I learnt 800ft underground in an American coal mine",
+      "link": "https://www.ft.com/content/ab0315bb-2657-4126-80b4-611bc83ec58f?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T11:54:27+00:00",
+      "resumo": "Operators are trying to make familiar an industry that seems consigned to another era",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Why smugglers are stealing Kenya’s ants",
+      "link": "https://www.economist.com/middle-east-and-africa/2026/08/26/why-smugglers-are-stealing-kenyas-ants",
+      "publicado": "2026-08-26T11:41:28+00:00",
+      "resumo": "A global craze for pet ants has created a lucrative black market",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Heart, hope and a steely determination: Dolly Parton's musical legacy",
+      "link": "https://www.bbc.co.uk/news/articles/c74k8zwvez0o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T11:32:11+00:00",
+      "resumo": "BBC music correspondent Mark Savage looks back on the legacy of the \"irreplaceable\" late singer.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "MPT processa Uber em R$ 321 milhões por cobrar taxa de motoristas para trabalhar",
+      "link": "https://g1.globo.com/trabalho-e-carreira/noticia/2026/08/26/mpt-processa-uber-por-cobrar-taxa-de-motoristas-para-trabalhar.ghtml",
+      "publicado": "2026-08-26T11:28:09+00:00",
+      "resumo": "Motorista de aplicativo, app, Uber, 99 Maksim Goncharenok/Pexels O Ministério Público do Trabalho (MPT) ajuizou uma ação civil pública contra a Uber do Brasil para suspender o programa \"Passe para Motoristas\", que cobra dos motoristas uma taxa para que eles possam aceitar corridas pelo aplicativo. O órgão também pede a devolução dos valores pagos pelos trabalhadores e uma indenização de R$ 321...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "The end of Trumpsplaining",
+      "link": "https://www.ft.com/content/ea6efd7b-83c3-40ed-803a-e86402aa3aeb?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T11:26:18+00:00",
+      "resumo": "The pretence that America’s leader is a grand strategist will not survive the Iran fiasco",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Meta, states discuss mid-trial settlement in teen addiction case",
+      "link": "https://finance.yahoo.com/media-advertising/articles/meta-states-discuss-mid-trial-111938416.html",
+      "publicado": "2026-08-26T11:19:38+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bill Gates is deeply worried about AI, and he’s no longer staying quiet",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/984923/bill-gates-is-deeply-worried-about-ai-and-hes-no-longer-staying-quiet",
+      "publicado": "2026-08-26T11:07:40+00:00",
+      "resumo": "Bill Gates has been reflecting a lot on AI lately, and the process has triggered a stark awakening. Once a staunch AI optimist, the Microsoft cofounder is now deeply pessimistic about what AI means for our collective future. Having been conspicuously quiet on AI issues recently, Gates is back with a nearly 6,000-word essay seeking […]",
+      "fonte": "The Verge",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Runable hits $21M to bet AI agents can go from building businesses to growing them",
+      "link": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them/",
+      "publicado": "2026-08-26T11:00:00+00:00",
+      "resumo": "Runable says 60%–70% of its 1 trillion-plus token usage in the last 90 days came from paying customers.",
+      "fonte": "TechCrunch",
+      "secao": "tech"
+    },
+    {
+      "titulo": "Menos prateleira, mais servidores: o “motor silencioso” que levou a Multilaser do prejuízo ao caixa recorde",
+      "link": "https://neofeed.com.br/negocios/menos-prateleira-mais-servidores-o-motor-silencioso-que-levou-a-multilaser-do-prejuizo-ao-caixa-recorde/",
+      "publicado": "2026-08-26T10:53:30+00:00",
+      "resumo": "Quando assumiu o comando da Multilaser, em abril de 2025, André Poroger, um veterano com 23 anos de casa, tinha um mandato claro. Era preciso recuperar o grupo de eletroeletrônicos, que, após o boom da categoria na pandemia, vinha de dois anos de prejuízos anuais, que somavam mais de R$ 1,1 bilhão. Para reverter esses […] O post Menos prateleira, mais servidores: o “motor silencioso” que levou a...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "“O problema do Brasil não é o endividamento. São os juros”, diz José Dirceu",
+      "link": "https://neofeed.com.br/videos/eleicoes-2026/o-problema-do-brasil-nao-e-o-endividamento-sao-os-juros-diz-jose-dirceu/",
+      "publicado": "2026-08-26T10:52:54+00:00",
+      "resumo": "José Dirceu pediu desculpas pela voz, afetada pela mais recente sessão de quimioterapia. Só falta mais uma para que o ex-ministro da Casa Civil do governo Lula 1 se considere curado do câncer do sistema linfático, descoberto no dia 10 de maio. Naquele período, ele já era pré-candidato a deputado federal pelo PT e não […] O post “O problema do Brasil não é o endividamento. São os juros”, diz José...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "A nova vitrine da Loungerie: balanço enxuto, rebranding e um mercado de R$ 21 bilhões",
+      "link": "https://neofeed.com.br/negocios/a-nova-vitrine-da-loungerie-balanco-enxuto-rebranding-e-um-mercado-de-r-21-bilhoes/",
+      "publicado": "2026-08-26T10:51:46+00:00",
+      "resumo": "Juros nas alturas, crédito caro, dívidas elevadas e consumidores com o bolso cada vez mais apertado. Essa equação tem cobrado uma fatura indigesta de boa parte do varejo brasileiro, expressa em um volume crescente de empresas vivenciando crises de liquidez e recorrendo a recuperações judiciais. A Loungerie está seguindo, porém, na contramão desse “modo sobrevivência” […] O post A nova vitrine da...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Radiation link in flight attendant's breast cancer, French court finds",
+      "link": "https://www.bbc.co.uk/news/articles/cn0j3z6147jo?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T10:29:36+00:00",
+      "resumo": "Former Air France stewardess Sophie Lainault has had her cancer recognised as an occupational disease.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Häagen-Dazs de saída do Brasil: os 4 motivos para o adeus da marca de sorvetes",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/haagen-dazs-de-saida-do-brasil-os-4-motivos-para-o-adeus-da-marca-de-sorvetes.ghtml",
+      "publicado": "2026-08-26T10:14:56+00:00",
+      "resumo": "Marca de sorvetes Häagen-Dazs deixa de ser distribuída no Brasil após quase 30 anos Depois de quase 30 anos de operação no Brasil, a Häagen-Dazs vai deixar o país. A multinacional americana General Mills, dona da marca de sorvetes premium, decidiu abandonar as suas vendas no território nacional. O desfecho vinha sendo anunciado por números estagnados: entre 2021 e 2025 a marca se manteve em...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Slip the surly bonds? Scott Bessent goes on a yield trip",
+      "link": "https://www.economist.com/podcasts/2026/08/26/slip-the-surly-bonds-scott-bessent-goes-on-a-yield-trip",
+      "publicado": "2026-08-26T10:10:21+00:00",
+      "resumo": "Also on the daily podcast: the grave hacking threat to America’s water supplies and the politics of accents in Britain",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Mortgage and refinance interest rates today, Wednesday, August 26, 2026: Rates down across the board",
+      "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-wednesday-august-26-2026-rates-down-across-the-board-100000670.html",
+      "publicado": "2026-08-26T10:00:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "Best CD rates today, Wednesday, August 26, 2026: Earn up to 4.30% APY",
+      "link": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-wednesday-august-26-2026-earn-up-to-430-apy-100000859.html",
+      "publicado": "2026-08-26T10:00:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "AI precisa de um ‘iPhone moment’, diz Sam Altman",
+      "link": "https://braziljournal.com/ai-precisa-de-um-iphone-moment-diz-sam-altman/",
+      "publicado": "2026-08-26T09:50:13+00:00",
+      "resumo": "Sam Altman é, por definição, alguém extremamente exposto aos avanços da inteligência artificial, mas trabalha no computador, do mesmo jeito, há 20 anos. A AI ainda não conseguiu mudar isso. “Estamos em um mundo com todo avanço tecnológico, mas ainda não tivemos o ‘iPhone moment’ que mudou completamente a forma como alguém interage com uma […] The post AI precisa de um ‘iPhone moment’, diz Sam...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Canada's retaliation tests the limit of American power under Trump",
+      "link": "https://www.bbc.co.uk/news/articles/ce8xd5k1krpo?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T08:47:18+00:00",
+      "resumo": "The president is using US dominance to challenge allies and enemies alike - but both Canada and Iran have found ways to fight back.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "China’s nostalgia for the 1990s",
+      "link": "https://www.economist.com/podcasts/2026/08/26/chinas-nostalgia-for-the-1990s",
+      "publicado": "2026-08-26T08:47:04+00:00",
+      "resumo": "A handpicked article read aloud from the latest issue of The Economist",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Far-right Israeli lawmaker damages Palestinian memorial with sledgehammer",
+      "link": "https://www.bbc.co.uk/news/articles/c0lrw8325pzo?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T08:17:45+00:00",
+      "resumo": "Zvi Sukkot's actions have drawn widespread condemnation, including from Israeli Prime Minister Benjamin Netanyahu.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Golpistas avançam do roubo de senhas para o uso de IA para 'clonar' pessoas no Brasil, revela estudo",
+      "link": "https://g1.globo.com/tecnologia/noticia/2026/08/26/golpistas-avancam-do-roubo-de-senhas-para-o-uso-de-ia-para-clonar-pessoas-no-brasil-revela-estudo.ghtml",
+      "publicado": "2026-08-26T08:04:17+00:00",
+      "resumo": "Deepfake nas eleições: entenda o que é e por que pode enganar o eleitor Um dos golpes mais comuns na internet, o roubo de senhas, está dividindo espaço com uma nova estratégia no Brasil: a \"clonagem\" de pessoas para tentar enganar vítimas e obter dinheiro. É o que mostra um levantamento inédito da Nexus Pesquisa e Inteligência de Dados, que analisa menções nas redes sociais sobre diferentes...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Libyan who was cleared after Lockerbie bombing trial dies aged 70",
+      "link": "https://www.bbc.co.uk/news/articles/cy0zgx6wlz3o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T08:01:56+00:00",
+      "resumo": "A Facebook post by Libyan Airlines announced the death of Al Amin Khalifah Fhimah and expressed the company's condolences to his family.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Why Dolly Parton mattered to America",
+      "link": "https://www.economist.com/culture/2026/08/26/why-dolly-parton-mattered-to-america",
+      "publicado": "2026-08-26T07:59:54+00:00",
+      "resumo": "She was brave, decent and unapologetically herself",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Indian jewellery ad pulled after backlash over actor's outfit",
+      "link": "https://www.bbc.co.uk/news/articles/cy9z4dwx172o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T07:26:03+00:00",
+      "resumo": "Kriti Sanon has defended the ad in which she was seen celebrating the upcoming Hindu festival of Rakhi.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Bodies found on S Korean holiday island as missing persons scandal deepens",
+      "link": "https://www.bbc.co.uk/news/articles/cwyz9gjw9n9o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T07:01:45+00:00",
+      "resumo": "A police sergeant has been arrested following accusations that he lied to victims' families and prematurely closed missing persons cases.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Watch Nashville fans lay flowers in tribute to Dolly Parton",
+      "link": "https://www.bbc.co.uk/news/videos/cx2zm89zd99o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T06:37:30+00:00",
+      "resumo": "The BBC's Helena Humphrey is outside the Country Music Hall of Fame where fans gathered to mourn Dolly Parton.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "India's sugar squeeze threatens its biggest season for sweets",
+      "link": "https://www.bbc.co.uk/news/articles/cm2r9y9eleno?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T06:30:24+00:00",
+      "resumo": "Domestic sugar prices have jumped nearly 40%, forcing India to import 1 million tonnes of the sweetener.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Nvidia’s $200bn ‘balance sheet-as-a-service’",
+      "link": "https://www.ft.com/content/9a6947bf-9d4e-4489-80b9-2178ea657a67",
+      "publicado": "2026-08-26T05:00:03+00:00",
+      "resumo": "Because ‘vendor finance’ are such ugly words",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Bessent’s bond intervention puts US Treasury on collision course with Fed",
+      "link": "https://www.ft.com/content/a50df99b-0621-44ea-a7c7-c9c685e2eba1?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T04:00:30+00:00",
+      "resumo": "Increased purchases of debt threaten to undermine central bank chief Kevin Warsh’s bid to tame inflation",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "Why today’s markets are not as contradictory as they seem",
+      "link": "https://www.ft.com/content/c96c25c1-b27c-4c08-a2ba-21821b39dd78?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T04:00:23+00:00",
+      "resumo": "What looks like a breakdown in historical correlations may simply reflect a different macroeconomic regime",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "The multiplying risks of financing data centres",
+      "link": "https://www.ft.com/content/9cb63980-cd43-419d-a7e5-42039b9fd01e?syn-25a6b1a6=1",
+      "publicado": "2026-08-26T04:00:13+00:00",
+      "resumo": "Wall Street players extending themselves to underwrite this colossal new asset class are looking to limit exposure",
+      "fonte": "Financial Times",
+      "secao": "global"
+    },
+    {
+      "titulo": "As duas frentes da guerra comercial de Trump - O Assunto #1791",
+      "link": "https://g1.globo.com/podcast/o-assunto/noticia/2026/08/26/as-duas-frentes-da-guerra-comercial-de-trump-o-assunto-1791.ghtml",
+      "publicado": "2026-08-26T03:30:15+00:00",
+      "resumo": "O presidente dos Estados Unidos afirmou que esta segunda-feira (24) seria o “Dia D” da guerra econômica que está promovendo contra o Irã. E o Departamento do Tesouro americano de fato anunciou sanções contra pessoas e organizações ligadas ao regime de Teerã e ameaçou fazer o mesmo com países que mantenham qualquer transação econômica com o Irã. O governo iraniano reagiu e afirmou que parceiros...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Justiça mantém reintegração de 1.900 demitidos da Casas Bahia; veja o que acontece agora",
+      "link": "https://g1.globo.com/economia/noticia/2026/08/26/justica-mantem-reintegracao-de-1900-demitidos-da-casas-bahia-veja-o-que-acontece-agora.ghtml",
+      "publicado": "2026-08-26T03:00:55+00:00",
+      "resumo": "Justiça manda Casas Bahia reverter demissões e limita novos cortes A Justiça do Trabalho manteve, nesta segunda-feira (24), a decisão que suspendeu as demissões de 1.900 trabalhadores do Grupo Casas Bahia e determinou a reintegração provisória dos funcionários. A empresa entrou com pedido de recuperação extrajudicial na semana passada. A companhia havia apresentado um mandado de segurança para...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "TikTok leva multa inédita no Brasil: o que causou a decisão? E o que muda? Veja perguntas e respostas",
+      "link": "https://g1.globo.com/tecnologia/noticia/2026/08/26/tiktok-leva-multa-inedita-no-brasil-o-que-causou-a-decisao-e-o-que-muda-veja-perguntas-e-respostas.ghtml",
+      "publicado": "2026-08-26T03:00:46+00:00",
+      "resumo": "ANPD multa TikTok em R$ 153,7 milhões por falhas na proteção de menores A multa aplicada contra a ByteDance, dona do TikTok, na terça-feira (25) foi uma medida inédita contra uma empresa de rede social no Brasil. A Agência Nacional de Proteção de Dados (ANPD) determinou que a empresa pague R$ 153,7 milhões por violações no tratamento de dados de crianças e adolescentes. 🗒️ Tem alguma sugestão de...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Eleições 2026: presidenciáveis defendem contas em ordem para baixar juro e estimular economia, mas não detalham propostas",
+      "link": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/08/26/eleicoes-2026-presidenciaveis-defendem-contas-em-ordem-para-baixar-juro-e-estimular-economia-mas-nao-detalham-propostas.ghtml",
+      "publicado": "2026-08-26T03:00:20+00:00",
+      "resumo": "Lula, Flávio Bolsonaro, Renan Santos, Ronaldo Caiado e Romeu Zema: candidatos à Presidência da República Divulgação Os candidatos à Presidência da República nas eleições de outubro identificam em seus planos de governo, na área de economia, a alta taxa de juros como um dos principais obstáculos ao crescimento sustentável do país. Para impulsionar o crescimento econômico sem gerar desequilíbrios,...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Musk's SpaceX to build $100bn launch facility in Louisiana",
+      "link": "https://www.bbc.co.uk/news/articles/cq5xel4v642o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-26T01:32:07+00:00",
+      "resumo": "It will be the firm's biggest site yet and aims to send rockets to space in 2029.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Mega-Sena 3049 acumula e prêmio vai a R$ 25 milhões; veja os números sorteados",
+      "link": "https://g1.globo.com/loterias/mega-sena/noticia/2026/08/25/mega-sena-concurso-3049-confira-os-numeros-sorteados.ghtml",
+      "publicado": "2026-08-26T00:02:30+00:00",
+      "resumo": "Como funciona a Mega-Sena? O sorteio do concurso 3.049 da Mega-Sena foi realizado na noite desta terça-feira (25), em São Paulo. O prêmio para as apostas que acertassem as seis dezenas era de R$ 2.8 milhões. No entanto, ninguém levou a faixa principal e o valor acumulou para R$ 25 milhões. 📱Favorite o g1 no Google e acompanhe as principais notícias do dia Clique aqui para seguir o canal de...",
+      "fonte": "G1 Economia",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "As Ukraine hits Russia's refineries, Russia targets Ukraine's petrol pumps",
+      "link": "https://www.bbc.co.uk/news/articles/c5y6x777gk4o?at_medium=RSS&at_campaign=rss",
+      "publicado": "2026-08-25T23:50:53+00:00",
+      "resumo": "Fuel companies are urging customers not to linger at the pumps after a wave of deadly attacks.",
+      "fonte": "BBC World",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Governo sinaliza “consertar” distorções no preço da energia",
+      "link": "https://neofeed.com.br/economia/governo-sinaliza-consertar-distorcoes-no-preco-da-energia/",
+      "publicado": "2026-08-25T22:24:37+00:00",
+      "resumo": "Num movimento esperado há anos, o governo federal reconheceu que a forma como o preço da energia do setor elétrico é calculado no Brasil distorce o mercado e atrapalha tanto consumidores quanto geradores. As três consultas públicas abertas pelo Ministério de Minas e Energia (MME) nesta semana sinalizam um caminho para corrigir o problema na […] O post Governo sinaliza “consertar” distorções no...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Prisma coloca Origem Energia à venda",
+      "link": "https://braziljournal.com/prisma-coloca-origem-energia-a-venda/",
+      "publicado": "2026-08-25T22:11:11+00:00",
+      "resumo": "A Prisma Capital está avançando em um processo para vender a Origem Energia, uma junior oil que nos últimos anos se tornou uma das maiores produtoras independentes de gás do País. A gestora de ativos alternativos de Marcelo Hallack, João Mendes e Lucas Canhoto entrou na companhia no final de 2020. A Origem foi fundada […] The post Prisma coloca Origem Energia à venda appeared first on Brazil...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Pemex e PIBinho colocam em risco o ‘investment grade’ do México",
+      "link": "https://braziljournal.com/pemex-e-pibinho-colocam-em-risco-o-investment-grade-do-mexico/",
+      "publicado": "2026-08-25T22:05:10+00:00",
+      "resumo": "Com gastos públicos em alta e crescimento econômico medíocre, o México está próximo de perder o grau de investimento – e uma das razões para isso são as recorrentes capitalizações que o Governo tem feito na Pemex. Segundo a Bloomberg, nos últimos dois anos o Governo da esquerdista Claudia Sheinbaum coordenou mais de US$ 50 […] The post Pemex e PIBinho colocam em risco o ‘investment grade’ do...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "A rara combinação de Lula, Alcolumbre e Motta para destravar os minerais críticos no Senado",
+      "link": "https://neofeed.com.br/poder/a-rara-combinacao-de-lula-alcolumbre-e-motta-para-destravar-os-minerais-criticos-no-senado/",
+      "publicado": "2026-08-25T21:53:05+00:00",
+      "resumo": "Brasília – Após ficar parado por quase quatro meses no Senado sem avançar, o projeto de lei que regulamenta a exploração de minerais críticos no País tem uma janela de oportunidade para aprovação na Casa na semana que vem. A proposta conta também com a articulação de Hugo Motta (Republicanos-PB), presidente da Câmara – para […] O post A rara combinação de Lula, Alcolumbre e Motta para destravar...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Louis Navellier has blunt message on Nvidia’s reign before earnings",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/louis-navellier-blunt-message-nvidia-214700439.html",
+      "publicado": "2026-08-25T21:47:00+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "FICO credit scores are holding up, but consumers are under pressure",
+      "link": "https://finance.yahoo.com/personal-finance/banking/article/fico-credit-scores-are-holding-up-but-consumers-are-under-pressure-205705068.html",
+      "publicado": "2026-08-25T20:57:05+00:00",
+      "resumo": "",
+      "fonte": "Yahoo Finance",
+      "secao": "global"
+    },
+    {
+      "titulo": "EXCLUSIVO: Administradora judicial da Fictor pede afastamento de fundador e diretores",
+      "link": "https://neofeed.com.br/negocios/exclusivo-administradora-judicial-da-fictor-pede-afastamento-de-fundador-e-diretores/",
+      "publicado": "2026-08-25T20:00:06+00:00",
+      "resumo": "A Laspro, administradora judicial da recuperação judicial do Grupo Fictor, manifestou-se favoravelmente à destituição dos administradores da empresa e à nomeação de um gestor judicial, de acordo com documento que o NeoFeed teve acesso. O parecer, apresentado em 18 de agosto ao Tribunal de Justiça de São Paulo (TJSP), reitera apoio ao pedido dos credores, […] O post EXCLUSIVO: Administradora...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Pulverização da dívida e resistência de credores: os desafios (de curto prazo) da Braskem",
+      "link": "https://neofeed.com.br/negocios/pulverizacao-da-divida-e-resistencia-de-credores-os-desafios-de-curto-prazo-da-braskem/",
+      "publicado": "2026-08-25T19:55:46+00:00",
+      "resumo": "Um mapeamento dos documentos judiciais listados no processo de recuperação extrajudicial (RE) da Braskem mostra um total de 1.179 créditos financeiros. Esse número consolidado, porém, esconde uma adesão bem mais desigual. O NeoFeed identificou nos documentos do pedido de RE de R$ 56,5 bilhões em dívidas financeiras protocolados pela petroquímica na segunda-feira, 24 de agosto, […] O post...",
+      "fonte": "NeoFeed",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Does Donald Trump deserve credit for a manufacturing revival?",
+      "link": "https://www.economist.com/united-states/2026/08/25/does-donald-trump-deserve-credit-for-a-manufacturing-revival",
+      "publicado": "2026-08-25T19:21:23+00:00",
+      "resumo": "Assessing the president’s promise to bring back factory jobs",
+      "fonte": "The Economist",
+      "secao": "mundo"
+    },
+    {
+      "titulo": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "link": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "publicado": "2026-08-25T18:00:00+00:00",
+      "resumo": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "fonte": "Federal Reserve",
+      "secao": "global"
+    },
+    {
+      "titulo": "Família, patrimônio, saúde, viagens: o que move o brasileiro de alta renda",
+      "link": "https://braziljournal.com/familia-patrimonio-saude-viagens-o-que-move-o-brasileiro-de-alta-renda/",
+      "publicado": "2026-08-25T15:22:31+00:00",
+      "resumo": "Para o brasileiro de alta renda, a tranquilidade tem preço: R$ 17 milhões. Este é o valor médio que os brasileiros com renda mensal a partir de R$ 15 mil consideram necessário ter investido para poder parar de trabalhar ou trabalhar apenas com aquilo de que gostam, segundo um estudo inédito do Google Brasil que […] The post Família, patrimônio, saúde, viagens: o que move o brasileiro de alta...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "O hedge da Solfácil para o futuro GD: baterias e comercialização",
+      "link": "https://braziljournal.com/o-hedge-da-solfacil-para-o-futuro-gd-baterias-e-comercializacao/",
+      "publicado": "2026-08-25T15:19:16+00:00",
+      "resumo": "A Solfácil chegou aos R$ 2 bilhões em faturamento espalhando painéis solares pelos telhados do Brasil. A empresa foi um dos maiores beneficiários da política de subsídios à geração distribuída aprovada pelo Congresso, e que continua até hoje. Mas agora – em meio às discussões sobre o fim desses subsídios e preços variáveis ao longo […] The post O hedge da Solfácil para o futuro GD: baterias e...",
+      "fonte": "Brazil Journal",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "View of the Week – O que está por trás do endividamento das famílias",
+      "link": "https://www.turimbr.com/publicacoes/insights/view-of-the-week-o-que-esta-por-tras-do-endividamento-das-familias/",
+      "publicado": "2026-08-24T14:31:26+00:00",
+      "resumo": "A deterioração da qualidade do crédito, sobretudo nas linhas destinadas às famílias, tem ganhado espaço no noticiário brasileiro. O endividamento das famílias voltou a crescer nos últimos dois anos, após um breve período de moderação entre 2022 e 2024, e atingiu a máxima histórica de 49,93% em janeiro. Os dados mais recentes mostram que a […] The post View of the Week – O que está por trás do...",
+      "fonte": "Turim",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "View of the Week – Salários, produtividade e pressões inflacionárias",
+      "link": "https://www.turimbr.com/publicacoes/insights/view-of-the-week-salarios-produtividade-e-pressoes-inflacionarias/",
+      "publicado": "2026-08-17T13:20:16+00:00",
+      "resumo": "A relação entre o crescimento dos salários e a inflação é muitas vezes tratada de forma simplificada no debate econômico, como se qualquer aumento salarial se traduzisse mecanicamente em maior pressão inflacionária. Na prática, os salários tendem a pressionar os preços quando seu crescimento supera os ganhos de produtividade. Caso contrário, o aumento da produção […] The post View of the Week –...",
+      "fonte": "Turim",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "View of the Week – Menos comunicação, mais inclinação: um balanço dos primeiros meses de mandato de Warsh",
+      "link": "https://www.turimbr.com/publicacoes/insights/view-of-the-week-menos-comunicacao-mais-inclinacao-um-balanco-dos-primeiros-meses-de-mandato-de-warsh/",
+      "publicado": "2026-08-10T13:36:01+00:00",
+      "resumo": "Os primeiros meses de Kevin Warsh à frente do Federal Reserve foram marcados, sobretudo, por uma mudança no perfil de comunicação da instituição. Os comunicados se tornaram mais curtos e as sinalizações, mais escassas. Segundo o novo chair, essa mudança busca permitir que a precificação do mercado reflita mais os dados econômicos e menos as […] The post View of the Week – Menos comunicação, mais...",
+      "fonte": "Turim",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "View of the Week – Os desafios estruturais da aplicação da fronteira eficiente",
+      "link": "https://www.turimbr.com/publicacoes/insights/view-of-the-week-os-desafios-estruturais-da-aplicacao-da-fronteira-eficiente/",
+      "publicado": "2026-08-03T14:15:38+00:00",
+      "resumo": "A fronteira eficiente de Markowitz é uma das ideias mais influentes da literatura acadêmica em finanças. O modelo serviu de base para a Teoria Moderna do Portfólio, estabeleceu a variância (ou volatilidade) como principal medida de risco de mercado e rendeu ao seu formulador o Prêmio Nobel de Economia em 1990, conforme apresentado em uma […] The post View of the Week – Os desafios estruturais da...",
+      "fonte": "Turim",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "Acquired – Netflix",
+      "link": "https://www.turimbr.com/publicacoes/insights/acquired-netflix/",
+      "publicado": "2026-07-30T18:02:26+00:00",
+      "resumo": "Acquired: Nike é a nossa Dica Turim deste mês. No episódio dedicado à Nike, os apresentadores Ben Gilbert e David Rosenthal revisitam a trajetória da companhia desde sua fundação por Phil Knight e Bill Bowerman até sua consolidação como uma das marcas mais valiosas do mundo. Com ampla pesquisa e análise, o episódio revela os […] The post Acquired – Netflix appeared first on TURIM .",
+      "fonte": "Turim",
+      "secao": "brasil"
+    },
+    {
+      "titulo": "View of the Week – Começar cedo ou investir por mais tempo?",
+      "link": "https://www.turimbr.com/publicacoes/insights/view-of-the-week-comecar-cedo-ou-investir-por-mais-tempo/",
+      "publicado": "2026-07-27T12:58:43+00:00",
+      "resumo": "O que pesa mais na construção de patrimônio: por quanto tempo você investe ou quando começa a investir? A resposta não é óbvia e está diretamente relacionada à forma como o tempo potencializa os efeitos dos juros compostos. Considere um exemplo didático com dois irmãos gêmeos que adotaram estratégias de investimento diferentes. O primeiro realiza […] The post View of the Week – Começar cedo ou...",
+      "fonte": "Turim",
+      "secao": "brasil"
+    }
+  ],
+  "descartados_por_repeticao": 0,
+  "fontes_com_erro": [
+    {
+      "fonte": "Dolar (USD/BRL)",
+      "erro": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "fonte": "Euro (EUR/BRL)",
+      "erro": "HTTPError: HTTP Error 429: Too Many Requests"
+    }
+  ]
+}

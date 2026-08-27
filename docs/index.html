@@ -1,0 +1,424 @@
+<title>Daily Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ink: #0c1622;
+    --surface: #142236;
+    --surface-2: #1a2c44;
+    --line: rgba(233, 240, 248, 0.09);
+    --line-strong: rgba(233, 240, 248, 0.16);
+    --text: #eef2f8;
+    --text-soft: #a9b8ca;
+    --text-faint: #6f8098;
+    --amber: #e6ad4d;
+    --amber-soft: #f0c274;
+    --teal: #5fb3a3;
+    --up: #6cbf7a;
+    --down: #e08a7d;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-font-smoothing: antialiased; }
+
+  body {
+    background: var(--ink);
+    background-image:
+      radial-gradient(ellipse 900px 500px at 18% -10%, rgba(230,173,77,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(95,179,163,0.07), transparent 60%);
+    color: var(--text);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .wrap {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 0 22px 90px;
+  }
+
+  /* ---------------- topo ---------------- */
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 68px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .kicker .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 0 3px rgba(230,173,77,0.18);
+  }
+
+  h1 {
+    font-family: Newsreader, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 7vw, 3.4rem);
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    margin: 18px 0 0;
+    text-wrap: balance;
+  }
+  h1 em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--amber-soft);
+  }
+
+  .dek {
+    font-size: 1.06rem;
+    color: var(--text-soft);
+    max-width: 46ch;
+    margin: 18px 0 0;
+  }
+  .dek strong { color: var(--text); font-weight: 600; }
+
+  /* ---------------- ticker ---------------- */
+  .ticker {
+    margin-top: 34px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .ticker-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--line);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .ticker-head b { color: var(--text-soft); font-weight: 500; }
+  .ticker-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 14px;
+    padding: 9px 16px;
+    font-size: 0.86rem;
+    border-top: 1px solid var(--line);
+  }
+  .ticker-row:first-of-type { border-top: none; }
+  .ticker-row .nome { color: var(--text-soft); }
+  .ticker-row .valor {
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+  }
+  .ticker-row .var {
+    font-family: "IBM Plex Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    min-width: 58px;
+  }
+  .var.up { color: var(--up); }
+  .var.down { color: var(--down); }
+
+  .ticker-item {
+    padding: 16px;
+    border-top: 1px solid var(--line);
+  }
+  .ticker-item .tit {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 5px;
+  }
+  .ticker-item .txt {
+    font-size: 0.86rem;
+    color: var(--text-soft);
+    margin: 0;
+  }
+  .ticker-item .txt b { color: var(--amber-soft); font-weight: 600; }
+
+  /* ---------------- formulario ---------------- */
+  .signup {
+    margin-top: 40px;
+  }
+  .signup h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 14px;
+  }
+
+  form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  input[type="email"] {
+    flex: 1 1 260px;
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    border-radius: 5px;
+    color: var(--text);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.98rem;
+    padding: 14px 16px;
+    outline: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  input[type="email"]::placeholder { color: var(--text-faint); }
+  input[type="email"]:focus {
+    border-color: var(--amber);
+    background: var(--surface-2);
+  }
+  input[type="email"]:invalid:not(:placeholder-shown) {
+    border-color: var(--down);
+  }
+
+  button {
+    background: var(--amber);
+    color: #241705;
+    border: none;
+    border-radius: 5px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.98rem;
+    font-weight: 600;
+    padding: 14px 24px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+    white-space: nowrap;
+  }
+  button:hover { background: var(--amber-soft); }
+  button:active { transform: translateY(1px); }
+  button:focus-visible {
+    outline: 2px solid var(--amber-soft);
+    outline-offset: 2px;
+  }
+  button:disabled { opacity: 0.6; cursor: default; }
+
+  .microcopy {
+    margin-top: 12px;
+    font-size: 0.82rem;
+    color: var(--text-faint);
+  }
+
+  .estado {
+    margin-top: 16px;
+    padding: 13px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: none;
+    align-items: center;
+    gap: 9px;
+  }
+  .estado.mostrar { display: flex; }
+  .estado.ok { background: rgba(108,191,122,0.1); border: 1px solid rgba(108,191,122,0.28); color: var(--up); }
+  .estado.erro { background: rgba(224,138,125,0.1); border: 1px solid rgba(224,138,125,0.28); color: var(--down); }
+
+  /* ---------------- o que vem ---------------- */
+  .secoes {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .secao {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 16px;
+    background: var(--ink);
+    padding: 15px 18px;
+  }
+  .secao .id {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    color: var(--text-faint);
+    padding-top: 2px;
+  }
+  .secao .nome { font-weight: 600; font-size: 0.94rem; }
+  .secao .desc { font-size: 0.86rem; color: var(--text-soft); margin-top: 2px; }
+
+  /* ---------------- rodape ---------------- */
+  footer {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    font-size: 0.82rem;
+    color: var(--text-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media (max-width: 480px) {
+    form { flex-direction: column; }
+    button { width: 100%; }
+    .secao { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .aparece {
+      animation: subir 0.5s ease both;
+    }
+    .aparece:nth-of-type(2) { animation-delay: 0.06s; }
+    .aparece:nth-of-type(3) { animation-delay: 0.12s; }
+  }
+  @keyframes subir {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<div class="wrap">
+
+  <div class="kicker"><span class="dot"></span>07:07 · todo dia, sem exceção</div>
+
+  <h1>As notícias que <em>importam</em>,<br>antes da sua primeira reunião.</h1>
+
+  <p class="dek">
+    Mercado, Brasil, mundo e tech — resumidos em <strong>5 minutos de leitura</strong>,
+    com o número certo em cada frase. Nada de "cenário cada vez mais dinâmico".
+  </p>
+
+  <div class="ticker aparece">
+    <div class="ticker-head"><span>mercado de hoje</span><b>26/08</b></div>
+    <div class="ticker-row">
+      <span class="nome">Ibovespa</span>
+      <span class="valor">175.142</span>
+      <span class="var up">▲ 0,32%</span>
+    </div>
+    <div class="ticker-row">
+      <span class="nome">Dólar</span>
+      <span class="valor">R$ 5,1627</span>
+      <span class="var up">▲ 0,30%</span>
+    </div>
+    <div class="ticker-row">
+      <span class="nome">S&amp;P 500</span>
+      <span class="valor">7.679,37</span>
+      <span class="var up">▲ 0,03%</span>
+    </div>
+    <div class="ticker-item">
+      <p class="tit">IPCA-15 recua 0,40% em agosto</p>
+      <p class="txt">Um resultado deflacionário na prévia amplia o espaço do argumento de quem defende <b>corte de juros</b> — e é o dado que os presidenciáveis vão citar.</p>
+    </div>
+  </div>
+
+  <div class="signup aparece">
+    <h2>Receber todo dia</h2>
+    <form id="form-inscricao" autocomplete="off">
+      <input type="email" id="campo-email" placeholder="seu@email.com" required>
+      <button type="submit" id="botao-enviar">Inscrever</button>
+    </form>
+    <p class="microcopy">Sem spam. Um email por dia, às 07h. Cancele quando quiser.</p>
+    <div class="estado" id="estado-msg"></div>
+  </div>
+
+  <div class="secoes aparece">
+    <div class="secao">
+      <div class="id">brasil</div>
+      <div><div class="nome">Brasil</div><div class="desc">Selic, IPCA, câmbio, Ibovespa, fiscal.</div></div>
+    </div>
+    <div class="secao">
+      <div class="id">global</div>
+      <div><div class="nome">Global</div><div class="desc">Fed, treasuries, S&amp;P, dólar, petróleo.</div></div>
+    </div>
+    <div class="secao">
+      <div class="id">mundo</div>
+      <div><div class="nome">Mundo</div><div class="desc">Geopolítica, eleições, comércio internacional.</div></div>
+    </div>
+    <div class="secao">
+      <div class="id">tech</div>
+      <div><div class="nome">Tech e Cripto</div><div class="desc">Big techs, IA, funding, mercado cripto.</div></div>
+    </div>
+  </div>
+
+  <footer>
+    <span>Curadoria automatizada · nenhum conselho de investimento</span>
+    <span>enviado por um amigo, não por uma empresa</span>
+  </footer>
+
+</div>
+
+<script>
+  // Wiring real: conecta ao Google Forms assim que os dois links chegarem.
+  // Ate la, valida e mostra a confirmacao sem gravar nada de verdade.
+  const FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSfwGbUgCY8ughSceS1Ih_RtJTFLvEC5zLZd0POc6o_rMfamfA/formResponse";
+  const FIELD_EMAIL = "entry.153874878";
+
+  const form = document.getElementById("form-inscricao");
+  const campo = document.getElementById("campo-email");
+  const botao = document.getElementById("botao-enviar");
+  const estado = document.getElementById("estado-msg");
+
+  function mostrarEstado(tipo, texto) {
+    estado.className = "estado mostrar " + tipo;
+    estado.textContent = texto;
+  }
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    const email = campo.value.trim();
+    if (!email || !campo.checkValidity()) {
+      mostrarEstado("erro", "Verifique o formato do email.");
+      return;
+    }
+
+    botao.disabled = true;
+    botao.textContent = "Enviando…";
+
+    if (!FORM_ACTION || !FIELD_EMAIL) {
+      // modo previa: sem backend ligado ainda.
+      setTimeout(function () {
+        mostrarEstado("ok", "Prévia — a inscrição real liga assim que o formulário for conectado.");
+        botao.disabled = false;
+        botao.textContent = "Inscrever";
+        campo.value = "";
+      }, 500);
+      return;
+    }
+
+    const iframeNome = "alvo-oculto";
+    let iframe = document.querySelector('iframe[name="' + iframeNome + '"]');
+    if (!iframe) {
+      iframe = document.createElement("iframe");
+      iframe.name = iframeNome;
+      iframe.style.display = "none";
+      document.body.appendChild(iframe);
+    }
+
+    const envio = document.createElement("form");
+    envio.action = FORM_ACTION;
+    envio.method = "POST";
+    envio.target = iframeNome;
+    envio.style.display = "none";
+    const input = document.createElement("input");
+    input.name = FIELD_EMAIL;
+    input.value = email;
+    envio.appendChild(input);
+    document.body.appendChild(envio);
+    envio.submit();
+    envio.remove();
+
+    setTimeout(function () {
+      mostrarEstado("ok", "Inscrito! O primeiro email chega no próximo dia útil, às 07h.");
+      botao.disabled = false;
+      botao.textContent = "Inscrever";
+      campo.value = "";
+    }, 700);
+  });
+</script>
