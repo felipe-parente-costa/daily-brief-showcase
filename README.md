@@ -3,6 +3,25 @@
 Resumo diário por email: mercado, notícias mundiais e as newsletters que você assina.
 Chega às 07:00, em cinco seções — números, Brasil, Global, Mundo, Tech e Cripto.
 
+**[▶ Ver a página de inscrição no ar](https://felipe-parente-costa.github.io/daily-brief-showcase/)**
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://felipe-parente-costa.github.io/daily-brief-showcase/">
+<img src="docs/img/landing.png" alt="Página de inscrição do Daily Brief">
+</a>
+<p align="center"><em>A página de inscrição</em></p>
+</td>
+<td width="50%" valign="top">
+<a href="data/briefs/2026-08-26.html">
+<img src="docs/img/email.png" alt="Exemplo do email do Daily Brief, edição de 26/08/2026">
+</a>
+<p align="center"><em>O email que chega às 07:00 — <a href="data/briefs/2026-08-26.html">edição real de 26/08</a></em></p>
+</td>
+</tr>
+</table>
+
 > **Este repositório é vitrine.** O código é o real, roda de verdade — mas a instância
 > que efetivamente me envia o email todo dia mora num repositório privado (tem meu
 > email e o histórico das minhas leituras, por isso fica fora daqui). Aqui você encontra
