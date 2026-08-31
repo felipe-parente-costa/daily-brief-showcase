@@ -44,6 +44,13 @@ def _alias_padrao(usuario):
 
 
 CHAVE_DO_PROVEDOR = {"gemini": "GEMINI_API_KEY", "anthropic": "ANTHROPIC_API_KEY"}
+VERDADEIROS = ("1", "true", "yes", "on")
+
+
+def _ligado(nome):
+    """O GitHub manda input booleano nao marcado como a string "false", entao
+    checar so "a variavel existe" acionaria a flag sem querer."""
+    return os.environ.get(nome, "").strip().lower() in VERDADEIROS
 
 
 def _ambiente():
@@ -67,6 +74,18 @@ def _ambiente():
         "provedor": provedor,
         "modelo": os.environ.get("BRIEF_MODELO", "").strip() or None,
         "sheet_id": os.environ.get("BRIEF_SUBSCRIBERS_SHEET_ID", "").strip() or None,
+        # Teste: gera e manda o brief real, mas so para o dono. Nao toca na
+        # planilha e nao registra em seen.json - assim o envio de verdade do
+        # dia acontece normalmente depois, para todo mundo.
+        "so_dono": _ligado("BRIEF_SO_DONO"),
+        # So vale em modo teste: finge uma lista de inscritos. Serve para
+        # exercitar o caminho de varios destinatarios (que e onde o Bcc
+        # vazava) usando aliases da propria caixa, sem enviar para ninguem.
+        "amigos_teste": [
+            e.strip()
+            for e in os.environ.get("BRIEF_AMIGOS_TESTE", "").split(",")
+            if e.strip()
+        ],
     }
 
 
@@ -146,7 +165,7 @@ def _ja_enviado_hoje(hoje):
     workflow_dispatch nao e marcado - por isso comparar contra um conjunto
     de valores verdadeiros, nunca so "a variavel existe".
     """
-    if os.environ.get("BRIEF_FORCE", "").strip().lower() in ("1", "true", "yes", "on"):
+    if _ligado("BRIEF_FORCE") or _ligado("BRIEF_SO_DONO"):
         return False
     vistos = pipeline.carregar_vistos()
     return bool(vistos.get(hoje))
@@ -187,30 +206,45 @@ def executar():
     if pipeline.validar(caminho) != 0:
         raise RuntimeError("o brief nao passou no --validar depois da poda")
 
-    caminho.with_suffix(".html").write_text(render.renderizar(brief), encoding="utf-8")
-    texto = render.renderizar_texto(brief)
+    # O contato do rodape e o mesmo endereco que envia: sem servidor, o pedido
+    # de descadastro chega como email comum. Ver mailer._montar.
+    corpo_html = render.renderizar(brief, contato=env["usuario"])
+    caminho.with_suffix(".html").write_text(corpo_html, encoding="utf-8")
+    texto = render.renderizar_texto(brief, contato=env["usuario"])
     caminho.with_suffix(".txt").write_text(texto, encoding="utf-8")
 
     # Amigos inscritos pelo formulario tambem sao bonus: planilha fora do ar
     # nao pode impedir o dono de receber o proprio brief.
     amigos = []
-    if env["sheet_id"]:
+    if env["so_dono"]:
+        amigos = env["amigos_teste"]
+        alvo = f"o dono + {len(amigos)} endereco(s) de teste" if amigos else "so o dono"
+        print(f"MODO TESTE (BRIEF_SO_DONO): enviando para {alvo}, sem tocar na planilha")
+    elif env["sheet_id"]:
         try:
             amigos = subscribers.buscar(env["sheet_id"], excluir=[env["destino"]])
             print(f"inscritos: {len(amigos)}")
         except Exception as erro:
             print(f"lista de inscritos indisponivel ({erro}) - enviando so para o dono")
 
-    mailer.enviar(
+    enviados, falhas = mailer.enviar(
         env["usuario"],
         env["senha"],
         env["destino"],
         brief["assunto"],
-        render.renderizar(brief),
+        corpo_html,
         texto,
         ocultos=amigos,
     )
-    print(f"enviado para {1 + len(amigos)} destinatario(s): {brief['assunto']}")
+    print(f"enviado para {len(enviados)} destinatario(s): {brief['assunto']}")
+    for endereco, erro in falhas:
+        print(f"falhou para {endereco}: {erro}")
+
+    if env["so_dono"]:
+        # Nao registra: o envio de verdade do dia ainda tem que acontecer para
+        # todo mundo. Marcar aqui faria a trava bloquear o envio real depois.
+        print("MODO TESTE: seen.json intocado - o envio normal do dia segue valendo")
+        return 0
 
     # Sem isto o brief de amanha repete as manchetes de hoje.
     print(f"registrados {pipeline.marcar_vistos(caminho)} links em seen.json")

@@ -32,8 +32,11 @@ MAX_TOKENS = 32000
 # Sobrecarga do lado do Google e comum e temporaria ("high demand", 500/503).
 # Numa tarefa diaria sem ninguem por perto isso nao pode derrubar a edicao:
 # tenta de novo, depois cai para outro Flash - todos no mesmo free tier.
-CADEIA_GEMINI = ["gemini-3.7-flash", "gemini-3.5-flash", "gemini-2.5-flash"]
-TENTATIVAS = 2
+# gemini-2.5-flash saiu do ar para contas novas (404 "no longer available")
+# e derrubou a cadeia inteira em 31/08/2026 - o ultimo degrau nao existia mais.
+# Modelo aposentado nao avisa antes: se um dia der 404 aqui, e so trocar o nome.
+CADEIA_GEMINI = ["gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash"]
+TENTATIVAS = 3
 ESPERA_BASE = 20
 MARCAS_TRANSITORIAS = (
     "high demand",
@@ -44,6 +47,18 @@ MARCAS_TRANSITORIAS = (
     "resource has been exhausted",
     "deadline exceeded",
     "internal error",
+    # Queda de conexao no meio da chamada e o caso mais transitorio que existe,
+    # mas chega como texto de socket, sem codigo HTTP nenhum - sem estas marcas
+    # era tratada como erro permanente e o modelo perdia a vez sem retentar.
+    "connection reset",
+    "connection aborted",
+    "connection error",
+    "broken pipe",
+    "timed out",
+    "timeout",
+    "eof occurred",
+    "remote end closed",
+    "server disconnected",
 )
 
 REGRAS = """Voce e o editor de um brief diario por email, com um leitor so.
@@ -144,6 +159,10 @@ def _material(pacote, cartas):
 
 def _transitorio(erro):
     """Sobrecarga e cota passam; schema errado e chave invalida, nao."""
+    # Erro de socket vem como excecao do sistema, sem codigo nem mensagem util.
+    # E sempre vale retentar: nada do lado do pedido mudou.
+    if isinstance(erro, (ConnectionError, TimeoutError)):
+        return True
     codigo = getattr(erro, "code", None) or getattr(erro, "status_code", None)
     if codigo in (429, 500, 502, 503, 504):
         return True

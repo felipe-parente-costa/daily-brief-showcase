@@ -167,21 +167,42 @@ def bloco_newsletters(nomes):
     )
 
 
-def rodape(brief):
+def _link_descadastro(contato):
+    """mailto: de saida, para o corpo e para o cabecalho List-Unsubscribe.
+
+    Nao ha servidor para processar o clique: o pedido chega como email e sai da
+    planilha na mao. Feio, mas e o unico caminho gratuito - e a existencia do
+    link e o que o filtro de spam olha, nao a automacao por tras dele.
+    """
+    return f"mailto:{contato}?subject=Descadastrar%20do%20Daily%20Brief"
+
+
+def rodape(brief, contato=None):
     partes = [f'Gerado em {e(brief.get("gerado_em", ""))}.']
     erros = brief.get("fontes_com_erro") or []
     if erros:
         nomes = ", ".join(e(x["fonte"]) for x in erros)
         partes.append(f'Fontes indisponíveis nesta edição: {nomes}.')
+    # Um link de saida visivel e um dos sinais que Gmail e Outlook usam para
+    # separar "lista que a pessoa pediu" de disparo em massa. Sem ele, a mesma
+    # mensagem indo para dezenas de enderecos parece spam - e foi para o spam.
+    # O cabecalho List-Unsubscribe, em mailer.py, e o par deste link.
+    saida = ""
+    if contato:
+        saida = (
+            f'<br>Você recebe este email porque se inscreveu. '
+            f'<a href="{e(_link_descadastro(contato))}" style="color:{SUAVE};">'
+            f'Descadastrar</a>.'
+        )
     return (
         f'<div style="{FONTE}font-size:11px;color:{SUAVE};line-height:1.6;'
         f'border-top:1px solid {BORDA};margin-top:22px;padding-top:12px;">'
         f'{" ".join(partes)}<br>Resumo automatizado de fontes públicas e newsletters '
-        f'assinadas. Não é recomendação de investimento.</div>'
+        f'assinadas. Não é recomendação de investimento.{saida}</div>'
     )
 
 
-def renderizar(brief):
+def renderizar(brief, contato=None):
     secoes = "".join(bloco_secao(s) for s in brief.get("secoes", []))
     corpo = (
         f'<div style="{FONTE}font-size:16px;line-height:1.55;color:{TINTA};'
@@ -189,7 +210,7 @@ def renderizar(brief):
         f'{tabela_mercado(brief.get("mercado", []))}'
         f'{secoes}'
         f'{bloco_newsletters(brief.get("newsletters_lidas"))}'
-        f'{rodape(brief)}'
+        f'{rodape(brief, contato)}'
     )
     return (
         f'<div style="background:{FUNDO};padding:20px 0;margin:0;">'
@@ -208,7 +229,7 @@ def renderizar(brief):
     )
 
 
-def renderizar_texto(brief):
+def renderizar_texto(brief, contato=None):
     """Alternativa em texto puro, para cliente de email sem HTML."""
     linhas = ["DAILY BRIEF", data_extensa(brief["data"]), "", sem_marcadores(brief.get("abertura", "")), ""]
     for i in brief.get("mercado", []):
@@ -228,6 +249,9 @@ def renderizar_texto(brief):
         linhas += ["NEWSLETTERS LIDAS HOJE"] + [f'- {n}' for n in brief["newsletters_lidas"]]
     linhas += ["", "Resumo automatizado de fontes públicas e newsletters assinadas.",
                "Não é recomendação de investimento."]
+    if contato:
+        linhas += ["", "Você recebe este email porque se inscreveu.",
+                   "Para sair, responda a este email com o assunto: Descadastrar"]
     return "\n".join(linhas)
 
 
