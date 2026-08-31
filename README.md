@@ -38,9 +38,14 @@ Quatro estágios. Só um deles usa modelo de linguagem, e é o único que precis
 | Estágio | Quem faz | O quê |
 |---|---|---|
 | 1. Coleta | `pipeline.py` | 16 feeds RSS + 13 indicadores de mercado → `data/raw/AAAA-MM-DD.json` |
-| 2. Curadoria | Claude | lê o raw + as newsletters, filtra, escreve → `data/briefs/AAAA-MM-DD.json` |
+| 2. Curadoria | Claude **ou** Gemini, a depender da rota (veja abaixo) | lê o raw + as newsletters, filtra, escreve → `data/briefs/AAAA-MM-DD.json` |
 | 3. Render | `render.py` | brief JSON → HTML e TXT do email |
-| 4. Envio | Claude ou `mailer.py` | manda para a sua caixa e registra o que saiu |
+| 4. Envio | Claude **ou** `mailer.py`, a depender da rota (veja abaixo) | manda para a sua caixa e registra o que saiu |
+
+A instância que roda de verdade (a que gera os `data/briefs/` deste repositório)
+usa a **rota autônoma**: Gemini na curadoria, `mailer.py` no envio, disparada
+pelo GitHub Actions sem ninguém por perto. "Claude" nas linhas acima é a
+outra rota, a interativa - explicada a seguir.
 
 Buscar feed e cotação é trabalho de script: mais barato, mais rápido, e quando quebra
 você vê exatamente onde. O modelo entra só na triagem e na redação.
