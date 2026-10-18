@@ -139,6 +139,27 @@ h1 {
 .lede { margin: 0; max-width: 54ch; font-size: 16px; color: var(--muted); }
 .lede b { color: var(--ink); font-weight: 600; }
 
+/* Chamada para quem chega pelo status e ainda nao assina. */
+.assinar { margin: 16px 0 0; }
+.assinar a {
+  display: inline-block;
+  padding: 9px 16px;
+  border: 1px solid var(--navy);
+  background: color-mix(in srgb, var(--navy) 9%, transparent);
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--data);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: background 140ms ease;
+}
+.assinar a:hover { background: color-mix(in srgb, var(--navy) 18%, transparent); }
+.assinar a:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+
+footer a { color: inherit; }
+
 .postmark { width: 128px; height: 128px; transform: rotate(-8deg); opacity: 0.9; justify-self: start; }
 @media (min-width: 720px) { .postmark { justify-self: end; } }
 .postmark text { font-family: var(--data); fill: var(--selo); font-weight: 600; }
