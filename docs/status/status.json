@@ -1,0 +1,1441 @@
+{
+ "gerado_em": "2026-10-18T12:27:18-03:00",
+ "projeto": {
+  "primeira_edicao": "2026-08-26",
+  "edicoes": 54,
+  "itens_curados": 611,
+  "feeds": 16,
+  "indicadores": 13,
+  "janela_horas": 30,
+  "leitores": 14,
+  "sequencia": 54
+ },
+ "hoje": {
+  "data": "2026-10-18",
+  "entregue": true,
+  "aviso_de_falha": false,
+  "destinatarios": null,
+  "hora": "07:22",
+  "curado_por": null
+ },
+ "ultima_edicao": {
+  "data": "2026-10-18",
+  "numero": 54,
+  "assunto": "Daily Brief - 18/10 - Infraestrutura de IA sob escrutínio",
+  "abertura": "O racha nas ações de tecnologia se aprofunda com o ceticismo sobre o retorno da infraestrutura de IA, enquanto Treasuries elevados mantêm a renda fixa sob alerta. No Brasil, o agronegócio monitora a concorrência chinesa que avança com frango até **20%** mais barato nos mercados internacionais.",
+  "itens": 12,
+  "secoes": [
+   {
+    "titulo": "Brasil",
+    "itens": 3
+   },
+   {
+    "titulo": "Global",
+    "itens": 3
+   },
+   {
+    "titulo": "Mundo",
+    "itens": 3
+   },
+   {
+    "titulo": "Tech e Cripto",
+    "itens": 3
+   }
+  ],
+  "newsletters": 2
+ },
+ "mercado": [
+  {
+   "nome": "Ibovespa",
+   "grupo": "brasil",
+   "valor": "205.430",
+   "variacao_pct": 0.54
+  },
+  {
+   "nome": "S&P 500",
+   "grupo": "global",
+   "valor": "7.659,44",
+   "variacao_pct": -1.09
+  },
+  {
+   "nome": "Nasdaq",
+   "grupo": "global",
+   "valor": "26.140,03",
+   "variacao_pct": -2.15
+  },
+  {
+   "nome": "Treasury 10a",
+   "grupo": "global",
+   "valor": "5,098%",
+   "variacao_pct": 0.18
+  },
+  {
+   "nome": "Dolar (DXY)",
+   "grupo": "global",
+   "valor": "101,78",
+   "variacao_pct": -0.22
+  },
+  {
+   "nome": "Petroleo WTI",
+   "grupo": "commodity",
+   "valor": "US$ 99,02",
+   "variacao_pct": 1.07
+  },
+  {
+   "nome": "Ouro",
+   "grupo": "commodity",
+   "valor": "US$ 4.181,10",
+   "variacao_pct": 0.26
+  },
+  {
+   "nome": "Bitcoin",
+   "grupo": "cripto",
+   "valor": "US$ 82.101",
+   "variacao_pct": 0.71
+  },
+  {
+   "nome": "Ethereum",
+   "grupo": "cripto",
+   "valor": "US$ 2.421,12",
+   "variacao_pct": -0.45
+  }
+ ],
+ "secoes": {
+  "brasil": 171,
+  "global": 146,
+  "mundo": 122,
+  "tech": 172
+ },
+ "fontes": [
+  {
+   "nome": "G1 Economia",
+   "citacoes": 104
+  },
+  {
+   "nome": "Financial Times",
+   "citacoes": 102
+  },
+  {
+   "nome": "TechCrunch",
+   "citacoes": 85
+  },
+  {
+   "nome": "CNBC",
+   "citacoes": 70
+  },
+  {
+   "nome": "BBC World",
+   "citacoes": 68
+  },
+  {
+   "nome": "CNBC Top News",
+   "citacoes": 66
+  },
+  {
+   "nome": "CNBC World",
+   "citacoes": 65
+  },
+  {
+   "nome": "The Verge",
+   "citacoes": 63
+  },
+  {
+   "nome": "InfoMoney",
+   "citacoes": 58
+  },
+  {
+   "nome": "WSJ Markets",
+   "citacoes": 49
+  },
+  {
+   "nome": "NeoFeed",
+   "citacoes": 40
+  },
+  {
+   "nome": "Brazil Journal",
+   "citacoes": 40
+  },
+  {
+   "nome": "MarketWatch",
+   "citacoes": 19
+  },
+  {
+   "nome": "G1",
+   "citacoes": 19
+  }
+ ],
+ "newsletters": [
+  {
+   "nome": "Market Makers",
+   "edicoes": 35
+  },
+  {
+   "nome": "Apollo",
+   "edicoes": 24
+  },
+  {
+   "nome": "Torsten Slok",
+   "edicoes": 12
+  },
+  {
+   "nome": "CompoundLetter",
+   "edicoes": 11
+  },
+  {
+   "nome": "Bain & Company",
+   "edicoes": 7
+  },
+  {
+   "nome": "Boston Consulting Group",
+   "edicoes": 6
+  },
+  {
+   "nome": "Chamath Palihapitiya",
+   "edicoes": 5
+  },
+  {
+   "nome": "GaryVee",
+   "edicoes": 4
+  },
+  {
+   "nome": "Apollo Global Management",
+   "edicoes": 4
+  },
+  {
+   "nome": "Ray Dalio",
+   "edicoes": 3
+  }
+ ],
+ "saude_fontes": [
+  {
+   "nome": "Dolar (USD/BRL)",
+   "secao": "brasil",
+   "tipo": "mercado",
+   "falhas": 30,
+   "dias": 30
+  },
+  {
+   "nome": "Euro (EUR/BRL)",
+   "secao": "brasil",
+   "tipo": "mercado",
+   "falhas": 30,
+   "dias": 30
+  },
+  {
+   "nome": "Yahoo Finance",
+   "secao": "global",
+   "tipo": "feed",
+   "falhas": 13,
+   "dias": 30
+  },
+  {
+   "nome": "IPCA (mensal)",
+   "secao": "brasil",
+   "tipo": "mercado",
+   "falhas": 3,
+   "dias": 30
+  },
+  {
+   "nome": "Selic (meta)",
+   "secao": "brasil",
+   "tipo": "mercado",
+   "falhas": 3,
+   "dias": 30
+  },
+  {
+   "nome": "NeoFeed",
+   "secao": "brasil",
+   "tipo": "feed",
+   "falhas": 1,
+   "dias": 30
+  },
+  {
+   "nome": "BBC World",
+   "secao": "mundo",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Bitcoin",
+   "secao": "cripto",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Brazil Journal",
+   "secao": "brasil",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "CNBC Top News",
+   "secao": "global",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "CNBC World",
+   "secao": "mundo",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Dolar (DXY)",
+   "secao": "global",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Ethereum",
+   "secao": "cripto",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Federal Reserve",
+   "secao": "global",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Financial Times",
+   "secao": "global",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "G1 Economia",
+   "secao": "brasil",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Ibovespa",
+   "secao": "brasil",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "InfoMoney",
+   "secao": "brasil",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "MarketWatch",
+   "secao": "global",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Nasdaq",
+   "secao": "global",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Ouro",
+   "secao": "commodity",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Petroleo WTI",
+   "secao": "commodity",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "S&P 500",
+   "secao": "global",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "TechCrunch",
+   "secao": "tech",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "The Economist",
+   "secao": "mundo",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "The Verge",
+   "secao": "tech",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Treasury 10a",
+   "secao": "global",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Turim",
+   "secao": "brasil",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "WSJ Markets",
+   "secao": "global",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  }
+ ],
+ "historico": [
+  {
+   "data": "2026-08-26",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-08-27",
+   "itens": 11,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 1,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-08-28",
+   "itens": 14,
+   "secoes": {
+    "brasil": 5,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-08-29",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 1,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-08-30",
+   "itens": 8,
+   "secoes": {
+    "brasil": 3,
+    "global": 1,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-08-31",
+   "itens": 12,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-01",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-02",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 1,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-03",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-04",
+   "itens": 10,
+   "secoes": {
+    "brasil": 2,
+    "global": 2,
+    "mundo": 2,
+    "tech": 4
+   },
+   "newsletters": 6,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-05",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-06",
+   "itens": 9,
+   "secoes": {
+    "brasil": 2,
+    "global": 3,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-07",
+   "itens": 7,
+   "secoes": {
+    "global": 3,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-08",
+   "itens": 8,
+   "secoes": {
+    "brasil": 1,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-09",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 1,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-10",
+   "itens": 11,
+   "secoes": {
+    "brasil": 4,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-11",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 1,
+    "tech": 3
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-12",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-13",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 4
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-14",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-15",
+   "itens": 14,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-16",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-17",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-18",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-19",
+   "itens": 11,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 1,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-20",
+   "itens": 9,
+   "secoes": {
+    "brasil": 2,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-21",
+   "itens": 12,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-22",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 1,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-23",
+   "itens": 11,
+   "secoes": {
+    "brasil": 2,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-24",
+   "itens": 19,
+   "secoes": {
+    "brasil": 5,
+    "global": 4,
+    "mundo": 5,
+    "tech": 5
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-25",
+   "itens": 12,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-26",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 1,
+    "mundo": 2,
+    "tech": 4
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-27",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-28",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-29",
+   "itens": 14,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-09-30",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-01",
+   "itens": 14,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 3,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-02",
+   "itens": 13,
+   "secoes": {
+    "brasil": 3,
+    "global": 4,
+    "mundo": 2,
+    "tech": 4
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-03",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-04",
+   "itens": 10,
+   "secoes": {
+    "brasil": 2,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-05",
+   "itens": 15,
+   "secoes": {
+    "brasil": 4,
+    "global": 4,
+    "mundo": 4,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-06",
+   "itens": 18,
+   "secoes": {
+    "brasil": 5,
+    "global": 4,
+    "mundo": 4,
+    "tech": 5
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-07",
+   "itens": 12,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 1,
+    "tech": 4
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-08",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-09",
+   "itens": 15,
+   "secoes": {
+    "brasil": 5,
+    "global": 4,
+    "mundo": 2,
+    "tech": 4
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-10",
+   "itens": 10,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-11",
+   "itens": 13,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-12",
+   "itens": 9,
+   "secoes": {
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-13",
+   "itens": 14,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-14",
+   "itens": 19,
+   "secoes": {
+    "brasil": 5,
+    "global": 5,
+    "mundo": 4,
+    "tech": 5
+   },
+   "newsletters": 4,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-15",
+   "itens": 12,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 5,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-16",
+   "itens": 11,
+   "secoes": {
+    "brasil": 4,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-17",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  },
+  {
+   "data": "2026-10-18",
+   "itens": 12,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": null,
+   "curado_por": null
+  }
+ ],
+ "edicoes": [
+  {
+   "data": "2026-08-26",
+   "assunto": "Daily Brief - 26/08 - Nvidia bate recorde e prévia do IPCA traz deflação",
+   "itens": 11,
+   "arquivo": "edicoes/2026-08-26.html"
+  },
+  {
+   "data": "2026-08-27",
+   "assunto": "Daily Brief - 27/08 - Nvidia brilha e desemprego cai",
+   "itens": 11,
+   "arquivo": "edicoes/2026-08-27.html"
+  },
+  {
+   "data": "2026-08-28",
+   "assunto": "Daily Brief - 28/08 - Geopolítica e insolvência corporativa",
+   "itens": 14,
+   "arquivo": "edicoes/2026-08-28.html"
+  },
+  {
+   "data": "2026-08-29",
+   "assunto": "Daily Brief - 29/08 - Fed endurece tom e vagas desaceleram",
+   "itens": 9,
+   "arquivo": "edicoes/2026-08-29.html"
+  },
+  {
+   "data": "2026-08-30",
+   "assunto": "Daily Brief - 30/08 - Correios, tarifas do split payment e petróleo venezuelano",
+   "itens": 8,
+   "arquivo": "edicoes/2026-08-30.html"
+  },
+  {
+   "data": "2026-08-31",
+   "assunto": "Daily Brief - 31/08 - Tensão no Oriente Médio e Orçamento 2027",
+   "itens": 12,
+   "arquivo": "edicoes/2026-08-31.html"
+  },
+  {
+   "data": "2026-09-01",
+   "assunto": "Daily Brief - 01/09 - Tensão em Ormuz e Orçamento 2027",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-01.html"
+  },
+  {
+   "data": "2026-09-02",
+   "assunto": "Daily Brief - 02/09 - Disparo do Ibovespa e emprego americano",
+   "itens": 9,
+   "arquivo": "edicoes/2026-09-02.html"
+  },
+  {
+   "data": "2026-09-03",
+   "assunto": "Daily Brief - 03/09 - Embargo europeu e troca na CSN",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-03.html"
+  },
+  {
+   "data": "2026-09-04",
+   "assunto": "Daily Brief - 04/09 - Noruega corta Treasuries e reestruturação na VW",
+   "itens": 10,
+   "arquivo": "edicoes/2026-09-04.html"
+  },
+  {
+   "data": "2026-09-05",
+   "assunto": "Daily Brief - 05/09 - Payroll forte pressiona Fed e balança comercial bate recorde",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-05.html"
+  },
+  {
+   "data": "2026-09-06",
+   "assunto": "Daily Brief - 06/09 - Pressão no Fed e tensão no Golfo",
+   "itens": 9,
+   "arquivo": "edicoes/2026-09-06.html"
+  },
+  {
+   "data": "2026-09-07",
+   "assunto": "Daily Brief - 07/09 - China injeta US$ 54 bi e tensão no Golfo",
+   "itens": 7,
+   "arquivo": "edicoes/2026-09-07.html"
+  },
+  {
+   "data": "2026-09-08",
+   "assunto": "Daily Brief - 08/09 - Petróleo dispara e guerra tarifária",
+   "itens": 8,
+   "arquivo": "edicoes/2026-09-08.html"
+  },
+  {
+   "data": "2026-09-09",
+   "assunto": "Daily Brief - 09/09 - Petróleo a US$ 100 e choque geopolítico",
+   "itens": 9,
+   "arquivo": "edicoes/2026-09-09.html"
+  },
+  {
+   "data": "2026-09-10",
+   "assunto": "Daily Brief - 10/09 - BCE decide juros e petróleo pressiona",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-10.html"
+  },
+  {
+   "data": "2026-09-11",
+   "assunto": "Daily Brief - 11/09 - Alta do diesel e socorro aos Correios",
+   "itens": 9,
+   "arquivo": "edicoes/2026-09-11.html"
+  },
+  {
+   "data": "2026-09-12",
+   "assunto": "Daily Brief - 12/09 - Fraude no Master e Fed",
+   "itens": 9,
+   "arquivo": "edicoes/2026-09-12.html"
+  },
+  {
+   "data": "2026-09-13",
+   "assunto": "Daily Brief - 13/09 - Adiam-se IPOs de IA e fala sobre superávit repercute",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-13.html"
+  },
+  {
+   "data": "2026-09-14",
+   "assunto": "Daily Brief - 14/09 - Petróleo dispara com tensão em Ormuz",
+   "itens": 10,
+   "arquivo": "edicoes/2026-09-14.html"
+  },
+  {
+   "data": "2026-09-15",
+   "assunto": "Daily Brief - 15/09 - Alta dos juros globais e racha na IA",
+   "itens": 14,
+   "arquivo": "edicoes/2026-09-15.html"
+  },
+  {
+   "data": "2026-09-16",
+   "assunto": "Daily Brief - 16/09 - Superquarta traz decisões do Copom e Fed",
+   "itens": 10,
+   "arquivo": "edicoes/2026-09-16.html"
+  },
+  {
+   "data": "2026-09-17",
+   "assunto": "Daily Brief - 17/09 - Superquarta traz corte da Selic e alta do Fed",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-17.html"
+  },
+  {
+   "data": "2026-09-18",
+   "assunto": "Daily Brief - 18/09 - Bolsa Família e saída de Buffett",
+   "itens": 10,
+   "arquivo": "edicoes/2026-09-18.html"
+  },
+  {
+   "data": "2026-09-19",
+   "assunto": "Daily Brief - 19/09 - Diesel sobe e OpenAI projeta gastos bilionários",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-19.html"
+  },
+  {
+   "data": "2026-09-20",
+   "assunto": "Daily Brief - 20/09 - Financiamento oculto em IA e tensões no petróleo",
+   "itens": 9,
+   "arquivo": "edicoes/2026-09-20.html"
+  },
+  {
+   "data": "2026-09-21",
+   "assunto": "Daily Brief - 21/09 - Alívio no Petróleo e Cúpula EUA-China",
+   "itens": 12,
+   "arquivo": "edicoes/2026-09-21.html"
+  },
+  {
+   "data": "2026-09-22",
+   "assunto": "Daily Brief - 22/09 - Espaço fiscal no Brasil e diplomacia na ONU",
+   "itens": 9,
+   "arquivo": "edicoes/2026-09-22.html"
+  },
+  {
+   "data": "2026-09-23",
+   "assunto": "Daily Brief - 23/09 - Conversas entre EUA e Irã",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-23.html"
+  },
+  {
+   "data": "2026-09-24",
+   "assunto": "Daily Brief - 24/09 - Juro longo americano no pico",
+   "itens": 19,
+   "arquivo": "edicoes/2026-09-24.html"
+  },
+  {
+   "data": "2026-09-25",
+   "assunto": "Daily Brief - 25/09 - Ormuz esfria petróleo e trégua Trump-Xi",
+   "itens": 12,
+   "arquivo": "edicoes/2026-09-25.html"
+  },
+  {
+   "data": "2026-09-26",
+   "assunto": "Daily Brief - 26/09 - Governo proíbe bets e petróleo recua",
+   "itens": 10,
+   "arquivo": "edicoes/2026-09-26.html"
+  },
+  {
+   "data": "2026-09-27",
+   "assunto": "Daily Brief - 27/09 - Nubank mira Monzo e juros globais",
+   "itens": 11,
+   "arquivo": "edicoes/2026-09-27.html"
+  },
+  {
+   "data": "2026-09-28",
+   "assunto": "Daily Brief - 28/09 - Petróleo dispara e tarifas EUA-China",
+   "itens": 10,
+   "arquivo": "edicoes/2026-09-28.html"
+  },
+  {
+   "data": "2026-09-29",
+   "assunto": "Daily Brief - 29/09 - Veto a bets e cautela em IA",
+   "itens": 14,
+   "arquivo": "edicoes/2026-09-29.html"
+  },
+  {
+   "data": "2026-09-30",
+   "assunto": "Daily Brief - 30/09 - Regulação de IA e Desenrola MEI",
+   "itens": 10,
+   "arquivo": "edicoes/2026-09-30.html"
+  },
+  {
+   "data": "2026-10-01",
+   "assunto": "Daily Brief - 01/10 - Tarifa chinesa e juros globais sobem",
+   "itens": 14,
+   "arquivo": "edicoes/2026-10-01.html"
+  },
+  {
+   "data": "2026-10-02",
+   "assunto": "Daily Brief - 02/10 - Inflação europeia acelera e petróleo recua",
+   "itens": 13,
+   "arquivo": "edicoes/2026-10-02.html"
+  },
+  {
+   "data": "2026-10-03",
+   "assunto": "Daily Brief - 03/10 - Payroll nos EUA, G7 libera petróleo e fiscal na França",
+   "itens": 10,
+   "arquivo": "edicoes/2026-10-03.html"
+  },
+  {
+   "data": "2026-10-04",
+   "assunto": "Daily Brief - 04/10 - Eleições no Brasil e dívida corporativa nos EUA",
+   "itens": 10,
+   "arquivo": "edicoes/2026-10-04.html"
+  },
+  {
+   "data": "2026-10-05",
+   "assunto": "Daily Brief - 05/10 - Flávio lidera e ativos brasileiros disparam",
+   "itens": 15,
+   "arquivo": "edicoes/2026-10-05.html"
+  },
+  {
+   "data": "2026-10-06",
+   "assunto": "Daily Brief - 06/10 - Ibovespa passa dos 200 mil pontos",
+   "itens": 18,
+   "arquivo": "edicoes/2026-10-06.html"
+  },
+  {
+   "data": "2026-10-07",
+   "assunto": "Daily Brief - 07/10 - SpaceX capta bilhões e petróleo sobe",
+   "itens": 12,
+   "arquivo": "edicoes/2026-10-07.html"
+  },
+  {
+   "data": "2026-10-08",
+   "assunto": "Daily Brief - 08/10 - Petróleo dispara e STF pressiona União",
+   "itens": 11,
+   "arquivo": "edicoes/2026-10-08.html"
+  },
+  {
+   "data": "2026-10-09",
+   "assunto": "Daily Brief - 09/10 - Spreads franceses disparam, OpenAI sob pressão e a corrida do crédito no Brasil",
+   "itens": 15,
+   "arquivo": "edicoes/2026-10-09.html"
+  },
+  {
+   "data": "2026-10-10",
+   "assunto": "Daily Brief - 10/10 - MP de combustíveis e diesel russo",
+   "itens": 10,
+   "arquivo": "edicoes/2026-10-10.html"
+  },
+  {
+   "data": "2026-10-11",
+   "assunto": "Daily Brief - 11/10 - Acordo por diesel russo agita mercado",
+   "itens": 13,
+   "arquivo": "edicoes/2026-10-11.html"
+  },
+  {
+   "data": "2026-10-12",
+   "assunto": "Daily Brief - 12/10 - Nobel de Economia e tensão energética",
+   "itens": 9,
+   "arquivo": "edicoes/2026-10-12.html"
+  },
+  {
+   "data": "2026-10-13",
+   "assunto": "Daily Brief - 13/10 - Focus reduz Selic e chips realizam",
+   "itens": 14,
+   "arquivo": "edicoes/2026-10-13.html"
+  },
+  {
+   "data": "2026-10-14",
+   "assunto": "Daily Brief - 14/10 - Inflação americana acelera e IA sangra",
+   "itens": 19,
+   "arquivo": "edicoes/2026-10-14.html"
+  },
+  {
+   "data": "2026-10-15",
+   "assunto": "Daily Brief - 15/10 - Senado aprova fim da 6x1",
+   "itens": 12,
+   "arquivo": "edicoes/2026-10-15.html"
+  },
+  {
+   "data": "2026-10-16",
+   "assunto": "Daily Brief - 16/10 - Pausa do Fed e pressão fiscal",
+   "itens": 11,
+   "arquivo": "edicoes/2026-10-16.html"
+  },
+  {
+   "data": "2026-10-17",
+   "assunto": "Daily Brief - 17/10 - Petróleo dispara e déficit americano cresce",
+   "itens": 10,
+   "arquivo": "edicoes/2026-10-17.html"
+  },
+  {
+   "data": "2026-10-18",
+   "assunto": "Daily Brief - 18/10 - Infraestrutura de IA sob escrutínio",
+   "itens": 12,
+   "arquivo": "edicoes/2026-10-18.html"
+  }
+ ]
+}
