@@ -513,7 +513,7 @@ window.Briefy = (function () {
       intensidadeAlvo = chave === "dormindo" ? 0.8 : (chave === "trabalhando" ? 2.8 : 2.2);
 
       if (ref.badgeTexto) ref.badgeTexto.textContent = e.rotulo;
-      if (ref.led) ref.led.style.setProperty("--state-color", "var(" + e.cor + ")");
+      if (ref.led) ref.led.style.setProperty("--cor-estado", "var(" + e.cor + ")");
       esconderBilhete();
     }
 

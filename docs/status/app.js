@@ -13,15 +13,12 @@
 
   var MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho",
     "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
-  var MESES_CURTO = ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN",
-    "JUL", "AGO", "SET", "OUT", "NOV", "DEZ"];
 
   var ROTULO_CURADOR = {
-    gemini: "Gemini", openai_compat: "Reserva (OpenAI-compat)",
-    anthropic: "Claude", manual: "à mão (resgate)"
+    gemini: "Gemini", openai_compat: "reserva", anthropic: "Claude",
+    manual: "à mão"
   };
 
-  // ------------------------------------------------------------- utilidades
   function $(id) { return document.getElementById(id); }
 
   function escapar(texto) {
@@ -35,12 +32,59 @@
     return escapar(texto).replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   }
 
-  /** Data de hoje no fuso do projeto, nao no do visitante. */
+  function guardar(chave, valor) {
+    try { localStorage.setItem(chave, valor); } catch (e) {}
+  }
+  function lembrar(chave) {
+    try { return localStorage.getItem(chave); } catch (e) { return null; }
+  }
+
+  // ------------------------------------------------------------- tema
+  var btnTema = $("btn-tema");
+  var queroClaro = window.matchMedia("(prefers-color-scheme: light)");
+
+  function temaEfetivo() {
+    var explicito = document.documentElement.getAttribute("data-theme");
+    if (explicito === "dark" || explicito === "light") return explicito;
+    return queroClaro.matches ? "light" : "dark";
+  }
+  function desenharIcone() {
+    // Mostra o icone do tema para o qual o clique vai levar.
+    if (btnTema) btnTema.dataset.mostrar = temaEfetivo() === "dark" ? "sol" : "lua";
+  }
+  if (btnTema) {
+    btnTema.addEventListener("click", function () {
+      var novo = temaEfetivo() === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", novo);
+      guardar("tema", novo);
+      desenharIcone();
+    });
+  }
+  if (queroClaro.addEventListener) {
+    queroClaro.addEventListener("change", desenharIcone);
+  }
+  desenharIcone();
+
+  // ------------------------------------------------------------- dobras
+  // Cada bloco lembra se ficou aberto ou fechado, so neste navegador.
+  Array.prototype.forEach.call(
+    document.querySelectorAll("details[data-chave]"),
+    function (d) {
+      var chave = "secao:" + d.dataset.chave;
+      var salvo = lembrar(chave);
+      if (salvo === "1") d.open = true;
+      else if (salvo === "0") d.open = false;
+      d.addEventListener("toggle", function () {
+        guardar(chave, d.open ? "1" : "0");
+      });
+    }
+  );
+
+  // ------------------------------------------------------------- datas
   function hojeNoProjeto() {
-    var partes = new Intl.DateTimeFormat("en-CA", {
+    return new Intl.DateTimeFormat("en-CA", {
       timeZone: FUSO, year: "numeric", month: "2-digit", day: "2-digit"
     }).format(new Date());
-    return partes;  // en-CA ja devolve AAAA-MM-DD
   }
 
   function minutosNoProjeto() {
@@ -61,6 +105,12 @@
     return d.dia + " de " + MESES[d.mes - 1] + " de " + d.ano;
   }
 
+  function curto(iso) {
+    var d = partes(iso);
+    if (!d.ano) return "—";
+    return (d.dia < 10 ? "0" + d.dia : d.dia) + "/" + (d.mes < 10 ? "0" + d.mes : d.mes);
+  }
+
   function semAssuntoPadrao(assunto) {
     return String(assunto || "").replace(
       /^Daily Brief\s*[-–—]\s*\d{1,2}\/\d{1,2}\s*[-–—]\s*/, ""
@@ -68,6 +118,16 @@
   }
 
   function plural(n, um, muitos) { return n === 1 ? um : muitos; }
+
+  /** 54 vira 054, com os zeros apagados - leitura de terminal. */
+  function comZeros(valor, largura) {
+    if (valor == null) return "—";
+    var texto = String(valor);
+    var faltam = Math.max(0, (largura || 3) - texto.length);
+    return faltam
+      ? '<span class="zeros">' + new Array(faltam + 1).join("0") + "</span>" + texto
+      : texto;
+  }
 
   // ------------------------------------------------------------- estado
   function decidirEstado(s, hoje) {
@@ -85,24 +145,24 @@
     if (estado === "entregue") {
       return {
         titulo: "Entregue hoje",
-        detalhe: "A edição de " + extenso(u.data) + " saiu para "
-          + (s.hoje.destinatarios ? s.hoje.destinatarios + " " +
-             plural(s.hoje.destinatarios, "leitor", "leitores") : "a lista")
-          + "."
+        detalhe: "A edição de " + extenso(u.data) + " saiu para " +
+          (s.hoje.destinatarios
+            ? s.hoje.destinatarios + " " + plural(s.hoje.destinatarios, "leitor", "leitores")
+            : "a lista") + "."
       };
     }
     if (estado === "falhou") {
       return {
         titulo: "Hoje falhou",
-        detalhe: "Nenhum provedor de curadoria respondeu. A rota de resgate "
-          + "assume e a edição sai com atraso."
+        detalhe: "Nenhum provedor de curadoria respondeu. A rota de resgate assume " +
+          "e a edição sai com atraso."
       };
     }
     if (estado === "trabalhando") {
       return {
         titulo: "Em andamento",
-        detalhe: "O disparo das 07:20 já passou e a edição de hoje ainda não "
-          + "foi registrada. A última publicada é de " + extenso(u.data) + "."
+        detalhe: "O disparo das 07:20 já passou e a edição de hoje ainda não foi " +
+          "registrada. A última publicada é de " + extenso(u.data) + "."
       };
     }
     return {
@@ -114,29 +174,44 @@
   }
 
   function proximoDisparo() {
-    var agora = minutosNoProjeto();
-    var alvo = DISPARO_H * 60 + DISPARO_M;
-    var falta = alvo - agora;
+    var falta = DISPARO_H * 60 + DISPARO_M - minutosNoProjeto();
     if (falta <= 0) falta += 24 * 60;
     var h = Math.floor(falta / 60), m = falta % 60;
-    if (h === 0) return "em " + m + " min";
-    return "em " + h + " h " + (m < 10 ? "0" + m : m) + " min";
+    return h === 0 ? m + " min" : h + "h " + (m < 10 ? "0" + m : m);
   }
 
   // ------------------------------------------------------------- blocos
+  function preencherFita(s) {
+    var itens = s.mercado || [];
+    if (!itens.length) { $("fita").hidden = true; return; }
+    var html = itens.map(function (m) {
+      var v = m.variacao_pct;
+      var classe = v == null ? "" : (v >= 0 ? "sobe" : "cai");
+      var seta = v == null ? "" : (v >= 0 ? "▲ " : "▼ ");
+      var texto = v == null ? "—"
+        : seta + (v >= 0 ? "+" : "") + v.toFixed(2).replace(".", ",") + "%";
+      return '<span class="cotacao"><span class="t">' + escapar(m.nome) + "</span>" +
+        '<span class="v">' + escapar(m.valor) + "</span>" +
+        '<span class="d ' + classe + '">' + texto + "</span></span>";
+    }).join("");
+    // Duas voltas: a animacao desloca metade do trilho e volta ao inicio
+    // sem emenda visivel.
+    $("fita-trilho").innerHTML = html + html;
+  }
+
   function preencherPainel(s, estado, hoje) {
     var u = s.ultima_edicao || {};
     var texto = textoDoEstado(estado, s, hoje);
     var cor = (window.Briefy && Briefy.ESTADOS[estado] || {}).cor || "--ok";
 
-    $("estado-titulo").textContent = texto.titulo;
-    $("estado-titulo").style.setProperty("--state-color", "var(" + cor + ")");
+    var titulo = $("estado-titulo");
+    titulo.textContent = texto.titulo;
+    titulo.style.setProperty("--cor-estado", "var(" + cor + ")");
     $("estado-detalhe").textContent = texto.detalhe;
 
-    $("v-hora").textContent = s.hoje && s.hoje.hora ? s.hoje.hora : "—";
-    $("v-destinatarios").textContent = s.hoje && s.hoje.destinatarios
-      ? s.hoje.destinatarios
-      : (s.projeto.leitores ? s.projeto.leitores + " na lista" : "—");
+    $("v-hora").textContent = (s.hoje && s.hoje.hora) || "—";
+    $("v-destinatarios").textContent = (s.hoje && s.hoje.destinatarios) ||
+      (s.projeto.leitores != null ? s.projeto.leitores : "—");
     var curador = (s.hoje && s.hoje.curado_por) || null;
     $("v-curador").textContent = curador ? (ROTULO_CURADOR[curador] || curador) : "—";
     $("v-itens").textContent = u.itens != null ? u.itens : "—";
@@ -146,33 +221,29 @@
 
   function preencherCabecalho(s) {
     var u = s.ultima_edicao || {};
-    var d = partes(u.data);
     $("selo-data").textContent = extenso(u.data);
-    if (d.ano) {
-      $("carimbo-dia").textContent = d.dia + " " + MESES_CURTO[d.mes - 1];
-      $("carimbo-hora").textContent = ((s.hoje && s.hoje.hora) || "") + " · " + d.ano;
-    }
-    $("rodape-gerado").textContent = "Atualizado em " + extenso((s.gerado_em || "").slice(0, 10));
+    $("rodape-gerado").textContent = "atualizado " + curto((s.gerado_em || "").slice(0, 10)) +
+      ((s.hoje && s.hoje.hora) ? " · " + s.hoje.hora : "");
   }
 
-  function preencherTiles(s) {
+  function preencherPlacar(s) {
     var p = s.projeto || {};
-    var tiles = [
-      [p.edicoes, "edições publicadas"],
+    var casas = [
+      [p.edicoes, "edições"],
       [p.sequencia, "dias seguidos"],
       [p.itens_curados, "itens curados"],
-      [(p.feeds || 0) + (p.indicadores || 0), "fontes monitoradas"],
-      [p.leitores != null ? p.leitores : "—", "leitores"]
+      [(p.feeds || 0) + (p.indicadores || 0), "fontes"],
+      [p.leitores, "leitores"]
     ];
-    $("tiles").innerHTML = tiles.map(function (t) {
-      return '<div class="tile"><span class="n">' + escapar(t[0]) +
-        '</span><span class="r">' + t[1] + "</span></div>";
+    $("placar").innerHTML = casas.map(function (c) {
+      return '<div class="casa"><span class="n">' + comZeros(c[0], 3) +
+        '</span><span class="r">' + c[1] + "</span></div>";
     }).join("");
   }
 
   function preencherUltima(s) {
     var u = s.ultima_edicao || {};
-    $("ultima-sub").textContent = u.numero ? "número " + u.numero : "";
+    $("ultima-nota").textContent = u.numero ? "número " + u.numero : "";
     $("ultima-meta").textContent = extenso(u.data) +
       (u.itens ? " · " + u.itens + " itens" : "");
     $("ultima-assunto").textContent = semAssuntoPadrao(u.assunto) || "—";
@@ -180,10 +251,11 @@
     if (u.data) $("ultima-link").href = "edicoes/" + u.data + ".html";
   }
 
+  var NIVEIS = [0.28, 0.5, 0.74, 1];
+
   function preencherCalendario(s) {
     var grade = $("grade");
-    var hist = {};
-    var maximo = 1;
+    var hist = {}, maximo = 1;
     (s.historico || []).forEach(function (h) {
       hist[h.data] = h;
       if (h.itens > maximo) maximo = h.itens;
@@ -197,24 +269,20 @@
     var fim = new Date(Date.UTC(hoje.ano, hoje.mes - 1, hoje.dia));
 
     var celulas = [];
-    // Completa a primeira coluna: a grade tem 7 linhas, domingo no topo.
     var vazios = cursor.getUTCDay();
-    for (var v = 0; v < vazios; v++) {
-      celulas.push('<span class="dia vazio"></span>');
-    }
-    var niveis = [0.26, 0.48, 0.72, 1];
+    for (var v = 0; v < vazios; v++) celulas.push('<span class="dia vazio"></span>');
+
     while (cursor <= fim) {
       var iso = cursor.toISOString().slice(0, 10);
       var h = hist[iso];
+      var rotulo = iso.split("-").reverse().join("/");
       if (h) {
         var faixa = Math.min(3, Math.floor((h.itens / maximo) * 3.999));
-        celulas.push('<span class="dia" style="background:var(--navy);opacity:' +
-          niveis[faixa] + '" title="' + escapar(iso.split("-").reverse().join("/")) +
-          " — " + h.itens + " itens" + '"></span>');
+        celulas.push('<span class="dia" style="background:var(--ambar);opacity:' +
+          NIVEIS[faixa] + '" title="' + escapar(rotulo) + " — " + h.itens + ' itens"></span>');
       } else {
-        celulas.push('<span class="dia" title="' +
-          escapar(iso.split("-").reverse().join("/")) +
-          " — sem edição\"></span>");
+        celulas.push('<span class="dia" title="' + escapar(rotulo) +
+          ' — sem edição"></span>');
       }
       cursor = new Date(cursor.getTime() + 86400000);
     }
@@ -222,29 +290,27 @@
 
     var publicadas = (s.historico || []).length;
     var total = celulas.length - vazios;
-    $("calendario-sub").textContent = publicadas + " de " +
+    $("calendario-nota").textContent = publicadas + " de " +
       Math.max(publicadas, total) + " dias desde " + extenso(inicio);
 
     [1, 2, 3, 4].forEach(function (n, i) {
       var el = $("leg-" + n);
-      if (el) { el.style.background = "var(--navy)"; el.style.opacity = niveis[i]; }
+      if (el) { el.style.background = "var(--ambar)"; el.style.opacity = NIVEIS[i]; }
     });
   }
 
-  function barras(alvo, itens, chaveValor, sufixo) {
+  function barras(alvo, itens, chaveValor) {
     var el = $(alvo);
     if (!itens || !itens.length) {
       el.innerHTML = '<li class="carregando">sem dados</li>';
       return;
     }
-    var maximo = itens.reduce(function (m, i) {
-      return Math.max(m, i[chaveValor]);
-    }, 1);
+    var maximo = itens.reduce(function (m, i) { return Math.max(m, i[chaveValor]); }, 1);
     el.innerHTML = itens.map(function (i) {
       var pct = Math.max(2, (i[chaveValor] / maximo) * 100);
       return '<li><span class="nome">' + escapar(i.nome) + "</span>" +
-        '<span class="v">' + i[chaveValor] + (sufixo || "") + "</span>" +
-        '<span class="trilho"><span class="preenche" style="width:' +
+        '<span class="v">' + i[chaveValor] + "</span>" +
+        '<span class="trilho"><span class="cheio" style="width:' +
         pct.toFixed(1) + '%"></span></span></li>';
     }).join("");
   }
@@ -255,23 +321,23 @@
     var caidas = lista.filter(function (f) { return f.falhas > 0; });
     var inteiras = lista.length - caidas.length;
 
-    $("saude-sub").textContent = dias
-      ? "falhas nas últimas " + dias + " edições"
-      : "";
+    $("saude-nota").textContent = dias ? "falhas nas últimas " + dias + " edições" : "";
 
     var html = caidas.map(function (f) {
       var pct = dias ? Math.round(((dias - f.falhas) / dias) * 100) : 100;
       var classe = pct < 50 ? "ruim" : (pct < 95 ? "meia" : "boa");
-      return "<li><span>" + escapar(f.nome) + "</span>" +
-        '<span class="tipo">' + (f.tipo === "feed" ? "feed" : "mercado") + "</span>" +
-        '<span class="pct ' + classe + '">' + pct + "%</span></li>";
+      return "<li><span>" + escapar(f.nome) +
+        '<span class="tipo">' + (f.tipo === "feed" ? "feed" : "mercado") + "</span></span>" +
+        '<span class="pct ' + classe + '">' + pct + "%</span>" +
+        '<span class="trilho"><span class="cheio ' + classe + '-f" style="width:' +
+        pct + '%"></span></span></li>';
     });
 
     if (inteiras > 0) {
       html.push("<li><span>" + inteiras + " " +
-        plural(inteiras, "fonte respondeu", "fontes responderam") +
-        " todos os dias</span><span class=\"tipo\"></span>" +
-        '<span class="pct boa">100%</span></li>');
+        plural(inteiras, "fonte respondeu", "fontes responderam") + " todos os dias</span>" +
+        '<span class="pct boa">100%</span>' +
+        '<span class="trilho"><span class="cheio boa-f" style="width:100%"></span></span></li>');
     }
     $("saude").innerHTML = html.join("");
   }
@@ -287,8 +353,8 @@
     corpo.innerHTML = itens.map(function (m) {
       var v = m.variacao_pct;
       var classe = v == null ? "" : (v >= 0 ? "sobe" : "cai");
-      var texto = v == null ? "—" :
-        (v >= 0 ? "+" : "") + v.toFixed(2).replace(".", ",") + "%";
+      var texto = v == null ? "—"
+        : (v >= 0 ? "+" : "") + v.toFixed(2).replace(".", ",") + "%";
       return "<tr><td>" + escapar(m.nome) + "</td>" +
         '<td class="grupo">' + escapar(m.grupo || "") + "</td>" +
         '<td class="num">' + escapar(m.valor) + "</td>" +
@@ -298,11 +364,10 @@
 
   function preencherArquivo(s) {
     var edicoes = (s.edicoes || []).slice().reverse();
-    $("arquivo-sub").textContent = edicoes.length + " " +
+    $("arquivo-nota").textContent = edicoes.length + " " +
       plural(edicoes.length, "edição", "edições");
 
-    var porMes = [];
-    var indice = {};
+    var porMes = [], indice = {};
     edicoes.forEach(function (e) {
       var chave = e.data.slice(0, 7);
       if (!indice[chave]) {
@@ -312,7 +377,8 @@
       indice[chave].itens.push(e);
     });
 
-    $("arquivo").innerHTML = porMes.map(function (m) {
+    // So o mes mais recente nasce aberto; os anteriores viram pastas fechadas.
+    $("arquivo").innerHTML = porMes.map(function (m, posicao) {
       var d = partes(m.chave + "-01");
       var linhas = m.itens.map(function (e) {
         var dia = partes(e.data).dia;
@@ -321,8 +387,12 @@
           '<span class="t">' + escapar(semAssuntoPadrao(e.assunto)) + "</span>" +
           '<span class="q">' + e.itens + " itens</span></a></li>";
       }).join("");
-      return '<div class="mes"><h3>' + MESES[d.mes - 1] + " de " + d.ano +
-        '</h3><ul class="lista">' + linhas + "</ul></div>";
+      return '<details class="pasta"' + (posicao === 0 ? " open" : "") + ">" +
+        '<summary><span class="marcador" aria-hidden="true"></span>' +
+        '<span class="mes-nome">' + MESES[d.mes - 1] + " " + d.ano + "</span>" +
+        '<span class="quantas">' + m.itens.length + " " +
+        plural(m.itens.length, "edição", "edições") + "</span></summary>" +
+        '<ul class="lista">' + linhas + "</ul></details>";
     }).join("");
   }
 
@@ -336,14 +406,13 @@
 
     var sempre = [];
     if (p.edicoes) sempre.push(p.edicoes + " edições publicadas até agora.");
-    if (p.itens_curados) sempre.push(p.itens_curados +
-      " itens curados desde " + extenso(p.primeira_edicao) + ".");
-    if (topFonte) sempre.push(topFonte.nome +
-      " é minha fonte mais citada: " + topFonte.citacoes + " vezes.");
-    if (topNews) sempre.push(topNews.nome +
-      " apareceu em " + topNews.edicoes + " edições.");
-    if (mortas.length) sempre.push(mortas[0].nome +
-      " falha há " + mortas[0].dias + " dias seguidos e ninguém tinha notado.");
+    if (p.itens_curados) sempre.push(p.itens_curados + " itens curados desde " +
+      extenso(p.primeira_edicao) + ".");
+    if (topFonte) sempre.push(topFonte.nome + " é minha fonte mais citada: " +
+      topFonte.citacoes + " vezes.");
+    if (topNews) sempre.push(topNews.nome + " apareceu em " + topNews.edicoes + " edições.");
+    if (mortas.length) sempre.push(mortas[0].nome + " falha há " + mortas[0].dias +
+      " dias seguidos e ninguém tinha notado.");
     if (p.sequencia > 1) sempre.push(p.sequencia + " dias seguidos sem falhar.");
 
     return {
@@ -368,15 +437,9 @@
     palco: $("palco"),
     bilhete: $("bilhete"),
     bilheteTexto: $("bilhete-texto"),
-    led: $("badge-led"),
-    badgeTexto: $("badge-texto")
+    led: $("led"),
+    badgeTexto: $("sinal-texto")
   }) : null;
-
-  function falhar(mensagem) {
-    var el = $("erro");
-    el.textContent = mensagem;
-    el.hidden = false;
-  }
 
   fetch("status.json", { cache: "no-cache" })
     .then(function (r) {
@@ -387,9 +450,10 @@
       var hoje = hojeNoProjeto();
       var estado = decidirEstado(s, hoje);
 
+      preencherFita(s);
       preencherCabecalho(s);
       preencherPainel(s, estado, hoje);
-      preencherTiles(s);
+      preencherPlacar(s);
       preencherUltima(s);
       preencherCalendario(s);
       barras("fontes", s.fontes, "citacoes");
@@ -403,14 +467,15 @@
         briefy.definirEstado(estado);
       }
 
-      // A contagem regressiva e a unica coisa que muda sem recarregar.
       setInterval(function () {
         $("v-proximo").textContent = proximoDisparo();
       }, 30000);
     })
     .catch(function (erro) {
-      falhar("Não consegui ler o status.json (" + erro.message +
-        "). A página mostra a estrutura, mas sem os números do dia.");
+      var el = $("erro");
+      el.textContent = "Não consegui ler o status.json (" + erro.message +
+        "). A página mostra a estrutura, mas sem os números do dia.";
+      el.hidden = false;
       if (briefy) briefy.definirEstado("dormindo");
     });
 })();
