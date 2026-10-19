@@ -77,6 +77,11 @@ function criar(ref) {
   orbita.maxAzimuthAngle = Math.PI / 4;
   orbita.minPolarAngle = Math.PI * 0.32;
   orbita.maxPolarAngle = Math.PI * 0.58;
+  // O OrbitControls marca o canvas com touch-action: none, e no celular o
+  // palco ocupa a largura toda: quem rolasse com o dedo em cima do Briefy
+  // ficava preso. pan-y devolve a rolagem vertical a pagina; o arrasto
+  // horizontal continua girando o boneco.
+  renderer.domElement.style.touchAction = "pan-y";
 
   const raiz = new THREE.Group();
   cena.add(raiz);
