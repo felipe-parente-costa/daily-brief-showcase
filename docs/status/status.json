@@ -1,29 +1,29 @@
 {
- "gerado_em": "2026-10-18T22:32:03-03:00",
+ "gerado_em": "2026-10-19T07:26:14-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 54,
-  "itens_curados": 611,
+  "edicoes": 55,
+  "itens_curados": 622,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 14,
-  "sequencia": 54
+  "sequencia": 55
  },
  "hoje": {
-  "data": "2026-10-18",
+  "data": "2026-10-19",
   "entregue": true,
   "aviso_de_falha": false,
-  "destinatarios": null,
-  "hora": "07:22",
-  "curado_por": null
+  "destinatarios": 14,
+  "hora": "07:26",
+  "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-18",
-  "numero": 54,
-  "assunto": "Daily Brief - 18/10 - Infraestrutura de IA sob escrutínio",
-  "abertura": "O racha nas ações de tecnologia se aprofunda com o ceticismo sobre o retorno da infraestrutura de IA, enquanto Treasuries elevados mantêm a renda fixa sob alerta. No Brasil, o agronegócio monitora a concorrência chinesa que avança com frango até **20%** mais barato nos mercados internacionais.",
-  "itens": 12,
+  "data": "2026-10-19",
+  "numero": 55,
+  "assunto": "Daily Brief - 19/10 - Sanções russas e PIB chinês",
+  "abertura": "A Casa Branca abriu uma trégua de **60 dias** nas sanções a compradores de petróleo russo, derrubando as cotações do barril e aliviando a curva de juros global. Enquanto a Ásia repercute a aceleração do crescimento chinês, protestos violentos contra medidas de austeridade fiscal na França voltam a pressionar os títulos soberanos europeus e o euro.",
+  "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
@@ -35,7 +35,7 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
@@ -50,6 +50,18 @@
    "grupo": "brasil",
    "valor": "205.430",
    "variacao_pct": 0.54
+  },
+  {
+   "nome": "Dolar (USD/BRL)",
+   "grupo": "brasil",
+   "valor": "R$ 5,0693",
+   "variacao_pct": -0.54
+  },
+  {
+   "nome": "Euro (EUR/BRL)",
+   "grupo": "brasil",
+   "valor": "R$ 5,6892",
+   "variacao_pct": -0.38
   },
   {
    "nome": "S&P 500",
@@ -72,68 +84,68 @@
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,78",
-   "variacao_pct": -0.22
+   "valor": "101,94",
+   "variacao_pct": 0.1
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 99,02",
-   "variacao_pct": 1.07
+   "valor": "US$ 98,34",
+   "variacao_pct": -3.03
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.181,10",
-   "variacao_pct": 0.26
+   "valor": "US$ 4.188,80",
+   "variacao_pct": 0.18
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 82.101",
-   "variacao_pct": 0.71
+   "valor": "US$ 82.551",
+   "variacao_pct": 0.56
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.421,12",
-   "variacao_pct": -0.45
+   "valor": "US$ 2.430,45",
+   "variacao_pct": 0.41
   }
  ],
  "secoes": {
-  "brasil": 171,
-  "global": 146,
-  "mundo": 122,
-  "tech": 172
+  "brasil": 174,
+  "global": 149,
+  "mundo": 124,
+  "tech": 175
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 104
+   "citacoes": 105
   },
   {
    "nome": "Financial Times",
-   "citacoes": 102
+   "citacoes": 103
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 85
+   "citacoes": 87
   },
   {
    "nome": "CNBC",
    "citacoes": 70
   },
   {
-   "nome": "BBC World",
-   "citacoes": 68
-  },
-  {
    "nome": "CNBC Top News",
-   "citacoes": 66
+   "citacoes": 69
   },
   {
    "nome": "CNBC World",
-   "citacoes": 65
+   "citacoes": 69
+  },
+  {
+   "nome": "BBC World",
+   "citacoes": 68
   },
   {
    "nome": "The Verge",
@@ -141,11 +153,11 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 58
+   "citacoes": 59
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 49
+   "citacoes": 51
   },
   {
    "nome": "NeoFeed",
@@ -171,7 +183,7 @@
   },
   {
    "nome": "Apollo",
-   "edicoes": 24
+   "edicoes": 25
   },
   {
    "nome": "Torsten Slok",
@@ -183,7 +195,7 @@
   },
   {
    "nome": "Bain & Company",
-   "edicoes": 7
+   "edicoes": 8
   },
   {
    "nome": "Boston Consulting Group",
@@ -211,14 +223,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 30,
+   "falhas": 29,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 30,
+   "falhas": 29,
    "dias": 30
   },
   {
@@ -232,14 +244,14 @@
    "nome": "IPCA (mensal)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 3,
+   "falhas": 4,
    "dias": 30
   },
   {
    "nome": "Selic (meta)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 3,
+   "falhas": 4,
    "dias": 30
   },
   {
@@ -1110,6 +1122,19 @@
    "newsletters": 2,
    "destinatarios": null,
    "curado_por": null
+  },
+  {
+   "data": "2026-10-19",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 14,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1436,6 +1461,12 @@
    "assunto": "Daily Brief - 18/10 - Infraestrutura de IA sob escrutínio",
    "itens": 12,
    "arquivo": "edicoes/2026-10-18.html"
+  },
+  {
+   "data": "2026-10-19",
+   "assunto": "Daily Brief - 19/10 - Sanções russas e PIB chinês",
+   "itens": 11,
+   "arquivo": "edicoes/2026-10-19.html"
   }
  ]
 }
