@@ -8,6 +8,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="estilo.css">
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    }
+  }
+</script>
 <script>
   // Antes da primeira pintura, para a pagina nao piscar no tema errado.
   try {
@@ -57,10 +65,6 @@
     <div>
       <div class="moldura">
         <div class="palco" id="palco">
-          <span class="mira tl" aria-hidden="true"></span>
-          <span class="mira tr" aria-hidden="true"></span>
-          <span class="mira bl" aria-hidden="true"></span>
-          <span class="mira br" aria-hidden="true"></span>
           <div class="bilhete" id="bilhete"><span class="quem">Briefy</span><span id="bilhete-texto"></span></div>
         </div>
       </div>
@@ -203,8 +207,7 @@
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
-<script src="briefy.js"></script>
-<script src="app.js"></script>
+<script type="module" src="briefy.js"></script>
+<script type="module" src="app.js"></script>
 </body>
 </html>
