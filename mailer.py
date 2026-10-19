@@ -4,12 +4,21 @@ Substitui o conector do Gmail quando o brief roda sem o app do Claude aberto.
 Usa a mesma senha de app do newsletters.py.
 """
 
+import imaplib
 import smtplib
 import ssl
+from datetime import date, timedelta
 from email.message import EmailMessage
 
 HOST = "smtp.gmail.com"
 PORTA = 465
+HOST_IMAP = "imap.gmail.com"
+PASTA_ENVIADOS = '"[Gmail]/Sent Mail"'
+PASTA_LIXEIRA = '"[Gmail]/Trash"'
+DIAS_EM_ENVIADOS = 1
+# smtplib e imaplib esperam para sempre quando nao recebem timeout: conexao
+# aceita e depois muda - a execucao do dia trava ate o GitHub matar o job.
+TIMEOUT = 60
 
 
 NOME_REMETENTE = "Daily Brief"
@@ -65,7 +74,7 @@ def enviar(usuario, senha, destino, assunto, html, texto, ocultos=None):
     enviados, falhas = [], []
 
     contexto = ssl.create_default_context()
-    with smtplib.SMTP_SSL(HOST, PORTA, context=contexto) as servidor:
+    with smtplib.SMTP_SSL(HOST, PORTA, context=contexto, timeout=TIMEOUT) as servidor:
         servidor.login(usuario, senha)
 
         servidor.send_message(_montar(usuario, destino, assunto, html, texto))
@@ -96,6 +105,53 @@ def avisar_falha(usuario, senha, destino, data, erro):
     msg.set_content(corpo)
 
     contexto = ssl.create_default_context()
-    with smtplib.SMTP_SSL(HOST, PORTA, context=contexto) as servidor:
+    with smtplib.SMTP_SSL(HOST, PORTA, context=contexto, timeout=TIMEOUT) as servidor:
         servidor.login(usuario, senha)
         servidor.send_message(msg)
+
+
+def limpar_enviados(usuario, senha, dias=DIAS_EM_ENVIADOS):
+    """Move para a lixeira as copias em Enviados mais velhas que `dias` dia(s).
+
+    Uma mensagem por destinatario (ver enviar()) significa uma copia em
+    Enviados por amigo, todo santo dia - e nenhuma delas saia de la sozinha,
+    entao a pasta so cresce. Aqui elas saem: ficam visiveis por `dias` dia(s)
+    (tempo de sobra para conferir que o envio aconteceu) e depois vao para a
+    lixeira, de onde o Gmail as apaga de vez em 30 dias.
+
+    "NOT TO usuario" e o que protege a copia que cai na sua propria Inbox: ela
+    tem o mesmo assunto e o mesmo remetente, mas o destinatario e voce mesmo -
+    e a unica que precisa ficar. Excluir pelo destinatario, em vez de tentar
+    diferenciar por rotulo do Gmail, evita depender de um comportamento de
+    IMAP que varia entre provedor e que seria dificil de testar sem arriscar
+    apagar a leitura de verdade.
+
+    BEFORE do IMAP exclui o proprio dia informado (so pega o que e anterior).
+    Por isso o limite e hoje menos (dias - 1), nao hoje menos dias: com
+    dias=1 o alvo e "BEFORE hoje", que pega tudo de ontem para tras - a copia
+    de ontem fica visivel o dia inteiro de ontem e some no primeiro run de
+    hoje. Descontar so `dias` deixava a copia mais velha um dia a mais do que
+    o pedido (pegou isso no teste de 31/08: o lote de 30/08 ficou para tras).
+    """
+    limite = (date.today() - timedelta(days=dias - 1)).strftime("%d-%b-%Y")
+    criterio = f'(BEFORE {limite}) (SUBJECT "Daily Brief") NOT (TO "{usuario}")'
+
+    conexao = imaplib.IMAP4_SSL(HOST_IMAP, timeout=TIMEOUT)
+    try:
+        conexao.login(usuario, senha)
+        conexao.select(PASTA_ENVIADOS)
+        ok, dados = conexao.search(None, criterio)
+        if ok != "OK" or not dados or not dados[0]:
+            return 0
+
+        ids = dados[0].split()
+        id_set = b",".join(ids).decode()
+        conexao.copy(id_set, PASTA_LIXEIRA)
+        conexao.store(id_set, "+FLAGS", r"\Deleted")
+        conexao.expunge()
+        return len(ids)
+    finally:
+        try:
+            conexao.logout()
+        except Exception:
+            pass

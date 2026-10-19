@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Status do Daily Brief</title>
+<meta name="description" content="Pagina de status do Daily Brief: o que saiu hoje, de onde vem a materia-prima e o arquivo de todas as edicoes.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="estilo.css">
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+    }
+  }
+</script>
+<script>
+  // Antes da primeira pintura, para a pagina nao piscar no tema errado.
+  try {
+    var salvo = localStorage.getItem("tema");
+    if (salvo === "dark" || salvo === "light") {
+      document.documentElement.setAttribute("data-theme", salvo);
+    }
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<div class="topo">
+  <div class="topo-grade">
+    <div class="marca">
+      <span class="sigla" aria-hidden="true">DB</span>
+      <span class="palavra">Daily Brief<span class="cursor" aria-hidden="true"></span></span>
+    </div>
+    <span class="espaco"></span>
+    <span class="sinal"><span class="led" id="led"></span><span class="rotulo-sinal" id="sinal-texto">carregando</span></span>
+    <button type="button" class="btn-tema" id="btn-tema" data-mostrar="sol" aria-label="Alternar tema claro e escuro">
+      <svg class="icone icone-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+      </svg>
+      <svg class="icone icone-lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="fita" id="fita" aria-hidden="true"><div class="fita-trilho" id="fita-trilho"></div></div>
+
+<div class="wrap">
+
+  <header>
+    <p class="kicker">Esta&ccedil;&atilde;o de curadoria &middot; <b id="selo-data">carregando</b></p>
+    <h1>Status<br><span class="fino">do Daily Brief</span></h1>
+    <p class="lede">Um resumo de mercado, not&iacute;cias e newsletters entregue por email todo dia pela manh&atilde;. <b>Quem faz isso rodar &eacute; o Briefy</b> &mdash; arraste para girar, clique nele para ouvir alguma coisa.</p>
+    <p class="assinar"><a href="../">Receber por email</a></p>
+  </header>
+
+  <p class="erro" id="erro" hidden></p>
+
+  <div class="heroi">
+    <div>
+      <div class="moldura">
+        <div class="palco" id="palco">
+          <div class="bilhete" id="bilhete"><span class="quem">Briefy</span><span id="bilhete-texto"></span></div>
+        </div>
+      </div>
+      <p class="dica">arraste para girar &middot; clique para conversar</p>
+    </div>
+
+    <div class="painel">
+      <div class="cabeca">
+        <p class="estado" id="estado-titulo">&mdash;</p>
+        <p class="detalhe" id="estado-detalhe">Lendo o status da &uacute;ltima execu&ccedil;&atilde;o&hellip;</p>
+      </div>
+      <dl class="linhas">
+        <div><dt>Entregue &agrave;s</dt><span class="pontos"></span><dd id="v-hora">&mdash;</dd></div>
+        <div><dt>Destinat&aacute;rios</dt><span class="pontos"></span><dd id="v-destinatarios">&mdash;</dd></div>
+        <div><dt>Curadoria</dt><span class="pontos"></span><dd id="v-curador">&mdash;</dd></div>
+        <div><dt>Itens</dt><span class="pontos"></span><dd id="v-itens">&mdash;</dd></div>
+        <div><dt>Newsletters</dt><span class="pontos"></span><dd id="v-newsletters">&mdash;</dd></div>
+        <div><dt>Pr&oacute;ximo disparo</dt><span class="pontos"></span><dd id="v-proximo">&mdash;</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section class="bloco">
+    <details open data-chave="numeros">
+      <summary><h2>N&uacute;meros</h2><span class="seta"></span></summary>
+      <div class="placar" id="placar"></div>
+    </details>
+  </section>
+
+  <section class="bloco">
+    <details open data-chave="ultima">
+      <summary><h2>&Uacute;ltima edi&ccedil;&atilde;o</h2><span class="nota" id="ultima-nota"></span><span class="seta"></span></summary>
+      <div class="corpo">
+        <p class="edicao-meta" id="ultima-meta">&mdash;</p>
+        <p class="edicao-assunto" id="ultima-assunto">&mdash;</p>
+        <p class="abertura" id="ultima-abertura"></p>
+        <a class="ler" id="ultima-link" href="#">Ler esta edi&ccedil;&atilde;o &rarr;</a>
+      </div>
+    </details>
+  </section>
+
+  <section class="bloco">
+    <details open data-chave="calendario">
+      <summary><h2>Dia a dia</h2><span class="nota" id="calendario-nota"></span><span class="seta"></span></summary>
+      <div class="corpo">
+        <div class="calendario">
+          <div class="grade" id="grade" role="img" aria-label="Calend&aacute;rio de edi&ccedil;&otilde;es publicadas"></div>
+        </div>
+        <p class="legenda">Menos <i id="leg-1"></i><i id="leg-2"></i><i id="leg-3"></i><i id="leg-4"></i> Mais</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="bloco">
+    <details open data-chave="materia">
+      <summary><h2>Mat&eacute;ria-prima</h2><span class="nota">de onde sai cada edi&ccedil;&atilde;o</span><span class="seta"></span></summary>
+      <div class="dupla">
+        <div>
+          <h3>Fontes mais citadas</h3>
+          <ul class="barras" id="fontes"><li class="carregando">carregando&hellip;</li></ul>
+        </div>
+        <div>
+          <h3>Newsletters mais lidas</h3>
+          <ul class="barras secundaria" id="newsletters"><li class="carregando">carregando&hellip;</li></ul>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section class="bloco">
+    <details data-chave="saude">
+      <summary><h2>Sa&uacute;de das fontes</h2><span class="nota" id="saude-nota"></span><span class="seta"></span></summary>
+      <div class="corpo">
+        <ul class="saude" id="saude"></ul>
+      </div>
+    </details>
+  </section>
+
+  <section class="bloco">
+    <details data-chave="mercado">
+      <summary><h2>Mercado</h2><span class="nota">na &uacute;ltima edi&ccedil;&atilde;o</span><span class="seta"></span></summary>
+      <div class="rolo">
+        <table class="mercado">
+          <thead><tr><th>Indicador</th><th>Grupo</th><th style="text-align:right">Valor</th><th style="text-align:right">Varia&ccedil;&atilde;o</th></tr></thead>
+          <tbody id="mercado"></tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <section class="bloco">
+    <details data-chave="como">
+      <summary><h2>Como uma edi&ccedil;&atilde;o nasce</h2><span class="nota">seis etapas</span><span class="seta"></span></summary>
+      <ol class="etapas">
+        <li>
+          <span class="n">01</span>
+          <h3>Disparo</h3>
+          <p>Um servi&ccedil;o de cron externo pede ao GitHub, &agrave;s 07:20, que ligue uma m&aacute;quina tempor&aacute;ria na nuvem. Ela existe por dois minutos.</p>
+        </li>
+        <li>
+          <span class="n">02</span>
+          <h3>Coleta</h3>
+          <p>Um script em Python busca os feeds e os indicadores numa janela de 30 horas, e l&ecirc; as newsletters que chegaram por email.</p>
+        </li>
+        <li>
+          <span class="n">03</span>
+          <h3>Curadoria</h3>
+          <p>A &uacute;nica etapa com IA. Um modelo recebe o material e as regras editoriais, escolhe o que importa e escreve o resumo.</p>
+        </li>
+        <li>
+          <span class="n">04</span>
+          <h3>Poda</h3>
+          <p>Todo link do resumo &eacute; conferido contra a coleta do dia. O que n&atilde;o veio de l&aacute; &eacute; cortado &mdash; ningu&eacute;m revisa antes de enviar.</p>
+        </li>
+        <li>
+          <span class="n">05</span>
+          <h3>Envio</h3>
+          <p>Uma mensagem separada para cada leitor, nunca uma s&oacute; com todos em c&oacute;pia oculta.</p>
+        </li>
+        <li>
+          <span class="n">06</span>
+          <h3>Registro</h3>
+          <p>Os links entram num hist&oacute;rico para a edi&ccedil;&atilde;o de amanh&atilde; n&atilde;o repetir manchete, e a caixa de enviados &eacute; limpa.</p>
+        </li>
+      </ol>
+    </details>
+  </section>
+
+  <section class="bloco">
+    <details open data-chave="arquivo">
+      <summary><h2>Arquivo</h2><span class="nota" id="arquivo-nota"></span><span class="seta"></span></summary>
+      <div id="arquivo"></div>
+    </details>
+  </section>
+
+  <footer>
+    <span><a href="../">Daily Brief</a> &middot; custo zero, sem servidor</span>
+    <span id="rodape-gerado">&mdash;</span>
+  </footer>
+
+</div>
+
+<script type="module" src="briefy.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

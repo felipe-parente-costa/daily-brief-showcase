@@ -1,33 +1,38 @@
 /* Status do Daily Brief
    Direcao: terminal de mercado. A pagina e quase toda dado - numero, serie,
    variacao, disponibilidade - entao assume isso em vez de disfarcar de
-   revista. Base quase preta esverdeada, ambar como unico acento, verde e
-   vermelho reservados a alta e baixa, nunca decorativos.
+   revista. Verde e vermelho ficam reservados a alta e baixa, nunca
+   decorativos.
+
+   A paleta sai do proprio Briefy (k-means sobre a textura do modelo):
+   indigo-ardosia do bone e da bolsa (#3d3f56) escurecido para a base, cobre
+   das juntas e asas (#ca7040) clareado para o acento, creme do corpo
+   (#cab5ad) no texto e no papel do tema claro.
 
    Desenho escuro primeiro: o tema claro e a excecao. */
 
 :root {
-  --bg: #090d0c;
-  --surface: #0f1513;
-  --surface-2: #151e1b;
-  --line: #1e2b27;
-  --line-forte: #2d3d38;
-  --fg: #e9f0ed;
-  --muted: #8a9a94;
-  --faint: #5d6e69;
-  --trilho: rgba(233, 240, 237, 0.08);
+  --bg: #0b0c13;
+  --surface: #11131c;
+  --surface-2: #181a26;
+  --line: #242737;
+  --line-forte: #34384c;
+  --fg: #f0ebe6;
+  --muted: #9a98a6;
+  --faint: #686879;
+  --trilho: rgba(240, 235, 230, 0.08);
 
-  --ambar: #e8a33d;
-  --ambar-claro: #f6c572;
-  --sobre-ambar: #090d0c;
+  --ambar: #e0864a;
+  --ambar-claro: #f0a46c;
+  --sobre-ambar: #0b0c13;
   --alta: #4ade80;
   --baixa: #f0523f;
 
   /* estados do Briefy: briefy.js le estes quatro nomes */
   --ok: #4ade80;
-  --work: #e8a33d;
+  --work: #e0864a;
   --bad: #f0523f;
-  --sleep: #7d8f89;
+  --sleep: #8a8aa0;
 
   --display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -37,47 +42,47 @@
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
-    --bg: #f2f1ea;
-    --surface: #fbfaf5;
-    --surface-2: #e9e7dd;
-    --line: #dcd8cb;
-    --line-forte: #bdb7a6;
-    --fg: #111614;
-    --muted: #525d58;
-    --faint: #78837e;
-    --trilho: rgba(17, 22, 20, 0.09);
-    --ambar: #9a6005;
-    --ambar-claro: #7d4d03;
-    --sobre-ambar: #fbfaf5;
+    --bg: #f4efe9;
+    --surface: #fbf8f4;
+    --surface-2: #ece5dd;
+    --line: #ddd3c9;
+    --line-forte: #c3b6aa;
+    --fg: #1b1c2a;
+    --muted: #5b5a6b;
+    --faint: #85838f;
+    --trilho: rgba(27, 28, 42, 0.09);
+    --ambar: #a8541f;
+    --ambar-claro: #8a4416;
+    --sobre-ambar: #fbf8f4;
     --alta: #0f7a4d;
     --baixa: #be3a24;
     --ok: #0f7a4d;
-    --work: #9a6005;
+    --work: #a8541f;
     --bad: #be3a24;
-    --sleep: #6a756f;
+    --sleep: #6e6d80;
     color-scheme: light;
   }
 }
 
 :root[data-theme="light"] {
-  --bg: #f2f1ea;
-  --surface: #fbfaf5;
-  --surface-2: #e9e7dd;
-  --line: #dcd8cb;
-  --line-forte: #bdb7a6;
-  --fg: #111614;
-  --muted: #525d58;
-  --faint: #78837e;
-  --trilho: rgba(17, 22, 20, 0.09);
-  --ambar: #9a6005;
-  --ambar-claro: #7d4d03;
-  --sobre-ambar: #fbfaf5;
+  --bg: #f4efe9;
+  --surface: #fbf8f4;
+  --surface-2: #ece5dd;
+  --line: #ddd3c9;
+  --line-forte: #c3b6aa;
+  --fg: #1b1c2a;
+  --muted: #5b5a6b;
+  --faint: #85838f;
+  --trilho: rgba(27, 28, 42, 0.09);
+  --ambar: #a8541f;
+  --ambar-claro: #8a4416;
+  --sobre-ambar: #fbf8f4;
   --alta: #0f7a4d;
   --baixa: #be3a24;
   --ok: #0f7a4d;
-  --work: #9a6005;
+  --work: #a8541f;
   --bad: #be3a24;
-  --sleep: #6a756f;
+  --sleep: #6e6d80;
   color-scheme: light;
 }
 

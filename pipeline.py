@@ -77,7 +77,9 @@ def validar(caminho_brief):
     erro que passa despercebido na leitura e so aparece quando o leitor clica.
     """
     brief = json.loads(Path(caminho_brief).read_text(encoding="utf-8"))
-    raw = RAW / f"{brief['data']}.json"
+    # A rota manual grava o brief sem "data" (normalizar copia da coleta);
+    # sem ela, a data vem do nome do arquivo (AAAA-MM-DD.json).
+    raw = RAW / f"{brief.get('data') or Path(caminho_brief).stem}.json"
     if not raw.exists():
         print(f"FALHOU: coleta {raw.name} nao encontrada")
         return 1

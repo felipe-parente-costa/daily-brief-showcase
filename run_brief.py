@@ -7,13 +7,19 @@ depender do app do Claude nem do conector do Gmail. Roda no GitHub Actions ou
 em qualquer agendador.
 
 Variaveis de ambiente:
-    GEMINI_API_KEY        chave da curadoria quando BRIEF_PROVIDER=gemini (padrao)
-    ANTHROPIC_API_KEY     chave da curadoria quando BRIEF_PROVIDER=anthropic
+    GEMINI_API_KEY        curadoria pelo Gemini (padrao, free tier)
+    LLM_API_KEY, LLM_BASE_URL, LLM_MODELOS
+                          reserva gratuito: qualquer API no dialeto da OpenAI
+    ANTHROPIC_API_KEY     curadoria pela Anthropic (pago por uso)
+                          Basta UM provedor configurado; os outros sao pulados.
     GMAIL_USER            a conta que le as newsletters e envia o brief
     GMAIL_APP_PASSWORD    senha de app do Google (IMAP e SMTP)
     BRIEF_TO              destinatario (padrao: GMAIL_USER)
     BRIEF_ALIAS           alias das assinaturas (padrao: usuario+brief@dominio)
-    BRIEF_PROVIDER        gemini (padrao) ou anthropic
+    BRIEF_PROVIDER        quem tenta primeiro: gemini (padrao), openai_compat
+                          ou anthropic - se nao entregar, passa ao proximo
+    BRIEF_USAR_EXISTENTE  rota manual: nao chama API nenhuma, usa o brief que
+                          ja esta em data/briefs/HOJE.json (ver BRIEF.md)
     BRIEF_MODELO          sobrescreve o modelo padrao do provedor
     BRIEF_SUBSCRIBERS_SHEET_ID  id da planilha de inscritos (opcional, sem ela
                           o brief so vai para BRIEF_TO)
@@ -22,7 +28,7 @@ Variaveis de ambiente:
 import json
 import os
 import sys
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 BASE = Path(__file__).parent
@@ -36,6 +42,13 @@ import render  # noqa: E402
 import subscribers  # noqa: E402
 
 BRIEFS = BASE / "data" / "briefs"
+# Data do ultimo aviso de falha. Vive em data/ para o passo "Registrar o que
+# saiu" do workflow comitar junto, inclusive quando a execucao falha.
+AVISO_FALHA = BASE / "data" / "ultimo_aviso_falha.txt"
+# Registro do que saiu: data -> {destinatarios, hora, curado_por}. So
+# contagem, nunca endereco - e lido pelo status.py, que publica num
+# repositorio publico. Vive em data/ pelo mesmo motivo do seen.json.
+ENTREGAS = BASE / "data" / "entregas.json"
 
 
 def _alias_padrao(usuario):
@@ -43,7 +56,6 @@ def _alias_padrao(usuario):
     return f"{local}+brief@{dominio}"
 
 
-CHAVE_DO_PROVEDOR = {"gemini": "GEMINI_API_KEY", "anthropic": "ANTHROPIC_API_KEY"}
 VERDADEIROS = ("1", "true", "yes", "on")
 
 
@@ -60,11 +72,26 @@ def _ambiente():
         raise SystemExit("GMAIL_USER e GMAIL_APP_PASSWORD sao obrigatorios")
 
     provedor = os.environ.get("BRIEF_PROVIDER", "").strip() or curator.PROVEDOR
-    chave = CHAVE_DO_PROVEDOR.get(provedor)
-    if not chave:
-        raise SystemExit(f"BRIEF_PROVIDER invalido: {provedor} (use gemini ou anthropic)")
-    if not os.environ.get(chave, "").strip():
-        raise SystemExit(f"{chave} e obrigatorio com BRIEF_PROVIDER={provedor}")
+    if provedor not in curator.BACKENDS:
+        validos = ", ".join(curator.BACKENDS)
+        raise SystemExit(f"BRIEF_PROVIDER invalido: {provedor} (use {validos})")
+
+    # Basta UM provedor configurado, nao necessariamente o preferido: a
+    # curadoria cai para o proximo da cadeia quando o primeiro nao entrega.
+    # Exigir a chave do preferido impediria rodar so com o reserva.
+    #
+    # Na rota manual nao ha curadoria por API, entao nenhuma chave de LLM e
+    # necessaria - exigir uma so faria a rota de emergencia depender do
+    # provedor que acabou de cair, que e o oposto do proposito dela.
+    disponiveis = curator.provedores_disponiveis(provedor)
+    if not _ligado("BRIEF_USAR_EXISTENTE"):
+        if not disponiveis:
+            chaves = ", ".join(curator.CHAVE_DO_PROVEDOR[p] for p in curator.CADEIA_PROVEDORES)
+            raise SystemExit(
+                f"nenhum provedor de curadoria configurado - defina uma destas: {chaves}"
+            )
+        if disponiveis[0] != provedor:
+            print(f"aviso: {provedor} sem credencial - a curadoria comeca por {disponiveis[0]}")
 
     return {
         "usuario": usuario,
@@ -87,6 +114,30 @@ def _ambiente():
             if e.strip()
         ],
     }
+
+
+def _brief_manual(caminho):
+    """O brief que o Claude ja curou na rota interativa, se for para usa-lo.
+
+    Rota de emergencia do BRIEF.md: quando nenhum provedor de API responde, a
+    curadoria - a unica etapa que exige julgamento - e feita a mao numa sessao
+    do Claude, e o resto do caminho continua sendo o codigo de sempre. Assim o
+    dia ruim herda as mesmas garantias do dia bom: uma mensagem por
+    destinatario (sem Bcc vazando a lista), List-Unsubscribe, lista de
+    inscritos vinda da planilha, poda, validacao e registro em seen.json.
+
+    Refazer o envio a mao perderia todas elas de uma vez - e em silencio, que
+    e o pior modo de perder: o email chega bonito na sua caixa e os inscritos
+    ficam de fora sem ninguem notar.
+    """
+    if not _ligado("BRIEF_USAR_EXISTENTE"):
+        return None
+    if not caminho.exists():
+        raise SystemExit(
+            f"BRIEF_USAR_EXISTENTE ligado, mas {caminho.name} nao existe. "
+            "Grave o brief curado em data/briefs/ antes de rodar (ver BRIEF.md)."
+        )
+    return json.loads(caminho.read_text(encoding="utf-8"))
 
 
 def coletar_dia():
@@ -177,6 +228,16 @@ def executar():
     BRIEFS.mkdir(parents=True, exist_ok=True)
     caminho = BRIEFS / f"{hoje}.json"
 
+    # Faxina antes de qualquer outra coisa: independe do brief de hoje sair ou
+    # nao, e roda em toda execucao (inclusive a que so confere se ja foi
+    # enviado e sai). Erro aqui nao pode derrubar o envio do dia.
+    try:
+        apagados = mailer.limpar_enviados(env["usuario"], env["senha"])
+        if apagados:
+            print(f"limpeza: {apagados} copia(s) de amigos movida(s) da caixa Enviados para a lixeira")
+    except Exception as erro:
+        print(f"limpeza de enviados falhou ({erro}) - seguindo sem ela")
+
     if _ja_enviado_hoje(hoje):
         print(f"brief de {hoje} ja foi enviado - nada a fazer (segundo disparo do dia)")
         return 0
@@ -186,15 +247,22 @@ def executar():
         raise RuntimeError("a coleta nao trouxe nenhum item")
     print(f"coleta: {len(pacote['itens'])} itens, {len(pacote['fontes_com_erro'])} fontes com erro")
 
-    # Newsletter e bonus: dia sem newsletter e dia normal, nao e falha.
-    try:
-        cartas = newsletters.buscar(env["usuario"], env["senha"], env["alias"])
-        print(f"newsletters: {len(cartas)}")
-    except Exception as erro:
-        print(f"newsletters indisponiveis ({erro}) - seguindo sem elas")
-        cartas = []
+    manual = _brief_manual(caminho)
+    if manual is not None:
+        # As newsletters ja foram lidas na sessao que curou; buscar de novo so
+        # gastaria uma conexao IMAP para alimentar um curador que nao roda.
+        print(f"curadoria manual: usando {caminho.name}, sem chamar API nenhuma")
+        brief = curator.normalizar(manual, pacote, curado_por="manual")
+    else:
+        # Newsletter e bonus: dia sem newsletter e dia normal, nao e falha.
+        try:
+            cartas = newsletters.buscar(env["usuario"], env["senha"], env["alias"])
+            print(f"newsletters: {len(cartas)}")
+        except Exception as erro:
+            print(f"newsletters indisponiveis ({erro}) - seguindo sem elas")
+            cartas = []
 
-    brief = curator.curar(pacote, cartas, provedor=env["provedor"], modelo=env["modelo"])
+        brief = curator.curar(pacote, cartas, provedor=env["provedor"], modelo=env["modelo"])
     cortes = podar(brief, pacote)
     if cortes["links"] or cortes["itens"]:
         print(f"poda: {cortes['links']} links fora da coleta, {cortes['itens']} itens sem link")
@@ -246,24 +314,64 @@ def executar():
         print("MODO TESTE: seen.json intocado - o envio normal do dia segue valendo")
         return 0
 
+    # Nunca pode derrubar um envio que ja aconteceu: e so registro.
+    try:
+        _registrar_entrega(brief, enviados)
+    except Exception as erro:
+        print(f"aviso: nao registrei a entrega em entregas.json ({erro})")
+
     # Sem isto o brief de amanha repete as manchetes de hoje.
     print(f"registrados {pipeline.marcar_vistos(caminho)} links em seen.json")
     return 0
 
 
+def _registrar_entrega(brief, enviados):
+    """Anota quantos receberam o brief de hoje, a que hora e quem curou.
+
+    Contagem, nao lista: o numero alimenta a pagina publica de status e os
+    enderecos nunca saem daqui. Ver status.py.
+    """
+    try:
+        registro = json.loads(ENTREGAS.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        registro = {}
+    registro[date.today().isoformat()] = {
+        "destinatarios": len(enviados),
+        "hora": datetime.now().strftime("%H:%M"),
+        "curado_por": brief.get("curado_por"),
+    }
+    ENTREGAS.write_text(
+        json.dumps(registro, ensure_ascii=False, indent=1), encoding="utf-8"
+    )
+
+
 def main():
-    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    # line_buffering: sem isto o Python guarda a saida num buffer de 8KB e o
+    # GitHub Actions mata o processo no timeout antes de qualquer flush - foi
+    # o que aconteceu em 02/09, uma execucao de 30 minutos sem UMA linha de
+    # log para dizer onde travou. Com buffer por linha, cada print sai na hora.
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace", line_buffering=True)
     try:
         return executar()
     except SystemExit:
         raise
     except Exception as erro:
         print(f"FALHA: {erro}", file=sys.stderr)
+        # Um aviso por dia basta: em 24/09 os cinco horarios do cron falharam
+        # em sequencia e o dono recebeu seis emails iguais. O primeiro ja diz
+        # o que precisa; os seguintes so enchem a caixa.
+        hoje = date.today().isoformat()
+        try:
+            ja_avisado = AVISO_FALHA.read_text(encoding="utf-8").strip() == hoje
+        except OSError:
+            ja_avisado = False
+        if ja_avisado:
+            print("aviso de falha de hoje ja foi enviado - nao repetindo")
+            return 1
         try:
             env = _ambiente()
-            mailer.avisar_falha(
-                env["usuario"], env["senha"], env["destino"], date.today().isoformat(), erro
-            )
+            mailer.avisar_falha(env["usuario"], env["senha"], env["destino"], hoje, erro)
+            AVISO_FALHA.write_text(hoje + "\n", encoding="utf-8")
             print("aviso de falha enviado")
         except Exception as segundo:
             print(f"nao deu nem para avisar: {segundo}", file=sys.stderr)

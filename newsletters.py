@@ -16,6 +16,10 @@ from email.header import decode_header, make_header
 HOST = "imap.gmail.com"
 TETO_PADRAO = 12
 CORPO_MAX = 6000
+# Sem timeout o imaplib espera para sempre: se o Gmail aceitar a conexao e
+# depois parar de responder, a execucao inteira do dia trava ate o GitHub
+# matar o job. Newsletter e bonus - melhor perder a secao que perder o brief.
+TIMEOUT = 60
 
 
 def _assunto(msg):
@@ -77,7 +81,7 @@ def buscar(usuario, senha, alias, teto=TETO_PADRAO):
         "from:newsletters-noreply@linkedin.com newer_than:1d",
     ]
 
-    conexao = imaplib.IMAP4_SSL(HOST)
+    conexao = imaplib.IMAP4_SSL(HOST, timeout=TIMEOUT)
     try:
         conexao.login(usuario, senha)
         conexao.select('"[Gmail]/All Mail"', readonly=True)

@@ -1,13 +1,50 @@
 name: Daily Brief
 
-# Este repositorio e vitrine: o workflow fica so como referencia, sem
-# agendamento proprio. A versao que roda de verdade mora num repo privado -
-# nao tem como rodar aqui sem voce cadastrar seus proprios secrets abaixo.
 on:
+  schedule:
+    # 10:07 UTC = 07:07 no horario de Brasilia (UTC-3 o ano todo desde 2019).
+    # Minuto 7 e nao 0 de proposito: no minuto cheio a fila do Actions atrasa mais.
+    #
+    # Cinco horarios, nao um: o cron do GitHub Actions e "melhor esforco" e
+    # pode simplesmente nao disparar, sem erro nenhum visivel em lugar algum.
+    # Confirmado duas vezes em dois dias - 26/08 (zero disparos o dia
+    # inteiro) e 27/08 (as duas janelas de entao ficaram mudas ate as
+    # 11:35 UTC, quase 1h30 depois do segundo horario). Um segundo horario
+    # nao bastou; este e o proximo degrau, nao a garantia final.
+    #
+    # run_brief.py sai em segundos se o brief de hoje ja foi enviado, entao
+    # nenhuma tentativa extra aqui duplica email - so aumenta a chance de
+    # pelo menos uma das cinco realmente disparar.
+    - cron: "7 10 * * *"
+    - cron: "27 10 * * *"
+    - cron: "47 10 * * *"
+    - cron: "7 11 * * *"
+    - cron: "27 11 * * *"
   workflow_dispatch:
     inputs:
       force:
         description: "Reenviar mesmo se o brief de hoje ja foi enviado"
+        type: boolean
+        default: false
+      so_dono:
+        description: "TESTE: enviar so para o dono, sem tocar na lista de inscritos"
+        type: boolean
+        default: false
+      amigos_teste:
+        description: "TESTE: enderecos extras separados por virgula (use aliases seus)"
+        type: string
+        default: ""
+      provedor:
+        description: "TESTE: forca este provedor de curadoria (deixe vazio para o padrao)"
+        type: choice
+        options: ["", "gemini", "openai_compat", "anthropic"]
+        default: ""
+      diagnostico:
+        description: "DIAGNOSTICO: so mede os limites por modelo do reserva, nao gera brief"
+        type: boolean
+        default: false
+      usar_brief:
+        description: "MANUAL: usa o data/briefs/HOJE.json ja commitado, sem chamar API (ver BRIEF.md)"
         type: boolean
         default: false
 
@@ -27,6 +64,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Sem isto, o checkout usa o SHA de quando a execucao foi DISPARADA.
+          # Com cinco horarios e um disparo externo, uma execucao pode ficar na
+          # fila enquanto outra roda e comita o seen.json - ao comecar, ela
+          # leria o estado velho, nao veria o brief de hoje registrado e
+          # mandaria tudo de novo. Pedir o topo de main fecha essa janela.
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -35,22 +79,116 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Medir limites do provedor reserva
+        # So roda quando pedido de proposito. Nao manda email nem toca em
+        # data/ - existe para responder "qual modelo aguenta o tamanho do
+        # nosso pedido?" com o numero do provedor, em vez de estimativa.
+        if: github.event.inputs.diagnostico == 'true'
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+        run: python probe_llm.py
+
       - name: Gerar e enviar o brief
+        if: github.event.inputs.diagnostico != 'true'
         env:
           # Provedor da curadoria: gemini (free tier) por padrao.
           # Para trocar para o Claude, mude para anthropic, descomente a linha
           # do anthropic em requirements.txt e cadastre ANTHROPIC_API_KEY.
-          BRIEF_PROVIDER: gemini
+          # Vazio (o normal) usa o padrao do curator.py. So o disparo manual
+          # pode sobrescrever - serve para provar ao vivo que um provedor
+          # reserva funciona, sem esperar o principal cair de verdade.
+          BRIEF_PROVIDER: ${{ github.event.inputs.provedor }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Reserva: qualquer API no dialeto /chat/completions da OpenAI
+          # (Groq, OpenRouter, Cerebras, Mistral...). Cadastrar os tres
+          # secrets abaixo ja liga o segundo degrau da cadeia - se o Gemini
+          # nao entregar, a curadoria passa para ca sozinha. Sem eles, o
+          # provedor e simplesmente pulado.
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODELOS: ${{ secrets.LLM_MODELOS }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           BRIEF_TO: ${{ secrets.BRIEF_TO }}
-          # Id da SUA planilha de inscritos (opcional). Nao precisa ser secret -
-          # so leitura publica e exposta - mas cadastre como secret se preferir.
+          # Nao e segredo: a planilha so tem leitura publica habilitada.
+          # A escrita continua so pelo formulario do Google.
           BRIEF_SUBSCRIBERS_SHEET_ID: ${{ secrets.BRIEF_SUBSCRIBERS_SHEET_ID }}
           BRIEF_FORCE: ${{ github.event.inputs.force }}
+          BRIEF_USAR_EXISTENTE: ${{ github.event.inputs.usar_brief }}
+          BRIEF_SO_DONO: ${{ github.event.inputs.so_dono }}
+          BRIEF_AMIGOS_TESTE: ${{ github.event.inputs.amigos_teste }}
         run: python run_brief.py
+
+      - name: Publicar a pagina de status
+        # Depois do envio, nunca antes: a pagina mostra o que ja aconteceu.
+        # `always()` de proposito - num dia de falha a pagina tem que dizer
+        # que falhou, e e justamente ai que ela serve para alguma coisa.
+        # Sem o SHOWCASE_TOKEN cadastrado o passo sai em silencio: a pagina e
+        # enfeite, o brief e o produto, e um token faltando nao pode derrubar
+        # uma execucao que ja entregou email.
+        if: always() && github.event.inputs.diagnostico != 'true'
+        continue-on-error: true
+        env:
+          SHOWCASE_TOKEN: ${{ secrets.SHOWCASE_TOKEN }}
+          SHOWCASE_REPO: felipe-parente-costa/daily-brief-showcase
+          # Só para CONTAR leitores enquanto o primeiro envio com registro
+          # nao acontece. Nenhum endereco entra no site - o status.py varre a
+          # saida e aborta se achar um.
+          BRIEF_SUBSCRIBERS_SHEET_ID: ${{ secrets.BRIEF_SUBSCRIBERS_SHEET_ID }}
+          BRIEF_TO: ${{ secrets.BRIEF_TO }}
+        run: |
+          if [ -z "$SHOWCASE_TOKEN" ]; then
+            echo "SHOWCASE_TOKEN nao cadastrado - pagina de status nao publicada"
+            exit 0
+          fi
+          # Copiar da pagina do GitHub costuma trazer espaco ou quebra de
+          # linha junto, e um unico caractere a mais devolve 401. Limpa antes.
+          LIMPO=$(printf '%s' "$SHOWCASE_TOKEN" | tr -d '[:space:]')
+          # Confere o token ANTES de gerar 54 paginas para descobrir no push
+          # que ele nao autentica. Imprime so o codigo HTTP, nunca o segredo.
+          codigo=$(curl -s -o /dev/null -w '%{http_code}'             -H "Authorization: Bearer $LIMPO"             "https://api.github.com/repos/${SHOWCASE_REPO}")
+          if [ "$codigo" != "200" ]; then
+            echo "SHOWCASE_TOKEN nao enxerga ${SHOWCASE_REPO} (HTTP $codigo)."
+            echo "401 = token invalido ou expirado; 404 = token valido mas sem"
+            echo "acesso a este repositorio. Refaca em github.com/settings/tokens."
+            # Diagnostico do FORMATO, sem imprimir caractere nenhum do segredo.
+            case "$LIMPO" in
+              ghp_*) tipo="classico (ghp_...)" ;;
+              github_pat_*) tipo="fine-grained (github_pat_...)" ;;
+              "") tipo="VAZIO" ;;
+              *) tipo="nao comeca com ghp_ nem github_pat_ - isso nao e um token" ;;
+            esac
+            echo "formato do valor cadastrado: $tipo, ${#LIMPO} caracteres"
+            echo "  (classico tem 40; fine-grained tem ~93)"
+            if [ "${#SHOWCASE_TOKEN}" != "${#LIMPO}" ]; then
+              echo "  havia espaco/quebra de linha no valor - ja descontado aqui"
+            fi
+            echo "Pagina de status nao publicada - o brief seguiu normalmente."
+            exit 0
+          fi
+          python status.py --saida site_build
+          git clone --depth 1 --quiet \
+            "https://x-access-token:${LIMPO}@github.com/${SHOWCASE_REPO}.git" showcase
+          # docs/ ja e a landing page de inscricao - NAO mexer nela. A pagina
+          # de status mora em docs/status/, que pertence inteiro ao gerador:
+          # apagar e recriar evita edicao orfa sobrevivendo no site depois de
+          # sair do arquivo de origem.
+          rm -rf showcase/docs/status
+          mkdir -p showcase/docs/status
+          cp -r site_build/. showcase/docs/status/
+          cd showcase
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/status
+          if git diff --cached --quiet; then
+            echo "pagina de status sem mudanca"
+          else
+            git commit -m "status de $(date +%F)"
+            git push
+            echo "pagina de status publicada"
+          fi
 
       - name: Registrar o que saiu
         # Sem o commit, o seen.json volta ao estado do repo e o brief de amanha

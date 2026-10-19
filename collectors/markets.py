@@ -1,8 +1,14 @@
 """Coleta de indicadores de mercado a partir de APIs publicas.
 
-Fontes: Yahoo Finance (chart v8), AwesomeAPI (cambio), CoinGecko (cripto)
+Fontes: Yahoo Finance (chart v8, indices e cambio), CoinGecko (cripto)
 e Banco Central / SGS (Selic e IPCA). Cada fetcher e isolado: se um cai,
 os outros continuam e o indicador ausente aparece como erro no relatorio.
+
+O dolar e o euro ja vieram da AwesomeAPI, que respondia 429 em TODAS as
+coletas feitas pelo GitHub Actions - o limite e por IP, e os IPs
+compartilhados dos runners vivem estourados. Da maquina local a mesma
+chamada funcionava, o que escondeu o problema por 54 edicoes seguidas.
+Agora sao USDBRL=X e EURBRL=X pelo Yahoo, o mesmo caminho dos indices.
 """
 
 import json
@@ -62,14 +68,6 @@ def yahoo(cfg):
     return _registro(cfg, atual, _variacao(atual, anterior), "Yahoo Finance")
 
 
-def awesomeapi(cfg):
-    """Cambio via AwesomeAPI - ja entrega a variacao do dia."""
-    par = cfg["par"]
-    dados = json.loads(buscar(f"https://economia.awesomeapi.com.br/last/{par}"))
-    bloco = dados[par.replace("-", "")]
-    return _registro(cfg, float(bloco["bid"]), round(float(bloco["pctChange"]), 2), "AwesomeAPI")
-
-
 def coingecko_lote(cfgs):
     """Cripto via CoinGecko, com variacao de 24h.
 
@@ -100,7 +98,7 @@ def bcb(cfg):
     return reg
 
 
-COLETORES = {"yahoo": yahoo, "awesomeapi": awesomeapi, "bcb": bcb}
+COLETORES = {"yahoo": yahoo, "bcb": bcb}
 # Provedores que buscam a lista inteira numa requisicao so
 COLETORES_LOTE = {"coingecko": coingecko_lote}
 

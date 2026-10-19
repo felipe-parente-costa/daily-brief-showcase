@@ -1,10 +1,30 @@
-# Daily Brief — instruções de execução
+# Daily Brief — rota manual (emergência)
 
-Este arquivo é a fonte da verdade do estágio 2 (curadoria). Ele é autocontido:
-a tarefa agendada roda numa sessão nova, sem memória de conversa anterior.
+Fonte da verdade da **curadoria feita à mão**, quando nenhum provedor de API
+responde e o `run_brief.py` não conseguiu fechar a edição sozinho. Autocontido:
+a sessão que executa isto não tem memória da conversa anterior.
 
-Diretório do projeto: `C:\Users\felip\OneDrive\Favorites\A.Reports`
-Destinatário do email: `seuemail@gmail.com`
+**O que é manual aqui é só a curadoria** — a única etapa que exige julgamento.
+Renderização, envio e registro continuam sendo o código de sempre, e não devem
+ser refeitos à mão: é neles que moram as garantias que custaram caro (uma
+mensagem por destinatário, sem `Bcc` vazando a lista; `List-Unsubscribe`;
+lista de inscritos vinda da planilha; `seen.json` para não repetir manchete
+amanhã). Mandar o email pelo conector do Gmail perde todas de uma vez — e em
+silêncio: chega bonito na sua caixa e os inscritos ficam de fora.
+
+Diretório do projeto: `/caminho/do/seu/projeto`
+Destinatários: você **+ os inscritos da planilha** (o código resolve isso).
+
+## Isto normalmente roda sozinho
+
+A tarefa agendada `daily-brief-resgate` (Claude Code, 08:01 todo dia) executa
+este arquivo sem ninguém pedir. Ela começa conferindo se o brief de hoje já
+saiu e, na imensa maioria dos dias, para aí mesmo em silêncio — só age quando
+a rota automática falhou de verdade.
+
+Os passos abaixo são, portanto, **o que a tarefa faz** — e o que você seguiria
+à mão caso queira conduzir você mesmo. Uma condição: tarefa agendada só dispara
+com o app do Claude Code aberto; fechado, ela roda na abertura seguinte.
 
 ---
 
@@ -63,15 +83,12 @@ Regras que não se negociam:
 
 ## 4. Gravar o brief
 
-Escreva `data/briefs/AAAA-MM-DD.json` exatamente neste formato:
+Escreva `data/briefs/AAAA-MM-DD.json` (data de hoje) neste formato:
 
 ```json
 {
-  "data": "AAAA-MM-DD",
-  "gerado_em": "26/08/2026 07:00",
-  "assunto": "Daily Brief · 26/08 · <3 a 6 palavras sobre o fato do dia>",
+  "assunto": "Daily Brief - DD/MM - <3 a 6 palavras sobre o fato do dia>",
   "abertura": "Duas ou três frases sobre o que de fato importa hoje.",
-  "mercado": [ "<copie o array mercado do raw, sem alterar>" ],
   "secoes": [
     {
       "id": "brasil",
@@ -86,21 +103,21 @@ Escreva `data/briefs/AAAA-MM-DD.json` exatamente neste formato:
       ]
     }
   ],
-  "newsletters_lidas": ["McKinsey — título da edição"],
-  "fontes_com_erro": [ "<copie do raw>" ]
+  "newsletters_lidas": ["McKinsey - título da edição"]
 }
 ```
 
+**Não** preencha `data`, `mercado`, `fontes_com_erro` nem `gerado_em`: o código
+copia os quatro da coleta (`curator.normalizar`). Escrever à mão só abre espaço
+para divergir do que foi realmente coletado.
+
 Ordem das seções: `brasil`, `global`, `mundo`, `tech`. Títulos: Brasil, Global,
-Mundo, Tech e Cripto. `links` e `fontes` são paralelos — mesmo índice, mesma fonte.
+Mundo, Tech e Cripto. `links` e `fontes` são paralelos — mesmo índice, mesma
+fonte. Quando dois links do mesmo item vêm da mesma fonte, diferencie o rótulo
+pelo assunto (`"G1 - TikTok"`, `"G1 - Uber"`) — senão o rodapé vira "G1 - G1".
 
-Quando dois links do mesmo item vêm da mesma fonte, diferencie o rótulo pelo
-assunto (`"G1 · TikTok"`, `"G1 · Uber"`) — senão o rodapé do item vira
-"G1 · G1" e o leitor não sabe qual link é qual.
-
-Em `abertura` e `texto` você pode marcar destaque com `**assim**`, e só aí — o teto
-e o critério estão em `config/profile.md`. Regra curta: o indicador e o número dele,
-no máximo 2 por item, 1 na abertura, nenhum nos títulos.
+Em `abertura` e `texto` marque destaque com `**assim**`, no máximo 2 por item e
+1 na abertura, nenhum nos títulos. O critério está em `config/profile.md`.
 
 ## 5. Validar
 
@@ -108,35 +125,55 @@ no máximo 2 por item, 1 na abertura, nenhum nos títulos.
 cd "/caminho/do/seu/projeto" && python pipeline.py --validar data/briefs/AAAA-MM-DD.json
 ```
 
-Confere duas coisas: se todo link do brief saiu de fato da coleta do dia, e se os
-destaques estão dentro do teto. Se acusar problema, **corrija antes de renderizar** —
-link inventado ou colado do item errado passa despercebido na leitura e só aparece
-quando o leitor clica.
+Confere se todo link saiu da coleta do dia e se os destaques cabem no teto.
+Corrija antes de seguir: link colado do item errado passa despercebido na
+leitura e só aparece quando o leitor clica.
 
-## 6. Renderizar
+## 6. Enviar
 
-```bash
-cd "/caminho/do/seu/projeto" && python render.py data/briefs/AAAA-MM-DD.json
-```
-
-Gera o `.html` ao lado do JSON. Leia o arquivo inteiro — ele é o corpo do email.
-
-## 7. Enviar
-
-Conector do Gmail, `send_message`:
-
-- `to`: `["seuemail@gmail.com"]`
-- `subject`: o campo `assunto` do brief
-- `htmlBody`: o conteúdo do arquivo `.html`
-- `body`: uma versão em texto puro (abertura + títulos dos itens), para clientes sem HTML
-
-## 8. Registrar o que saiu
+O envio roda no GitHub Actions, com os mesmos segredos e o mesmo caminho de
+sempre. Commite o brief e dispare:
 
 ```bash
-cd "/caminho/do/seu/projeto" && python pipeline.py --marcar data/briefs/AAAA-MM-DD.json
+cd "/caminho/do/seu/projeto" && git add data/briefs && git commit -m "brief manual de $(date +%F)" && git push
 ```
 
-Sem esse passo o brief de amanhã repete as manchetes de hoje.
+```bash
+cd "/caminho/do/seu/projeto" && gh workflow run daily-brief.yml --ref main -f usar_brief=true
+```
+
+O `usar_brief=true` faz o `run_brief.py` pular a curadoria por API e usar o
+JSON commitado. Todo o resto acontece igual: poda, validação, renderização,
+uma mensagem por destinatário, `List-Unsubscribe`, inscritos da planilha,
+`seen.json` e faxina da caixa Enviados.
+
+Acompanhe:
+
+```bash
+cd "/caminho/do/seu/projeto" && gh run watch $(gh run list --workflow=daily-brief.yml --limit 1 --json databaseId --jq '.[0].databaseId')
+```
+
+Antes de disparar, confira que o brief de hoje **ainda não saiu** — se já
+tiver saído, a trava do `seen.json` barra o segundo envio e o log dirá isso.
+
+### Sem poder dar push?
+
+Com `GMAIL_USER` e `GMAIL_APP_PASSWORD` no ambiente local, o mesmo caminho
+roda na máquina, sem GitHub:
+
+```bash
+cd "/caminho/do/seu/projeto" && BRIEF_USAR_EXISTENTE=1 BRIEF_SUBSCRIBERS_SHEET_ID=SEU_SHEET_ID python run_brief.py
+```
+
+Sem a variável da planilha o email vai só para você — os inscritos ficam de
+fora, que é justamente a falha silenciosa a evitar.
+
+## 7. Conferir
+
+O log tem que dizer `enviado para N destinatario(s)` com N = você + inscritos
+(14 em 18/10/2026), e `registrados X links em seen.json`. Se disser
+`enviado para 1`, a lista não foi lida: confira a planilha antes de dar o dia
+por encerrado.
 
 ---
 
@@ -145,4 +182,7 @@ Sem esse passo o brief de amanhã repete as manchetes de hoje.
 - **Uma fonte caiu** — normal. Ela aparece no rodapé do email e a edição sai assim mesmo.
 - **Muitas fontes caíram** (mais de um terço) — mande o email com o que tem e diga isso na abertura.
 - **Sem itens depois da filtragem** — email curto: "dia sem novidade relevante nas fontes", com a tabela de mercado.
-- **Falha no envio** — salve como rascunho (`create_draft`) e registre o erro no fim do brief JSON.
+- **Falha no envio** — o log diz para quem falhou; o dono é obrigatório e derruba a
+  execução, endereço de inscrito quebrado só é registrado e o resto segue.
+- **Nenhum provedor de API responde** — é exatamente o caso desta rota: cure à mão
+  e siga do passo 4. Não invente conteúdo para preencher.
