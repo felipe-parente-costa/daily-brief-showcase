@@ -9,7 +9,8 @@
    das juntas e asas (#ca7040) clareado para o acento, creme do corpo
    (#cab5ad) no texto e no papel do tema claro.
 
-   Desenho escuro primeiro: o tema claro e a excecao. */
+   As variaveis-base sao as do escuro, mas quem abre a pagina ve o claro: o
+   index.html marca data-theme="light" ate o visitante trocar no botao. */
 
 :root {
   --bg: #0b0c13;
@@ -255,7 +256,7 @@ summary:focus-visible { outline: 2px solid var(--ambar); outline-offset: 2px; }
 }
 
 /* ======================================================= cabecalho */
-header { margin-block: 34px 28px; }
+header { grid-area: texto; margin-bottom: 10px; }
 
 .kicker {
   margin: 0 0 12px;
@@ -297,8 +298,30 @@ h1 .fino { color: var(--muted); font-weight: 500; }
 .assinar a:hover { background: var(--ambar-claro); }
 
 /* ======================================================= heroi */
-.heroi { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); }
-@media (min-width: 900px) { .heroi { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); } }
+.heroi {
+  display: grid;
+  gap: 18px;
+  margin-top: 34px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "texto" "briefy" "painel";
+}
+.briefy { grid-area: briefy; display: flex; flex-direction: column; min-width: 0; }
+.painel { grid-area: painel; }
+/* O Briefy ocupa a coluna da direita do titulo ate o fim do painel: sem
+   vazio ao lado do titulo e sem sobra embaixo do painel. */
+@media (min-width: 900px) {
+  .heroi {
+    column-gap: 32px;
+    row-gap: 22px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-areas: "texto briefy" "painel briefy";
+  }
+  .briefy .moldura { flex: 1; display: flex; }
+  .briefy .palco { flex: 1; aspect-ratio: auto; min-height: 520px; }
+  /* a dica desce para dentro do quadro, para ele terminar junto do painel */
+  .briefy { position: relative; }
+  .briefy .dica { position: absolute; left: 14px; bottom: 12px; margin: 0; padding: 0; pointer-events: none; }
+}
 
 .moldura { position: relative; border: 1px solid var(--line); background: var(--surface); }
 .palco {

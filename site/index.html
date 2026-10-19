@@ -18,12 +18,13 @@
 </script>
 <script>
   // Antes da primeira pintura, para a pagina nao piscar no tema errado.
+  // Claro e o padrao, mesmo com o sistema no escuro; o botao troca e lembra.
+  var tema = "light";
   try {
     var salvo = localStorage.getItem("tema");
-    if (salvo === "dark" || salvo === "light") {
-      document.documentElement.setAttribute("data-theme", salvo);
-    }
+    if (salvo === "dark" || salvo === "light") tema = salvo;
   } catch (e) {}
+  document.documentElement.setAttribute("data-theme", tema);
 </script>
 </head>
 <body>
@@ -52,6 +53,11 @@
 
 <div class="wrap">
 
+  <p class="erro" id="erro" hidden></p>
+
+  <!-- No desktop: texto e painel na coluna da esquerda, Briefy ocupando a
+       direita inteira. No celular: texto, Briefy, painel. -->
+  <div class="heroi">
   <header>
     <p class="kicker">Esta&ccedil;&atilde;o de curadoria &middot; <b id="selo-data">carregando</b></p>
     <h1>Status<br><span class="fino">do Daily Brief</span></h1>
@@ -59,10 +65,7 @@
     <p class="assinar"><a href="../">Receber por email</a></p>
   </header>
 
-  <p class="erro" id="erro" hidden></p>
-
-  <div class="heroi">
-    <div>
+    <div class="briefy">
       <div class="moldura">
         <div class="palco" id="palco">
           <div class="bilhete" id="bilhete"><span class="quem">Briefy</span><span id="bilhete-texto"></span></div>
