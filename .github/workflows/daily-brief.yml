@@ -57,6 +57,10 @@ concurrency:
 
 jobs:
   brief:
+    # O showcase publico recebe uma copia deste arquivo, mas nao tem os
+    # secrets: la o agendamento falhava todo dia e mandava email de erro.
+    # Pulado, o job nao falha nem avisa. Em um fork, roda normalmente.
+    if: github.repository != 'felipe-parente-costa/daily-brief-showcase'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
