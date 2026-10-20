@@ -51,6 +51,9 @@
   function desenharIcone() {
     // Mostra o icone do tema para o qual o clique vai levar.
     if (btnTema) btnTema.dataset.mostrar = temaEfetivo() === "dark" ? "sol" : "lua";
+    // barra do navegador no celular acompanha o fundo da pagina
+    var barra = document.querySelector('meta[name="theme-color"]');
+    if (barra) barra.content = temaEfetivo() === "dark" ? "#0b0c13" : "#f4efe9";
   }
   if (btnTema) {
     btnTema.addEventListener("click", function () {
