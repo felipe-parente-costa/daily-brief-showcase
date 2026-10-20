@@ -1,15 +1,15 @@
 /* Briefy: o carteiro que roda o Daily Brief, em 3D.
  *
- * O modelo (modelos/briefy.glb, 3,9 MB) veio de uma geracao no ChatGPT e foi
- * reduzido de 500 mil para 50 mil triangulos em briefy-3d/reduzir_animado.py,
- * com os morph targets das asas transferidos para a malha nova. O arquivo traz
- * um clipe de 4 s ("Flutuar e bater asas") que faz o corpo flutuar e as asas
- * baterem.
+ * Dois modelos, os dois gerados no ChatGPT e reduzidos de 500 mil para 50 mil
+ * triangulos em briefy-3d/reduzir_animado.py (os morph targets das asas
+ * transferidos para a malha nova). Cada um traz um clipe de 4 s que faz o
+ * corpo flutuar e as asas baterem.
+ *   modelos/briefy.glb         - feliz: a edicao de hoje ja saiu
+ *   modelos/briefy-triste.glb  - triste: ainda nao saiu, ou falhou
  *
- * Dois modos, como pedido:
- *   "entrega" - preparando ou ja entregue: o clipe toca, asas batendo.
- *   "falha"   - a edicao nao saiu: o clipe para, as asas caem, o corpo
- *               afunda, inclina e apaga um pouco.
+ * O modelo do estado atual carrega primeiro; o outro so quando for preciso.
+ * Se o triste nao carregar, o feliz faz as vezes dele do jeito antigo: asas
+ * caidas, corpo afundado e cor apagada.
  *
  * A camera so gira +-45 graus pela frente. As asas sao deformacao de
  * vertice, nao rotacao rigida: de tras, a asa colada nas costas entorta.
@@ -24,13 +24,15 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 
-const MODELO = "modelos/briefy.glb";
+const MODELOS = { feliz: "modelos/briefy.glb", triste: "modelos/briefy-triste.glb" };
+const PES = 0.03;   // altura dos pes em repouso; a camera foi enquadrada assim
 
+// Feliz so quando a edicao de hoje ja saiu; em qualquer outro caso, triste.
 const ESTADOS = {
-  entregue:    { rotulo: "Entregue",        cor: "--ok",    modo: "entrega" },
-  trabalhando: { rotulo: "Rodando",         cor: "--work",  modo: "entrega" },
-  dormindo:    { rotulo: "Fora do horario", cor: "--sleep", modo: "entrega" },
-  falhou:      { rotulo: "Falhou",          cor: "--bad",   modo: "falha" },
+  entregue:    { rotulo: "Entregue",        cor: "--ok",    humor: "feliz" },
+  trabalhando: { rotulo: "Rodando",         cor: "--work",  humor: "triste" },
+  dormindo:    { rotulo: "Fora do horario", cor: "--sleep", humor: "triste" },
+  falhou:      { rotulo: "Falhou",          cor: "--bad",   humor: "triste" },
 };
 
 const FRASES_PADRAO = {
@@ -46,7 +48,6 @@ function criar(ref) {
 
   const semMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let atual = "entregue";
-  let modo = "entrega";
   let frases = FRASES_PADRAO;
 
   // ------------------------------------------------------------- cena
@@ -91,48 +92,80 @@ function criar(ref) {
   aviso.textContent = "carregando o Briefy…";
   palco.appendChild(aviso);
 
-  // ------------------------------------------------------------- modelo
-  let malha = null, acao = null, mixer = null;
-  const indice = { sobe: 0, desce: 1 };
+  // ------------------------------------------------------------- modelos
+  // humor -> promessa de { cena, malha, mixer, acao }, ou de null se falhou
+  const pendentes = {};
+  let reserva = false;           // feliz imitando o triste (o triste falhou)
   const corOriginal = new THREE.Color(1, 1, 1);
   const corAlvo = new THREE.Color(1, 1, 1);
+  const carregador = new GLTFLoader();
 
-  new GLTFLoader().load(
-    MODELO,
-    (gltf) => {
-      raiz.add(gltf.scene);
-      gltf.scene.traverse((o) => {
-        if (o.isMesh && o.morphTargetInfluences) {
-          malha = o;
-          const d = o.morphTargetDictionary || {};
-          if (d["Asas sobem"] !== undefined) indice.sobe = d["Asas sobem"];
-          if (d["Asas descem"] !== undefined) indice.desce = d["Asas descem"];
-        }
+  function carregar(humor) {
+    if (!pendentes[humor]) {
+      pendentes[humor] = new Promise((pronto) => {
+        carregador.load(MODELOS[humor], (gltf) => {
+          const m = { cena: gltf.scene, malha: null, mixer: null, acao: null, sobe: 0, desce: 1 };
+          gltf.scene.traverse((o) => {
+            if (o.isMesh && o.morphTargetInfluences) {
+              m.malha = o;
+              const d = o.morphTargetDictionary || {};
+              if (d["Asas sobem"] !== undefined) m.sobe = d["Asas sobem"];
+              if (d["Asas descem"] !== undefined) m.desce = d["Asas descem"];
+            }
+          });
+          if (gltf.animations.length) {
+            m.mixer = new THREE.AnimationMixer(gltf.scene);
+            m.acao = m.mixer.clipAction(gltf.animations[0]);
+          }
+          // Cada modelo veio com a origem num lugar (o feliz no meio do
+          // corpo, o triste nos pes): apoia os pes na mesma altura.
+          const caixa = new THREE.Box3().setFromObject(gltf.scene);
+          gltf.scene.position.y = PES - caixa.min.y;
+          gltf.scene.visible = false;
+          raiz.add(gltf.scene);
+          pronto(m);
+        }, undefined, () => pronto(null));
       });
-      if (gltf.animations.length) {
-        mixer = new THREE.AnimationMixer(gltf.scene);
-        acao = mixer.clipAction(gltf.animations[0]);
-      }
-      aviso.remove();
-      aplicarModo();
-    },
-    undefined,
-    () => { aviso.textContent = "não consegui carregar o modelo 3D."; }
-  );
-
-  function aplicarModo() {
-    if (!malha) return;
-    if (modo === "entrega" && !semMovimento) {
-      if (acao) acao.reset().play();
-    } else if (acao) {
-      acao.stop();
     }
-    if (modo === "falha") {
-      malha.morphTargetInfluences[indice.sobe] = 0;
-      malha.morphTargetInfluences[indice.desce] = 0.9;   // asas caidas
-      corAlvo.setRGB(0.72, 0.62, 0.6);
-    } else {
-      corAlvo.copy(corOriginal);
+    return pendentes[humor];
+  }
+
+  let visivel = null;            // o modelo que esta na tela
+
+  function aplicarHumor(desejado) {
+    carregar(desejado).then((m) => {
+      if (desejado !== ESTADOS[atual].humor) return;   // estado mudou no meio
+      if (!m && desejado === "triste") {
+        // sem o modelo triste: o feliz assume, com asas caidas e cor apagada
+        return carregar("feliz").then((f) => mostrar(f, true));
+      }
+      mostrar(m, false);
+    });
+  }
+
+  function mostrar(m, comoReserva) {
+    if (!m) { aviso.textContent = "não consegui carregar o modelo 3D."; return; }
+    aviso.remove();
+    if (visivel && visivel !== m) {
+      visivel.cena.visible = false;
+      if (visivel.acao) visivel.acao.stop();
+    }
+    visivel = m;
+    reserva = comoReserva;
+    m.cena.visible = true;
+    if (m.acao) {
+      if (!reserva && !semMovimento) m.acao.reset().play();
+      else m.acao.stop();
+    }
+    if (m.malha) {
+      if (reserva) {
+        m.malha.morphTargetInfluences[m.sobe] = 0;
+        m.malha.morphTargetInfluences[m.desce] = 0.9;   // asas caidas
+        corAlvo.setRGB(0.72, 0.62, 0.6);
+      } else {
+        m.malha.morphTargetInfluences[m.desce] = 0;
+        corAlvo.copy(corOriginal);
+      }
     }
   }
 
@@ -140,8 +173,7 @@ function criar(ref) {
     const e = ESTADOS[chaveEstado];
     if (!e) return;
     atual = chaveEstado;
-    modo = e.modo;
-    aplicarModo();
+    aplicarHumor(e.humor);
     if (ref.badgeTexto) ref.badgeTexto.textContent = e.rotulo;
     if (ref.led) ref.led.style.setProperty("--cor-estado", `var(${e.cor})`);
     esconderBilhete();
@@ -192,15 +224,15 @@ function criar(ref) {
     const dt = Math.min(relogio.getDelta(), 0.05);
     const t = relogio.elapsedTime;
 
-    if (mixer && modo === "entrega" && !semMovimento) mixer.update(dt);
+    if (visivel && visivel.mixer && !reserva && !semMovimento) visivel.mixer.update(dt);
 
-    // modo falha: afunda, inclina para frente e balanca devagar
-    const falha = modo === "falha";
+    // so na reserva (sem o modelo triste): afunda, inclina e balanca devagar
+    const falha = reserva;
     const alvoY = falha ? -0.09 + (semMovimento ? 0 : Math.sin(t * 0.8) * 0.01) : 0;
     raiz.position.y += (alvoY - raiz.position.y) * Math.min(1, dt * 3);
     raiz.rotation.x += ((falha ? 0.16 : 0) - raiz.rotation.x) * Math.min(1, dt * 3);
     raiz.rotation.z += ((falha ? 0.07 : 0) - raiz.rotation.z) * Math.min(1, dt * 3);
-    if (malha) malha.material.color.lerp(corAlvo, Math.min(1, dt * 3));
+    if (visivel && visivel.malha) visivel.malha.material.color.lerp(corAlvo, Math.min(1, dt * 3));
 
     orbita.update();
     renderer.render(cena, camera);
@@ -213,7 +245,7 @@ function criar(ref) {
     definirFrases(novas) { frases = novas || FRASES_PADRAO; },
     falar: mostrarBilhete,
   };
-  // Para trocar de modo pelo console ao ajustar: Briefy.atual.definirEstado("falhou")
+  // Para trocar de humor pelo console ao ajustar: Briefy.atual.definirEstado("falhou")
   window.Briefy.atual = api;
   return api;
 }

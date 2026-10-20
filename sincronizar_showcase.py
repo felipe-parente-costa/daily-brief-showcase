@@ -29,7 +29,7 @@ ARQUIVOS = [
     "requirements.txt", "run_brief.py", "subscribers.py", "status.py", "probe_llm.py",
     "sincronizar_showcase.py",
     "site/index.html", "site/estilo.css", "site/app.js", "site/briefy.js", "site/.nojekyll",
-    "site/modelos/briefy.glb",
+    "site/modelos/briefy.glb", "site/modelos/briefy-triste.glb",
 ]
 
 CAMINHO_LOCAL = re.compile(r"[A-Za-z]:[\\/]+Users[\\/]+[^\\/\s\"'`]+(?:[\\/]+[^\\/\s\"'`]+)*?[\\/]+A\.Reports")
