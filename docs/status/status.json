@@ -1,135 +1,151 @@
 {
- "gerado_em": "2026-10-19T14:38:43-03:00",
+ "gerado_em": "2026-10-20T07:29:11-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 55,
-  "itens_curados": 622,
+  "edicoes": 56,
+  "itens_curados": 634,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
-  "leitores": 14,
-  "sequencia": 55
+  "leitores": 15,
+  "sequencia": 56
  },
  "hoje": {
-  "data": "2026-10-19",
+  "data": "2026-10-20",
   "entregue": true,
   "aviso_de_falha": false,
-  "destinatarios": 14,
-  "hora": "07:26",
+  "destinatarios": 15,
+  "hora": "07:29",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-19",
-  "numero": 55,
-  "assunto": "Daily Brief - 19/10 - Sanções russas e PIB chinês",
-  "abertura": "A Casa Branca abriu uma trégua de **60 dias** nas sanções a compradores de petróleo russo, derrubando as cotações do barril e aliviando a curva de juros global. Enquanto a Ásia repercute a aceleração do crescimento chinês, protestos violentos contra medidas de austeridade fiscal na França voltam a pressionar os títulos soberanos europeus e o euro.",
-  "itens": 11,
+  "data": "2026-10-20",
+  "numero": 56,
+  "assunto": "Daily Brief - 20/10 - Alerta de Newcastle e petróleo em alta",
+  "abertura": "Os riscos sanitários no agronegócio ganham prioridade no Brasil com a confirmação de Newcastle em Santa Catarina. No cenário internacional, a cotação do petróleo supera **US$ 110** em meio a tensões geopolíticas e dúvidas sobre o ritmo de aportes em IA.",
+  "itens": 12,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Global",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
     "itens": 3
    }
   ],
-  "newsletters": 2
+  "newsletters": 5
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "205.430",
-   "variacao_pct": 0.54
+   "valor": "205.079",
+   "variacao_pct": -0.17
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,0693",
-   "variacao_pct": -0.54
+   "valor": "R$ 5,0497",
+   "variacao_pct": -0.26
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,6892",
-   "variacao_pct": -0.38
+   "valor": "R$ 5,6632",
+   "variacao_pct": -0.33
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.659,44",
-   "variacao_pct": -1.09
+   "valor": "7.690,73",
+   "variacao_pct": 0.41
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "26.140,03",
-   "variacao_pct": -2.15
+   "valor": "26.430,89",
+   "variacao_pct": 1.11
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,098%",
-   "variacao_pct": 0.18
+   "valor": "5,136%",
+   "variacao_pct": 0.75
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,94",
-   "variacao_pct": 0.1
+   "valor": "101,83",
+   "variacao_pct": -0.15
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 98,34",
-   "variacao_pct": -3.03
+   "valor": "US$ 100,71",
+   "variacao_pct": -2.85
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.188,80",
-   "variacao_pct": 0.18
+   "valor": "US$ 4.130,20",
+   "variacao_pct": -0.72
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 82.551",
-   "variacao_pct": 0.56
+   "valor": "US$ 81.510",
+   "variacao_pct": -1.27
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.430,45",
-   "variacao_pct": 0.41
+   "valor": "US$ 2.385,88",
+   "variacao_pct": -1.84
+  },
+  {
+   "nome": "Selic (meta)",
+   "grupo": "brasil",
+   "valor": "13,75% a.a.",
+   "variacao_pct": null
+  },
+  {
+   "nome": "IPCA (mensal)",
+   "grupo": "brasil",
+   "valor": "0,82%",
+   "variacao_pct": null
   }
  ],
  "secoes": {
-  "brasil": 174,
-  "global": 149,
-  "mundo": 124,
-  "tech": 175
+  "brasil": 178,
+  "global": 151,
+  "mundo": 127,
+  "tech": 178
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 105
+   "citacoes": 108
   },
   {
    "nome": "Financial Times",
-   "citacoes": 103
+   "citacoes": 104
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 87
+   "citacoes": 90
+  },
+  {
+   "nome": "CNBC World",
+   "citacoes": 71
   },
   {
    "nome": "CNBC",
@@ -137,10 +153,6 @@
   },
   {
    "nome": "CNBC Top News",
-   "citacoes": 69
-  },
-  {
-   "nome": "CNBC World",
    "citacoes": 69
   },
   {
@@ -153,15 +165,15 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 59
+   "citacoes": 60
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 51
+   "citacoes": 53
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 40
+   "citacoes": 42
   },
   {
    "nome": "Brazil Journal",
@@ -169,7 +181,7 @@
   },
   {
    "nome": "MarketWatch",
-   "citacoes": 19
+   "citacoes": 20
   },
   {
    "nome": "G1",
@@ -179,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 35
+   "edicoes": 37
   },
   {
    "nome": "Apollo",
@@ -207,15 +219,15 @@
   },
   {
    "nome": "GaryVee",
-   "edicoes": 4
+   "edicoes": 5
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 4
+   "edicoes": 5
   },
   {
-   "nome": "Ray Dalio",
-   "edicoes": 3
+   "nome": "BCG",
+   "edicoes": 4
   }
  ],
  "saude_fontes": [
@@ -223,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 29,
+   "falhas": 28,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 29,
+   "falhas": 28,
    "dias": 30
   },
   {
@@ -1135,6 +1147,19 @@
    "newsletters": 2,
    "destinatarios": 14,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-10-20",
+   "itens": 12,
+   "secoes": {
+    "brasil": 4,
+    "global": 2,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 5,
+   "destinatarios": 15,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1467,6 +1492,12 @@
    "assunto": "Daily Brief - 19/10 - Sanções russas e PIB chinês",
    "itens": 11,
    "arquivo": "edicoes/2026-10-19.html"
+  },
+  {
+   "data": "2026-10-20",
+   "assunto": "Daily Brief - 20/10 - Alerta de Newcastle e petróleo em alta",
+   "itens": 12,
+   "arquivo": "edicoes/2026-10-20.html"
   }
  ]
 }
