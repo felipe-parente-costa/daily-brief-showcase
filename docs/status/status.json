@@ -1,33 +1,33 @@
 {
- "gerado_em": "2026-10-20T12:43:42-03:00",
+ "gerado_em": "2026-10-21T07:22:58-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 56,
-  "itens_curados": 634,
+  "edicoes": 57,
+  "itens_curados": 643,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 15,
-  "sequencia": 56
+  "sequencia": 57
  },
  "hoje": {
-  "data": "2026-10-20",
+  "data": "2026-10-21",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 15,
-  "hora": "07:29",
+  "hora": "07:22",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-20",
-  "numero": 56,
-  "assunto": "Daily Brief - 20/10 - Alerta de Newcastle e petróleo em alta",
-  "abertura": "Os riscos sanitários no agronegócio ganham prioridade no Brasil com a confirmação de Newcastle em Santa Catarina. No cenário internacional, a cotação do petróleo supera **US$ 110** em meio a tensões geopolíticas e dúvidas sobre o ritmo de aportes em IA.",
-  "itens": 12,
+  "data": "2026-10-21",
+  "numero": 57,
+  "assunto": "Daily Brief - 21/10 - Fusão Tesla-SpaceX e juro francês",
+  "abertura": "A formação de comitês para avaliar uma fusão entre Tesla e SpaceX mobiliza os mercados de tecnologia após lucros recordes da empresa espacial. Na Europa, a dívida pública francesa alcançou a marca de **5%** em meio a protestos internos e cortes de projeção no varejo.",
+  "itens": 9,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 4
+    "itens": 3
    },
    {
     "titulo": "Global",
@@ -35,81 +35,81 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 3
+    "itens": 2
    }
   ],
-  "newsletters": 5
+  "newsletters": 3
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "205.079",
-   "variacao_pct": -0.17
+   "valor": "208.296",
+   "variacao_pct": 1.57
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,0497",
-   "variacao_pct": -0.26
+   "valor": "R$ 5,0093",
+   "variacao_pct": -0.55
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,6632",
-   "variacao_pct": -0.33
+   "valor": "R$ 5,6285",
+   "variacao_pct": -0.32
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.690,73",
-   "variacao_pct": 0.41
+   "valor": "7.712,57",
+   "variacao_pct": 0.28
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "26.430,89",
-   "variacao_pct": 1.11
+   "valor": "26.424,82",
+   "variacao_pct": -0.02
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,136%",
-   "variacao_pct": 0.75
+   "valor": "5,117%",
+   "variacao_pct": -0.37
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,83",
-   "variacao_pct": -0.15
+   "valor": "101,77",
+   "variacao_pct": 0.04
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 100,71",
-   "variacao_pct": -2.85
+   "valor": "US$ 99,91",
+   "variacao_pct": -1.85
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.130,20",
-   "variacao_pct": -0.72
+   "valor": "US$ 4.134,80",
+   "variacao_pct": -0.19
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 81.510",
-   "variacao_pct": -1.27
+   "valor": "US$ 83.190",
+   "variacao_pct": 2.04
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.385,88",
-   "variacao_pct": -1.84
+   "valor": "US$ 2.444,79",
+   "variacao_pct": 2.45
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 178,
-  "global": 151,
-  "mundo": 127,
-  "tech": 178
+  "brasil": 181,
+  "global": 153,
+  "mundo": 129,
+  "tech": 180
  },
  "fontes": [
   {
@@ -137,14 +137,18 @@
   },
   {
    "nome": "Financial Times",
-   "citacoes": 104
+   "citacoes": 106
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 90
+   "citacoes": 91
   },
   {
    "nome": "CNBC World",
+   "citacoes": 73
+  },
+  {
+   "nome": "CNBC Top News",
    "citacoes": 71
   },
   {
@@ -152,12 +156,8 @@
    "citacoes": 70
   },
   {
-   "nome": "CNBC Top News",
-   "citacoes": 69
-  },
-  {
    "nome": "BBC World",
-   "citacoes": 68
+   "citacoes": 69
   },
   {
    "nome": "The Verge",
@@ -165,7 +165,7 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 60
+   "citacoes": 61
   },
   {
    "nome": "WSJ Markets",
@@ -173,7 +173,7 @@
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 42
+   "citacoes": 44
   },
   {
    "nome": "Brazil Journal",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 37
+   "edicoes": 39
   },
   {
    "nome": "Apollo",
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 28,
+   "falhas": 27,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 28,
+   "falhas": 27,
    "dias": 30
   },
   {
@@ -267,6 +267,13 @@
    "dias": 30
   },
   {
+   "nome": "Brazil Journal",
+   "secao": "brasil",
+   "tipo": "feed",
+   "falhas": 1,
+   "dias": 30
+  },
+  {
    "nome": "NeoFeed",
    "secao": "brasil",
    "tipo": "feed",
@@ -284,13 +291,6 @@
    "nome": "Bitcoin",
    "secao": "cripto",
    "tipo": "mercado",
-   "falhas": 0,
-   "dias": 30
-  },
-  {
-   "nome": "Brazil Journal",
-   "secao": "brasil",
-   "tipo": "feed",
    "falhas": 0,
    "dias": 30
   },
@@ -1160,6 +1160,19 @@
    "newsletters": 5,
    "destinatarios": 15,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-10-21",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 3,
+   "destinatarios": 15,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1498,6 +1511,12 @@
    "assunto": "Daily Brief - 20/10 - Alerta de Newcastle e petróleo em alta",
    "itens": 12,
    "arquivo": "edicoes/2026-10-20.html"
+  },
+  {
+   "data": "2026-10-21",
+   "assunto": "Daily Brief - 21/10 - Fusão Tesla-SpaceX e juro francês",
+   "itens": 9,
+   "arquivo": "edicoes/2026-10-21.html"
   }
  ]
 }
