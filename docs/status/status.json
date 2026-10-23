@@ -1,33 +1,33 @@
 {
- "gerado_em": "2026-10-22T12:57:06-03:00",
+ "gerado_em": "2026-10-23T07:28:25-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 58,
-  "itens_curados": 654,
+  "edicoes": 59,
+  "itens_curados": 667,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 15,
-  "sequencia": 58
+  "sequencia": 59
  },
  "hoje": {
-  "data": "2026-10-22",
+  "data": "2026-10-23",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 15,
-  "hora": "07:24",
+  "hora": "07:28",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-22",
-  "numero": 58,
-  "assunto": "Daily Brief - 22/10 - Tensão geopolítica eleva petróleo e Big Techs sofrem no Q3",
-  "abertura": "A escalada de conflitos no Oriente Médio voltou a impulsionar a cotação do petróleo para perto de **US$ 100** por barril, reacendendo os temores globais de inflação. Ao mesmo tempo, os balanços corporativos de Meta e Tesla expõem o custo elevado e a pressão sobre as margens exigidos pela corrida da inteligência artificial.",
-  "itens": 11,
+  "data": "2026-10-23",
+  "numero": 59,
+  "assunto": "Daily Brief - 23/10 - Tensão no petróleo e ajuste em tech",
+  "abertura": "O mercado enfrenta pressão global com a escalada do **petróleo** diante das tensões no Oriente Médio e das dúvidas sobre o endividamento na Europa. No Brasil, o Bradesco abre a safra dos grandes bancos com margens comprimidas pelo juro elevado.",
+  "itens": 13,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Global",
@@ -35,81 +35,81 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
     "itens": 3
    }
   ],
-  "newsletters": 3
+  "newsletters": 4
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "206.495",
-   "variacao_pct": -0.86
+   "valor": "204.120",
+   "variacao_pct": -1.15
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,0276",
-   "variacao_pct": 0.1
+   "valor": "R$ 5,0298",
+   "variacao_pct": 0.19
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,6490",
-   "variacao_pct": 0.21
+   "valor": "R$ 5,6408",
+   "variacao_pct": 0.01
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.757,17",
-   "variacao_pct": 0.58
+   "valor": "7.663,43",
+   "variacao_pct": -1.21
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "26.702,86",
-   "variacao_pct": 1.05
+   "valor": "26.008,86",
+   "variacao_pct": -2.6
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,146%",
-   "variacao_pct": 0.57
+   "valor": "4,953%",
+   "variacao_pct": -3.75
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,65",
-   "variacao_pct": -0.13
+   "valor": "101,74",
+   "variacao_pct": 0.13
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 99,44",
-   "variacao_pct": 2.36
+   "valor": "US$ 101,04",
+   "variacao_pct": 1.58
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.103,90",
-   "variacao_pct": -1.11
+   "valor": "US$ 4.037,50",
+   "variacao_pct": -0.56
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 81.983",
-   "variacao_pct": -1.48
+   "valor": "US$ 81.713",
+   "variacao_pct": -0.33
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.407,31",
-   "variacao_pct": -1.56
+   "valor": "US$ 2.400,02",
+   "variacao_pct": -0.3
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 184,
-  "global": 156,
-  "mundo": 131,
-  "tech": 183
+  "brasil": 188,
+  "global": 159,
+  "mundo": 134,
+  "tech": 186
  },
  "fontes": [
   {
@@ -137,11 +137,15 @@
   },
   {
    "nome": "Financial Times",
-   "citacoes": 107
+   "citacoes": 108
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 93
+   "citacoes": 94
+  },
+  {
+   "nome": "CNBC",
+   "citacoes": 77
   },
   {
    "nome": "CNBC World",
@@ -152,20 +156,16 @@
    "citacoes": 73
   },
   {
-   "nome": "CNBC",
-   "citacoes": 70
-  },
-  {
    "nome": "BBC World",
    "citacoes": 70
   },
   {
    "nome": "The Verge",
-   "citacoes": 66
+   "citacoes": 67
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 62
+   "citacoes": 63
   },
   {
    "nome": "WSJ Markets",
@@ -173,15 +173,15 @@
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 44
+   "citacoes": 46
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 41
+   "citacoes": 43
   },
   {
    "nome": "MarketWatch",
-   "citacoes": 21
+   "citacoes": 22
   },
   {
    "nome": "G1",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 39
+   "edicoes": 41
   },
   {
    "nome": "Apollo",
@@ -211,11 +211,11 @@
   },
   {
    "nome": "Boston Consulting Group",
-   "edicoes": 7
+   "edicoes": 8
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 6
+   "edicoes": 7
   },
   {
    "nome": "Chamath Palihapitiya",
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 26,
+   "falhas": 25,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 26,
+   "falhas": 25,
    "dias": 30
   },
   {
@@ -1186,6 +1186,19 @@
    "newsletters": 3,
    "destinatarios": 15,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-10-23",
+   "itens": 13,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 4,
+   "destinatarios": 15,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1536,6 +1549,12 @@
    "assunto": "Daily Brief - 22/10 - Tensão geopolítica eleva petróleo e Big Techs sofrem no Q3",
    "itens": 11,
    "arquivo": "edicoes/2026-10-22.html"
+  },
+  {
+   "data": "2026-10-23",
+   "assunto": "Daily Brief - 23/10 - Tensão no petróleo e ajuste em tech",
+   "itens": 13,
+   "arquivo": "edicoes/2026-10-23.html"
   }
  ]
 }
