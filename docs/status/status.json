@@ -1,29 +1,29 @@
 {
- "gerado_em": "2026-10-26T14:30:46-03:00",
+ "gerado_em": "2026-10-27T07:25:36-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 62,
-  "itens_curados": 699,
+  "edicoes": 63,
+  "itens_curados": 710,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 16,
-  "sequencia": 62
+  "sequencia": 63
  },
  "hoje": {
-  "data": "2026-10-26",
+  "data": "2026-10-27",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 16,
-  "hora": "07:26",
+  "hora": "07:25",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-26",
-  "numero": 62,
-  "assunto": "Daily Brief - 26/10 - Reeleição de Lula e estresse nos mercados",
-  "abertura": "A confirmação da reeleição de Lula no segundo turno acionou uma forte repassificação de risco nos ativos brasileiros negociados no exterior, com o principal fundo de ações em Nova York desabando **19%** no pré-mercado. No cenário internacional, os investidores operam com cautela antes de balanços de Big Techs e decisões de juros do Fed.",
-  "itens": 12,
+  "data": "2026-10-27",
+  "numero": 63,
+  "assunto": "Daily Brief - 27/10 - Reação dos mercados e IPO da Anthropic",
+  "abertura": "O pregão pós-eleitoral brasileiro foi marcado por forte volatilidade, levando o Tesouro a atuar diretamente no mercado para conter o estresse nos títulos públicos. No exterior, a abertura do processo de IPO da Anthropic reacendeu os negócios de IA e impulsionou acordos bilionários de infraestrutura.",
+  "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
@@ -35,81 +35,81 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
     "itens": 3
    }
   ],
-  "newsletters": 2
+  "newsletters": 5
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "205.083",
-   "variacao_pct": 0.47
+   "valor": "176.608",
+   "variacao_pct": -13.88
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 4,9931",
-   "variacao_pct": -1.12
+   "valor": "R$ 5,4088",
+   "variacao_pct": 9.04
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,5938",
-   "variacao_pct": -1.27
+   "valor": "R$ 6,0325",
+   "variacao_pct": 8.97
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.623,68",
-   "variacao_pct": -0.52
+   "valor": "7.676,77",
+   "variacao_pct": 0.7
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "25.955,34",
-   "variacao_pct": -0.21
+   "valor": "26.169,38",
+   "variacao_pct": 0.82
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,988%",
-   "variacao_pct": 0.71
+   "valor": "4,986%",
+   "variacao_pct": -0.04
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,84",
-   "variacao_pct": 0.03
+   "valor": "102,24",
+   "variacao_pct": 0.27
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 101,43",
-   "variacao_pct": -1.78
+   "valor": "US$ 102,08",
+   "variacao_pct": 0.31
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.032,70",
-   "variacao_pct": 0.62
+   "valor": "US$ 4.010,50",
+   "variacao_pct": -0.69
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 80.342",
-   "variacao_pct": 0.04
+   "valor": "US$ 79.465",
+   "variacao_pct": -1.09
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.328,40",
-   "variacao_pct": 0.05
+   "valor": "US$ 2.298,04",
+   "variacao_pct": -1.31
   },
   {
    "nome": "Selic (meta)",
@@ -125,15 +125,15 @@
   }
  ],
  "secoes": {
-  "brasil": 197,
-  "global": 166,
-  "mundo": 142,
-  "tech": 194
+  "brasil": 200,
+  "global": 169,
+  "mundo": 144,
+  "tech": 197
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 119
+   "citacoes": 121
   },
   {
    "nome": "Financial Times",
@@ -141,39 +141,39 @@
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 97
+   "citacoes": 101
+  },
+  {
+   "nome": "CNBC World",
+   "citacoes": 81
   },
   {
    "nome": "CNBC",
    "citacoes": 81
   },
   {
-   "nome": "CNBC World",
-   "citacoes": 78
+   "nome": "CNBC Top News",
+   "citacoes": 76
   },
   {
    "nome": "BBC World",
-   "citacoes": 75
-  },
-  {
-   "nome": "CNBC Top News",
-   "citacoes": 74
+   "citacoes": 76
   },
   {
    "nome": "The Verge",
-   "citacoes": 70
+   "citacoes": 71
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 64
+   "citacoes": 66
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 57
+   "citacoes": 58
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 47
+   "citacoes": 48
   },
   {
    "nome": "Brazil Journal",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 42
+   "edicoes": 45
   },
   {
    "nome": "Apollo",
@@ -215,7 +215,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 7
+   "edicoes": 8
   },
   {
    "nome": "Chamath Palihapitiya",
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 22,
+   "falhas": 21,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 22,
+   "falhas": 21,
    "dias": 30
   },
   {
@@ -1238,6 +1238,19 @@
    "newsletters": 2,
    "destinatarios": 16,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-10-27",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 5,
+   "destinatarios": 16,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1612,6 +1625,12 @@
    "assunto": "Daily Brief - 26/10 - Reeleição de Lula e estresse nos mercados",
    "itens": 12,
    "arquivo": "edicoes/2026-10-26.html"
+  },
+  {
+   "data": "2026-10-27",
+   "assunto": "Daily Brief - 27/10 - Reação dos mercados e IPO da Anthropic",
+   "itens": 11,
+   "arquivo": "edicoes/2026-10-27.html"
   }
  ]
 }
