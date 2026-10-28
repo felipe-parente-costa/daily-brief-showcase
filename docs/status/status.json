@@ -1,17 +1,17 @@
 {
- "gerado_em": "2026-10-27T13:47:01-03:00",
+ "gerado_em": "2026-10-28T07:25:37-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 63,
-  "itens_curados": 710,
+  "edicoes": 64,
+  "itens_curados": 723,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 16,
-  "sequencia": 63
+  "sequencia": 64
  },
  "hoje": {
-  "data": "2026-10-27",
+  "data": "2026-10-28",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 16,
@@ -19,15 +19,15 @@
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-27",
-  "numero": 63,
-  "assunto": "Daily Brief - 27/10 - Reação dos mercados e IPO da Anthropic",
-  "abertura": "O pregão pós-eleitoral brasileiro foi marcado por forte volatilidade, levando o Tesouro a atuar diretamente no mercado para conter o estresse nos títulos públicos. No exterior, a abertura do processo de IPO da Anthropic reacendeu os negócios de IA e impulsionou acordos bilionários de infraestrutura.",
-  "itens": 11,
+  "data": "2026-10-28",
+  "numero": 64,
+  "assunto": "Daily Brief - 28/10 - Estreia da Jio, compra recorde de dólar e balanços de IA",
+  "abertura": "Mercados globais operam na expectativa da decisão de juros do Fed e balanços de big techs, enquanto o Brasil absorve ajustes pós-eleições com movimento recorde de proteção no câmbio. O apetite por infraestrutura de inteligência artificial e novas tensões no Oriente Médio dão o tom do dia.",
+  "itens": 13,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Global",
@@ -35,81 +35,81 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
     "itens": 3
    }
   ],
-  "newsletters": 5
+  "newsletters": 2
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "176.608",
-   "variacao_pct": -13.88
+   "valor": "175.710",
+   "variacao_pct": -0.51
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,4088",
-   "variacao_pct": 9.04
+   "valor": "R$ 5,3489",
+   "variacao_pct": -0.44
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,0325",
-   "variacao_pct": 8.97
+   "valor": "R$ 5,9489",
+   "variacao_pct": -0.83
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.676,77",
-   "variacao_pct": 0.7
+   "valor": "7.722,60",
+   "variacao_pct": 0.6
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "26.169,38",
-   "variacao_pct": 0.82
+   "valor": "26.477,81",
+   "variacao_pct": 1.18
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,986%",
-   "variacao_pct": -0.04
+   "valor": "4,993%",
+   "variacao_pct": 0.14
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "102,24",
-   "variacao_pct": 0.27
+   "valor": "102,40",
+   "variacao_pct": 0.08
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 102,08",
-   "variacao_pct": 0.31
+   "valor": "US$ 101,68",
+   "variacao_pct": 1.78
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.010,50",
-   "variacao_pct": -0.69
+   "valor": "US$ 4.065,30",
+   "variacao_pct": -0.23
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 79.465",
-   "variacao_pct": -1.09
+   "valor": "US$ 81.412",
+   "variacao_pct": 2.46
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.298,04",
-   "variacao_pct": -1.31
+   "valor": "US$ 2.367,91",
+   "variacao_pct": 3.03
   },
   {
    "nome": "Selic (meta)",
@@ -125,27 +125,27 @@
   }
  ],
  "secoes": {
-  "brasil": 200,
-  "global": 169,
-  "mundo": 144,
-  "tech": 197
+  "brasil": 204,
+  "global": 172,
+  "mundo": 147,
+  "tech": 200
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 121
+   "citacoes": 123
   },
   {
    "nome": "Financial Times",
-   "citacoes": 112
+   "citacoes": 113
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 101
+   "citacoes": 105
   },
   {
    "nome": "CNBC World",
-   "citacoes": 81
+   "citacoes": 83
   },
   {
    "nome": "CNBC",
@@ -153,7 +153,7 @@
   },
   {
    "nome": "CNBC Top News",
-   "citacoes": 76
+   "citacoes": 77
   },
   {
    "nome": "BBC World",
@@ -165,11 +165,11 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 66
+   "citacoes": 68
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 58
+   "citacoes": 60
   },
   {
    "nome": "NeoFeed",
@@ -177,11 +177,11 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 45
+   "citacoes": 46
   },
   {
    "nome": "MarketWatch",
-   "citacoes": 22
+   "citacoes": 23
   },
   {
    "nome": "G1",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 45
+   "edicoes": 46
   },
   {
    "nome": "Apollo",
@@ -206,15 +206,15 @@
    "edicoes": 12
   },
   {
+   "nome": "Apollo Global Management",
+   "edicoes": 9
+  },
+  {
    "nome": "Bain & Company",
    "edicoes": 8
   },
   {
    "nome": "Boston Consulting Group",
-   "edicoes": 8
-  },
-  {
-   "nome": "Apollo Global Management",
    "edicoes": 8
   },
   {
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 21,
+   "falhas": 20,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 21,
+   "falhas": 20,
    "dias": 30
   },
   {
@@ -1251,6 +1251,19 @@
    "newsletters": 5,
    "destinatarios": 16,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-10-28",
+   "itens": 13,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 16,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1631,6 +1644,12 @@
    "assunto": "Daily Brief - 27/10 - Reação dos mercados e IPO da Anthropic",
    "itens": 11,
    "arquivo": "edicoes/2026-10-27.html"
+  },
+  {
+   "data": "2026-10-28",
+   "assunto": "Daily Brief - 28/10 - Estreia da Jio, compra recorde de dólar e balanços de IA",
+   "itens": 13,
+   "arquivo": "edicoes/2026-10-28.html"
   }
  ]
 }
