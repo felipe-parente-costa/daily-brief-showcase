@@ -1,33 +1,33 @@
 {
- "gerado_em": "2026-10-28T14:15:04-03:00",
+ "gerado_em": "2026-10-29T07:29:12-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 64,
-  "itens_curados": 723,
+  "edicoes": 65,
+  "itens_curados": 735,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 16,
-  "sequencia": 64
+  "sequencia": 65
  },
  "hoje": {
-  "data": "2026-10-28",
+  "data": "2026-10-29",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 16,
-  "hora": "07:25",
+  "hora": "07:29",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-28",
-  "numero": 64,
-  "assunto": "Daily Brief - 28/10 - Estreia da Jio, compra recorde de dólar e balanços de IA",
-  "abertura": "Mercados globais operam na expectativa da decisão de juros do Fed e balanços de big techs, enquanto o Brasil absorve ajustes pós-eleições com movimento recorde de proteção no câmbio. O apetite por infraestrutura de inteligência artificial e novas tensões no Oriente Médio dão o tom do dia.",
-  "itens": 13,
+  "data": "2026-10-29",
+  "numero": 65,
+  "assunto": "Daily Brief - 29/10 - Lagarde deixa BCE e techs recuam",
+  "abertura": "A renúncia antecipada de Christine Lagarde no Banco Central Europeu e o tombo das ações de tecnologia após os números da Alphabet ditam o tom dos negócios lá fora. No cenário doméstico, investidores mantêm cautela redobrada à espera de definições na equipe econômica e de compromissos fiscais críveis.",
+  "itens": 12,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 4
+    "itens": 3
    },
    {
     "titulo": "Global",
@@ -42,74 +42,74 @@
     "itens": 3
    }
   ],
-  "newsletters": 2
+  "newsletters": 3
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "175.710",
-   "variacao_pct": -0.51
+   "valor": "171.006",
+   "variacao_pct": -2.68
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,3489",
-   "variacao_pct": -0.44
+   "valor": "R$ 5,3503",
+   "variacao_pct": 0.0
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,9489",
-   "variacao_pct": -0.83
+   "valor": "R$ 5,9681",
+   "variacao_pct": 0.28
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.722,60",
-   "variacao_pct": 0.6
+   "valor": "7.743,98",
+   "variacao_pct": 0.28
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "26.477,81",
-   "variacao_pct": 1.18
+   "valor": "26.549,85",
+   "variacao_pct": 0.27
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,993%",
-   "variacao_pct": 0.14
+   "valor": "5,045%",
+   "variacao_pct": 1.04
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "102,40",
-   "variacao_pct": 0.08
+   "valor": "102,22",
+   "variacao_pct": 0.03
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 101,68",
-   "variacao_pct": 1.78
+   "valor": "US$ 101,42",
+   "variacao_pct": -1.32
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.065,30",
-   "variacao_pct": -0.23
+   "valor": "US$ 4.044,20",
+   "variacao_pct": -0.18
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 81.412",
-   "variacao_pct": 2.46
+   "valor": "US$ 80.031",
+   "variacao_pct": -1.71
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.367,91",
-   "variacao_pct": 3.03
+   "valor": "US$ 2.315,59",
+   "variacao_pct": -2.23
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 204,
-  "global": 172,
-  "mundo": 147,
-  "tech": 200
+  "brasil": 207,
+  "global": 175,
+  "mundo": 150,
+  "tech": 203
  },
  "fontes": [
   {
@@ -137,31 +137,31 @@
   },
   {
    "nome": "Financial Times",
-   "citacoes": 113
+   "citacoes": 114
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 105
+   "citacoes": 107
+  },
+  {
+   "nome": "CNBC",
+   "citacoes": 86
   },
   {
    "nome": "CNBC World",
    "citacoes": 83
   },
   {
-   "nome": "CNBC",
-   "citacoes": 81
+   "nome": "BBC World",
+   "citacoes": 78
   },
   {
    "nome": "CNBC Top News",
    "citacoes": 77
   },
   {
-   "nome": "BBC World",
-   "citacoes": 76
-  },
-  {
    "nome": "The Verge",
-   "citacoes": 71
+   "citacoes": 73
   },
   {
    "nome": "InfoMoney",
@@ -169,7 +169,7 @@
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 60
+   "citacoes": 62
   },
   {
    "nome": "NeoFeed",
@@ -177,7 +177,7 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 46
+   "citacoes": 47
   },
   {
    "nome": "MarketWatch",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 46
+   "edicoes": 47
   },
   {
    "nome": "Apollo",
@@ -207,14 +207,14 @@
   },
   {
    "nome": "Apollo Global Management",
+   "edicoes": 10
+  },
+  {
+   "nome": "Boston Consulting Group",
    "edicoes": 9
   },
   {
    "nome": "Bain & Company",
-   "edicoes": 8
-  },
-  {
-   "nome": "Boston Consulting Group",
    "edicoes": 8
   },
   {
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 20,
+   "falhas": 19,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 20,
+   "falhas": 19,
    "dias": 30
   },
   {
@@ -1264,6 +1264,19 @@
    "newsletters": 2,
    "destinatarios": 16,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-10-29",
+   "itens": 12,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": 16,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1650,6 +1663,12 @@
    "assunto": "Daily Brief - 28/10 - Estreia da Jio, compra recorde de dólar e balanços de IA",
    "itens": 13,
    "arquivo": "edicoes/2026-10-28.html"
+  },
+  {
+   "data": "2026-10-29",
+   "assunto": "Daily Brief - 29/10 - Lagarde deixa BCE e techs recuam",
+   "itens": 12,
+   "arquivo": "edicoes/2026-10-29.html"
   }
  ]
 }
