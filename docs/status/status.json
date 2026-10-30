@@ -1,29 +1,29 @@
 {
- "gerado_em": "2026-10-29T14:29:24-03:00",
+ "gerado_em": "2026-10-30T07:25:30-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 65,
-  "itens_curados": 735,
+  "edicoes": 66,
+  "itens_curados": 745,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
-  "leitores": 16,
-  "sequencia": 65
+  "leitores": 17,
+  "sequencia": 66
  },
  "hoje": {
-  "data": "2026-10-29",
+  "data": "2026-10-30",
   "entregue": true,
   "aviso_de_falha": false,
-  "destinatarios": 16,
-  "hora": "07:29",
+  "destinatarios": 17,
+  "hora": "07:25",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-10-29",
-  "numero": 65,
-  "assunto": "Daily Brief - 29/10 - Lagarde deixa BCE e techs recuam",
-  "abertura": "A renúncia antecipada de Christine Lagarde no Banco Central Europeu e o tombo das ações de tecnologia após os números da Alphabet ditam o tom dos negócios lá fora. No cenário doméstico, investidores mantêm cautela redobrada à espera de definições na equipe econômica e de compromissos fiscais críveis.",
-  "itens": 12,
+  "data": "2026-10-30",
+  "numero": 66,
+  "assunto": "Daily Brief - 30/10 - Mega-hack na Binance abala mercados",
+  "abertura": "Uma onda de aversão ao risco sacode os mercados nesta sexta-feira com o ataque cibernético de **US$ 6,3 bilhões** contra a Binance e a cobrança de Wall Street pelo retorno dos investimentos em IA. No front doméstico, os maiores bancos privados encarecem o crédito imobiliário enquanto a CSN acerta a venda de sua divisão de cimentos.",
+  "itens": 10,
   "secoes": [
    {
     "titulo": "Brasil",
@@ -31,85 +31,85 @@
    },
    {
     "titulo": "Global",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Mundo",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
     "itens": 3
    }
   ],
-  "newsletters": 3
+  "newsletters": 1
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "171.006",
-   "variacao_pct": -2.68
+   "valor": "169.186",
+   "variacao_pct": -1.06
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,3503",
-   "variacao_pct": 0.0
+   "valor": "R$ 5,3598",
+   "variacao_pct": 0.26
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,9681",
-   "variacao_pct": 0.28
+   "valor": "R$ 6,0124",
+   "variacao_pct": 0.86
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.743,98",
-   "variacao_pct": 0.28
+   "valor": "7.720,39",
+   "variacao_pct": -0.3
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "26.549,85",
-   "variacao_pct": 0.27
+   "valor": "26.184,72",
+   "variacao_pct": -1.38
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,045%",
-   "variacao_pct": 1.04
+   "valor": "4,989%",
+   "variacao_pct": -1.11
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "102,22",
-   "variacao_pct": 0.03
+   "valor": "101,64",
+   "variacao_pct": -0.39
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 101,42",
-   "variacao_pct": -1.32
+   "valor": "US$ 103,96",
+   "variacao_pct": 1.92
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.044,20",
-   "variacao_pct": -0.18
+   "valor": "US$ 3.997,60",
+   "variacao_pct": -0.84
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 80.031",
-   "variacao_pct": -1.71
+   "valor": "US$ 77.316",
+   "variacao_pct": -3.4
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.315,59",
-   "variacao_pct": -2.23
+   "valor": "US$ 2.221,17",
+   "variacao_pct": -4.07
   },
   {
    "nome": "Selic (meta)",
@@ -125,27 +125,27 @@
   }
  ],
  "secoes": {
-  "brasil": 207,
-  "global": 175,
-  "mundo": 150,
-  "tech": 203
+  "brasil": 210,
+  "global": 177,
+  "mundo": 152,
+  "tech": 206
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 123
+   "citacoes": 125
   },
   {
    "nome": "Financial Times",
-   "citacoes": 114
+   "citacoes": 115
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 107
+   "citacoes": 109
   },
   {
    "nome": "CNBC",
-   "citacoes": 86
+   "citacoes": 90
   },
   {
    "nome": "CNBC World",
@@ -161,11 +161,11 @@
   },
   {
    "nome": "The Verge",
-   "citacoes": 73
+   "citacoes": 74
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 68
+   "citacoes": 70
   },
   {
    "nome": "WSJ Markets",
@@ -195,7 +195,7 @@
   },
   {
    "nome": "Apollo",
-   "edicoes": 27
+   "edicoes": 28
   },
   {
    "nome": "Torsten Slok",
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 19,
+   "falhas": 18,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 19,
+   "falhas": 18,
    "dias": 30
   },
   {
@@ -1277,6 +1277,19 @@
    "newsletters": 3,
    "destinatarios": 16,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-10-30",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": 17,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1669,6 +1682,12 @@
    "assunto": "Daily Brief - 29/10 - Lagarde deixa BCE e techs recuam",
    "itens": 12,
    "arquivo": "edicoes/2026-10-29.html"
+  },
+  {
+   "data": "2026-10-30",
+   "assunto": "Daily Brief - 30/10 - Mega-hack na Binance abala mercados",
+   "itens": 10,
+   "arquivo": "edicoes/2026-10-30.html"
   }
  ]
 }
