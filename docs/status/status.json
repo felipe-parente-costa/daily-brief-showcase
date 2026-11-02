@@ -1,29 +1,29 @@
 {
- "gerado_em": "2026-11-01T14:12:42-03:00",
+ "gerado_em": "2026-11-02T07:29:44-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 68,
-  "itens_curados": 767,
+  "edicoes": 69,
+  "itens_curados": 776,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 18,
-  "sequencia": 68
+  "sequencia": 69
  },
  "hoje": {
-  "data": "2026-11-01",
+  "data": "2026-11-02",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 18,
-  "hora": "07:27",
+  "hora": "07:29",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-01",
-  "numero": 68,
-  "assunto": "Daily Brief - 01/11 - Binance retoma saques e OpenAI revê captação",
-  "abertura": "A retomada dos saques na Binance após o roubo recorde de **US$ 6,3 bilhões** e a revisão das metas de captação da OpenAI marcam o início de novembro. No Brasil, entram em vigor novas regras de interoperabilidade para vales-refeição, enquanto investidores da renda fixa global desaceleram operações antes das eleições norte-americanas.",
-  "itens": 10,
+  "data": "2026-11-02",
+  "numero": 69,
+  "assunto": "Daily Brief - 02/11 - Mercado reage e Petrobras sobe querosene",
+  "abertura": "Os mercados globais ensaiam recuperação após o tombo do setor de tecnologia, enquanto investidores ajustam posições às vésperas das eleições de meio de mandato nos EUA. No Brasil, o reajuste de **7,2%** no querosene de aviação pela Petrobras amplia a pressão sobre custos logísticos e tarifas.",
+  "itens": 9,
   "secoes": [
    {
     "titulo": "Brasil",
@@ -31,18 +31,18 @@
    },
    {
     "titulo": "Global",
-    "itens": 1
+    "itens": 2
    },
    {
     "titulo": "Mundo",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 3
+    "itens": 2
    }
   ],
-  "newsletters": 4
+  "newsletters": 2
  },
  "mercado": [
   {
@@ -54,14 +54,14 @@
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,4397",
-   "variacao_pct": 1.75
+   "valor": "R$ 5,4406",
+   "variacao_pct": 1.04
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,0668",
-   "variacao_pct": 1.77
+   "valor": "R$ 6,1027",
+   "variacao_pct": 1.39
   },
   {
    "nome": "S&P 500",
@@ -84,32 +84,32 @@
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,96",
-   "variacao_pct": -0.07
+   "valor": "101,60",
+   "variacao_pct": -0.27
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 104,12",
-   "variacao_pct": 2.08
+   "valor": "US$ 99,61",
+   "variacao_pct": -4.33
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.898,90",
-   "variacao_pct": -3.29
+   "valor": "US$ 3.906,10",
+   "variacao_pct": 0.18
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 78.059",
-   "variacao_pct": 0.88
+   "valor": "US$ 77.905",
+   "variacao_pct": -0.2
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.270,66",
-   "variacao_pct": 1.13
+   "valor": "US$ 2.284,58",
+   "variacao_pct": 0.57
   },
   {
    "nome": "Selic (meta)",
@@ -125,15 +125,15 @@
   }
  ],
  "secoes": {
-  "brasil": 217,
-  "global": 180,
-  "mundo": 157,
-  "tech": 213
+  "brasil": 220,
+  "global": 182,
+  "mundo": 159,
+  "tech": 215
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 131
+   "citacoes": 136
   },
   {
    "nome": "Financial Times",
@@ -141,7 +141,7 @@
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 112
+   "citacoes": 113
   },
   {
    "nome": "CNBC",
@@ -149,15 +149,15 @@
   },
   {
    "nome": "CNBC World",
-   "citacoes": 84
+   "citacoes": 87
   },
   {
    "nome": "CNBC Top News",
-   "citacoes": 81
+   "citacoes": 83
   },
   {
    "nome": "BBC World",
-   "citacoes": 81
+   "citacoes": 83
   },
   {
    "nome": "The Verge",
@@ -202,20 +202,20 @@
    "edicoes": 13
   },
   {
+   "nome": "Apollo Global Management",
+   "edicoes": 13
+  },
+  {
    "nome": "Torsten Slok",
    "edicoes": 12
   },
   {
-   "nome": "Apollo Global Management",
-   "edicoes": 12
+   "nome": "Bain & Company",
+   "edicoes": 10
   },
   {
    "nome": "Boston Consulting Group",
    "edicoes": 10
-  },
-  {
-   "nome": "Bain & Company",
-   "edicoes": 9
   },
   {
    "nome": "Chamath Palihapitiya",
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 16,
+   "falhas": 15,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 16,
+   "falhas": 15,
    "dias": 30
   },
   {
@@ -256,14 +256,14 @@
    "nome": "IPCA (mensal)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 4,
+   "falhas": 3,
    "dias": 30
   },
   {
    "nome": "Selic (meta)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 4,
+   "falhas": 3,
    "dias": 30
   },
   {
@@ -1316,6 +1316,19 @@
    "newsletters": 4,
    "destinatarios": 18,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-02",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 2,
+   "destinatarios": 18,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1726,6 +1739,12 @@
    "assunto": "Daily Brief - 01/11 - Binance retoma saques e OpenAI revê captação",
    "itens": 10,
    "arquivo": "edicoes/2026-11-01.html"
+  },
+  {
+   "data": "2026-11-02",
+   "assunto": "Daily Brief - 02/11 - Mercado reage e Petrobras sobe querosene",
+   "itens": 9,
+   "arquivo": "edicoes/2026-11-02.html"
   }
  ]
 }
