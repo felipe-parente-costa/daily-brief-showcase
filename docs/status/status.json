@@ -1,28 +1,28 @@
 {
- "gerado_em": "2026-11-02T17:51:31-03:00",
+ "gerado_em": "2026-11-03T07:28:12-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 69,
-  "itens_curados": 776,
+  "edicoes": 70,
+  "itens_curados": 785,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 18,
-  "sequencia": 69
+  "sequencia": 70
  },
  "hoje": {
-  "data": "2026-11-02",
+  "data": "2026-11-03",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 18,
-  "hora": "07:29",
+  "hora": "07:28",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-02",
-  "numero": 69,
-  "assunto": "Daily Brief - 02/11 - Mercado reage e Petrobras sobe querosene",
-  "abertura": "Os mercados globais ensaiam recuperação após o tombo do setor de tecnologia, enquanto investidores ajustam posições às vésperas das eleições de meio de mandato nos EUA. No Brasil, o reajuste de **7,2%** no querosene de aviação pela Petrobras amplia a pressão sobre custos logísticos e tarifas.",
+  "data": "2026-11-03",
+  "numero": 70,
+  "assunto": "Daily Brief - 03/11 - Midterms nos EUA e conflito no Oriente Médio",
+  "abertura": "As eleições de meio de mandato nos EUA concentram as atenções dos mercados globais sob incerteza quanto ao controle do Congresso americano. Em paralelo, a escalada militar no Oriente Médio volta a pressionar o petróleo, enquanto mudanças regulatórias no Brasil exigem adequação de empresas no Simples e no setor de benefícios.",
   "itens": 9,
   "secoes": [
    {
@@ -42,7 +42,7 @@
     "itens": 2
    }
   ],
-  "newsletters": 2
+  "newsletters": 3
  },
  "mercado": [
   {
@@ -54,62 +54,62 @@
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,4406",
-   "variacao_pct": 1.04
+   "valor": "R$ 5,3837",
+   "variacao_pct": -0.95
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,1027",
-   "variacao_pct": 1.39
+   "valor": "R$ 6,0298",
+   "variacao_pct": -0.59
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.580,07",
-   "variacao_pct": -1.82
+   "valor": "7.541,40",
+   "variacao_pct": -0.51
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "25.437,00",
-   "variacao_pct": -2.86
+   "valor": "25.164,36",
+   "variacao_pct": -1.07
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,929%",
-   "variacao_pct": -1.2
+   "valor": "4,894%",
+   "variacao_pct": -0.71
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,60",
-   "variacao_pct": -0.27
+   "valor": "101,81",
+   "variacao_pct": 0.05
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 99,61",
-   "variacao_pct": -4.33
+   "valor": "US$ 97,34",
+   "variacao_pct": 0.91
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.906,10",
-   "variacao_pct": 0.18
+   "valor": "US$ 3.917,60",
+   "variacao_pct": -1.31
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 77.905",
-   "variacao_pct": -0.2
+   "valor": "US$ 76.964",
+   "variacao_pct": -1.23
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.284,58",
-   "variacao_pct": 0.57
+   "valor": "US$ 2.265,32",
+   "variacao_pct": -0.88
   },
   {
    "nome": "Selic (meta)",
@@ -125,35 +125,35 @@
   }
  ],
  "secoes": {
-  "brasil": 220,
-  "global": 182,
-  "mundo": 159,
-  "tech": 215
+  "brasil": 223,
+  "global": 184,
+  "mundo": 161,
+  "tech": 217
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 136
+   "citacoes": 138
   },
   {
    "nome": "Financial Times",
-   "citacoes": 120
+   "citacoes": 121
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 113
+   "citacoes": 115
+  },
+  {
+   "nome": "CNBC World",
+   "citacoes": 90
   },
   {
    "nome": "CNBC",
    "citacoes": 90
   },
   {
-   "nome": "CNBC World",
-   "citacoes": 87
-  },
-  {
    "nome": "CNBC Top News",
-   "citacoes": 83
+   "citacoes": 84
   },
   {
    "nome": "BBC World",
@@ -161,7 +161,7 @@
   },
   {
    "nome": "The Verge",
-   "citacoes": 75
+   "citacoes": 76
   },
   {
    "nome": "InfoMoney",
@@ -177,7 +177,7 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 47
+   "citacoes": 48
   },
   {
    "nome": "MarketWatch",
@@ -191,18 +191,18 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 49
+   "edicoes": 50
   },
   {
    "nome": "Apollo",
    "edicoes": 28
   },
   {
-   "nome": "CompoundLetter",
-   "edicoes": 13
+   "nome": "Apollo Global Management",
+   "edicoes": 14
   },
   {
-   "nome": "Apollo Global Management",
+   "nome": "CompoundLetter",
    "edicoes": 13
   },
   {
@@ -218,11 +218,11 @@
    "edicoes": 10
   },
   {
-   "nome": "Chamath Palihapitiya",
-   "edicoes": 5
+   "nome": "GaryVee",
+   "edicoes": 6
   },
   {
-   "nome": "GaryVee",
+   "nome": "Chamath Palihapitiya",
    "edicoes": 5
   },
   {
@@ -235,14 +235,14 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 15,
+   "falhas": 14,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 15,
+   "falhas": 14,
    "dias": 30
   },
   {
@@ -256,14 +256,14 @@
    "nome": "IPCA (mensal)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 3,
+   "falhas": 2,
    "dias": 30
   },
   {
    "nome": "Selic (meta)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 3,
+   "falhas": 2,
    "dias": 30
   },
   {
@@ -1329,6 +1329,19 @@
    "newsletters": 2,
    "destinatarios": 18,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-03",
+   "itens": 9,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 3,
+   "destinatarios": 18,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1745,6 +1758,12 @@
    "assunto": "Daily Brief - 02/11 - Mercado reage e Petrobras sobe querosene",
    "itens": 9,
    "arquivo": "edicoes/2026-11-02.html"
+  },
+  {
+   "data": "2026-11-03",
+   "assunto": "Daily Brief - 03/11 - Midterms nos EUA e conflito no Oriente Médio",
+   "itens": 9,
+   "arquivo": "edicoes/2026-11-03.html"
   }
  ]
 }
