@@ -1,29 +1,29 @@
 {
- "gerado_em": "2026-11-04T07:26:39-03:00",
+ "gerado_em": "2026-11-04T15:02:04-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
   "edicoes": 71,
-  "itens_curados": 792,
+  "itens_curados": 795,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
-  "leitores": 18,
+  "leitores": 17,
   "sequencia": 71
  },
  "hoje": {
   "data": "2026-11-04",
   "entregue": true,
   "aviso_de_falha": false,
-  "destinatarios": 18,
-  "hora": "07:26",
+  "destinatarios": 17,
+  "hora": "15:02",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
   "data": "2026-11-04",
   "numero": 71,
-  "assunto": "Daily Brief - 04/11 - Vitória democrata nos EUA e Copom",
-  "abertura": "A vitória esmagadora dos democratas nas eleições de meio de mandato reconfigurou o cenário político nos EUA, movimentando moedas e commodities globais. No Brasil, a atenção do mercado se volta para a decisão do Copom sobre a Selic após a divisão de expectativas quanto a um novo corte.",
-  "itens": 7,
+  "assunto": "Daily Brief - 04/11 - Vitória democrata nos EUA mexe com petróleo e bolsas",
+  "abertura": "A vitória do Partido Democrata nas eleições de meio de mandato nos EUA reconfigurou o cenário global, impulsionando os mercados acionários em NY e provocando um tombo no petróleo com apostas de alívio geopolítico. No Brasil, o Caged de setembro frustrou as projeções ao registrar queda anual de **43,5%** na criação de vagas formais.",
+  "itens": 10,
   "secoes": [
    {
     "titulo": "Brasil",
@@ -31,7 +31,7 @@
    },
    {
     "titulo": "Global",
-    "itens": 1
+    "itens": 3
    },
    {
     "titulo": "Mundo",
@@ -39,77 +39,77 @@
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 2
+    "itens": 3
    }
   ],
-  "newsletters": 3
+  "newsletters": 4
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "165.529",
-   "variacao_pct": -1.43
+   "valor": "167.848",
+   "variacao_pct": 1.4
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,4883",
-   "variacao_pct": 0.96
+   "valor": "R$ 5,4625",
+   "variacao_pct": 0.48
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,1889",
-   "variacao_pct": 1.81
+   "valor": "R$ 6,1414",
+   "variacao_pct": 1.03
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.568,92",
-   "variacao_pct": 0.36
+   "valor": "7.712,43",
+   "variacao_pct": 1.9
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "25.372,01",
-   "variacao_pct": 0.83
+   "valor": "25.923,33",
+   "variacao_pct": 2.17
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,952%",
-   "variacao_pct": 1.19
+   "valor": "4,900%",
+   "variacao_pct": -1.05
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,32",
-   "variacao_pct": -0.54
+   "valor": "101,44",
+   "variacao_pct": -0.42
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 95,51",
-   "variacao_pct": -0.6
+   "valor": "US$ 87,69",
+   "variacao_pct": -8.74
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.055,20",
-   "variacao_pct": 2.91
+   "valor": "US$ 4.079,40",
+   "variacao_pct": 3.53
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 78.392",
-   "variacao_pct": 1.84
+   "valor": "US$ 80.363",
+   "variacao_pct": 3.54
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.321,95",
-   "variacao_pct": 2.47
+   "valor": "US$ 2.425,61",
+   "variacao_pct": 5.67
   },
   {
    "nome": "Selic (meta)",
@@ -126,22 +126,22 @@
  ],
  "secoes": {
   "brasil": 226,
-  "global": 185,
+  "global": 187,
   "mundo": 162,
-  "tech": 219
+  "tech": 220
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 139
+   "citacoes": 142
   },
   {
    "nome": "Financial Times",
-   "citacoes": 121
+   "citacoes": 122
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 116
+   "citacoes": 117
   },
   {
    "nome": "CNBC World",
@@ -157,7 +157,7 @@
   },
   {
    "nome": "BBC World",
-   "citacoes": 84
+   "citacoes": 83
   },
   {
    "nome": "The Verge",
@@ -165,19 +165,19 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 75
+   "citacoes": 76
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 64
+   "citacoes": 65
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 52
+   "citacoes": 50
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 49
+   "citacoes": 48
   },
   {
    "nome": "MarketWatch",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 51
+   "edicoes": 52
   },
   {
    "nome": "Apollo",
@@ -1345,15 +1345,15 @@
   },
   {
    "data": "2026-11-04",
-   "itens": 7,
+   "itens": 10,
    "secoes": {
     "brasil": 3,
-    "global": 1,
+    "global": 3,
     "mundo": 1,
-    "tech": 2
+    "tech": 3
    },
-   "newsletters": 3,
-   "destinatarios": 18,
+   "newsletters": 4,
+   "destinatarios": 17,
    "curado_por": "gemini"
   }
  ],
@@ -1780,8 +1780,8 @@
   },
   {
    "data": "2026-11-04",
-   "assunto": "Daily Brief - 04/11 - Vitória democrata nos EUA e Copom",
-   "itens": 7,
+   "assunto": "Daily Brief - 04/11 - Vitória democrata nos EUA mexe com petróleo e bolsas",
+   "itens": 10,
    "arquivo": "edicoes/2026-11-04.html"
   }
  ]
