@@ -1,29 +1,29 @@
 {
- "gerado_em": "2026-11-08T14:10:35-03:00",
+ "gerado_em": "2026-11-09T07:25:46-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 75,
-  "itens_curados": 842,
+  "edicoes": 76,
+  "itens_curados": 852,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 19,
-  "sequencia": 75
+  "sequencia": 76
  },
  "hoje": {
-  "data": "2026-11-08",
+  "data": "2026-11-09",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 19,
-  "hora": "07:24",
+  "hora": "07:25",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-08",
-  "numero": 75,
-  "assunto": "Daily Brief - 08/11 - Midterms nos EUA e crise bancária paraguaia",
-  "abertura": "O resultado das eleições de meio de mandato nos EUA acendeu o alerta para o setor de tecnologia e criptoativos com a vitória democrata no Congresso. No Brasil e na América Latina, as atenções se voltam para os desdobramentos da liquidação do Ueno Bank no Paraguai e os desafios fiscais do governo federal. Apesar da volatilidade da semana, o mercado acionário americano mantém ganho acumulado de **US$ 5 trilhões** no ano.",
-  "itens": 13,
+  "data": "2026-11-09",
+  "numero": 76,
+  "assunto": "Daily Brief - 09/11 - Investigação na Nvidia e juros altos",
+  "abertura": "A investigação do conselho da Nvidia sobre o CEO Jensen Huang por envolvimento com uma suspeita de espionagem chinesa pressiona as ações de tecnologia e abre a semana em alerta nos mercados globais. No Brasil, o mercado projeta a manutenção dos juros em **13,75%** por período prolongado diante de expectativas de inflação pressionadas.",
+  "itens": 10,
   "secoes": [
    {
     "titulo": "Brasil",
@@ -31,7 +31,7 @@
    },
    {
     "titulo": "Global",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Mundo",
@@ -39,10 +39,10 @@
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 4
+    "itens": 2
    }
   ],
-  "newsletters": 1
+  "newsletters": 2
  },
  "mercado": [
   {
@@ -54,14 +54,14 @@
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,4959",
-   "variacao_pct": -0.14
+   "valor": "R$ 5,5031",
+   "variacao_pct": -0.01
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,1320",
-   "variacao_pct": 0.07
+   "valor": "R$ 6,1601",
+   "variacao_pct": -0.21
   },
   {
    "nome": "S&P 500",
@@ -84,38 +84,32 @@
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "102,28",
-   "variacao_pct": 0.72
+   "valor": "101,82",
+   "variacao_pct": -0.47
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 90,83",
-   "variacao_pct": 0.34
+   "valor": "US$ 90,29",
+   "variacao_pct": -0.59
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.074,90",
-   "variacao_pct": -0.94
+   "valor": "US$ 4.108,70",
+   "variacao_pct": 0.83
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 75.815",
-   "variacao_pct": -0.2
+   "valor": "US$ 74.091",
+   "variacao_pct": -2.28
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.233,41",
-   "variacao_pct": -0.51
-  },
-  {
-   "nome": "Selic (meta)",
-   "grupo": "brasil",
-   "valor": "13,75% a.a.",
-   "variacao_pct": null
+   "valor": "US$ 2.100,40",
+   "variacao_pct": -5.96
   },
   {
    "nome": "IPCA (mensal)",
@@ -125,10 +119,10 @@
   }
  ],
  "secoes": {
-  "brasil": 240,
-  "global": 199,
-  "mundo": 170,
-  "tech": 233
+  "brasil": 243,
+  "global": 201,
+  "mundo": 173,
+  "tech": 235
  },
  "fontes": [
   {
@@ -137,19 +131,19 @@
   },
   {
    "nome": "Financial Times",
-   "citacoes": 127
+   "citacoes": 128
   },
   {
    "nome": "TechCrunch",
    "citacoes": 127
   },
   {
-   "nome": "CNBC World",
-   "citacoes": 95
+   "nome": "CNBC",
+   "citacoes": 96
   },
   {
-   "nome": "CNBC",
-   "citacoes": 93
+   "nome": "CNBC World",
+   "citacoes": 95
   },
   {
    "nome": "CNBC Top News",
@@ -161,11 +155,11 @@
   },
   {
    "nome": "The Verge",
-   "citacoes": 83
+   "citacoes": 85
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 77
+   "citacoes": 81
   },
   {
    "nome": "WSJ Markets",
@@ -177,7 +171,7 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 52
+   "citacoes": 53
   },
   {
    "nome": "MarketWatch",
@@ -195,7 +189,7 @@
   },
   {
    "nome": "Apollo",
-   "edicoes": 28
+   "edicoes": 29
   },
   {
    "nome": "Apollo Global Management",
@@ -235,32 +229,32 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 9,
+   "falhas": 8,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 9,
+   "falhas": 8,
    "dias": 30
   },
   {
    "nome": "Yahoo Finance",
    "secao": "global",
    "tipo": "feed",
-   "falhas": 9,
-   "dias": 30
-  },
-  {
-   "nome": "IPCA (mensal)",
-   "secao": "brasil",
-   "tipo": "mercado",
-   "falhas": 2,
+   "falhas": 8,
    "dias": 30
   },
   {
    "nome": "Selic (meta)",
+   "secao": "brasil",
+   "tipo": "mercado",
+   "falhas": 3,
+   "dias": 30
+  },
+  {
+   "nome": "IPCA (mensal)",
    "secao": "brasil",
    "tipo": "mercado",
    "falhas": 2,
@@ -1407,6 +1401,19 @@
    "newsletters": 1,
    "destinatarios": 19,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-09",
+   "itens": 10,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 3,
+    "tech": 2
+   },
+   "newsletters": 2,
+   "destinatarios": 19,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1859,6 +1866,12 @@
    "assunto": "Daily Brief - 08/11 - Midterms nos EUA e crise bancária paraguaia",
    "itens": 13,
    "arquivo": "edicoes/2026-11-08.html"
+  },
+  {
+   "data": "2026-11-09",
+   "assunto": "Daily Brief - 09/11 - Investigação na Nvidia e juros altos",
+   "itens": 10,
+   "arquivo": "edicoes/2026-11-09.html"
   }
  ]
 }
