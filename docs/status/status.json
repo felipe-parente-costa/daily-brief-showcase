@@ -1,45 +1,45 @@
 {
- "gerado_em": "2026-11-09T18:33:01-03:00",
+ "gerado_em": "2026-11-10T07:28:04-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 76,
-  "itens_curados": 852,
+  "edicoes": 77,
+  "itens_curados": 864,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 19,
-  "sequencia": 76
+  "sequencia": 77
  },
  "hoje": {
-  "data": "2026-11-09",
+  "data": "2026-11-10",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 19,
-  "hora": "07:25",
+  "hora": "07:28",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-09",
-  "numero": 76,
-  "assunto": "Daily Brief - 09/11 - Investigação na Nvidia e juros altos",
-  "abertura": "A investigação do conselho da Nvidia sobre o CEO Jensen Huang por envolvimento com uma suspeita de espionagem chinesa pressiona as ações de tecnologia e abre a semana em alerta nos mercados globais. No Brasil, o mercado projeta a manutenção dos juros em **13,75%** por período prolongado diante de expectativas de inflação pressionadas.",
-  "itens": 10,
+  "data": "2026-11-10",
+  "numero": 77,
+  "assunto": "Daily Brief - 10/11 - Sinalização de juros nos EUA e desoneração de combustíveis",
+  "abertura": "O mercado reage hoje às declarações do Federal Reserve sobre a possibilidade de um aperto monetário reforçado, enquanto o governo brasileiro estendeu a desoneração dos combustíveis por mais **30 dias**. Paralelamente, o alívio nas tensões geopolíticas no Oriente Médio derruba o petróleo e traz um respiro às bolsas globais.",
+  "itens": 12,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Global",
-    "itens": 2
-   },
-   {
-    "titulo": "Mundo",
     "itens": 3
    },
    {
-    "titulo": "Tech e Cripto",
+    "titulo": "Mundo",
     "itens": 2
+   },
+   {
+    "titulo": "Tech e Cripto",
+    "itens": 3
    }
   ],
   "newsletters": 2
@@ -48,68 +48,74 @@
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "168.498",
-   "variacao_pct": 1.39
+   "valor": "172.236",
+   "variacao_pct": 2.22
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,5031",
-   "variacao_pct": -0.01
+   "valor": "R$ 5,5069",
+   "variacao_pct": 0.06
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,1601",
-   "variacao_pct": -0.21
+   "valor": "R$ 6,1859",
+   "variacao_pct": 0.89
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.376,86",
-   "variacao_pct": 0.31
+   "valor": "7.549,94",
+   "variacao_pct": 2.35
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "24.579,42",
-   "variacao_pct": 1.09
+   "valor": "25.253,14",
+   "variacao_pct": 2.74
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,859%",
-   "variacao_pct": 0.45
+   "valor": "4,864%",
+   "variacao_pct": 0.1
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,82",
-   "variacao_pct": -0.47
+   "valor": "101,72",
+   "variacao_pct": 0.06
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 90,29",
-   "variacao_pct": -0.59
+   "valor": "US$ 84,46",
+   "variacao_pct": -2.75
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.108,70",
-   "variacao_pct": 0.83
+   "valor": "US$ 4.091,20",
+   "variacao_pct": -0.57
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 74.091",
-   "variacao_pct": -2.28
+   "valor": "US$ 74.237",
+   "variacao_pct": 0.2
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.100,40",
-   "variacao_pct": -5.96
+   "valor": "US$ 2.094,22",
+   "variacao_pct": -0.3
+  },
+  {
+   "nome": "Selic (meta)",
+   "grupo": "brasil",
+   "valor": "13,75% a.a.",
+   "variacao_pct": null
   },
   {
    "nome": "IPCA (mensal)",
@@ -119,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 243,
-  "global": 201,
-  "mundo": 173,
-  "tech": 235
+  "brasil": 247,
+  "global": 204,
+  "mundo": 175,
+  "tech": 238
  },
  "fontes": [
   {
@@ -159,7 +165,7 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 81
+   "citacoes": 82
   },
   {
    "nome": "WSJ Markets",
@@ -167,7 +173,7 @@
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 55
+   "citacoes": 56
   },
   {
    "nome": "Brazil Journal",
@@ -185,11 +191,11 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 54
+   "edicoes": 55
   },
   {
    "nome": "Apollo",
-   "edicoes": 29
+   "edicoes": 30
   },
   {
    "nome": "Apollo Global Management",
@@ -229,21 +235,21 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 8,
+   "falhas": 7,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 8,
+   "falhas": 7,
    "dias": 30
   },
   {
    "nome": "Yahoo Finance",
    "secao": "global",
    "tipo": "feed",
-   "falhas": 8,
+   "falhas": 7,
    "dias": 30
   },
   {
@@ -1414,6 +1420,19 @@
    "newsletters": 2,
    "destinatarios": 19,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-10",
+   "itens": 12,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 19,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1872,6 +1891,12 @@
    "assunto": "Daily Brief - 09/11 - Investigação na Nvidia e juros altos",
    "itens": 10,
    "arquivo": "edicoes/2026-11-09.html"
+  },
+  {
+   "data": "2026-11-10",
+   "assunto": "Daily Brief - 10/11 - Sinalização de juros nos EUA e desoneração de combustíveis",
+   "itens": 12,
+   "arquivo": "edicoes/2026-11-10.html"
   }
  ]
 }
