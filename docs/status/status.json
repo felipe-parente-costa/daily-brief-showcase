@@ -1,33 +1,33 @@
 {
- "gerado_em": "2026-11-10T15:45:02-03:00",
+ "gerado_em": "2026-11-11T07:21:49-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 77,
-  "itens_curados": 864,
+  "edicoes": 78,
+  "itens_curados": 876,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 19,
-  "sequencia": 77
+  "sequencia": 78
  },
  "hoje": {
-  "data": "2026-11-10",
+  "data": "2026-11-11",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 19,
-  "hora": "07:28",
+  "hora": "07:21",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-10",
-  "numero": 77,
-  "assunto": "Daily Brief - 10/11 - Sinalização de juros nos EUA e desoneração de combustíveis",
-  "abertura": "O mercado reage hoje às declarações do Federal Reserve sobre a possibilidade de um aperto monetário reforçado, enquanto o governo brasileiro estendeu a desoneração dos combustíveis por mais **30 dias**. Paralelamente, o alívio nas tensões geopolíticas no Oriente Médio derruba o petróleo e traz um respiro às bolsas globais.",
+  "data": "2026-11-11",
+  "numero": 78,
+  "assunto": "Daily Brief - 11/11 - Balanço da Petrobras e apetite por IA",
+  "abertura": "Os balanços operacionais de grandes empresas e a manutenção do apetite por inteligência artificial dão tração às bolsas lá fora, equilibrando o receio de juros mais altos nos Estados Unidos. No Brasil, o foco se divide entre os resultados recordes da Petrobras e a articulação do governo para limitar o crescimento dos pisos constitucionais de saúde e educação.",
   "itens": 12,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 4
+    "itens": 3
    },
    {
     "titulo": "Global",
@@ -35,7 +35,7 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
@@ -48,68 +48,68 @@
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "172.236",
-   "variacao_pct": 2.22
+   "valor": "171.337",
+   "variacao_pct": -0.52
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,5069",
-   "variacao_pct": 0.06
+   "valor": "R$ 5,5803",
+   "variacao_pct": 1.3
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,1859",
-   "variacao_pct": 0.89
+   "valor": "R$ 6,2230",
+   "variacao_pct": 0.75
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.549,94",
-   "variacao_pct": 2.35
+   "valor": "7.520,93",
+   "variacao_pct": -0.38
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "25.253,14",
-   "variacao_pct": 2.74
+   "valor": "25.065,88",
+   "variacao_pct": -0.74
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,864%",
-   "variacao_pct": 0.1
+   "valor": "4,983%",
+   "variacao_pct": 2.45
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "101,72",
-   "variacao_pct": 0.06
+   "valor": "102,50",
+   "variacao_pct": 0.26
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 84,46",
-   "variacao_pct": -2.75
+   "valor": "US$ 87,20",
+   "variacao_pct": 1.35
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 4.091,20",
-   "variacao_pct": -0.57
+   "valor": "US$ 4.060,30",
+   "variacao_pct": 0.75
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 74.237",
-   "variacao_pct": 0.2
+   "valor": "US$ 73.686",
+   "variacao_pct": -0.76
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.094,22",
-   "variacao_pct": -0.3
+   "valor": "US$ 2.053,85",
+   "variacao_pct": -1.9
   },
   {
    "nome": "Selic (meta)",
@@ -125,47 +125,47 @@
   }
  ],
  "secoes": {
-  "brasil": 247,
-  "global": 204,
-  "mundo": 175,
-  "tech": 238
+  "brasil": 250,
+  "global": 207,
+  "mundo": 178,
+  "tech": 241
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 154
+   "citacoes": 158
+  },
+  {
+   "nome": "TechCrunch",
+   "citacoes": 130
   },
   {
    "nome": "Financial Times",
    "citacoes": 128
   },
   {
-   "nome": "TechCrunch",
-   "citacoes": 127
-  },
-  {
    "nome": "CNBC",
-   "citacoes": 96
+   "citacoes": 99
   },
   {
    "nome": "CNBC World",
    "citacoes": 95
   },
   {
+   "nome": "BBC World",
+   "citacoes": 88
+  },
+  {
    "nome": "CNBC Top News",
    "citacoes": 87
   },
   {
-   "nome": "BBC World",
+   "nome": "The Verge",
    "citacoes": 86
   },
   {
-   "nome": "The Verge",
-   "citacoes": 85
-  },
-  {
    "nome": "InfoMoney",
-   "citacoes": 82
+   "citacoes": 83
   },
   {
    "nome": "WSJ Markets",
@@ -177,11 +177,11 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 53
+   "citacoes": 54
   },
   {
    "nome": "MarketWatch",
-   "citacoes": 23
+   "citacoes": 24
   },
   {
    "nome": "G1",
@@ -199,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 18
+   "edicoes": 19
   },
   {
    "nome": "Torsten Slok",
@@ -226,7 +226,7 @@
    "edicoes": 5
   },
   {
-   "nome": "Apollo (Torsten Slok)",
+   "nome": "Ray Dalio",
    "edicoes": 4
   }
  ],
@@ -235,21 +235,21 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 7,
+   "falhas": 6,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 7,
+   "falhas": 6,
    "dias": 30
   },
   {
    "nome": "Yahoo Finance",
    "secao": "global",
    "tipo": "feed",
-   "falhas": 7,
+   "falhas": 6,
    "dias": 30
   },
   {
@@ -1433,6 +1433,19 @@
    "newsletters": 2,
    "destinatarios": 19,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-11",
+   "itens": 12,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 19,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1897,6 +1910,12 @@
    "assunto": "Daily Brief - 10/11 - Sinalização de juros nos EUA e desoneração de combustíveis",
    "itens": 12,
    "arquivo": "edicoes/2026-11-10.html"
+  },
+  {
+   "data": "2026-11-11",
+   "assunto": "Daily Brief - 11/11 - Balanço da Petrobras e apetite por IA",
+   "itens": 12,
+   "arquivo": "edicoes/2026-11-11.html"
   }
  ]
 }
