@@ -1,115 +1,115 @@
 {
- "gerado_em": "2026-11-12T16:00:56-03:00",
+ "gerado_em": "2026-11-13T07:28:37-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 79,
-  "itens_curados": 884,
+  "edicoes": 80,
+  "itens_curados": 895,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
-  "leitores": 19,
-  "sequencia": 79
+  "leitores": 20,
+  "sequencia": 80
  },
  "hoje": {
-  "data": "2026-11-12",
+  "data": "2026-11-13",
   "entregue": true,
   "aviso_de_falha": false,
-  "destinatarios": 19,
-  "hora": "07:25",
+  "destinatarios": 20,
+  "hora": "07:28",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-12",
-  "numero": 79,
-  "assunto": "Daily Brief - 12/11 - Crise na Nvidia e pacote fiscal no Senado",
-  "abertura": "A crise de governança na Nvidia com a possível saída do CEO Jensen Huang sacode o setor global de tecnologia, enquanto no Brasil a atenção se divide entre a votação do pacote fiscal de até **R$ 60 bilhões** no Senado e a temporada de balanços bancários.",
-  "itens": 8,
+  "data": "2026-11-13",
+  "numero": 80,
+  "assunto": "Daily Brief - 13/11 - Renúncia na Nvidia e ataque ao Tesouro",
+  "abertura": "A renúncia súbita do CEO da Nvidia após escândalos pessoais provocou uma perda de **US$ 1,6 trilhão** em valor de mercado e sacudiu o setor global de tecnologia. No Brasil, o Tesouro Nacional sofreu um ataque cibernético que expôs dados cadastrais e chaves PIX, enquanto o mercado avalia os balanços corporativos do terceiro trimestre.",
+  "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Global",
-    "itens": 1
+    "itens": 2
    },
    {
     "titulo": "Mundo",
-    "itens": 1
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
     "itens": 3
    }
   ],
-  "newsletters": 3
+  "newsletters": 2
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "172.060",
-   "variacao_pct": 0.42
+   "valor": "171.324",
+   "variacao_pct": -0.43
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,5860",
-   "variacao_pct": 0.06
+   "valor": "R$ 5,6453",
+   "variacao_pct": 1.13
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,1968",
-   "variacao_pct": -0.54
+   "valor": "R$ 6,2484",
+   "variacao_pct": 0.97
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.619,38",
-   "variacao_pct": 1.31
+   "valor": "7.592,40",
+   "variacao_pct": -0.35
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "25.466,19",
-   "variacao_pct": 1.6
+   "valor": "25.366,09",
+   "variacao_pct": -0.39
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,998%",
-   "variacao_pct": 0.3
+   "valor": "5,103%",
+   "variacao_pct": 2.1
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "102,87",
-   "variacao_pct": -0.04
+   "valor": "103,20",
+   "variacao_pct": 0.03
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 85,77",
-   "variacao_pct": -0.88
+   "valor": "US$ 88,04",
+   "variacao_pct": -0.79
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.951,80",
-   "variacao_pct": -1.22
+   "valor": "US$ 3.904,70",
+   "variacao_pct": 0.5
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 73.412",
-   "variacao_pct": -0.4
+   "valor": "US$ 69.306",
+   "variacao_pct": -5.62
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 2.044,05",
-   "variacao_pct": -0.5
+   "valor": "US$ 1.952,15",
+   "variacao_pct": -4.5
   },
   {
    "nome": "Selic (meta)",
@@ -120,24 +120,24 @@
   {
    "nome": "IPCA (mensal)",
    "grupo": "brasil",
-   "valor": "0,82%",
+   "valor": "0,14%",
    "variacao_pct": null
   }
  ],
  "secoes": {
-  "brasil": 253,
-  "global": 208,
-  "mundo": 179,
-  "tech": 244
+  "brasil": 257,
+  "global": 210,
+  "mundo": 181,
+  "tech": 247
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 160
+   "citacoes": 162
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 132
+   "citacoes": 134
   },
   {
    "nome": "Financial Times",
@@ -149,19 +149,19 @@
   },
   {
    "nome": "CNBC World",
-   "citacoes": 96
+   "citacoes": 97
   },
   {
    "nome": "CNBC Top News",
-   "citacoes": 89
-  },
-  {
-   "nome": "BBC World",
-   "citacoes": 89
+   "citacoes": 92
   },
   {
    "nome": "The Verge",
-   "citacoes": 87
+   "citacoes": 90
+  },
+  {
+   "nome": "BBC World",
+   "citacoes": 90
   },
   {
    "nome": "InfoMoney",
@@ -169,15 +169,15 @@
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 67
+   "citacoes": 68
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 58
+   "citacoes": 60
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 54
+   "citacoes": 55
   },
   {
    "nome": "MarketWatch",
@@ -199,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 20
+   "edicoes": 21
   },
   {
    "nome": "CompoundLetter",
@@ -235,21 +235,21 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 5,
+   "falhas": 4,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 5,
+   "falhas": 4,
    "dias": 30
   },
   {
    "nome": "Yahoo Finance",
    "secao": "global",
    "tipo": "feed",
-   "falhas": 5,
+   "falhas": 4,
    "dias": 30
   },
   {
@@ -1459,6 +1459,19 @@
    "newsletters": 3,
    "destinatarios": 19,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-13",
+   "itens": 11,
+   "secoes": {
+    "brasil": 4,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1935,6 +1948,12 @@
    "assunto": "Daily Brief - 12/11 - Crise na Nvidia e pacote fiscal no Senado",
    "itens": 8,
    "arquivo": "edicoes/2026-11-12.html"
+  },
+  {
+   "data": "2026-11-13",
+   "assunto": "Daily Brief - 13/11 - Renúncia na Nvidia e ataque ao Tesouro",
+   "itens": 11,
+   "arquivo": "edicoes/2026-11-13.html"
   }
  ]
 }
