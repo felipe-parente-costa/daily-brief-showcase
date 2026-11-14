@@ -1,41 +1,41 @@
 {
- "gerado_em": "2026-11-13T15:38:55-03:00",
+ "gerado_em": "2026-11-14T07:25:47-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 80,
-  "itens_curados": 895,
+  "edicoes": 81,
+  "itens_curados": 903,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 80
+  "sequencia": 81
  },
  "hoje": {
-  "data": "2026-11-13",
+  "data": "2026-11-14",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 20,
-  "hora": "07:28",
+  "hora": "07:25",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-13",
-  "numero": 80,
-  "assunto": "Daily Brief - 13/11 - Renúncia na Nvidia e ataque ao Tesouro",
-  "abertura": "A renúncia súbita do CEO da Nvidia após escândalos pessoais provocou uma perda de **US$ 1,6 trilhão** em valor de mercado e sacudiu o setor global de tecnologia. No Brasil, o Tesouro Nacional sofreu um ataque cibernético que expôs dados cadastrais e chaves PIX, enquanto o mercado avalia os balanços corporativos do terceiro trimestre.",
-  "itens": 11,
+  "data": "2026-11-14",
+  "numero": 81,
+  "assunto": "Daily Brief - 14/11 - Renúncia na Nvidia e apagão aéreo",
+  "abertura": "A renúncia de Jensen Huang na Nvidia desestabilizou a governança do setor de inteligência artificial, enquanto uma falha de telecomunicação suspendeu voos nos Estados Unidos. No Brasil, o mercado projeta Selic em dois dígitos até **2030**, sinalizando juros elevados por um período prolongado.",
+  "itens": 8,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 4
+    "itens": 3
    },
    {
     "titulo": "Global",
-    "itens": 2
+    "itens": 1
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 1
    },
    {
     "titulo": "Tech e Cripto",
@@ -48,68 +48,68 @@
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "171.324",
-   "variacao_pct": -0.43
+   "valor": "172.458",
+   "variacao_pct": 0.66
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,6453",
-   "variacao_pct": 1.13
+   "valor": "R$ 5,6666",
+   "variacao_pct": 1.51
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,2484",
-   "variacao_pct": 0.97
+   "valor": "R$ 6,2455",
+   "variacao_pct": 0.93
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.592,40",
-   "variacao_pct": -0.35
+   "valor": "7.561,67",
+   "variacao_pct": -0.4
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "25.366,09",
-   "variacao_pct": -0.39
+   "valor": "25.136,27",
+   "variacao_pct": -0.91
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,103%",
-   "variacao_pct": 2.1
+   "valor": "5,154%",
+   "variacao_pct": 1.0
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,20",
-   "variacao_pct": 0.03
+   "valor": "103,41",
+   "variacao_pct": 0.23
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 88,04",
-   "variacao_pct": -0.79
+   "valor": "US$ 88,56",
+   "variacao_pct": -0.2
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.904,70",
-   "variacao_pct": 0.5
+   "valor": "US$ 3.886,30",
+   "variacao_pct": 0.03
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 69.306",
-   "variacao_pct": -5.62
+   "valor": "US$ 67.265",
+   "variacao_pct": -2.94
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.952,15",
-   "variacao_pct": -4.5
+   "valor": "US$ 1.908,21",
+   "variacao_pct": -2.22
   },
   {
    "nome": "Selic (meta)",
@@ -125,23 +125,23 @@
   }
  ],
  "secoes": {
-  "brasil": 257,
-  "global": 210,
-  "mundo": 181,
-  "tech": 247
+  "brasil": 260,
+  "global": 211,
+  "mundo": 182,
+  "tech": 250
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 162
+   "citacoes": 166
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 134
+   "citacoes": 137
   },
   {
    "nome": "Financial Times",
-   "citacoes": 129
+   "citacoes": 130
   },
   {
    "nome": "CNBC",
@@ -153,19 +153,19 @@
   },
   {
    "nome": "CNBC Top News",
-   "citacoes": 92
+   "citacoes": 94
   },
   {
    "nome": "The Verge",
-   "citacoes": 90
+   "citacoes": 92
   },
   {
    "nome": "BBC World",
-   "citacoes": 90
+   "citacoes": 92
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 85
+   "citacoes": 86
   },
   {
    "nome": "WSJ Markets",
@@ -177,11 +177,11 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 55
+   "citacoes": 56
   },
   {
    "nome": "MarketWatch",
-   "citacoes": 24
+   "citacoes": 25
   },
   {
    "nome": "G1",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 55
+   "edicoes": 56
   },
   {
    "nome": "Apollo",
@@ -199,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 21
+   "edicoes": 22
   },
   {
    "nome": "CompoundLetter",
@@ -235,27 +235,27 @@
    "nome": "Dolar (USD/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 4,
+   "falhas": 3,
    "dias": 30
   },
   {
    "nome": "Euro (EUR/BRL)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 4,
-   "dias": 30
-  },
-  {
-   "nome": "Yahoo Finance",
-   "secao": "global",
-   "tipo": "feed",
-   "falhas": 4,
+   "falhas": 3,
    "dias": 30
   },
   {
    "nome": "Selic (meta)",
    "secao": "brasil",
    "tipo": "mercado",
+   "falhas": 3,
+   "dias": 30
+  },
+  {
+   "nome": "Yahoo Finance",
+   "secao": "global",
+   "tipo": "feed",
    "falhas": 3,
    "dias": 30
   },
@@ -1472,6 +1472,19 @@
    "newsletters": 2,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-14",
+   "itens": 8,
+   "secoes": {
+    "brasil": 3,
+    "global": 1,
+    "mundo": 1,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -1954,6 +1967,12 @@
    "assunto": "Daily Brief - 13/11 - Renúncia na Nvidia e ataque ao Tesouro",
    "itens": 11,
    "arquivo": "edicoes/2026-11-13.html"
+  },
+  {
+   "data": "2026-11-14",
+   "assunto": "Daily Brief - 14/11 - Renúncia na Nvidia e apagão aéreo",
+   "itens": 8,
+   "arquivo": "edicoes/2026-11-14.html"
   }
  ]
 }
