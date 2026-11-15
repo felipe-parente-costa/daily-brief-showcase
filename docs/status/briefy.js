@@ -67,7 +67,7 @@ function criar(ref) {
   cena.add(chave);
 
   const camera = new THREE.PerspectiveCamera(30, 1, 0.05, 50);
-  camera.position.set(0, 0.62, 2.7);
+  camera.position.set(0, 0.62, 3.25);   // mais longe = Briefy menor no quadro
 
   const orbita = new OrbitControls(camera, renderer.domElement);
   orbita.target.set(0, 0.54, 0);
