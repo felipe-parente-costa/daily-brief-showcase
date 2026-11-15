@@ -313,11 +313,15 @@ h1 .fino { color: var(--muted); font-weight: 500; }
   .heroi {
     column-gap: 32px;
     row-gap: 22px;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    /* Briefy numa coluna estreita (~380px); o texto e o painel ganham a largura */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.55fr);
     grid-template-areas: "texto briefy" "painel briefy";
   }
   .briefy .moldura { flex: 1; display: flex; }
-  .briefy .palco { flex: 1; aspect-ratio: auto; min-height: 520px; }
+  .briefy .palco { flex: 1; aspect-ratio: auto; min-height: 380px; }
+  /* com o painel largo, as linhas viram duas colunas: metade da altura */
+  dl.linhas { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; }
+  dl.linhas > div:nth-last-child(2) { border-bottom: 0; }
   /* a dica desce para dentro do quadro, para ele terminar junto do painel */
   .briefy { position: relative; }
   .briefy .dica { position: absolute; left: 14px; bottom: 12px; margin: 0; padding: 0; pointer-events: none; }
