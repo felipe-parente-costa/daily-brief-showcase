@@ -1,115 +1,115 @@
 {
- "gerado_em": "2026-11-17T07:32:56-03:00",
+ "gerado_em": "2026-11-17T10:32:59-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 83,
-  "itens_curados": 924,
+  "edicoes": 84,
+  "itens_curados": 940,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 83
+  "sequencia": 84
  },
  "hoje": {
   "data": "2026-11-17",
-  "entregue": false,
+  "entregue": true,
   "aviso_de_falha": true,
-  "destinatarios": null,
-  "hora": "07:25",
-  "curado_por": "gemini"
+  "destinatarios": 20,
+  "hora": "10:32",
+  "curado_por": "manual"
  },
  "ultima_edicao": {
-  "data": "2026-11-16",
-  "numero": 83,
-  "assunto": "Daily Brief - 16/11 - Mercado aguarda Nvidia e pacote fiscal",
-  "abertura": "A semana começa sob atenção aos resultados trimestrais da Nvidia e ao IPO da Anthropic, testes cruciais para a sustentabilidade da tese de inteligência artificial. No Brasil, os Correios registraram prejuízo de **R$ 7,5 bilhões** até o terceiro trimestre, ampliando a pressão sobre as contas públicas enquanto o governo tenta avançar com o pacote fiscal na Câmara.",
-  "itens": 11,
+  "data": "2026-11-17",
+  "numero": 84,
+  "assunto": "Daily Brief - 17/11 - Nvidia reporta sob tensão",
+  "abertura": "A Nvidia divulga hoje o primeiro balanço sem Jensen Huang, depois de um pregão de venda generalizada em tecnologia e com Washington apertando o cerco aos chips de IA. No Brasil, o pacote fiscal não convenceu: o dólar fechou no maior patamar desde maio de 2025.",
+  "itens": 16,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 5
    },
    {
     "titulo": "Global",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 3
+    "itens": 4
    }
   ],
-  "newsletters": 3
+  "newsletters": 2
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "172.458",
-   "variacao_pct": 0.66
+   "valor": "170.022",
+   "variacao_pct": 0.43
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,6666",
-   "variacao_pct": 0.46
+   "valor": "R$ 5,8081",
+   "variacao_pct": 2.53
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,2456",
-   "variacao_pct": 0.3
+   "valor": "R$ 6,3766",
+   "variacao_pct": 2.22
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.561,67",
-   "variacao_pct": -0.4
+   "valor": "7.416,59",
+   "variacao_pct": -1.92
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "25.136,27",
-   "variacao_pct": -0.91
+   "valor": "24.509,76",
+   "variacao_pct": -2.49
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,154%",
-   "variacao_pct": 1.0
+   "valor": "5,121%",
+   "variacao_pct": -0.64
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,50",
-   "variacao_pct": 0.08
+   "valor": "103,65",
+   "variacao_pct": 0.09
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 88,40",
-   "variacao_pct": -0.18
+   "valor": "US$ 86,71",
+   "variacao_pct": 1.15
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.866,70",
-   "variacao_pct": -0.5
+   "valor": "US$ 3.857,00",
+   "variacao_pct": 0.1
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 64.390",
-   "variacao_pct": -1.55
+   "valor": "US$ 64.976",
+   "variacao_pct": 1.09
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.800,47",
-   "variacao_pct": -1.42
+   "valor": "US$ 1.822,80",
+   "variacao_pct": 1.09
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 266,
-  "global": 216,
-  "mundo": 186,
-  "tech": 256
+  "brasil": 271,
+  "global": 220,
+  "mundo": 189,
+  "tech": 260
  },
  "fontes": [
   {
@@ -137,15 +137,15 @@
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 141
+   "citacoes": 143
   },
   {
    "nome": "Financial Times",
-   "citacoes": 132
+   "citacoes": 134
   },
   {
    "nome": "CNBC",
-   "citacoes": 101
+   "citacoes": 103
   },
   {
    "nome": "CNBC World",
@@ -173,25 +173,25 @@
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 60
+   "citacoes": 62
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 58
+   "citacoes": 60
   },
   {
    "nome": "MarketWatch",
-   "citacoes": 26
+   "citacoes": 27
   },
   {
    "nome": "G1",
-   "citacoes": 19
+   "citacoes": 23
   }
  ],
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 56
+   "edicoes": 57
   },
   {
    "nome": "Apollo",
@@ -199,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 24
+   "edicoes": 25
   },
   {
    "nome": "CompoundLetter",
@@ -235,13 +235,6 @@
    "nome": "Selic (meta)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 3,
-   "dias": 30
-  },
-  {
-   "nome": "IPCA (mensal)",
-   "secao": "brasil",
-   "tipo": "mercado",
    "falhas": 2,
    "dias": 30
   },
@@ -253,23 +246,9 @@
    "dias": 30
   },
   {
-   "nome": "Dolar (USD/BRL)",
+   "nome": "IPCA (mensal)",
    "secao": "brasil",
    "tipo": "mercado",
-   "falhas": 1,
-   "dias": 30
-  },
-  {
-   "nome": "Euro (EUR/BRL)",
-   "secao": "brasil",
-   "tipo": "mercado",
-   "falhas": 1,
-   "dias": 30
-  },
-  {
-   "nome": "Yahoo Finance",
-   "secao": "global",
-   "tipo": "feed",
    "falhas": 1,
    "dias": 30
   },
@@ -309,8 +288,22 @@
    "dias": 30
   },
   {
+   "nome": "Dolar (USD/BRL)",
+   "secao": "brasil",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
    "nome": "Ethereum",
    "secao": "cripto",
+   "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Euro (EUR/BRL)",
+   "secao": "brasil",
    "tipo": "mercado",
    "falhas": 0,
    "dias": 30
@@ -429,6 +422,13 @@
   },
   {
    "nome": "WSJ Markets",
+   "secao": "global",
+   "tipo": "feed",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Yahoo Finance",
    "secao": "global",
    "tipo": "feed",
    "falhas": 0,
@@ -1511,6 +1511,19 @@
    "newsletters": 3,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-17",
+   "itens": 16,
+   "secoes": {
+    "brasil": 5,
+    "global": 4,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 2,
+   "destinatarios": 20,
+   "curado_por": "manual"
   }
  ],
  "edicoes": [
@@ -2011,6 +2024,12 @@
    "assunto": "Daily Brief - 16/11 - Mercado aguarda Nvidia e pacote fiscal",
    "itens": 11,
    "arquivo": "edicoes/2026-11-16.html"
+  },
+  {
+   "data": "2026-11-17",
+   "assunto": "Daily Brief - 17/11 - Nvidia reporta sob tensão",
+   "itens": 16,
+   "arquivo": "edicoes/2026-11-17.html"
   }
  ]
 }
