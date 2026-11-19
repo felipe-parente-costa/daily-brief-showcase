@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-18T16:28:52-03:00",
+ "gerado_em": "2026-11-19T07:34:23-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
   "edicoes": 85,
@@ -11,11 +11,11 @@
   "sequencia": 85
  },
  "hoje": {
-  "data": "2026-11-18",
-  "entregue": true,
+  "data": "2026-11-19",
+  "entregue": false,
   "aviso_de_falha": true,
-  "destinatarios": 20,
-  "hora": "11:29",
+  "destinatarios": null,
+  "hora": "11:28",
   "curado_por": "manual"
  },
  "ultima_edicao": {
