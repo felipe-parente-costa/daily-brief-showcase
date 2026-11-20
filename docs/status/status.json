@@ -1,115 +1,121 @@
 {
- "gerado_em": "2026-11-19T16:34:06-03:00",
+ "gerado_em": "2026-11-20T07:26:39-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 86,
-  "itens_curados": 971,
+  "edicoes": 87,
+  "itens_curados": 982,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 86
+  "sequencia": 87
  },
  "hoje": {
-  "data": "2026-11-19",
+  "data": "2026-11-20",
   "entregue": true,
-  "aviso_de_falha": true,
+  "aviso_de_falha": false,
   "destinatarios": 20,
-  "hora": "07:46",
-  "curado_por": "manual"
+  "hora": "07:26",
+  "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-19",
-  "numero": 86,
-  "assunto": "Daily Brief - 19/11 - Anthropic estreia, real apanha",
-  "abertura": "A Anthropic levantou **US$ 81 bilhões** no maior IPO da história e começa a ser negociada hoje na Nasdaq, o que animou os futuros americanos depois de dias de venda em tecnologia. Aqui, o pacote fiscal passou no Senado quase intacto, mas o mercado não aliviou: o dólar subiu e a bolsa caiu.",
-  "itens": 16,
+  "data": "2026-11-20",
+  "numero": 87,
+  "assunto": "Daily Brief - 20/11 - Pressão no câmbio e queda global em tecnologia",
+  "abertura": "A turbulência nos mercados globais de tecnologia se intensificou após a estreia da Anthropic na Nasdaq, que não conseguiu conter as dúvidas dos investidores sobre valuations no setor. No Brasil, declarações do presidente Lula sobre a escolha do novo comandante da Fazenda mantiveram o câmbio sob forte pressão, exigindo intervenção do Banco Central.",
+  "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 5
+    "itens": 4
    },
    {
     "titulo": "Global",
-    "itens": 4
+    "itens": 2
    },
    {
     "titulo": "Mundo",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 4
+    "itens": 3
    }
   ],
-  "newsletters": 1
+  "newsletters": 3
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "167.538",
-   "variacao_pct": -1.34
+   "valor": "166.376",
+   "variacao_pct": -0.69
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,8455",
-   "variacao_pct": 1.19
+   "valor": "R$ 5,9362",
+   "variacao_pct": 0.93
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,4369",
-   "variacao_pct": 1.45
+   "valor": "R$ 6,5087",
+   "variacao_pct": 0.95
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.323,63",
-   "variacao_pct": -0.23
+   "valor": "7.175,83",
+   "variacao_pct": -2.02
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "24.429,88",
-   "variacao_pct": 0.42
+   "valor": "23.879,20",
+   "variacao_pct": -2.25
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,066%",
-   "variacao_pct": -0.73
+   "valor": "5,052%",
+   "variacao_pct": -0.28
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,63",
-   "variacao_pct": -0.22
+   "valor": "103,83",
+   "variacao_pct": -0.07
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 82,79",
-   "variacao_pct": -0.56
+   "valor": "US$ 81,06",
+   "variacao_pct": -2.58
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.732,10",
-   "variacao_pct": -0.26
+   "valor": "US$ 3.574,20",
+   "variacao_pct": -3.02
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 63.812",
-   "variacao_pct": -0.65
+   "valor": "US$ 61.672",
+   "variacao_pct": -3.37
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.804,66",
-   "variacao_pct": 0.19
+   "valor": "US$ 1.746,81",
+   "variacao_pct": -3.32
+  },
+  {
+   "nome": "Selic (meta)",
+   "grupo": "brasil",
+   "valor": "13,75% a.a.",
+   "variacao_pct": null
   },
   {
    "nome": "IPCA (mensal)",
@@ -119,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 281,
-  "global": 228,
-  "mundo": 195,
-  "tech": 267
+  "brasil": 285,
+  "global": 230,
+  "mundo": 197,
+  "tech": 270
  },
  "fontes": [
   {
@@ -193,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 26
+   "edicoes": 27
   },
   {
    "nome": "CompoundLetter",
@@ -204,16 +210,16 @@
    "edicoes": 13
   },
   {
+   "nome": "Boston Consulting Group",
+   "edicoes": 12
+  },
+  {
    "nome": "Bain & Company",
    "edicoes": 11
   },
   {
-   "nome": "Boston Consulting Group",
-   "edicoes": 11
-  },
-  {
    "nome": "GaryVee",
-   "edicoes": 6
+   "edicoes": 7
   },
   {
    "nome": "Chamath Palihapitiya",
@@ -233,13 +239,6 @@
    "dias": 30
   },
   {
-   "nome": "Brazil Journal",
-   "secao": "brasil",
-   "tipo": "feed",
-   "falhas": 1,
-   "dias": 30
-  },
-  {
    "nome": "BBC World",
    "secao": "mundo",
    "tipo": "feed",
@@ -250,6 +249,13 @@
    "nome": "Bitcoin",
    "secao": "cripto",
    "tipo": "mercado",
+   "falhas": 0,
+   "dias": 30
+  },
+  {
+   "nome": "Brazil Journal",
+   "secao": "brasil",
+   "tipo": "feed",
    "falhas": 0,
    "dias": 30
   },
@@ -1544,6 +1550,19 @@
    "newsletters": 1,
    "destinatarios": 20,
    "curado_por": "manual"
+  },
+  {
+   "data": "2026-11-20",
+   "itens": 11,
+   "secoes": {
+    "brasil": 4,
+    "global": 2,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 3,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2062,6 +2081,12 @@
    "assunto": "Daily Brief - 19/11 - Anthropic estreia, real apanha",
    "itens": 16,
    "arquivo": "edicoes/2026-11-19.html"
+  },
+  {
+   "data": "2026-11-20",
+   "assunto": "Daily Brief - 20/11 - Pressão no câmbio e queda global em tecnologia",
+   "itens": 11,
+   "arquivo": "edicoes/2026-11-20.html"
   }
  ]
 }
