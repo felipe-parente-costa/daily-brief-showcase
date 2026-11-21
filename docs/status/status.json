@@ -1,33 +1,33 @@
 {
- "gerado_em": "2026-11-20T16:11:29-03:00",
+ "gerado_em": "2026-11-21T07:33:59-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 87,
-  "itens_curados": 982,
+  "edicoes": 88,
+  "itens_curados": 993,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 87
+  "sequencia": 88
  },
  "hoje": {
-  "data": "2026-11-20",
+  "data": "2026-11-21",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 20,
-  "hora": "07:26",
+  "hora": "07:33",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-20",
-  "numero": 87,
-  "assunto": "Daily Brief - 20/11 - Pressão no câmbio e queda global em tecnologia",
-  "abertura": "A turbulência nos mercados globais de tecnologia se intensificou após a estreia da Anthropic na Nasdaq, que não conseguiu conter as dúvidas dos investidores sobre valuations no setor. No Brasil, declarações do presidente Lula sobre a escolha do novo comandante da Fazenda mantiveram o câmbio sob forte pressão, exigindo intervenção do Banco Central.",
+  "data": "2026-11-21",
+  "numero": 88,
+  "assunto": "Daily Brief - 21/11 - Correção em tech e injeção do 13º no Brasil",
+  "abertura": "A forte correção nas bolsas globais marcou a semana com uma liquidação no setor de tecnologia e revisão do prêmio de risco. No Brasil, o início do pagamento do 13º salário injeta **R$ 400 bilhões** na economia, enquanto o governo regulamenta a transição na escala de trabalho.",
   "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 4
+    "itens": 3
    },
    {
     "titulo": "Global",
@@ -39,10 +39,10 @@
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 3
+    "itens": 4
    }
   ],
-  "newsletters": 3
+  "newsletters": 4
  },
  "mercado": [
   {
@@ -54,62 +54,62 @@
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,9362",
-   "variacao_pct": 0.93
+   "valor": "R$ 5,9488",
+   "variacao_pct": 1.14
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,5087",
-   "variacao_pct": 0.95
+   "valor": "R$ 6,5199",
+   "variacao_pct": 1.12
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.175,83",
-   "variacao_pct": -2.02
+   "valor": "6.910,39",
+   "variacao_pct": -3.7
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "23.879,20",
-   "variacao_pct": -2.25
+   "valor": "22.617,73",
+   "variacao_pct": -5.28
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "5,052%",
-   "variacao_pct": -0.28
+   "valor": "4,912%",
+   "variacao_pct": -2.77
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,83",
-   "variacao_pct": -0.07
+   "valor": "103,84",
+   "variacao_pct": -0.06
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 81,06",
-   "variacao_pct": -2.58
+   "valor": "US$ 83,41",
+   "variacao_pct": 0.24
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.574,20",
-   "variacao_pct": -3.02
+   "valor": "US$ 3.515,40",
+   "variacao_pct": -4.62
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 61.672",
-   "variacao_pct": -3.37
+   "valor": "US$ 57.907",
+   "variacao_pct": -6.1
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.746,81",
-   "variacao_pct": -3.32
+   "valor": "US$ 1.635,41",
+   "variacao_pct": -6.36
   },
   {
    "nome": "Selic (meta)",
@@ -125,19 +125,19 @@
   }
  ],
  "secoes": {
-  "brasil": 285,
-  "global": 230,
-  "mundo": 197,
-  "tech": 270
+  "brasil": 288,
+  "global": 232,
+  "mundo": 199,
+  "tech": 274
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 170
+   "citacoes": 173
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 148
+   "citacoes": 150
   },
   {
    "nome": "Financial Times",
@@ -149,6 +149,10 @@
   },
   {
    "nome": "CNBC World",
+   "citacoes": 101
+  },
+  {
+   "nome": "The Verge",
    "citacoes": 99
   },
   {
@@ -156,20 +160,16 @@
    "citacoes": 97
   },
   {
-   "nome": "The Verge",
-   "citacoes": 95
-  },
-  {
    "nome": "BBC World",
-   "citacoes": 95
+   "citacoes": 96
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 88
+   "citacoes": 89
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 69
+   "citacoes": 70
   },
   {
    "nome": "NeoFeed",
@@ -177,7 +177,7 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 61
+   "citacoes": 62
   },
   {
    "nome": "G1",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 58
+   "edicoes": 59
   },
   {
    "nome": "Apollo",
@@ -199,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 27
+   "edicoes": 28
   },
   {
    "nome": "CompoundLetter",
@@ -210,23 +210,23 @@
    "edicoes": 13
   },
   {
-   "nome": "Boston Consulting Group",
+   "nome": "Bain & Company",
    "edicoes": 12
   },
   {
-   "nome": "Bain & Company",
-   "edicoes": 11
+   "nome": "Boston Consulting Group",
+   "edicoes": 12
   },
   {
    "nome": "GaryVee",
    "edicoes": 7
   },
   {
-   "nome": "Chamath Palihapitiya",
-   "edicoes": 5
+   "nome": "Era de Ouro",
+   "edicoes": 6
   },
   {
-   "nome": "BCG",
+   "nome": "Chamath Palihapitiya",
    "edicoes": 5
   }
  ],
@@ -1563,6 +1563,19 @@
    "newsletters": 3,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-21",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 2,
+    "tech": 4
+   },
+   "newsletters": 4,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2087,6 +2100,12 @@
    "assunto": "Daily Brief - 20/11 - Pressão no câmbio e queda global em tecnologia",
    "itens": 11,
    "arquivo": "edicoes/2026-11-20.html"
+  },
+  {
+   "data": "2026-11-21",
+   "assunto": "Daily Brief - 21/11 - Correção em tech e injeção do 13º no Brasil",
+   "itens": 11,
+   "arquivo": "edicoes/2026-11-21.html"
   }
  ]
 }
