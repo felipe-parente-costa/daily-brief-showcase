@@ -1,28 +1,28 @@
 {
- "gerado_em": "2026-11-21T15:07:34-03:00",
+ "gerado_em": "2026-11-22T07:26:27-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 88,
-  "itens_curados": 993,
+  "edicoes": 89,
+  "itens_curados": 1004,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 88
+  "sequencia": 89
  },
  "hoje": {
-  "data": "2026-11-21",
+  "data": "2026-11-22",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 20,
-  "hora": "07:33",
+  "hora": "07:26",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-21",
-  "numero": 88,
-  "assunto": "Daily Brief - 21/11 - Correção em tech e injeção do 13º no Brasil",
-  "abertura": "A forte correção nas bolsas globais marcou a semana com uma liquidação no setor de tecnologia e revisão do prêmio de risco. No Brasil, o início do pagamento do 13º salário injeta **R$ 400 bilhões** na economia, enquanto o governo regulamenta a transição na escala de trabalho.",
+  "data": "2026-11-22",
+  "numero": 89,
+  "assunto": "Daily Brief - 22/11 - Ajuste fiscal na Câmara e queda nas techs",
+  "abertura": "O mercado global encerrou sua pior semana desde 2020, liderado pela queda do Nasdaq em **-5,28%** com dúvidas sobre o retorno dos investimentos em inteligência artificial. No Brasil, os holofotes se voltam para a Câmara dos Deputados, que vota nesta segunda-feira o projeto de ajuste fiscal em meio ao rebaixamento do país por bancos globais.",
   "itens": 11,
   "secoes": [
    {
@@ -35,14 +35,14 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 4
+    "itens": 3
    }
   ],
-  "newsletters": 4
+  "newsletters": 2
  },
  "mercado": [
   {
@@ -54,8 +54,8 @@
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,9488",
-   "variacao_pct": 1.14
+   "valor": "R$ 5,9074",
+   "variacao_pct": -0.44
   },
   {
    "nome": "Euro (EUR/BRL)",
@@ -102,14 +102,14 @@
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 57.907",
-   "variacao_pct": -6.1
+   "valor": "US$ 60.834",
+   "variacao_pct": 5.15
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.635,41",
-   "variacao_pct": -6.36
+   "valor": "US$ 1.710,61",
+   "variacao_pct": 4.68
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 288,
-  "global": 232,
-  "mundo": 199,
-  "tech": 274
+  "brasil": 291,
+  "global": 234,
+  "mundo": 202,
+  "tech": 277
  },
  "fontes": [
   {
@@ -137,11 +137,11 @@
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 150
+   "citacoes": 152
   },
   {
    "nome": "Financial Times",
-   "citacoes": 142
+   "citacoes": 144
   },
   {
    "nome": "CNBC",
@@ -149,11 +149,11 @@
   },
   {
    "nome": "CNBC World",
-   "citacoes": 101
+   "citacoes": 102
   },
   {
    "nome": "The Verge",
-   "citacoes": 99
+   "citacoes": 101
   },
   {
    "nome": "CNBC Top News",
@@ -161,11 +161,11 @@
   },
   {
    "nome": "BBC World",
-   "citacoes": 96
+   "citacoes": 97
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 89
+   "citacoes": 90
   },
   {
    "nome": "WSJ Markets",
@@ -181,7 +181,7 @@
   },
   {
    "nome": "G1",
-   "citacoes": 30
+   "citacoes": 33
   },
   {
    "nome": "MarketWatch",
@@ -202,19 +202,19 @@
    "edicoes": 28
   },
   {
+   "nome": "Torsten Slok",
+   "edicoes": 14
+  },
+  {
    "nome": "CompoundLetter",
    "edicoes": 14
   },
   {
-   "nome": "Torsten Slok",
+   "nome": "Boston Consulting Group",
    "edicoes": 13
   },
   {
    "nome": "Bain & Company",
-   "edicoes": 12
-  },
-  {
-   "nome": "Boston Consulting Group",
    "edicoes": 12
   },
   {
@@ -1576,6 +1576,19 @@
    "newsletters": 4,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-22",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2106,6 +2119,12 @@
    "assunto": "Daily Brief - 21/11 - Correção em tech e injeção do 13º no Brasil",
    "itens": 11,
    "arquivo": "edicoes/2026-11-21.html"
+  },
+  {
+   "data": "2026-11-22",
+   "assunto": "Daily Brief - 22/11 - Ajuste fiscal na Câmara e queda nas techs",
+   "itens": 11,
+   "arquivo": "edicoes/2026-11-22.html"
   }
  ]
 }
