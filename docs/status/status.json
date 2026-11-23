@@ -1,17 +1,17 @@
 {
- "gerado_em": "2026-11-22T15:36:30-03:00",
+ "gerado_em": "2026-11-23T07:26:20-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 89,
-  "itens_curados": 1004,
+  "edicoes": 90,
+  "itens_curados": 1010,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 89
+  "sequencia": 90
  },
  "hoje": {
-  "data": "2026-11-22",
+  "data": "2026-11-23",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 20,
@@ -19,27 +19,27 @@
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-22",
-  "numero": 89,
-  "assunto": "Daily Brief - 22/11 - Ajuste fiscal na Câmara e queda nas techs",
-  "abertura": "O mercado global encerrou sua pior semana desde 2020, liderado pela queda do Nasdaq em **-5,28%** com dúvidas sobre o retorno dos investimentos em inteligência artificial. No Brasil, os holofotes se voltam para a Câmara dos Deputados, que vota nesta segunda-feira o projeto de ajuste fiscal em meio ao rebaixamento do país por bancos globais.",
-  "itens": 11,
+  "data": "2026-11-23",
+  "numero": 90,
+  "assunto": "Daily Brief - 23/11 - Ajuste fiscal na Câmara e fracasso da COP31",
+  "abertura": "A Câmara dos Deputados vota hoje a proposta de ajuste fiscal com previsão de economizar **R$ 50 bilhões** em 2027. No cenário internacional, os mercados tentam recuperação após tombo de tech, enquanto a COP31 encerra sem acordo global.",
+  "itens": 6,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 1
    },
    {
     "titulo": "Global",
-    "itens": 2
+    "itens": 1
    },
    {
     "titulo": "Mundo",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 3
+    "itens": 2
    }
   ],
   "newsletters": 2
@@ -60,8 +60,8 @@
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,5199",
-   "variacao_pct": 1.12
+   "valor": "R$ 6,4882",
+   "variacao_pct": -0.21
   },
   {
    "nome": "S&P 500",
@@ -84,32 +84,32 @@
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,84",
-   "variacao_pct": -0.06
+   "valor": "103,82",
+   "variacao_pct": 0.01
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 83,41",
-   "variacao_pct": 0.24
+   "valor": "US$ 83,13",
+   "variacao_pct": -1.01
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.515,40",
-   "variacao_pct": -4.62
+   "valor": "US$ 3.620,60",
+   "variacao_pct": 2.99
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 60.834",
-   "variacao_pct": 5.15
+   "valor": "US$ 61.315",
+   "variacao_pct": 0.79
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.710,61",
-   "variacao_pct": 4.68
+   "valor": "US$ 1.721,05",
+   "variacao_pct": 0.65
   },
   {
    "nome": "Selic (meta)",
@@ -125,15 +125,15 @@
   }
  ],
  "secoes": {
-  "brasil": 291,
-  "global": 234,
-  "mundo": 202,
-  "tech": 277
+  "brasil": 292,
+  "global": 235,
+  "mundo": 204,
+  "tech": 279
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 173
+   "citacoes": 174
   },
   {
    "nome": "TechCrunch",
@@ -141,7 +141,7 @@
   },
   {
    "nome": "Financial Times",
-   "citacoes": 144
+   "citacoes": 145
   },
   {
    "nome": "CNBC",
@@ -149,27 +149,27 @@
   },
   {
    "nome": "CNBC World",
-   "citacoes": 102
+   "citacoes": 105
   },
   {
    "nome": "The Verge",
-   "citacoes": 101
+   "citacoes": 102
   },
   {
    "nome": "CNBC Top News",
-   "citacoes": 97
+   "citacoes": 99
   },
   {
    "nome": "BBC World",
-   "citacoes": 97
+   "citacoes": 98
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 90
+   "citacoes": 92
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 70
+   "citacoes": 71
   },
   {
    "nome": "NeoFeed",
@@ -177,7 +177,7 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 62
+   "citacoes": 63
   },
   {
    "nome": "G1",
@@ -199,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 28
+   "edicoes": 29
   },
   {
    "nome": "Torsten Slok",
@@ -219,7 +219,7 @@
   },
   {
    "nome": "GaryVee",
-   "edicoes": 7
+   "edicoes": 8
   },
   {
    "nome": "Era de Ouro",
@@ -1589,6 +1589,19 @@
    "newsletters": 2,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-23",
+   "itens": 6,
+   "secoes": {
+    "brasil": 1,
+    "global": 1,
+    "mundo": 2,
+    "tech": 2
+   },
+   "newsletters": 2,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2125,6 +2138,12 @@
    "assunto": "Daily Brief - 22/11 - Ajuste fiscal na Câmara e queda nas techs",
    "itens": 11,
    "arquivo": "edicoes/2026-11-22.html"
+  },
+  {
+   "data": "2026-11-23",
+   "assunto": "Daily Brief - 23/11 - Ajuste fiscal na Câmara e fracasso da COP31",
+   "itens": 6,
+   "arquivo": "edicoes/2026-11-23.html"
   }
  ]
 }
