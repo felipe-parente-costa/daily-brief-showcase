@@ -1,115 +1,115 @@
 {
- "gerado_em": "2026-11-23T19:48:29-03:00",
+ "gerado_em": "2026-11-24T07:27:10-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 90,
-  "itens_curados": 1010,
+  "edicoes": 91,
+  "itens_curados": 1024,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 90
+  "sequencia": 91
  },
  "hoje": {
-  "data": "2026-11-23",
+  "data": "2026-11-24",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 20,
-  "hora": "07:26",
+  "hora": "07:27",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-23",
-  "numero": 90,
-  "assunto": "Daily Brief - 23/11 - Ajuste fiscal na Câmara e fracasso da COP31",
-  "abertura": "A Câmara dos Deputados vota hoje a proposta de ajuste fiscal com previsão de economizar **R$ 50 bilhões** em 2027. No cenário internacional, os mercados tentam recuperação após tombo de tech, enquanto a COP31 encerra sem acordo global.",
-  "itens": 6,
+  "data": "2026-11-24",
+  "numero": 91,
+  "assunto": "Daily Brief - 24/11 - Pacote fiscal aprovado e megafusões tech",
+  "abertura": "A aprovação do pacote fiscal na Câmara avança no Congresso com vigência focada em **2027**, enquanto o dólar perto de R$ 6 tensiona o cenário interno. No exterior, a volta de Jensen Huang ao comando da Nvidia destravou forte volatilidade no setor de tecnologia, impulsionando fusões bilionárias como os acordos de Sanofi, Amazon e Tesla.",
+  "itens": 14,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 1
+    "itens": 4
    },
    {
     "titulo": "Global",
-    "itens": 1
+    "itens": 3
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 2
+    "itens": 4
    }
   ],
-  "newsletters": 2
+  "newsletters": 0
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "166.376",
-   "variacao_pct": -0.69
+   "valor": "164.796",
+   "variacao_pct": -0.95
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,9074",
-   "variacao_pct": -0.44
+   "valor": "R$ 5,9314",
+   "variacao_pct": -0.28
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,4882",
-   "variacao_pct": -0.21
+   "valor": "R$ 6,4843",
+   "variacao_pct": -0.6
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "6.910,39",
-   "variacao_pct": -3.7
+   "valor": "7.237,17",
+   "variacao_pct": 4.73
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "22.617,73",
-   "variacao_pct": -5.28
+   "valor": "24.089,56",
+   "variacao_pct": 6.51
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,912%",
-   "variacao_pct": -2.77
+   "valor": "4,918%",
+   "variacao_pct": 0.12
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,82",
-   "variacao_pct": 0.01
+   "valor": "104,15",
+   "variacao_pct": -0.16
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 83,13",
-   "variacao_pct": -1.01
+   "valor": "US$ 80,05",
+   "variacao_pct": -0.15
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.620,60",
-   "variacao_pct": 2.99
+   "valor": "US$ 3.619,80",
+   "variacao_pct": -0.87
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 61.315",
-   "variacao_pct": 0.79
+   "valor": "US$ 59.907",
+   "variacao_pct": -2.3
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.721,05",
-   "variacao_pct": 0.65
+   "valor": "US$ 1.684,63",
+   "variacao_pct": -2.05
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 292,
-  "global": 235,
-  "mundo": 204,
-  "tech": 279
+  "brasil": 296,
+  "global": 238,
+  "mundo": 207,
+  "tech": 283
  },
  "fontes": [
   {
@@ -1602,6 +1602,19 @@
    "newsletters": 2,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-24",
+   "itens": 14,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 0,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2144,6 +2157,12 @@
    "assunto": "Daily Brief - 23/11 - Ajuste fiscal na Câmara e fracasso da COP31",
    "itens": 6,
    "arquivo": "edicoes/2026-11-23.html"
+  },
+  {
+   "data": "2026-11-24",
+   "assunto": "Daily Brief - 24/11 - Pacote fiscal aprovado e megafusões tech",
+   "itens": 14,
+   "arquivo": "edicoes/2026-11-24.html"
   }
  ]
 }
