@@ -1,37 +1,37 @@
 {
- "gerado_em": "2026-11-24T18:26:21-03:00",
+ "gerado_em": "2026-11-25T07:26:59-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 91,
-  "itens_curados": 1024,
+  "edicoes": 92,
+  "itens_curados": 1035,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 91
+  "sequencia": 92
  },
  "hoje": {
-  "data": "2026-11-24",
+  "data": "2026-11-25",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 20,
-  "hora": "07:27",
+  "hora": "07:26",
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-24",
-  "numero": 91,
-  "assunto": "Daily Brief - 24/11 - Pacote fiscal aprovado e megafusões tech",
-  "abertura": "A aprovação do pacote fiscal na Câmara avança no Congresso com vigência focada em **2027**, enquanto o dólar perto de R$ 6 tensiona o cenário interno. No exterior, a volta de Jensen Huang ao comando da Nvidia destravou forte volatilidade no setor de tecnologia, impulsionando fusões bilionárias como os acordos de Sanofi, Amazon e Tesla.",
-  "itens": 14,
+  "data": "2026-11-25",
+  "numero": 92,
+  "assunto": "Daily Brief - 25/11 - Afrouxamento fiscal e cautela em tech",
+  "abertura": "O governo brasileiro reduziu para **R$ 12,6 bilhões** o bloqueio no Orçamento de 2026, enquanto os mercados acionários globais recuam à espera de dados de inflação nos Estados Unidos.",
+  "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 4
+    "itens": 3
    },
    {
     "titulo": "Global",
-    "itens": 3
+    "itens": 2
    },
    {
     "titulo": "Mundo",
@@ -39,77 +39,77 @@
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 4
+    "itens": 3
    }
   ],
-  "newsletters": 0
+  "newsletters": 2
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "164.796",
-   "variacao_pct": -0.95
+   "valor": "164.090",
+   "variacao_pct": -0.43
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,9314",
-   "variacao_pct": -0.28
+   "valor": "R$ 5,8933",
+   "variacao_pct": -0.59
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,4843",
-   "variacao_pct": -0.6
+   "valor": "R$ 6,4566",
+   "variacao_pct": -0.05
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.237,17",
-   "variacao_pct": 4.73
+   "valor": "7.201,09",
+   "variacao_pct": -0.5
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "24.089,56",
-   "variacao_pct": 6.51
+   "valor": "23.733,53",
+   "variacao_pct": -1.48
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,918%",
-   "variacao_pct": 0.12
+   "valor": "4,904%",
+   "variacao_pct": -0.28
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "104,15",
-   "variacao_pct": -0.16
+   "valor": "104,01",
+   "variacao_pct": 0.2
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 80,05",
-   "variacao_pct": -0.15
+   "valor": "US$ 81,73",
+   "variacao_pct": -0.39
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.619,80",
-   "variacao_pct": -0.87
+   "valor": "US$ 3.562,50",
+   "variacao_pct": 0.02
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 59.907",
-   "variacao_pct": -2.3
+   "valor": "US$ 58.928",
+   "variacao_pct": -1.67
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.684,63",
-   "variacao_pct": -2.05
+   "valor": "US$ 1.643,85",
+   "variacao_pct": -2.45
   },
   {
    "nome": "Selic (meta)",
@@ -125,39 +125,39 @@
   }
  ],
  "secoes": {
-  "brasil": 296,
-  "global": 238,
-  "mundo": 207,
-  "tech": 283
+  "brasil": 299,
+  "global": 240,
+  "mundo": 210,
+  "tech": 286
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 174
+   "citacoes": 176
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 152
+   "citacoes": 154
   },
   {
    "nome": "Financial Times",
-   "citacoes": 145
+   "citacoes": 146
+  },
+  {
+   "nome": "CNBC World",
+   "citacoes": 108
   },
   {
    "nome": "CNBC",
    "citacoes": 108
   },
   {
-   "nome": "CNBC World",
-   "citacoes": 105
-  },
-  {
    "nome": "The Verge",
-   "citacoes": 102
+   "citacoes": 104
   },
   {
    "nome": "CNBC Top News",
-   "citacoes": 99
+   "citacoes": 100
   },
   {
    "nome": "BBC World",
@@ -165,11 +165,11 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 92
+   "citacoes": 94
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 71
+   "citacoes": 72
   },
   {
    "nome": "NeoFeed",
@@ -177,7 +177,7 @@
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 63
+   "citacoes": 64
   },
   {
    "nome": "G1",
@@ -191,7 +191,7 @@
  "newsletters": [
   {
    "nome": "Market Makers",
-   "edicoes": 59
+   "edicoes": 60
   },
   {
    "nome": "Apollo",
@@ -199,7 +199,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 29
+   "edicoes": 30
   },
   {
    "nome": "Torsten Slok",
@@ -1615,6 +1615,19 @@
    "newsletters": 0,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-25",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 2,
+    "mundo": 3,
+    "tech": 3
+   },
+   "newsletters": 2,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2163,6 +2176,12 @@
    "assunto": "Daily Brief - 24/11 - Pacote fiscal aprovado e megafusões tech",
    "itens": 14,
    "arquivo": "edicoes/2026-11-24.html"
+  },
+  {
+   "data": "2026-11-25",
+   "assunto": "Daily Brief - 25/11 - Afrouxamento fiscal e cautela em tech",
+   "itens": 11,
+   "arquivo": "edicoes/2026-11-25.html"
   }
  ]
 }
