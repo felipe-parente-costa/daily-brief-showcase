@@ -1,37 +1,37 @@
 {
- "gerado_em": "2026-11-26T07:33:45-03:00",
+ "gerado_em": "2026-11-26T10:38:21-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 92,
-  "itens_curados": 1035,
+  "edicoes": 93,
+  "itens_curados": 1050,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 92
+  "sequencia": 93
  },
  "hoje": {
   "data": "2026-11-26",
-  "entregue": false,
+  "entregue": true,
   "aviso_de_falha": true,
-  "destinatarios": null,
-  "hora": "07:26",
-  "curado_por": "gemini"
+  "destinatarios": 20,
+  "hora": "10:38",
+  "curado_por": "manual"
  },
  "ultima_edicao": {
-  "data": "2026-11-25",
-  "numero": 92,
-  "assunto": "Daily Brief - 25/11 - Afrouxamento fiscal e cautela em tech",
-  "abertura": "O governo brasileiro reduziu para **R$ 12,6 bilhões** o bloqueio no Orçamento de 2026, enquanto os mercados acionários globais recuam à espera de dados de inflação nos Estados Unidos.",
-  "itens": 11,
+  "data": "2026-11-26",
+  "numero": 93,
+  "assunto": "Daily Brief - 26/11 - Trump mira açúcar e aviões do Brasil",
+  "abertura": "Os EUA propuseram tarifa de **10%** sobre aviões brasileiros e mais imposto sobre o açúcar, e o governo Lula respondeu com indignação. O mercado local olhou para outro lado: a especulação sobre Luiz Trabuco na Fazenda pesou mais, e o Ibovespa subiu enquanto o dólar caiu.",
+  "itens": 15,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Global",
-    "itens": 2
+    "itens": 4
    },
    {
     "titulo": "Mundo",
@@ -39,77 +39,77 @@
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 3
+    "itens": 4
    }
   ],
-  "newsletters": 2
+  "newsletters": 1
  },
  "mercado": [
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "164.090",
-   "variacao_pct": -0.43
+   "valor": "172.083",
+   "variacao_pct": 3.24
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,8933",
-   "variacao_pct": -0.59
+   "valor": "R$ 5,7314",
+   "variacao_pct": -2.92
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,4566",
-   "variacao_pct": -0.05
+   "valor": "R$ 6,2951",
+   "variacao_pct": -2.61
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.201,09",
-   "variacao_pct": -0.5
+   "valor": "7.182,78",
+   "variacao_pct": -0.25
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "23.733,53",
-   "variacao_pct": -1.48
+   "valor": "23.585,80",
+   "variacao_pct": -0.62
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,904%",
-   "variacao_pct": -0.28
+   "valor": "4,848%",
+   "variacao_pct": -1.14
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "104,01",
-   "variacao_pct": 0.2
+   "valor": "103,73",
+   "variacao_pct": 0.06
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 81,73",
-   "variacao_pct": -0.39
+   "valor": "US$ 84,63",
+   "variacao_pct": 1.14
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.562,50",
-   "variacao_pct": 0.02
+   "valor": "US$ 3.594,50",
+   "variacao_pct": 1.66
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 58.928",
-   "variacao_pct": -1.67
+   "valor": "US$ 60.791",
+   "variacao_pct": 4.26
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.643,85",
-   "variacao_pct": -2.45
+   "valor": "US$ 1.702,83",
+   "variacao_pct": 3.98
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 299,
-  "global": 240,
-  "mundo": 210,
-  "tech": 286
+  "brasil": 303,
+  "global": 244,
+  "mundo": 213,
+  "tech": 290
  },
  "fontes": [
   {
@@ -137,23 +137,23 @@
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 154
+   "citacoes": 159
   },
   {
    "nome": "Financial Times",
-   "citacoes": 146
+   "citacoes": 150
+  },
+  {
+   "nome": "CNBC",
+   "citacoes": 111
   },
   {
    "nome": "CNBC World",
    "citacoes": 108
   },
   {
-   "nome": "CNBC",
-   "citacoes": 108
-  },
-  {
    "nome": "The Verge",
-   "citacoes": 104
+   "citacoes": 106
   },
   {
    "nome": "CNBC Top News",
@@ -161,7 +161,7 @@
   },
   {
    "nome": "BBC World",
-   "citacoes": 98
+   "citacoes": 100
   },
   {
    "nome": "InfoMoney",
@@ -169,19 +169,19 @@
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 72
+   "citacoes": 73
   },
   {
    "nome": "NeoFeed",
-   "citacoes": 65
+   "citacoes": 66
   },
   {
    "nome": "Brazil Journal",
-   "citacoes": 64
+   "citacoes": 66
   },
   {
    "nome": "G1",
-   "citacoes": 33
+   "citacoes": 36
   },
   {
    "nome": "MarketWatch",
@@ -1628,6 +1628,19 @@
    "newsletters": 2,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-26",
+   "itens": 15,
+   "secoes": {
+    "brasil": 4,
+    "global": 4,
+    "mundo": 3,
+    "tech": 4
+   },
+   "newsletters": 1,
+   "destinatarios": 20,
+   "curado_por": "manual"
   }
  ],
  "edicoes": [
@@ -2182,6 +2195,12 @@
    "assunto": "Daily Brief - 25/11 - Afrouxamento fiscal e cautela em tech",
    "itens": 11,
    "arquivo": "edicoes/2026-11-25.html"
+  },
+  {
+   "data": "2026-11-26",
+   "assunto": "Daily Brief - 26/11 - Trump mira açúcar e aviões do Brasil",
+   "itens": 15,
+   "arquivo": "edicoes/2026-11-26.html"
   }
  ]
 }
