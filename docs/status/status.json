@@ -1,45 +1,45 @@
 {
- "gerado_em": "2026-11-26T17:22:30-03:00",
+ "gerado_em": "2026-11-27T07:27:42-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 93,
-  "itens_curados": 1050,
+  "edicoes": 94,
+  "itens_curados": 1061,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 93
+  "sequencia": 94
  },
  "hoje": {
-  "data": "2026-11-26",
+  "data": "2026-11-27",
   "entregue": true,
-  "aviso_de_falha": true,
+  "aviso_de_falha": false,
   "destinatarios": 20,
-  "hora": "10:38",
-  "curado_por": "manual"
+  "hora": "07:27",
+  "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-26",
-  "numero": 93,
-  "assunto": "Daily Brief - 26/11 - Trump mira açúcar e aviões do Brasil",
-  "abertura": "Os EUA propuseram tarifa de **10%** sobre aviões brasileiros e mais imposto sobre o açúcar, e o governo Lula respondeu com indignação. O mercado local olhou para outro lado: a especulação sobre Luiz Trabuco na Fazenda pesou mais, e o Ibovespa subiu enquanto o dólar caiu.",
-  "itens": 15,
+  "data": "2026-11-27",
+  "numero": 94,
+  "assunto": "Daily Brief - 27/11 - Trabuco aceita Fazenda e acalma mercado",
+  "abertura": "A indicação do banqueiro Luiz Carlos Trabuco para o Ministério da Fazenda provocou forte otimismo no mercado financeiro, fazendo o principal fundo de ações brasileiras em Nova York disparar **9,45%**. No cenário internacional, Pequim prometeu novos estímulos para o mercado de capitais, enquanto entraves geopolíticos no Oriente Médio e restrições de tecnologia da Nvidia mantêm a cautela global.",
+  "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 4
-   },
-   {
-    "titulo": "Global",
-    "itens": 4
-   },
-   {
-    "titulo": "Mundo",
     "itens": 3
    },
    {
+    "titulo": "Global",
+    "itens": 3
+   },
+   {
+    "titulo": "Mundo",
+    "itens": 2
+   },
+   {
     "titulo": "Tech e Cripto",
-    "itens": 4
+    "itens": 3
    }
   ],
   "newsletters": 1
@@ -48,20 +48,20 @@
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "172.083",
-   "variacao_pct": 3.24
+   "valor": "176.800",
+   "variacao_pct": 6.07
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,7314",
-   "variacao_pct": -2.92
+   "valor": "R$ 5,6525",
+   "variacao_pct": -2.91
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,2951",
-   "variacao_pct": -2.61
+   "valor": "R$ 6,1958",
+   "variacao_pct": -2.91
   },
   {
    "nome": "S&P 500",
@@ -84,32 +84,32 @@
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,73",
-   "variacao_pct": 0.06
+   "valor": "103,85",
+   "variacao_pct": 0.17
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 84,63",
-   "variacao_pct": 1.14
+   "valor": "US$ 85,84",
+   "variacao_pct": 2.58
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.594,50",
-   "variacao_pct": 1.66
+   "valor": "US$ 3.697,80",
+   "variacao_pct": 4.58
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 60.791",
-   "variacao_pct": 4.26
+   "valor": "US$ 61.625",
+   "variacao_pct": 1.29
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.702,83",
-   "variacao_pct": 3.98
+   "valor": "US$ 1.727,41",
+   "variacao_pct": 1.54
   },
   {
    "nome": "Selic (meta)",
@@ -125,10 +125,10 @@
   }
  ],
  "secoes": {
-  "brasil": 303,
-  "global": 244,
-  "mundo": 213,
-  "tech": 290
+  "brasil": 306,
+  "global": 247,
+  "mundo": 215,
+  "tech": 293
  },
  "fontes": [
   {
@@ -137,15 +137,15 @@
   },
   {
    "nome": "TechCrunch",
-   "citacoes": 159
+   "citacoes": 160
   },
   {
    "nome": "Financial Times",
-   "citacoes": 150
+   "citacoes": 151
   },
   {
    "nome": "CNBC",
-   "citacoes": 111
+   "citacoes": 115
   },
   {
    "nome": "CNBC World",
@@ -153,23 +153,23 @@
   },
   {
    "nome": "The Verge",
-   "citacoes": 106
+   "citacoes": 107
+  },
+  {
+   "nome": "BBC World",
+   "citacoes": 102
   },
   {
    "nome": "CNBC Top News",
    "citacoes": 100
   },
   {
-   "nome": "BBC World",
-   "citacoes": 100
-  },
-  {
    "nome": "InfoMoney",
-   "citacoes": 94
+   "citacoes": 95
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 73
+   "citacoes": 74
   },
   {
    "nome": "NeoFeed",
@@ -181,7 +181,7 @@
   },
   {
    "nome": "G1",
-   "citacoes": 36
+   "citacoes": 37
   },
   {
    "nome": "MarketWatch",
@@ -194,11 +194,11 @@
    "edicoes": 60
   },
   {
-   "nome": "Apollo",
-   "edicoes": 30
+   "nome": "Apollo Global Management",
+   "edicoes": 31
   },
   {
-   "nome": "Apollo Global Management",
+   "nome": "Apollo",
    "edicoes": 30
   },
   {
@@ -1641,6 +1641,19 @@
    "newsletters": 1,
    "destinatarios": 20,
    "curado_por": "manual"
+  },
+  {
+   "data": "2026-11-27",
+   "itens": 11,
+   "secoes": {
+    "brasil": 3,
+    "global": 3,
+    "mundo": 2,
+    "tech": 3
+   },
+   "newsletters": 1,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2201,6 +2214,12 @@
    "assunto": "Daily Brief - 26/11 - Trump mira açúcar e aviões do Brasil",
    "itens": 15,
    "arquivo": "edicoes/2026-11-26.html"
+  },
+  {
+   "data": "2026-11-27",
+   "assunto": "Daily Brief - 27/11 - Trabuco aceita Fazenda e acalma mercado",
+   "itens": 11,
+   "arquivo": "edicoes/2026-11-27.html"
   }
  ]
 }
