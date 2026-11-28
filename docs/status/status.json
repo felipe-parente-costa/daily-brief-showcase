@@ -1,17 +1,17 @@
 {
- "gerado_em": "2026-11-27T17:08:13-03:00",
+ "gerado_em": "2026-11-28T07:27:05-03:00",
  "projeto": {
   "primeira_edicao": "2026-08-26",
-  "edicoes": 94,
-  "itens_curados": 1061,
+  "edicoes": 95,
+  "itens_curados": 1072,
   "feeds": 16,
   "indicadores": 13,
   "janela_horas": 30,
   "leitores": 20,
-  "sequencia": 94
+  "sequencia": 95
  },
  "hoje": {
-  "data": "2026-11-27",
+  "data": "2026-11-28",
   "entregue": true,
   "aviso_de_falha": false,
   "destinatarios": 20,
@@ -19,15 +19,15 @@
   "curado_por": "gemini"
  },
  "ultima_edicao": {
-  "data": "2026-11-27",
-  "numero": 94,
-  "assunto": "Daily Brief - 27/11 - Trabuco aceita Fazenda e acalma mercado",
-  "abertura": "A indicação do banqueiro Luiz Carlos Trabuco para o Ministério da Fazenda provocou forte otimismo no mercado financeiro, fazendo o principal fundo de ações brasileiras em Nova York disparar **9,45%**. No cenário internacional, Pequim prometeu novos estímulos para o mercado de capitais, enquanto entraves geopolíticos no Oriente Médio e restrições de tecnologia da Nvidia mantêm a cautela global.",
+  "data": "2026-11-28",
+  "numero": 95,
+  "assunto": "Daily Brief - 28/11 - Trabuco na Fazenda e rali dos juros",
+  "abertura": "A indicação de Luiz Carlos Trabuco para o Ministério da Fazenda em 2027 trouxe forte alívio aos mercados brasileiros, com queda expressiva nos juros futuros. No cenário internacional, a maior falência bancária nos EUA em mais de dois anos e gargalos orçamentários na Europa e no Oriente Médio marcam o dia.",
   "itens": 11,
   "secoes": [
    {
     "titulo": "Brasil",
-    "itens": 3
+    "itens": 4
    },
    {
     "titulo": "Global",
@@ -35,11 +35,11 @@
    },
    {
     "titulo": "Mundo",
-    "itens": 2
+    "itens": 3
    },
    {
     "titulo": "Tech e Cripto",
-    "itens": 3
+    "itens": 1
    }
   ],
   "newsletters": 1
@@ -48,68 +48,68 @@
   {
    "nome": "Ibovespa",
    "grupo": "brasil",
-   "valor": "176.800",
-   "variacao_pct": 6.07
+   "valor": "176.573",
+   "variacao_pct": -0.13
   },
   {
    "nome": "Dolar (USD/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 5,6525",
-   "variacao_pct": -2.91
+   "valor": "R$ 5,5582",
+   "variacao_pct": -4.53
   },
   {
    "nome": "Euro (EUR/BRL)",
    "grupo": "brasil",
-   "valor": "R$ 6,1958",
-   "variacao_pct": -2.91
+   "valor": "R$ 6,0775",
+   "variacao_pct": -4.77
   },
   {
    "nome": "S&P 500",
    "grupo": "global",
-   "valor": "7.182,78",
-   "variacao_pct": -0.25
+   "valor": "7.297,49",
+   "variacao_pct": 1.6
   },
   {
    "nome": "Nasdaq",
    "grupo": "global",
-   "valor": "23.585,80",
-   "variacao_pct": -0.62
+   "valor": "24.129,50",
+   "variacao_pct": 2.31
   },
   {
    "nome": "Treasury 10a",
    "grupo": "global",
-   "valor": "4,848%",
-   "variacao_pct": -1.14
+   "valor": "4,936%",
+   "variacao_pct": 1.82
   },
   {
    "nome": "Dolar (DXY)",
    "grupo": "global",
-   "valor": "103,85",
-   "variacao_pct": 0.17
+   "valor": "104,01",
+   "variacao_pct": 0.33
   },
   {
    "nome": "Petroleo WTI",
    "grupo": "commodity",
-   "valor": "US$ 85,84",
-   "variacao_pct": 2.58
+   "valor": "US$ 83,08",
+   "variacao_pct": -0.72
   },
   {
    "nome": "Ouro",
    "grupo": "commodity",
-   "valor": "US$ 3.697,80",
-   "variacao_pct": 4.58
+   "valor": "US$ 3.668,50",
+   "variacao_pct": 3.75
   },
   {
    "nome": "Bitcoin",
    "grupo": "cripto",
-   "valor": "US$ 61.625",
-   "variacao_pct": 1.29
+   "valor": "US$ 59.379",
+   "variacao_pct": -3.6
   },
   {
    "nome": "Ethereum",
    "grupo": "cripto",
-   "valor": "US$ 1.727,41",
-   "variacao_pct": 1.54
+   "valor": "US$ 1.650,77",
+   "variacao_pct": -4.39
   },
   {
    "nome": "Selic (meta)",
@@ -125,15 +125,15 @@
   }
  ],
  "secoes": {
-  "brasil": 306,
-  "global": 247,
-  "mundo": 215,
-  "tech": 293
+  "brasil": 310,
+  "global": 250,
+  "mundo": 218,
+  "tech": 294
  },
  "fontes": [
   {
    "nome": "G1 Economia",
-   "citacoes": 176
+   "citacoes": 179
   },
   {
    "nome": "TechCrunch",
@@ -141,7 +141,7 @@
   },
   {
    "nome": "Financial Times",
-   "citacoes": 151
+   "citacoes": 152
   },
   {
    "nome": "CNBC",
@@ -149,7 +149,7 @@
   },
   {
    "nome": "CNBC World",
-   "citacoes": 108
+   "citacoes": 111
   },
   {
    "nome": "The Verge",
@@ -165,18 +165,18 @@
   },
   {
    "nome": "InfoMoney",
-   "citacoes": 95
+   "citacoes": 96
   },
   {
    "nome": "WSJ Markets",
-   "citacoes": 74
-  },
-  {
-   "nome": "NeoFeed",
-   "citacoes": 66
+   "citacoes": 75
   },
   {
    "nome": "Brazil Journal",
+   "citacoes": 68
+  },
+  {
+   "nome": "NeoFeed",
    "citacoes": 66
   },
   {
@@ -195,7 +195,7 @@
   },
   {
    "nome": "Apollo Global Management",
-   "edicoes": 31
+   "edicoes": 32
   },
   {
    "nome": "Apollo",
@@ -1654,6 +1654,19 @@
    "newsletters": 1,
    "destinatarios": 20,
    "curado_por": "gemini"
+  },
+  {
+   "data": "2026-11-28",
+   "itens": 11,
+   "secoes": {
+    "brasil": 4,
+    "global": 3,
+    "mundo": 3,
+    "tech": 1
+   },
+   "newsletters": 1,
+   "destinatarios": 20,
+   "curado_por": "gemini"
   }
  ],
  "edicoes": [
@@ -2220,6 +2233,12 @@
    "assunto": "Daily Brief - 27/11 - Trabuco aceita Fazenda e acalma mercado",
    "itens": 11,
    "arquivo": "edicoes/2026-11-27.html"
+  },
+  {
+   "data": "2026-11-28",
+   "assunto": "Daily Brief - 28/11 - Trabuco na Fazenda e rali dos juros",
+   "itens": 11,
+   "arquivo": "edicoes/2026-11-28.html"
   }
  ]
 }
